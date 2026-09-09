@@ -4,6 +4,12 @@
 
 [공개 Knowledge Base](https://uptec-khj.github.io/gridex-power-policy-kb/) · [개발 로드맵](https://github.com/Uptec-khj/gridex-project-management/blob/main/content/roadmap.md) · [문서 표준](docs/frontmatter-standard.md) · [자료 확보 현황](content/collection-status.md) · [작성 템플릿](templates/policy-document.md)
 
+## GFM 세계 규격·시험·인증
+
+[GFM 공개 대시보드](content/gfm/index.md)에 국제 핵심문서 20건과 한국 공식 자료 2건의 서지·자체 한국어 요약, 국가별 허브, 요구사항·시험 비교와 요구→시험→증빙 예제를 공개합니다. 한국은 `KSGA-025-18-1:2023 Ed1` 단체표준과 한전·KPX 계통연계/시장 트랙을 분리하며, KSGA 개정 준비와 한전 공청회·기준 수립 이력은 현행 확정본과 별도 추적합니다.
+
+GFM 영역에는 제3자 PDF·원문 표·그림·스크린샷·로고·인증서 사본·OCR 전문·전문 번역을 포함하지 않습니다. 공식 페이지·원문 URL과 직접 작성한 한국어 요약·분석만 공개하며, 공개 열람과 재배포 허용을 구분합니다.
+
 ## 현재 범위
 
 공식 자료 **37건**을 연결했습니다. 전력수급·송변전계획 전문, 수요전망, 수립위원회·환경평가·공청회·토론회 자료와 기관 사보 해설을 포함합니다. 탐색 허브, 동일 문서의 PDF/HWP 형식 차이는 별도 문서로 세지 않습니다. 원본 첨부 36개를 SHA-256으로 보존했습니다.
