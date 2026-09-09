@@ -2,7 +2,7 @@
 
 대한민국 전력정책의 **공식 원문을 연결하는 Markdown Knowledge Base**입니다. PDF를 내려받지 않아도 정책의 맥락·수치·변화·연관 문서를 탐색할 수 있도록 만듭니다.
 
-[공개 Knowledge Base](https://uptec-khj.github.io/gridex-power-policy-kb/) · [개발 로드맵](content/project/roadmap.md) · [문서 표준](docs/frontmatter-standard.md) · [자료 확보 현황](content/collection-status.md) · [작성 템플릿](templates/policy-document.md)
+[공개 Knowledge Base](https://uptec-khj.github.io/gridex-power-policy-kb/) · [개발 로드맵](https://github.com/Uptec-khj/gridex-project-management/blob/main/content/roadmap.md) · [문서 표준](docs/frontmatter-standard.md) · [자료 확보 현황](content/collection-status.md) · [작성 템플릿](templates/policy-document.md)
 
 ## 현재 범위
 
@@ -20,7 +20,7 @@
 
 ## 구성
 
-[국가별 확장 로드맵](content/project/international-roadmap.md)의 G1을 구현했습니다. 대한민국·호주·미국·중국·유럽 메뉴와 [국가별 문서 찾기](content/document-search.md), PDF 원문 검색의 관할·시장·언어·종류 필터를 제공합니다. 기존 국내 37건은 v1.1 표준으로 이관했으며 본문·원본·출처·관계를 보존했습니다. [국제 자료원 후보](sources/international-candidates.yaml) 11개는 **비활성 설계 목록**입니다. 해외 메뉴는 0건·수집 준비 중으로 표시하며, 실제 해외 수집·정기 실행은 G2 이후 진행합니다.
+[국가별 확장 로드맵](https://github.com/Uptec-khj/gridex-project-management/blob/main/content/international-roadmap.md)의 G1을 구현했습니다. 대한민국·호주·미국·중국·유럽 메뉴와 [국가별 문서 찾기](content/document-search.md), PDF 원문 검색의 관할·시장·언어·종류 필터를 제공합니다. 기존 국내 37건은 v1.1 표준으로 이관했으며 본문·원본·출처·관계를 보존했습니다. [국제 자료원 후보](sources/international-candidates.yaml) 11개는 **비활성 설계 목록**입니다. 해외 메뉴는 0건·수집 준비 중으로 표시하며, 실제 해외 수집·정기 실행은 G2 이후 진행합니다.
 
 ```text
 content/                  Obsidian Markdown: 유일한 콘텐츠 편집 원본
@@ -28,7 +28,7 @@ content/                  Obsidian Markdown: 유일한 콘텐츠 편집 원본
   plans/                  10·11·12차 탐색 허브
   regions/                국가별 문서 목록과 수집 준비 상태 (자동 생성)
   document-search.md      제목·주제·관할·언어별 문서 찾기
-  project/                개발 로드맵·백로그·개발 기록
+  project/                공개 콘텐츠 검수 대기 목록
   original-search.md      공식 PDF 페이지 검색
   extraction-status.md    자동 생성한 PDF 추출 현황
   index.md                공개 KB 첫 화면
@@ -117,7 +117,7 @@ GRIDEX 신규 코드에는 [MIT License](LICENSE)를 적용합니다. 공식 원
 
 ## 개발 관리
 
-Obsidian에서 [개발 로드맵](content/project/roadmap.md)을 열고 [백로그](content/project/development-backlog.md), [개발 기록](content/project/release-log.md)을 함께 사용합니다. 새 작업에는 [development-task 템플릿](templates/development-task.md)을 적용합니다. 플러그인 없이 Frontmatter·체크박스·Wiki Link로 동작하며 Quartz에서도 공개됩니다.
+개발 관리는 [gridex-project-management](https://github.com/Uptec-khj/gridex-project-management) 저장소에서 수행합니다. 해당 저장소를 별도 Obsidian 보관함으로 열고 [로드맵](https://github.com/Uptec-khj/gridex-project-management/blob/main/content/roadmap.md), [백로그](https://github.com/Uptec-khj/gridex-project-management/blob/main/content/development-backlog.md), [개발 기록](https://github.com/Uptec-khj/gridex-project-management/blob/main/content/release-log.md)을 함께 사용합니다. 개발 문서는 공개 KB의 검색·탐색·그래프에서 제외합니다. 기존 개발 문서 주소는 새 저장소로 안내합니다. 자료 검수·수집 현황은 이 저장소에 유지합니다.
 
 ## 원문 검색의 범위
 

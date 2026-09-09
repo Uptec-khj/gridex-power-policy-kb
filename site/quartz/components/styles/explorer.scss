@@ -28,6 +28,12 @@
 }
 
 .explorer {
+  .explorer-ul > li:has(> a[data-for="document-search"]),
+  .explorer-ul > li:has(> a[data-for="reading-guide"]) {
+    margin-top: .8rem;
+    padding-top: .6rem;
+    border-top: 1px solid var(--lightgray);
+  }
   display: flex;
   flex-direction: column;
   overflow-y: hidden;

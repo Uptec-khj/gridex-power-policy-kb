@@ -177,7 +177,7 @@ def build():
     pending = [m for m in documents if m['verification_status'] != 'human_verified' or m['summary_review_status'] != 'reviewed']
     rows = ['---', 'title: 콘텐츠 검수 대기 목록', 'tags: [프로젝트, 검수]', '---', '',
             'Markdown 검수 상태에서 자동 생성합니다. 사람 검수 양식은 저장소 templates/content-review.md를 사용합니다. 이 목록의 생성은 검수 완료를 뜻하지 않습니다.', '',
-            '[[development-backlog|개발 백로그]] · [[technical-documents|기술 문서]] · [[collection-status|자료 확보 현황]]', '',
+            '[[technical-documents|기술 문서]] · [[collection-status|자료 확보 현황]]', '',
             f'검수 대기 {len(pending)}건. 출처·버전·적용 범위·수치/단위·쪽수·요약·이용조건을 대조하세요.', '',
             '| 문서 | 문서 단계 | 첨부 | 확인 범위와 남은 사항 |', '| --- | --- | --- | --- |']
     rows += [f"| [[{m['id']}]] | {m['document_stage']} | {len(m['attachments'])}개 | {m.get('verification_notes', '').replace('|', '/')} |" for m in pending]
@@ -197,7 +197,7 @@ def build_regions(documents):
         rows = ['---', f"title: {region['label']} 전력정책·기술 문서", f"region_group: {region['id']}",
                 'type: region_hub', 'tags: [국가별자료]', '---', '',
                 f"공개 공식 자료 **{len(selected)}건**. " + ('AI 요약의 사람 검수 상태는 각 문서에서 확인하세요.' if selected else '공식 문서 수집 준비 중입니다. 아래 자료원 후보는 아직 수집·검수된 문서가 아닙니다.'), '',
-                f"[이 지역 문서 찾기](../document-search?region={region['id']}) · [이 지역 PDF 검색](../original-search?region={region['id']}) · [[international-roadmap|확장 로드맵]]", '',
+                f"[이 지역 문서 찾기](../document-search?region={region['id']}) · [이 지역 PDF 검색](../original-search?region={region['id']}) · [[reading-guide|이용 안내]]", '',
                 '적용 관할·시장은 문서별 범위입니다. 국가 분류만으로 모든 지역·설비에 동일한 규정이 적용된다는 뜻은 아닙니다.', '']
         for category in ['에너지정책','재생에너지정책','전력수급계획','전력수요','송변전망','기술기준','성능평가','전력시장']:
             rows += [f'## {category}', '']

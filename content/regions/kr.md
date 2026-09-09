@@ -7,7 +7,7 @@ tags: [국가별자료]
 
 공개 공식 자료 **37건**. AI 요약의 사람 검수 상태는 각 문서에서 확인하세요.
 
-[이 지역 문서 찾기](../document-search?region=KR) · [이 지역 PDF 검색](../original-search?region=KR) · [[international-roadmap|확장 로드맵]]
+[이 지역 문서 찾기](../document-search?region=KR) · [이 지역 PDF 검색](../original-search?region=KR) · [[reading-guide|이용 안내]]
 
 적용 관할·시장은 문서별 범위입니다. 국가 분류만으로 모든 지역·설비에 동일한 규정이 적용된다는 뜻은 아닙니다.
 

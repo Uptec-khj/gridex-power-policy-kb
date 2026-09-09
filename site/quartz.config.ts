@@ -1,6 +1,7 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
 import { OriginalIndex } from "./quartz/plugins/emitters/originalIndex"
+import { ManagementRedirects } from "./quartz/plugins/emitters/managementRedirects"
 
 /**
  * Quartz 4 Configuration
@@ -86,6 +87,7 @@ const config: QuartzConfig = {
       Plugin.Assets(),
       Plugin.Static(),
       OriginalIndex(),
+      ManagementRedirects(),
       Plugin.Favicon(),
       Plugin.NotFoundPage(),
       // Comment out CustomOgImages to speed up build time

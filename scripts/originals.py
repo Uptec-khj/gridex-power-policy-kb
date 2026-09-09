@@ -122,7 +122,7 @@ def build():
     rows += [f"| [[{f['document_id']}]] · {f['title'].replace('|', '/')} | {f['page_count']} | {', '.join(map(str, f['empty_pages'])) or '없음'} | {', '.join(map(str, f['sparse_pages'])) or '없음'} | {f['status']} |" for f in report['files']]
     rows += ['', '## PDF 미확보 문서', '', '공식 HTML만 보존했거나 PDF 첨부를 확보하지 못한 문서입니다. 원문 검색 대상에는 포함되지 않습니다.', '']
     rows += [f"- [[{key}]]" for key in report['documents_without_pdf']]
-    rows += ['', '[[original-search|원문 검색]] · [[collection-status|자료 확보 현황]] · [[roadmap|개발 로드맵]]', '']
+    rows += ['', '[[original-search|원문 검색]] · [[collection-status|자료 확보 현황]] · [[reading-guide|이용 안내]]', '']
     write_atomic(ROOT / "content/extraction-status.md", '\n'.join(rows))
     print(f"PDF evidence: {report['unique_pdf_count']} files, {report['searchable_pages']} searchable pages, {report['empty_pages']} empty pages, {report['failed_files']} failures")
     return report

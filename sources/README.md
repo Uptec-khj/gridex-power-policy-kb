@@ -1,6 +1,6 @@
 # Source Registry
 
-`international-candidates.yaml`은 [국가별 확장 로드맵](../content/project/international-roadmap.md)의 **비활성 조사 후보**입니다. 실행 Registry가 아니며 수집기는 이 파일을 읽지 않습니다. 자료원마다 `enabled: false`이고, 공통 접근·이용조건 검토는 `defaults`에 명시합니다. URL 확인은 전문 수집·재배포 허용·자동 수집 가능성 검증을 뜻하지 않습니다. 검증을 마친 항목만 별도 작업에서 `registry.yaml`로 승격합니다.
+`international-candidates.yaml`은 [국가별 확장 로드맵](https://github.com/Uptec-khj/gridex-project-management/blob/main/content/international-roadmap.md)의 **비활성 조사 후보**입니다. 실행 Registry가 아니며 수집기는 이 파일을 읽지 않습니다. 자료원마다 `enabled: false`이고, 공통 접근·이용조건 검토는 `defaults`에 명시합니다. URL 확인은 전문 수집·재배포 허용·자동 수집 가능성 검증을 뜻하지 않습니다. 검증을 마친 항목만 별도 작업에서 `registry.yaml`로 승격합니다.
 
 `registry.yaml`은 기관 ID·발행기관·공식 도메인·우선순위·범위·수집 어댑터를 정의합니다. `seed-documents.yaml`은 실제 수집할 공식 게시물과 첨부 후보입니다. `backlog.yaml`은 미확보 자료와 후속 검수를 관리합니다.
 

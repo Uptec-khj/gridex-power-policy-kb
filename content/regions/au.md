@@ -7,7 +7,7 @@ tags: [국가별자료]
 
 공개 공식 자료 **0건**. 공식 문서 수집 준비 중입니다. 아래 자료원 후보는 아직 수집·검수된 문서가 아닙니다.
 
-[이 지역 문서 찾기](../document-search?region=AU) · [이 지역 PDF 검색](../original-search?region=AU) · [[international-roadmap|확장 로드맵]]
+[이 지역 문서 찾기](../document-search?region=AU) · [이 지역 PDF 검색](../original-search?region=AU) · [[reading-guide|이용 안내]]
 
 적용 관할·시장은 문서별 범위입니다. 국가 분류만으로 모든 지역·설비에 동일한 규정이 적용된다는 뜻은 아닙니다.
 

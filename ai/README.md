@@ -1,6 +1,6 @@
 # RAG 설계
 
-현재는 AI 편집 Markdown 검색과 공식 PDF 원문 페이지 검색을 제공합니다. 임베딩·벡터 저장소·생성형 답변 API는 후속 단계입니다. 개발 순서는 [로드맵](../content/project/roadmap.md)에 있습니다.
+현재는 AI 편집 Markdown 검색과 공식 PDF 원문 페이지 검색을 제공합니다. 임베딩·벡터 저장소·생성형 답변 API는 후속 단계입니다. 개발 순서는 [로드맵](https://github.com/Uptec-khj/gridex-project-management/blob/main/content/roadmap.md)에 있습니다.
 
 ## 데이터 경계
 

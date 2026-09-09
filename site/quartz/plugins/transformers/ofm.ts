@@ -159,6 +159,8 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options>>
   return {
     name: "ObsidianFlavoredMarkdown",
     textTransform(_ctx, src) {
+      // Windows-edited tables must match the same alias-escaping rules as LF files.
+      src = src.replace(/\r\n?/g, "\n")
       // do comments at text level
       if (opts.comments) {
         src = src.replace(commentRegex, "")

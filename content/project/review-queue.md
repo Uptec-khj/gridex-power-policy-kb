@@ -5,7 +5,7 @@ tags: [프로젝트, 검수]
 
 Markdown 검수 상태에서 자동 생성합니다. 사람 검수 양식은 저장소 templates/content-review.md를 사용합니다. 이 목록의 생성은 검수 완료를 뜻하지 않습니다.
 
-[[development-backlog|개발 백로그]] · [[technical-documents|기술 문서]] · [[collection-status|자료 확보 현황]]
+[[technical-documents|기술 문서]] · [[collection-status|자료 확보 현황]]
 
 검수 대기 37건. 출처·버전·적용 범위·수치/단위·쪽수·요약·이용조건을 대조하세요.
 

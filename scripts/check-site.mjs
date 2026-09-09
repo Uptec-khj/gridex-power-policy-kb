@@ -58,7 +58,17 @@ assert.equal(rankEvidence(evidence.pages, "송변전 zzz-does-not-exist", "", ""
 assert(evidence.pages.every(p => p.content_origin === "official_extraction" && p.extraction_review_status === "unreviewed"))
 const originalPage = fs.readFileSync(path.join(root, "site/public/original-search.html"), "utf8")
 assert(originalPage.includes('class="original-search"') && originalPage.includes('name="stage"'))
-assert(content["project/roadmap"].links.includes("project/development-backlog"))
+for (const name of ['roadmap','development-backlog','release-log','international-roadmap']) {
+  const slug = 'project/' + name
+  assert(!content[slug], 'Development documents must not appear in the policy search or graph')
+  assert(Object.values(content).every(record => !record.links.includes(slug)))
+  for (const file of ['sitemap.xml','index.xml']) {
+    assert(!fs.readFileSync(path.join(root,'site/public',file),'utf8').includes('/' + slug))
+  }
+  const redirect = fs.readFileSync(path.join(root,'site/public',slug+'.html'),'utf8')
+  assert(redirect.includes(`https://github.com/Uptec-khj/gridex-project-management/blob/main/content/${name}.md`))
+  assert(redirect.includes('content="noindex"'))
+}
 const technical = rankEvidence(evidence.pages, "유효전력", "technical", "supporting")
 assert(technical.some(p => p.document_id === 'tech-field-test-appendix6' && p.pdf_page === 1))
 assert(technical.every(p => p.plan_number === null))
@@ -115,3 +125,22 @@ for (const slug of ['original-search','document-search']) {
 }
 assert(evidence.pages.every(p => p.region_group === 'KR' && p.document_language === 'ko' && p.document_type))
 console.log('International navigation, region isolation, language/market filters and null-plan classification passed')
+
+// Use the same serialized functions and actual content tree as the Explorer.
+const explorerCode = buildSync({stdin:{contents:'export {knowledgeExplorer} from "./quartz/components/knowledgeExplorer"; export {FileTrieNode} from "./quartz/util/fileTrie"', resolveDir:path.join(root,'site'), loader:'ts'}, bundle:true, write:false, platform:'node', format:'cjs'}).outputFiles[0].text
+const explorerModule = {exports:{}}
+new Function('module','exports','require',explorerCode)(explorerModule,explorerModule.exports,require)
+const {knowledgeExplorer,FileTrieNode} = explorerModule.exports
+const trie = FileTrieNode.fromEntries(Object.entries(content))
+for (const action of knowledgeExplorer.order) {
+  const fn = new Function('return ' + knowledgeExplorer[action + 'Fn'].toString())()
+  trie[action](fn)
+}
+assert.deepEqual(trie.children.map(n => n.slug), ['regions/index','plans/index','energy-renewable-plans','transmission-plans','demand-outlook','technical-documents','documents/index','document-search','original-search','catalog','timeline','reading-guide','legal-basis','collection-status','extraction-status','project/index'])
+assert.deepEqual(trie.findNode(['regions']).children.map(n => n.displayName), ['대한민국','호주','미국','중국','유럽'])
+assert.deepEqual(trie.findNode(['plans']).children.map(n => n.slug), ['plans/plan-10','plans/plan-11','plans/plan-12'])
+assert.equal(trie.findNode(['project']).displayName,'자료 검수')
+assert.equal(trie.findNode(['project']).children.length,1)
+const dates = trie.findNode(['documents']).children.map(n => Date.parse(n.data.date) || 0)
+assert(dates.every((date,i) => !i || dates[i-1] >= date))
+console.log('Development documents excluded; compatibility redirects and Korean Explorer ordering passed')

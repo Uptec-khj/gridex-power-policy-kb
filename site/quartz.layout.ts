@@ -2,6 +2,7 @@ import PolicyMetadata from "./quartz/components/PolicyMetadata"
 import OriginalSearch from "./quartz/components/OriginalSearch"
 import CountryNavigation from "./quartz/components/CountryNavigation"
 import DocumentSearch from "./quartz/components/DocumentSearch"
+import { knowledgeExplorer } from "./quartz/components/knowledgeExplorer"
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
 
@@ -44,7 +45,7 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer(knowledgeExplorer),
   ],
   right: [
     Component.Graph(),
@@ -68,7 +69,7 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer(knowledgeExplorer),
   ],
   right: [],
 }
