@@ -1,13 +1,13 @@
 {
   "schema_version": "1.0",
   "extraction_engine": "pypdf/6.12.1:layout-v1",
-  "document_count": 30,
-  "documents_with_pdf": 16,
-  "unique_pdf_count": 17,
-  "page_records": 376,
-  "searchable_pages": 376,
+  "document_count": 34,
+  "documents_with_pdf": 20,
+  "unique_pdf_count": 22,
+  "page_records": 534,
+  "searchable_pages": 534,
   "empty_pages": 0,
-  "sparse_pages": 11,
+  "sparse_pages": 12,
   "failed_files": 0,
   "documents_without_pdf": [
     "p10-draft",
@@ -17,13 +17,13 @@
     "p10-sea-scope",
     "p11-committee",
     "p11-draft",
-    "p11-final",
     "p11-hearing",
     "p11-release",
     "p11-sea-draft",
     "p11-sea-scope",
     "t10-explainer",
-    "t11-explainer"
+    "t11-explainer",
+    "tech-field-test-notice-202605"
   ],
   "files": [
     {
@@ -72,6 +72,18 @@
       "error": null
     },
     {
+      "document_id": "p11-final",
+      "title": "제11차 최초 공고 PDF (KPX 재게시, 표지 2025-169호)",
+      "file_hash": "sha256:3b0867749e987e0773ae4c08587dffe5b94215701c0a619c7c19222a1e084e14",
+      "page_count": 120,
+      "empty_pages": [],
+      "sparse_pages": [
+        1
+      ],
+      "status": "extracted",
+      "error": null
+    },
+    {
       "document_id": "p11-implementation",
       "title": "제11차 전기본의 신규원전 계획대로 추진(기후부  보도자료).pdf (157.6 KB)",
       "file_hash": "sha256:53973f911fa26ae930b601b3cdcd329229595640b0d26b19d5b227af24534f57",
@@ -106,6 +118,16 @@
       "title": "별첨_기후부장관모두말씀.pdf (109.2 KB)",
       "file_hash": "sha256:34e4e8b319f050577592db38d33e4cab80bdc074d878383985b5373811f69b74",
       "page_count": 3,
+      "empty_pages": [],
+      "sparse_pages": [],
+      "status": "extracted",
+      "error": null
+    },
+    {
+      "document_id": "p12-demand-draft-20260519",
+      "title": "재생에너지 보급 전략 보도자료 — 붙임3 제12차 수요 전망(안) 포함",
+      "file_hash": "sha256:a89688dec4f1542d5c5cc5f34b9936a56b510afcccaa629e057c5507bb3b78a0",
+      "page_count": 8,
       "empty_pages": [],
       "sparse_pages": [],
       "status": "extracted",
@@ -210,6 +232,36 @@
       "title": "다운로드",
       "file_hash": "sha256:d2cdebf009f356711c9e27a88f144e9b035a4ab1cb20b16af9918383f1d3c01c",
       "page_count": 2,
+      "empty_pages": [],
+      "sparse_pages": [],
+      "status": "extracted",
+      "error": null
+    },
+    {
+      "document_id": "tech-field-test-appendix6",
+      "title": "신재생발전기 송전계통 연계기술기준 부록6.pdf",
+      "file_hash": "sha256:5deb6993fa7c0341f59f92164e512dd81474bb96a8c991cc1fa2315e08fee118",
+      "page_count": 13,
+      "empty_pages": [],
+      "sparse_pages": [],
+      "status": "extracted",
+      "error": null
+    },
+    {
+      "document_id": "tech-grid-model-draft-202608",
+      "title": "첨부1 전력시장운영규칙 개정(안)",
+      "file_hash": "sha256:b47df5a187e4243d0ce3f049244ce925cc7fcbefe2594740f11a3c12e128e136",
+      "page_count": 2,
+      "empty_pages": [],
+      "sparse_pages": [],
+      "status": "extracted",
+      "error": null
+    },
+    {
+      "document_id": "tech-grid-model-draft-202608",
+      "title": "첨부2 계통평가세부운영규정 신설(안)",
+      "file_hash": "sha256:39984bbe9610d1bd23b0cea3f34052003e8d089b75a894750ee1c50d5d75c392",
+      "page_count": 15,
       "empty_pages": [],
       "sparse_pages": [],
       "status": "extracted",

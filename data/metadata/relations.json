@@ -345,6 +345,21 @@
     "type": "related_documents"
   },
   {
+    "source": "p12-demand-draft-20260519",
+    "target": "p12-forum3",
+    "type": "related_documents"
+  },
+  {
+    "source": "p12-demand-draft-20260519",
+    "target": "p12-forum45",
+    "type": "related_documents"
+  },
+  {
+    "source": "p12-demand-draft-20260519",
+    "target": "p11-demand",
+    "type": "related_documents"
+  },
+  {
     "source": "p12-forum1",
     "target": "p12-committee",
     "type": "related_documents"
@@ -573,5 +588,56 @@
     "source": "t11-release",
     "target": "p11-amend",
     "type": "related_documents"
+  },
+  {
+    "source": "tech-field-test-appendix6",
+    "target": "tech-field-test-notice-202605",
+    "type": "related_documents"
+  },
+  {
+    "source": "tech-field-test-appendix6",
+    "target": "tech-grid-model-draft-202608",
+    "type": "related_documents"
+  },
+  {
+    "source": "tech-field-test-appendix6",
+    "target": "t11-final",
+    "type": "related_documents"
+  },
+  {
+    "source": "tech-field-test-notice-202605",
+    "target": "tech-field-test-appendix6",
+    "type": "related_documents"
+  },
+  {
+    "source": "tech-field-test-notice-202605",
+    "target": "tech-grid-model-draft-202608",
+    "type": "related_documents"
+  },
+  {
+    "target": "tech-field-test-appendix6",
+    "type": "explains",
+    "source_url": "https://www.kpx.or.kr/board.es?act=view&bid=0042&mid=a11201000000&list_no=77368",
+    "basis": "게시물 5항은 구체적인 시험항목·절차·판정기준을 붙임 부록6에서 확인하도록 안내한다.",
+    "source": "tech-field-test-notice-202605",
+    "interpretation_review_status": "unreviewed"
+  },
+  {
+    "source": "tech-grid-model-draft-202608",
+    "target": "tech-field-test-appendix6",
+    "type": "related_documents"
+  },
+  {
+    "source": "tech-grid-model-draft-202608",
+    "target": "tech-field-test-notice-202605",
+    "type": "related_documents"
+  },
+  {
+    "target": "tech-field-test-appendix6",
+    "type": "references",
+    "source_url": "https://www.kpx.or.kr/boardDownload.es?bid=0042&list_no=77979&seq=3",
+    "basis": "신설안 13.2.4.1은 현장시험 방법과 판정기준에 송전계통 연계기준을 참조한다. KB 편집 관계로 해당 기준의 확보 부록6에 연결하며 판본 동일성은 별도 대조 대상이다.",
+    "source": "tech-grid-model-draft-202608",
+    "interpretation_review_status": "unreviewed"
   }
 ]

@@ -13,7 +13,7 @@ export default (() => {
       <form class="original-search-form">
         <label>검색어<input name="query" type="search" placeholder="예: 송변전 61,183" required /></label>
         <div class="original-search-filters">
-          <label>계획 차수<select name="plan"><option value="">전체</option><option value="10">제10차</option><option value="11">제11차</option><option value="12">제12차</option></select></label>
+          <label>문서 범위<select name="plan"><option value="">전체</option><option value="10">제10차</option><option value="11">제11차</option><option value="12">제12차</option><option value="technical">기술 문서</option></select></label>
           <label>문서 단계<select name="stage"><option value="">전체</option></select></label>
           <button type="submit">원문 검색</button>
         </div>

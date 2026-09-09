@@ -8,7 +8,7 @@ export interface EvidencePage {
   file_hash: string
   pdf_page: number
   printed_page: null
-  plan_number: number
+  plan_number: number | null
   document_stage: string
   published_date: string | null
   citation_url: string
@@ -18,8 +18,8 @@ export interface EvidencePage {
 }
 
 export const stageLabels: Record<string, string> = {
-  final: "확정 계획", amended: "수정 공고", working_draft: "실무안", draft: "초안",
-  consultation: "의견수렴·토론회", announced: "수립 절차", supporting: "공식 보조자료",
+  final: "확정 문서", amended: "수정 공고", working_draft: "실무안", draft: "초안",
+  consultation: "의견수렴·토론회", announced: "추진·사전 안내", supporting: "공식 보조자료",
   press_release: "공식 발표자료", official_explainer: "기관 해설",
 }
 
@@ -30,7 +30,7 @@ export function normalizeEvidence(text: string): string {
 export function rankEvidence(pages: EvidencePage[], query: string, plan = "", stage = "") {
   const terms = query.trim().split(/\s+/).map(normalizeEvidence).filter(Boolean)
   if (!terms.length) return []
-  return pages.filter(p => p.text && (!plan || String(p.plan_number) === plan) && (!stage || p.document_stage === stage))
+  return pages.filter(p => p.text && (!plan || (plan === "technical" ? p.plan_number === null : String(p.plan_number) === plan)) && (!stage || p.document_stage === stage))
     .map(page => {
       const title = normalizeEvidence(page.title), body = normalizeEvidence(page.text)
       const score = terms.every(t => title.includes(t) || body.includes(t))

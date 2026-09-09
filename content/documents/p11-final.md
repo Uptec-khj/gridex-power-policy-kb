@@ -15,7 +15,7 @@ topics:
 - 전력수요
 source_id: motie-archive
 source_url: https://www.motir.go.kr/kor/article/ATCLc01b2801b/70083/view
-attachment_url: null
+attachment_url: https://www.kpx.or.kr/boardDownload.es?bid=ATT&list_no=74548&seq=1
 related_documents:
 - '[[p10-final]]'
 - '[[p11-draft]]'
@@ -26,19 +26,29 @@ related_documents:
 previous_document: '[[p11-draft]]'
 next_document: '[[p11-amend]]'
 collected_date: '2026-09-09'
-file_hash: null
+file_hash: sha256:3b0867749e987e0773ae4c08587dffe5b94215701c0a619c7c19222a1e084e14
 verification_status: source_verified
 ai_generated: true
 summary_review_status: unreviewed
 reviewed_by: null
 reviewed_date: null
 last_verified_date: '2026-09-09'
-verification_notes: 공식 게시물 및 확보한 원본을 AI가 확인. 요약·정책 해석에 대한 사람의 검수는 미완료. 일부 공식 첨부 다운로드 실패. 수집 기록에 오류를 보존.
+verification_notes: KPX 공식 재게시 PDF 표지의 2025-169호·2025-02-21 확인. 현재 확보한 바이트이며 최초 게시
+  당시와 동일하다는 보장은 없음. 산업부 첨부 오류 이력 보존. 수정본과 본문 비교·사람 검수 대기.
 draft: false
-attachments: []
+attachments:
+- url: https://www.kpx.or.kr/boardDownload.es?bid=ATT&list_no=74548&seq=1
+  title: 제11차 최초 공고 PDF (KPX 재게시, 표지 2025-169호)
+  path: data/raw/sha256/3b/3b0867749e987e0773ae4c08587dffe5b94215701c0a619c7c19222a1e084e14.pdf
+  file_hash: sha256:3b0867749e987e0773ae4c08587dffe5b94215701c0a619c7c19222a1e084e14
+  format: pdf
+  size_bytes: 4749938
+  resolved_url: https://www.kpx.or.kr/boardDownload.es?bid=ATT&list_no=74548&seq=1
+  collected_at: '2026-09-09T05:09:01.620644+00:00'
+  rights_status: check_source_terms
 source_snapshot:
-  path: data/raw/sha256/2e/2edf04e24fe69a1b950c50a1f6dc3d8d44d2a399f1f33c3b44d5667439820981.html
-  file_hash: sha256:2edf04e24fe69a1b950c50a1f6dc3d8d44d2a399f1f33c3b44d5667439820981
+  path: data/raw/sha256/ab/ab84737c5a895fdc94e6bcc71bff8474a27375698e41e2b29af794013e8ae8bd.html
+  file_hash: sha256:ab84737c5a895fdc94e6bcc71bff8474a27375698e41e2b29af794013e8ae8bd
   resolved_url: https://www.motir.go.kr/kor/article/ATCLc01b2801b/70083/view
 events:
 - date: '2025-02-21'
@@ -54,7 +64,7 @@ date: '2025-02-21'
 ---
 
 > [!warning] 공식 출처 확인 · AI 요약 검수 대기
-> 이 페이지는 공식 원문을 바탕으로 AI가 작성한 편집 문서입니다. 정부·기관이 작성한 원문은 아래 링크에서 확인하세요. 공식 게시물 및 확보한 원본을 AI가 확인. 요약·정책 해석에 대한 사람의 검수는 미완료. 일부 공식 첨부 다운로드 실패. 수집 기록에 오류를 보존.
+> 아래는 AI가 작성한 편집 문서입니다. KPX 공식 재게시 PDF 표지의 2025-169호·2025-02-21 확인. 현재 확보한 바이트이며 최초 게시 당시와 동일하다는 보장은 없음. 산업부 첨부 오류 이력 보존. 수정본과 본문 비교·사람 검수 대기.
 
 ## 기본정보
 
@@ -75,7 +85,7 @@ date: '2025-02-21'
 
 ## 핵심 내용
 
-최초 공고 게시판의 PDF와 HWPX를 보존한다. 게시판 첨부파일은 교체될 수 있으므로 수집 시점의 파일 해시와 표지 공고번호를 별도로 확인한다. [원문 근거](https://www.motir.go.kr/kor/article/ATCLc01b2801b/70083/view)
+KPX 공식 재게시 경로에서 120쪽 PDF를 확보했다. 표지의 산업통상자원부 공고 제2025-169호(2025-02-21)를 확인했다. 수정본의 공고 제2025-238호와 별도로 저장한다. [PDF 표지](https://www.kpx.or.kr/boardDownload.es?bid=ATT&list_no=74548&seq=1#page=1)
 
 ## 핵심 수치
 
@@ -116,10 +126,9 @@ date: '2025-02-21'
 
 ## 원본 첨부파일
 
-첨부파일 미확보. 공식 게시물 HTML은 별도로 보존했습니다. 사보 해설은 이 단계에서 HTML만 보존합니다.
+- [최초 공고 PDF](https://www.kpx.or.kr/boardDownload.es?bid=ATT&list_no=74548&seq=1) · [GitHub 보존본](https://github.com/Uptec-khj/gridex-power-policy-kb/blob/main/data/raw/sha256/3b/3b0867749e987e0773ae4c08587dffe5b94215701c0a619c7c19222a1e084e14.pdf)
+- SHA-256: `sha256:3b0867749e987e0773ae4c08587dffe5b94215701c0a619c7c19222a1e084e14`
 
-일부 공식 첨부 경로가 오류를 반환했습니다. 확보하지 못한 파일의 해시는 생성하지 않았습니다. 상세 상태: [[collection-status|자료 확보 현황]].
+산업부 첨부 경로의 다운로드 오류는 획득 이력에 남아 있습니다. [공식 게시물 보존본](https://github.com/Uptec-khj/gridex-power-policy-kb/blob/main/data/raw/sha256/ab/ab84737c5a895fdc94e6bcc71bff8474a27375698e41e2b29af794013e8ae8bd.html)
 
-게시물 스냅샷: `{r["source_snapshot"]["path"]}`
-
-원문 파일의 권리는 발행기관·원저작자에게 있습니다. GRIDEX의 코드 라이선스를 원본에 적용하지 않습니다.
+원문 파일의 권리는 발행기관·원저작자에게 있습니다.

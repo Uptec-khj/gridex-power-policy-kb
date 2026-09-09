@@ -7,10 +7,10 @@
 | title | 문자열 | 원문 식별에 충실한 제목. 편집 제목은 기본정보에 명시 |
 | organization | 문자열 | 발행 당시 기관명. 현재 호스팅 기관명으로 소급 변경 금지 |
 | published_date | 날짜 문자열 또는 null | 따옴표로 감싼 YYYY-MM-DD. 미상은 null, 수집일·월초로 추정 금지 |
-| category | 열거형 | 전력수급계획 / 전력수요 / 송변전망 |
+| category | 열거형 | 전력수급계획 / 전력수요 / 송변전망 / 기술기준 / 성능평가 |
 | subcategory | 문자열 | 기본계획 / 확정발표 / 수정공고 / 장기전력수요전망 / 수립착수 / 정책토론회안내 / 기관해설 등 |
-| plan_family | 열거형 | 전력수급기본계획 / 장기송변전설비계획 |
-| plan_number | 정수 | MVP: 10, 11, 12 |
+| plan_family | 열거형 또는 null | 전력수급기본계획 / 장기송변전설비계획. 기술 문서는 null |
+| plan_number | 정수 또는 null | 계획은 10, 11, 12. 기술 문서는 null |
 | document_stage | 열거형 | 아래 단계 표 참조 |
 | topics | 문자열 목록 | 통제 키워드. 빈 목록 금지 |
 | source_url | HTTPS URL | 공식 게시물·자료실 URL. 검색결과 URL 금지 |
@@ -68,3 +68,19 @@ URL이 같아도 바이트가 달라지면 다른 파일이다. 새 SHA-256 경�
 ## 수치와 근거
 
 각 행에 지표·연도·값·단위·전국/지역·판매단/발전단·기준/목표수요·원문 쪽수/표명을 가능한 한 기록한다. PDF 쪽수는 파일의 1-based 페이지 번호이며 인쇄 쪽수가 다르면 병기한다. AI 계산은 공식 수치와 분리하고 입력 출처와 계산식을 적는다. 미확인 값을 0이나 추정값으로 채우지 않는다.
+
+## 기술 문서 확장 (v0.4, schema_version 1.0의 호환 확장)
+
+`category`가 기술기준 또는 성능평가이면 `plan_family`와 `plan_number`는 모두 null이고 `technical` 객체를 필수로 입력한다. 계획 문서는 기존 차수 규칙을 유지한다. 템플릿은 `templates/technical-document.md`이다.
+
+- `document_type`: technical_standard / test_procedure / technical_notice / rule_draft. 유형과 공식 단계(document_stage)는 별개다.
+- `standard_id`, `revision`: 기준번호·개정번호 문자열 또는 null. 개정 04의 앞자리 0을 유지한다.
+- `revised_date`, `effective_date`: 확인된 YYYY-MM-DD 또는 null. 게시일은 published_date에 보존한다. 예정월·미정일을 임의의 날짜로 변환하지 않는다.
+- `applicability`: 대상 사업자·전압·설비·시험 범위. 일반적인 법적 적용 판정을 AI로 확정하지 않는다.
+- `coverage`: 전문 / 부록 / 발췌 / 안내 / 개정안과 확보 쪽수. 부록을 전체 기준으로 표시하지 않는다.
+
+## 근거 있는 관계 유형
+
+선택 필드 `typed_relations`는 target(Wiki Link), type, source_url, basis를 갖는다. type은 amends(개정), implements(이행), explains(설명), uses_evidence(근거 사용), references(참조)다. 공식 근거 URL과 연결 판단의 설명을 함께 기록한다. 동일 target을 related_documents와 본문 Wiki Link에도 기록한다. 페이지 그래프는 기존 Wiki Link를 유지하고, `relations.json`에는 추가 유형·근거·해석 검수 상태를 내보낸다. 그래프의 선 색상별 유형 표현은 아직 구현하지 않았다.
+
+검수 양식은 `templates/content-review.md`, 자동 생성 대기 목록은 `content/project/review-queue.md`이다. 자동 목록 생성은 사람 검수가 아니다.

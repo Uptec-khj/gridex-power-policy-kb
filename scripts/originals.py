@@ -87,6 +87,7 @@ def build_evidence(records, root=ROOT):
                     "citation_url": urldefrag(attachment["url"])[0] + f"#page={page['pdf_page']}",
                     "archive_url": "https://github.com/Uptec-khj/gridex-power-policy-kb/blob/main/" + attachment["path"],
                     "file_hash": digest, "plan_family": meta["plan_family"], "plan_number": meta["plan_number"],
+                    "category": meta.get("category"), "technical": meta.get("technical"),
                     "document_stage": meta["document_stage"], "published_date": meta["published_date"], **page})
     pages.sort(key=lambda p: (p["document_id"], p["file_hash"], p["pdf_page"]))
     report = {"schema_version": "1.0", "extraction_engine": ENGINE,

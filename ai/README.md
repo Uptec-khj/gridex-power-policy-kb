@@ -39,3 +39,9 @@ PDF를 읽기 전에 실제 바이트의 SHA-256을 대조합니다. 물리적 �
 4. 답변에는 출처·쪽수·버전·검수 상태를 표시하고 근거가 부족하면 미확인으로 답하도록 구현.
 
 현재 페이지 단위 기록은 긴 표를 중간에 자르지 않기 위한 선택입니다. 페이지에 이미지가 있거나 매우 긴 경우는 별도 검토 후 OCR·표 구조화·청크 전략을 확장합니다.
+
+## 기술 문서와 관계 (v0.4)
+
+기술 문서는 plan_family와 plan_number가 null이다. category와 technical 객체의 document_type, standard_id, revision, revised_date, effective_date, applicability, coverage를 편집 청크와 PDF 페이지 색인에 함께 보존한다. null을 임의 차수나 현행 버전으로 바꾸지 않는다. rule_draft와 document_stage=draft는 공개된 공식 개정안이며, 게시 제외용 draft=true와 구분한다.
+
+relations.json의 근거 있는 관계에는 source_url, basis, interpretation_review_status가 있다. 관계 자체도 편집 판단이므로 공식 규정의 명시적 연결인지 KB의 주제 연결인지 basis를 읽는다. 현재 두 가지 사례를 추가했고 기존 일반 관계는 유지한다. technical.effective_date=null인 예정안에서 시행일을 추정하거나 부록 coverage를 전문으로 확장해 답하지 않는다.

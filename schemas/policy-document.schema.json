@@ -49,7 +49,9 @@
       "enum": [
         "전력수급계획",
         "전력수요",
-        "송변전망"
+        "송변전망",
+        "기술기준",
+        "성능평가"
       ]
     },
     "subcategory": {
@@ -59,15 +61,20 @@
     "plan_family": {
       "enum": [
         "전력수급기본계획",
-        "장기송변전설비계획"
+        "장기송변전설비계획",
+        null
       ]
     },
     "plan_number": {
-      "type": "integer",
+      "type": [
+        "integer",
+        "null"
+      ],
       "enum": [
         10,
         11,
-        12
+        12,
+        null
       ]
     },
     "document_stage": {
@@ -319,7 +326,143 @@
     "verification_notes": {
       "type": "string",
       "minLength": 1
+    },
+    "technical": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "document_type",
+        "standard_id",
+        "revision",
+        "revised_date",
+        "effective_date",
+        "applicability",
+        "coverage"
+      ],
+      "properties": {
+        "document_type": {
+          "enum": [
+            "technical_standard",
+            "test_procedure",
+            "technical_notice",
+            "rule_draft"
+          ]
+        },
+        "standard_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "revision": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "revised_date": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "effective_date": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "applicability": {
+          "type": "string",
+          "minLength": 1
+        },
+        "coverage": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "typed_relations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "target",
+          "type",
+          "source_url",
+          "basis"
+        ],
+        "properties": {
+          "target": {
+            "type": "string",
+            "pattern": "^\\[\\[[a-z0-9][a-z0-9-]*\\]\\]$"
+          },
+          "type": {
+            "enum": [
+              "amends",
+              "implements",
+              "explains",
+              "uses_evidence",
+              "references"
+            ]
+          },
+          "source_url": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https://"
+          },
+          "basis": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
     }
   },
-  "additionalProperties": false
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "category": {
+            "enum": [
+              "기술기준",
+              "성능평가"
+            ]
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "technical"
+        ],
+        "properties": {
+          "plan_family": {
+            "type": "null"
+          },
+          "plan_number": {
+            "type": "null"
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "plan_family": {
+            "type": "string"
+          },
+          "plan_number": {
+            "type": "integer"
+          }
+        },
+        "not": {
+          "required": [
+            "technical"
+          ]
+        }
+      }
+    }
+  ]
 }

@@ -34,9 +34,13 @@ tags: [안내, Timeline]
 | 2026-01-26 | 제11차 신규원전 건설 계획대로 추진 발표 공개 | 게시·공고 | [[p11-implementation]] | [공식 출처](https://www.mcee.go.kr/home/web/board/read.do?boardId=1837310&boardMasterId=939&menuId=10598) |
 | 2026-04-17 | 제12차 전기본 제3차 전력수요 전망 정책토론회 안내 공개 | 게시·공고 | [[p12-forum3]] | [공식 출처](https://www.mcee.go.kr/home/web/board/read.do?boardId=1858100&boardMasterId=939&menuId=10598) |
 | 2026-04-22 | 제3차 수요전망 토론회 예정(안내문 기준) | 안내문상 예정 | [[p12-forum3]] | [공식 출처](https://www.mcee.go.kr/home/web/board/read.do?boardId=1858100&boardMasterId=939&menuId=10598) |
+| 2026-05-13 | 신재생발전기 송전계통 연계기술기준 부록6 발전단지 현장 특성시험절차서 게시 | 게시·공고 | [[tech-field-test-appendix6]] | [공식 출처](https://www.kpx.or.kr/board.es?act=view&bid=0042&mid=a11201000000&list_no=77368) |
+| 2026-05-13 | 신재생 발전소 현장성능시험 결과 제출 안내 게시 | 게시·공고 | [[tech-field-test-notice-202605]] | [공식 출처](https://www.kpx.or.kr/board.es?act=view&bid=0042&mid=a11201000000&list_no=77368) |
+| 2026-05-19 | 제12차 전력수급기본계획 수요 전망(안) 2026년 5월 게시 | 게시·공고 | [[p12-demand-draft-20260519]] | [공식 출처](https://www.mcee.go.kr/home/web/board/read.do?boardId=1864660&boardMasterId=939&menuId=10598) |
 | 2026-08-15 | 제4·5차 토론회 안내 등록 | 게시·공고 | [[p12-forum45]] | [공식 출처](https://www.mcee.go.kr/home/web/board/read.do?boardId=1884280&boardMasterId=939&menuId=10598) |
 | 2026-08-20 | 제4·5차 토론회 개최 예정일(안내문 기준) | 안내문상 예정 | [[p12-forum45]] | [공식 출처](https://www.mcee.go.kr/home/web/board/read.do?boardId=1884280&boardMasterId=939&menuId=10598) |
 | 2026-08-20 | 제6차 토론회 안내 등록 | 게시·공고 | [[p12-forum6]] | [공식 출처](https://www.mcee.go.kr/home/web/board/read.do?boardId=1884910&boardMasterId=939&menuId=10598) |
+| 2026-08-25 | 발전사업자 계통해석 모델 제출 사전안내 및 규정 개정안 게시 | 게시·공고 | [[tech-grid-model-draft-202608]] | [공식 출처](https://www.kpx.or.kr/board.es?act=view&bid=0042&mid=a11201000000&list_no=77979) |
 | 2026-08-26 | 제6차 토론회 개최 예정일(안내문 기준) | 안내문상 예정 | [[p12-forum6]] | [공식 출처](https://www.mcee.go.kr/home/web/board/read.do?boardId=1884910&boardMasterId=939&menuId=10598) |
 | 2026-09-09 | 제12차 전기본 제7차 석탄발전 조기폐지 정책토론회 안내 공개 | 게시·공고 | [[p12-forum7]] | [공식 출처](https://www.mcee.go.kr/home/web/board/read.do?boardId=1889590&boardMasterId=939&menuId=10598) |
 | 2026-09-18 | 제7차 석탄발전 조기폐지 토론회 개최 예정 | 안내문상 예정 | [[p12-forum7]] | [공식 출처](https://www.mcee.go.kr/home/web/board/read.do?boardId=1889590&boardMasterId=939&menuId=10598) |

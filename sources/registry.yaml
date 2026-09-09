@@ -44,6 +44,9 @@ sources:
   - 전력수급기본계획
   - 장기전력수요전망
   - 계획수립지원
+  - 재생에너지-현장성능시험
+  - 신재생발전기-송전계통연계기술기준
+  - 계통해석모델-검증
   entrypoints:
   - https://www.kpx.or.kr/board.es?bid=0061&mid=a30700000000
   - https://www.kpx.or.kr/board.es?bid=0017&mid=a10109030400
@@ -61,6 +64,9 @@ sources:
   scope:
   - 장기송변전설비계획-10
   - 장기송변전설비계획-11
+  - 재생에너지-현장성능시험
+  - 신재생발전기-송전계통연계기술기준
+  - 계통해석모델-검증
   notes: 새 공식 게시판의 G_FILE.downloadFile 인자를 원형 보존하여 수집. 10·11차 계획 PDF 확보. 사보는 해설로 별도
     분류.
   entrypoints:

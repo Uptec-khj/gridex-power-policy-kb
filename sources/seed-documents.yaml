@@ -33,6 +33,9 @@ documents:
   title: 제11차 전력수급기본계획 최초 공고
   source_url: https://www.motir.go.kr/kor/article/ATCLc01b2801b/70083/view
   expected_text: 제11차 전력수급기본계획
+  additional_attachments:
+  - url: https://www.kpx.or.kr/boardDownload.es?bid=ATT&list_no=74548&seq=1
+    title: 제11차 최초 공고 PDF (KPX 재게시, 표지 2025-169호)
 - id: p11-amend
   source_id: motie-archive
   title: 제11차 전력수급기본계획 수정 공고
@@ -167,3 +170,30 @@ documents:
   title: 제10차 전력수급기본계획 총괄분과위 실무안 공개
   source_url: https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/165956/view
   expected_text: 총괄분과위 실무안 공개
+- id: p12-demand-draft-20260519
+  source_id: mcee
+  title: 제12차 전력수급기본계획 수요 전망(안) 2026년 5월
+  source_url: https://www.mcee.go.kr/home/web/board/read.do?boardId=1864660&boardMasterId=939&menuId=10598
+  expected_text: 100GW
+  attachments:
+  - url: https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=324062&fileSeq=2
+    title: 재생에너지 보급 전략 보도자료 — 붙임3 제12차 수요 전망(안) 포함
+- id: tech-field-test-appendix6
+  source_id: kpx
+  title: 신재생발전기 송전계통 연계기술기준 부록6 발전단지 현장 특성시험절차서
+  source_url: https://www.kpx.or.kr/board.es?act=view&bid=0042&mid=a11201000000&list_no=77368
+  expected_text: 달라지는 신재생 발전소
+  attachments:
+  - url: https://www.kpx.or.kr/boardDownload.es?bid=0042&list_no=77368&seq=1
+    title: 신재생발전기 송전계통 연계기술기준 부록6.pdf
+- id: tech-field-test-notice-202605
+  source_id: kpx
+  title: 신재생 발전소 현장성능시험 결과 제출 안내
+  source_url: https://www.kpx.or.kr/board.es?act=view&bid=0042&mid=a11201000000&list_no=77368
+  expected_text: 달라지는 신재생 발전소
+  attachments: []
+- id: tech-grid-model-draft-202608
+  source_id: kpx
+  title: 발전사업자 계통해석 모델 제출 사전안내 및 규정 개정안
+  source_url: https://www.kpx.or.kr/board.es?act=view&bid=0042&mid=a11201000000&list_no=77979
+  expected_text: 계통해석 모델 제출 사전안내

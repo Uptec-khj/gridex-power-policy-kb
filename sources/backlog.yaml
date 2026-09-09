@@ -47,11 +47,11 @@ items:
 - id: amendment-diff
   priority: P0
   title: 제11차 최초 공고·수정 공고 비교
-  status: original_required
+  status: ready_for_comparison
   document_ids:
   - p11-final
   - p11-amend
-  next_action: 최초 공고 당시 원본 확보 후 표·숫자·본문 비교 및 사람 검수
+  next_action: 최초 공고(2025-169)와 수정 공고(2025-238) PDF 확보. 본문·표·숫자 비교 및 사람 검수
 - id: p12-briefing
   priority: P1
   title: 제12차 추진 방향 브리핑 원문
@@ -86,10 +86,32 @@ items:
   priority: P1
   title: 총 30~50개 공식 문서로 확장
   status: minimum_count_reached
-  next_action: 30건 기반 링크·검수 품질을 보강하고 미확보 핵심 원문 우선 수집
+  next_action: 34건 기반 링크·검수 품질 보강, 기술기준 전문 및 후속 수요 원표 수집
   notes: 형식·페이지 수로 문서 수를 늘리지 않음. 사람 검수 완료와 구분.
 - id: human-review
   priority: P0
   title: 초기 콘텐츠 사람 검수 및 원문별 권리 확인
   status: pending
   next_action: 발행일·버전·수치·요약·링크·이용조건 대조 후 reviewed_by와 reviewed_date 기록
+- id: renewable-technical-full-standard
+  priority: P0
+  title: 신재생발전기 송전계통 연계기술기준 전문·개정 이력
+  status: partially_collected
+  document_ids:
+  - tech-field-test-appendix6
+  - tech-field-test-notice-202605
+  next_action: KPX 공개 부록6 13쪽 확보. 한전 전체 전문과 최신 개정 이력 확보; 발췌를 전문으로 분류하지 않음
+- id: grid-model-final-rules
+  priority: P1
+  title: 계통해석 모델 제출 규정 확정본
+  status: draft_collected
+  document_ids:
+  - tech-grid-model-draft-202608
+  next_action: 2026-08-25 사전안내 이후 확정 규칙·시행일 확인
+- id: p12-demand-may-draft
+  priority: P0
+  title: 제12차 5월 수요 잠정안 원표
+  status: collected
+  document_ids:
+  - p12-demand-draft-20260519
+  next_action: 후속 재전망과 비교, 시나리오 수치 구조화 및 사람 검수

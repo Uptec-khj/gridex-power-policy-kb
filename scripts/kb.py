@@ -42,7 +42,7 @@ def validate(generating=False):
     known = {p.stem for p in CONTENT.rglob("*.md")}
     actual_basenames = set(known)
     if generating:
-        known.update({"catalog", "timeline"})
+        known.update({"catalog", "timeline", "review-queue"})
     ids = {m["id"]: m for _, m, _ in records}
     registry = yaml.safe_load((ROOT / "sources/registry.yaml").read_text(encoding="utf-8"))["sources"]
     sources = {s["id"]: s for s in registry}
@@ -71,6 +71,11 @@ def validate(generating=False):
             errors.append(f"{path.name}: source URL is not in its institution registry")
         if meta.get("published_date") and meta["published_date"] > meta["collected_date"]:
             errors.append(f"{path.name}: future publication date")
+        for relation in meta.get("typed_relations", []):
+            if relation["target"] not in meta.get("related_documents", []):
+                errors.append(f"{path.name}: typed relation must also be a related document")
+            if urlparse(relation["source_url"]).hostname not in {d for s in registry for d in s["allowed_domains"]}:
+                errors.append(f"{path.name}: typed relation needs an official source")
         for link in meta.get("related_documents", []) + [v for v in (meta.get("previous_document"), meta.get("next_document")) if v]:
             tid = target_id(link)
             if tid not in ids or tid == meta["id"]:
@@ -97,7 +102,7 @@ def validate(generating=False):
             if not e.get("source_url") or e["status"] not in ("publication", "scheduled", "confirmed"):
                 errors.append(f"{path.name}: event provenance/status missing")
     for path in CONTENT.rglob("*.md"):
-        if generating and path.name in ("catalog.md", "timeline.md"):
+        if generating and path.name in ("catalog.md", "timeline.md", "review-queue.md"):
             continue
         for target in WIKI.findall(path.read_text(encoding="utf-8")):
             if Path(target).stem not in known:
@@ -123,6 +128,9 @@ def build():
         for relation in ("related_documents", "previous_document", "next_document"):
             values = meta[relation] if isinstance(meta[relation], list) else [meta[relation]] if meta[relation] else []
             edges.extend({"source": meta["id"], "target": target_id(link), "type": relation} for link in values)
+        edges.extend({**r, "source": meta["id"], "target": target_id(r["target"]),
+                      "interpretation_review_status": meta["summary_review_status"]}
+                     for r in meta.get("typed_relations", []))
         timeline.extend({**e, "document_id": meta["id"], "title": meta["title"]} for e in meta.get("events", []))
         # Chunk Markdown at section/paragraph boundaries; never index the raw PDF as AI prose.
         for section in re.split(r"(?=^## )", body, flags=re.M):
@@ -143,6 +151,7 @@ def build():
                     "summary_review_status": meta["summary_review_status"], "source_url": meta["source_url"],
                     "attachment_url": meta["attachment_url"], "file_hash": meta["file_hash"],
                     "plan_family": meta["plan_family"], "plan_number": meta["plan_number"],
+                    "category": meta["category"], "technical": meta.get("technical"),
                     "document_stage": meta["document_stage"], "published_date": meta["published_date"],
                     "collected_date": meta["collected_date"], "topics": meta["topics"]})
     timeline.sort(key=lambda e: (e["date"], e["document_id"]))
@@ -156,8 +165,16 @@ def build():
     rows += [f"| {e['date']} | {e['label']} | {labels[e['status']]} | [[{e['document_id']}]] | [공식 출처]({e['source_url']}) |" for e in timeline]
     (CONTENT / "timeline.md").write_text("\n".join(rows) + "\n", encoding="utf-8")
     rows = ["---", 'title: "공식 문서 목록"', "tags: [안내]", "---", "", f"공식 자료 {len(documents)}건. 사보 해설은 계획 전문과 구분하며, AI 요약은 아직 사람의 검수를 거치지 않았습니다.", "", "| 문서 | 발행일 | 차수 | 문서 단계 | 검증 |", "| --- | --- | --- | --- | --- |"]
-    rows += [f"| {m['title']} · [[{m['id']}]] | {m['published_date'] or '일자 미확인'} | {m['plan_number']} | {m['document_stage']} | {'사람 검수 완료' if m['verification_status'] == 'human_verified' else '공식 출처 확인 · 요약 검수 대기'} |" for m in documents]
+    rows += [f"| {m['title']} · [[{m['id']}]] | {m['published_date'] or '일자 미확인'} | {m['plan_number'] if m['plan_number'] is not None else '기술 문서'} | {m['document_stage']} | {'사람 검수 완료' if m['verification_status'] == 'human_verified' else '공식 출처 확인 · 요약 검수 대기'} |" for m in documents]
     (CONTENT / "catalog.md").write_text("\n".join(rows) + "\n", encoding="utf-8")
+    pending = [m for m in documents if m['verification_status'] != 'human_verified' or m['summary_review_status'] != 'reviewed']
+    rows = ['---', 'title: 콘텐츠 검수 대기 목록', 'tags: [프로젝트, 검수]', '---', '',
+            'Markdown 검수 상태에서 자동 생성합니다. 사람 검수 양식은 저장소 templates/content-review.md를 사용합니다. 이 목록의 생성은 검수 완료를 뜻하지 않습니다.', '',
+            '[[development-backlog|개발 백로그]] · [[technical-documents|기술 문서]] · [[collection-status|자료 확보 현황]]', '',
+            f'검수 대기 {len(pending)}건. 출처·버전·적용 범위·수치/단위·쪽수·요약·이용조건을 대조하세요.', '',
+            '| 문서 | 문서 단계 | 첨부 | 확인 범위와 남은 사항 |', '| --- | --- | --- | --- |']
+    rows += [f"| [[{m['id']}]] | {m['document_stage']} | {len(m['attachments'])}개 | {m.get('verification_notes', '').replace('|', '/')} |" for m in pending]
+    (CONTENT / 'project/review-queue.md').write_text('\n'.join(rows) + '\n', encoding='utf-8')
     validate()
     print(f"Built {len(documents)} documents, {len(edges)} relationships, {len(timeline)} events, {len(chunks)} RAG chunks")
 

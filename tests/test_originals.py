@@ -36,6 +36,16 @@ class OriginalEvidenceTests(unittest.TestCase):
                 originals.build_evidence(self.records(), self.root)
             parser.assert_not_called()
 
+    def test_technical_provenance_and_plan_exclusion(self):
+        self.meta.update(plan_number=None, plan_family=None, category='성능평가',
+                         technical={'revision': '04', 'coverage': '부록6 발췌'})
+        with patch.object(originals, 'extract_pdf', return_value=[self.page]):
+            pages, _ = originals.build_evidence(self.records(), self.root)
+        self.assertEqual(pages[0]['technical']['revision'], '04')
+        self.assertIsNone(pages[0]['plan_number'])
+        self.assertEqual(len(originals.search_pages(pages, '61183')), 1)
+        self.assertEqual(originals.search_pages(pages, '61183', plan=11), [])
+
     def test_draft_and_unverified_originals_are_excluded(self):
         for changes in ({"draft": True}, {"draft": False, "verification_status": "unverified"}):
             self.meta.update(changes)
