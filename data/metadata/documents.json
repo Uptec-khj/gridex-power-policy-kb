@@ -1,0 +1,920 @@
+[
+  {
+    "schema_version": "1.0",
+    "id": "p10-demand",
+    "title": "장기 전력수요전망 2022-2036",
+    "organization": "전력거래소",
+    "published_date": "2023-01-18",
+    "category": "전력수요",
+    "subcategory": "장기전력수요전망",
+    "plan_family": "전력수급기본계획",
+    "plan_number": 10,
+    "document_stage": "supporting",
+    "topics": [
+      "전력수급기본계획",
+      "장기전력수요전망",
+      "목표수요"
+    ],
+    "source_id": "kpx",
+    "source_url": "https://www.kpx.or.kr/board.es?act=view&bid=0017&list_no=68649&mid=a10109030400",
+    "attachment_url": "https://www.kpx.or.kr/boardDownload.es?bid=0017&list_no=68649&seq=2",
+    "related_documents": [
+      "[[p10-final]]",
+      "[[p11-demand]]"
+    ],
+    "previous_document": null,
+    "next_document": "[[p11-demand]]",
+    "collected_date": "2026-09-09",
+    "file_hash": "sha256:af76e30ecd4a27a2c4040910ba0a3171ed7be33fde79d09204a16e6c43d1365b",
+    "verification_status": "source_verified",
+    "ai_generated": true,
+    "summary_review_status": "unreviewed",
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "last_verified_date": "2026-09-09",
+    "verification_notes": "공식 게시물 및 확보한 원본을 AI가 확인. 요약·정책 해석에 대한 사람의 검수는 미완료.",
+    "draft": false,
+    "attachments": [
+      {
+        "url": "https://www.kpx.or.kr/boardDownload.es?bid=0017&list_no=68649&seq=1",
+        "title": "다운로드",
+        "path": "data/raw/sha256/aa/aa6a2fb0e84a8c7e730d6366b6245235d81af94889c29feb7a8dcca4cbbfa8fa.hwp",
+        "file_hash": "sha256:aa6a2fb0e84a8c7e730d6366b6245235d81af94889c29feb7a8dcca4cbbfa8fa",
+        "format": "hwp",
+        "size_bytes": 133632,
+        "resolved_url": "https://www.kpx.or.kr/boardDownload.es?bid=0017&list_no=68649&seq=1",
+        "collected_at": "2026-09-09T02:33:40.301154+00:00",
+        "rights_status": "check_source_terms"
+      },
+      {
+        "url": "https://www.kpx.or.kr/boardDownload.es?bid=0017&list_no=68649&seq=2",
+        "title": "다운로드",
+        "path": "data/raw/sha256/af/af76e30ecd4a27a2c4040910ba0a3171ed7be33fde79d09204a16e6c43d1365b.pdf",
+        "file_hash": "sha256:af76e30ecd4a27a2c4040910ba0a3171ed7be33fde79d09204a16e6c43d1365b",
+        "format": "pdf",
+        "size_bytes": 85485,
+        "resolved_url": "https://www.kpx.or.kr/boardDownload.es?bid=0017&list_no=68649&seq=2",
+        "collected_at": "2026-09-09T02:33:40.301154+00:00",
+        "rights_status": "check_source_terms"
+      }
+    ],
+    "source_snapshot": {
+      "path": "data/raw/sha256/f3/f3ff814f9389387873576c72438f47ec773e471001eb844ed6c480b0b7e01c53.html",
+      "file_hash": "sha256:f3ff814f9389387873576c72438f47ec773e471001eb844ed6c480b0b7e01c53",
+      "resolved_url": "https://www.kpx.or.kr/board.es?act=view&bid=0017&list_no=68649&mid=a10109030400"
+    },
+    "events": [
+      {
+        "date": "2023-01-18",
+        "label": "장기 수요전망 게시",
+        "status": "publication",
+        "source_url": "https://www.kpx.or.kr/board.es?act=view&bid=0017&list_no=68649&mid=a10109030400"
+      }
+    ],
+    "tags": [
+      "계획/10차",
+      "장기전력수요전망",
+      "검수대기"
+    ],
+    "aliases": [],
+    "date": "2023-01-18",
+    "path": "content/documents/p10-demand.md",
+    "slug": "documents/p10-demand"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "p10-final",
+    "title": "제10차 전력수급기본계획",
+    "organization": "산업통상자원부",
+    "published_date": "2023-01-13",
+    "category": "전력수급계획",
+    "subcategory": "기본계획",
+    "plan_family": "전력수급기본계획",
+    "plan_number": 10,
+    "document_stage": "final",
+    "topics": [
+      "전력수급기본계획",
+      "전원구성",
+      "전력수요"
+    ],
+    "source_id": "kpx",
+    "source_url": "https://www.kpx.or.kr/board.es?bid=0061&mid=a30700000000",
+    "attachment_url": "https://www.kpx.or.kr/boardDownload.es?bid=0061&list_no=69127&seq=1",
+    "related_documents": [
+      "[[p10-release]]",
+      "[[p10-demand]]",
+      "[[t10-explainer]]",
+      "[[p11-final]]"
+    ],
+    "previous_document": null,
+    "next_document": null,
+    "collected_date": "2026-09-09",
+    "file_hash": "sha256:8ed37705452306eb20b4e6c065f816eb2389e69083d04d7cbad42d28e0f0b175",
+    "verification_status": "source_verified",
+    "ai_generated": true,
+    "summary_review_status": "unreviewed",
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "last_verified_date": "2026-09-09",
+    "verification_notes": "공식 게시물 및 확보한 원본을 AI가 확인. 요약·정책 해석에 대한 사람의 검수는 미완료.",
+    "draft": false,
+    "attachments": [
+      {
+        "url": "https://www.kpx.or.kr/boardDownload.es?bid=0061&list_no=69127&seq=1",
+        "title": "제10차 전력수급기본계획 원문",
+        "path": "data/raw/sha256/8e/8ed37705452306eb20b4e6c065f816eb2389e69083d04d7cbad42d28e0f0b175.pdf",
+        "file_hash": "sha256:8ed37705452306eb20b4e6c065f816eb2389e69083d04d7cbad42d28e0f0b175",
+        "format": "pdf",
+        "size_bytes": 5052465,
+        "resolved_url": "https://www.kpx.or.kr/boardDownload.es?bid=0061&list_no=69127&seq=1",
+        "collected_at": "2026-09-09T02:33:27.116494+00:00",
+        "rights_status": "check_source_terms"
+      }
+    ],
+    "source_snapshot": {
+      "path": "data/raw/sha256/19/198c8a716a041bf97df050c939d97e255e47d9b5ace3170c7385a499664d424c.html",
+      "file_hash": "sha256:198c8a716a041bf97df050c939d97e255e47d9b5ace3170c7385a499664d424c",
+      "resolved_url": "https://www.kpx.or.kr/board.es?bid=0061&mid=a30700000000"
+    },
+    "events": [
+      {
+        "date": "2023-01-13",
+        "label": "제10차 계획 공고",
+        "status": "publication",
+        "source_url": "https://www.kpx.or.kr/board.es?bid=0061&mid=a30700000000"
+      }
+    ],
+    "tags": [
+      "계획/10차",
+      "기본계획",
+      "검수대기"
+    ],
+    "aliases": [],
+    "date": "2023-01-13",
+    "path": "content/documents/p10-final.md",
+    "slug": "documents/p10-final"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "p10-release",
+    "title": "제10차 전력수급기본계획 확정 발표",
+    "organization": "산업통상자원부",
+    "published_date": "2023-01-12",
+    "category": "전력수급계획",
+    "subcategory": "확정발표",
+    "plan_family": "전력수급기본계획",
+    "plan_number": 10,
+    "document_stage": "press_release",
+    "topics": [
+      "전력수급기본계획",
+      "전원구성",
+      "전력수요"
+    ],
+    "source_id": "motie-archive",
+    "source_url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/166650/view",
+    "attachment_url": null,
+    "related_documents": [
+      "[[p10-final]]",
+      "[[p10-demand]]"
+    ],
+    "previous_document": null,
+    "next_document": null,
+    "collected_date": "2026-09-09",
+    "file_hash": null,
+    "verification_status": "source_verified",
+    "ai_generated": true,
+    "summary_review_status": "unreviewed",
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "last_verified_date": "2026-09-09",
+    "verification_notes": "공식 게시물 및 확보한 원본을 AI가 확인. 요약·정책 해석에 대한 사람의 검수는 미완료. 일부 공식 첨부 다운로드 실패. 수집 기록에 오류를 보존.",
+    "draft": false,
+    "attachments": [],
+    "source_snapshot": {
+      "path": "data/raw/sha256/57/571c08dc6c3a2c54d2081f63f25c05c1f7148c1a7e3c850d3956e4ea96de3c86.html",
+      "file_hash": "sha256:571c08dc6c3a2c54d2081f63f25c05c1f7148c1a7e3c850d3956e4ea96de3c86",
+      "resolved_url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/166650/view"
+    },
+    "events": [
+      {
+        "date": "2023-01-12",
+        "label": "확정 참고자료 등록",
+        "status": "publication",
+        "source_url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/166650/view"
+      }
+    ],
+    "tags": [
+      "계획/10차",
+      "확정발표",
+      "검수대기"
+    ],
+    "aliases": [],
+    "date": "2023-01-12",
+    "path": "content/documents/p10-release.md",
+    "slug": "documents/p10-release"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "p11-amend",
+    "title": "제11차 전력수급기본계획 수정 공고",
+    "organization": "산업통상자원부",
+    "published_date": "2025-03-13",
+    "category": "전력수급계획",
+    "subcategory": "수정공고",
+    "plan_family": "전력수급기본계획",
+    "plan_number": 11,
+    "document_stage": "amended",
+    "topics": [
+      "전력수급기본계획",
+      "전원구성",
+      "전력수요"
+    ],
+    "source_id": "motie-archive",
+    "source_url": "https://www.motir.go.kr/kor/article/ATCLc01b2801b/70152/view",
+    "attachment_url": "https://www.kpx.or.kr/boardDownload.es?bid=0061&list_no=74609&seq=1",
+    "related_documents": [
+      "[[p11-final]]",
+      "[[p11-release]]",
+      "[[p11-demand]]",
+      "[[t11-explainer]]"
+    ],
+    "previous_document": "[[p11-final]]",
+    "next_document": null,
+    "collected_date": "2026-09-09",
+    "file_hash": "sha256:4db38773da86a94fe3752a58376fbc6c33bb0ebfac17473f23a6555ac582d822",
+    "verification_status": "source_verified",
+    "ai_generated": true,
+    "summary_review_status": "unreviewed",
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "last_verified_date": "2026-09-09",
+    "verification_notes": "공식 게시물 및 확보한 원본을 AI가 확인. 요약·정책 해석에 대한 사람의 검수는 미완료. 일부 공식 첨부 다운로드 실패. 수집 기록에 오류를 보존.",
+    "draft": false,
+    "attachments": [
+      {
+        "url": "https://www.kpx.or.kr/boardDownload.es?bid=0061&list_no=74609&seq=1",
+        "title": "제11차 전력수급기본계획 수정본 PDF (KPX 공식 재게시, 표지 2025-238호)",
+        "path": "data/raw/sha256/4d/4db38773da86a94fe3752a58376fbc6c33bb0ebfac17473f23a6555ac582d822.pdf",
+        "file_hash": "sha256:4db38773da86a94fe3752a58376fbc6c33bb0ebfac17473f23a6555ac582d822",
+        "format": "pdf",
+        "size_bytes": 4601338,
+        "resolved_url": "https://www.kpx.or.kr/boardDownload.es?bid=0061&list_no=74609&seq=1",
+        "collected_at": "2026-09-09T02:37:53.199074+00:00",
+        "rights_status": "check_source_terms"
+      }
+    ],
+    "source_snapshot": {
+      "path": "data/raw/sha256/a4/a46be8c5b3e996718bee3a32b96335092d81bc965165c8cc67072b6b47cd55a5.html",
+      "file_hash": "sha256:a46be8c5b3e996718bee3a32b96335092d81bc965165c8cc67072b6b47cd55a5",
+      "resolved_url": "https://www.motir.go.kr/kor/article/ATCLc01b2801b/70152/view"
+    },
+    "events": [
+      {
+        "date": "2025-03-13",
+        "label": "공고 제2025-238호 수정 공고",
+        "status": "publication",
+        "source_url": "https://www.motir.go.kr/kor/article/ATCLc01b2801b/70152/view"
+      }
+    ],
+    "tags": [
+      "계획/11차",
+      "수정공고",
+      "검수대기"
+    ],
+    "aliases": [],
+    "date": "2025-03-13",
+    "path": "content/documents/p11-amend.md",
+    "slug": "documents/p11-amend"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "p11-demand",
+    "title": "장기 전력수요전망 2024-2038",
+    "organization": "전력거래소",
+    "published_date": "2025-02-27",
+    "category": "전력수요",
+    "subcategory": "장기전력수요전망",
+    "plan_family": "전력수급기본계획",
+    "plan_number": 11,
+    "document_stage": "supporting",
+    "topics": [
+      "전력수급기본계획",
+      "장기전력수요전망",
+      "목표수요"
+    ],
+    "source_id": "kpx",
+    "source_url": "https://www.kpx.or.kr/board.es?act=view&bid=0017&list_no=74523&mid=a10109030400",
+    "attachment_url": "https://www.kpx.or.kr/boardDownload.es?bid=0017&list_no=74523&seq=2",
+    "related_documents": [
+      "[[p10-demand]]",
+      "[[p11-final]]",
+      "[[p11-amend]]",
+      "[[p12-forum45]]"
+    ],
+    "previous_document": "[[p10-demand]]",
+    "next_document": null,
+    "collected_date": "2026-09-09",
+    "file_hash": "sha256:8f1c87b8ccbc467c5379880aba76cef207c629bc2c491c22df0cb251173b5026",
+    "verification_status": "source_verified",
+    "ai_generated": true,
+    "summary_review_status": "unreviewed",
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "last_verified_date": "2026-09-09",
+    "verification_notes": "공식 게시물 및 확보한 원본을 AI가 확인. 요약·정책 해석에 대한 사람의 검수는 미완료.",
+    "draft": false,
+    "attachments": [
+      {
+        "url": "https://www.kpx.or.kr/boardDownload.es?bid=0017&list_no=74523&seq=2",
+        "title": "다운로드",
+        "path": "data/raw/sha256/8f/8f1c87b8ccbc467c5379880aba76cef207c629bc2c491c22df0cb251173b5026.pdf",
+        "file_hash": "sha256:8f1c87b8ccbc467c5379880aba76cef207c629bc2c491c22df0cb251173b5026",
+        "format": "pdf",
+        "size_bytes": 51650,
+        "resolved_url": "https://www.kpx.or.kr/boardDownload.es?bid=0017&list_no=74523&seq=2",
+        "collected_at": "2026-09-09T02:33:50.729571+00:00",
+        "rights_status": "check_source_terms"
+      },
+      {
+        "url": "https://www.kpx.or.kr/boardDownload.es?bid=0017&list_no=74523&seq=3",
+        "title": "다운로드",
+        "path": "data/raw/sha256/be/bee1c4e5a58e68ba98473e8f825391de7041532fa56da8b5fa1131cf145c6275.hwpx",
+        "file_hash": "sha256:bee1c4e5a58e68ba98473e8f825391de7041532fa56da8b5fa1131cf145c6275",
+        "format": "hwpx",
+        "size_bytes": 69562,
+        "resolved_url": "https://www.kpx.or.kr/boardDownload.es?bid=0017&list_no=74523&seq=3",
+        "collected_at": "2026-09-09T02:33:50.729571+00:00",
+        "rights_status": "check_source_terms"
+      }
+    ],
+    "source_snapshot": {
+      "path": "data/raw/sha256/a9/a9a8d695f065c4083f835de5771d0ce8ed9876c66b7153594cf7996ce0175044.html",
+      "file_hash": "sha256:a9a8d695f065c4083f835de5771d0ce8ed9876c66b7153594cf7996ce0175044",
+      "resolved_url": "https://www.kpx.or.kr/board.es?act=view&bid=0017&list_no=74523&mid=a10109030400"
+    },
+    "events": [
+      {
+        "date": "2025-02-27",
+        "label": "장기 수요전망 게시",
+        "status": "publication",
+        "source_url": "https://www.kpx.or.kr/board.es?act=view&bid=0017&list_no=74523&mid=a10109030400"
+      }
+    ],
+    "tags": [
+      "계획/11차",
+      "장기전력수요전망",
+      "검수대기"
+    ],
+    "aliases": [],
+    "date": "2025-02-27",
+    "path": "content/documents/p11-demand.md",
+    "slug": "documents/p11-demand"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "p11-draft",
+    "title": "제11차 전력수급기본계획 실무안 공개",
+    "organization": "산업통상자원부",
+    "published_date": "2024-05-31",
+    "category": "전력수급계획",
+    "subcategory": "실무안발표",
+    "plan_family": "전력수급기본계획",
+    "plan_number": 11,
+    "document_stage": "working_draft",
+    "topics": [
+      "전력수급기본계획",
+      "전원구성",
+      "전력수요"
+    ],
+    "source_id": "motie-archive",
+    "source_url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/169132/view",
+    "attachment_url": null,
+    "related_documents": [
+      "[[p11-release]]",
+      "[[p11-final]]"
+    ],
+    "previous_document": null,
+    "next_document": "[[p11-final]]",
+    "collected_date": "2026-09-09",
+    "file_hash": null,
+    "verification_status": "source_verified",
+    "ai_generated": true,
+    "summary_review_status": "unreviewed",
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "last_verified_date": "2026-09-09",
+    "verification_notes": "공식 게시물 및 확보한 원본을 AI가 확인. 요약·정책 해석에 대한 사람의 검수는 미완료. 일부 공식 첨부 다운로드 실패. 수집 기록에 오류를 보존.",
+    "draft": false,
+    "attachments": [],
+    "source_snapshot": {
+      "path": "data/raw/sha256/44/4401ebb96bcdd825cfddce43535fc5c8c5eef07e52fadbee3046a59e543ed42e.html",
+      "file_hash": "sha256:4401ebb96bcdd825cfddce43535fc5c8c5eef07e52fadbee3046a59e543ed42e",
+      "resolved_url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/169132/view"
+    },
+    "events": [
+      {
+        "date": "2024-05-31",
+        "label": "실무안 공개",
+        "status": "publication",
+        "source_url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/169132/view"
+      }
+    ],
+    "tags": [
+      "계획/11차",
+      "실무안발표",
+      "검수대기"
+    ],
+    "aliases": [],
+    "date": "2024-05-31",
+    "path": "content/documents/p11-draft.md",
+    "slug": "documents/p11-draft"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "p11-final",
+    "title": "제11차 전력수급기본계획 최초 공고",
+    "organization": "산업통상자원부",
+    "published_date": "2025-02-21",
+    "category": "전력수급계획",
+    "subcategory": "기본계획",
+    "plan_family": "전력수급기본계획",
+    "plan_number": 11,
+    "document_stage": "final",
+    "topics": [
+      "전력수급기본계획",
+      "전원구성",
+      "전력수요"
+    ],
+    "source_id": "motie-archive",
+    "source_url": "https://www.motir.go.kr/kor/article/ATCLc01b2801b/70083/view",
+    "attachment_url": null,
+    "related_documents": [
+      "[[p10-final]]",
+      "[[p11-draft]]",
+      "[[p11-release]]",
+      "[[p11-amend]]",
+      "[[p11-demand]]",
+      "[[t11-explainer]]"
+    ],
+    "previous_document": "[[p11-draft]]",
+    "next_document": "[[p11-amend]]",
+    "collected_date": "2026-09-09",
+    "file_hash": null,
+    "verification_status": "source_verified",
+    "ai_generated": true,
+    "summary_review_status": "unreviewed",
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "last_verified_date": "2026-09-09",
+    "verification_notes": "공식 게시물 및 확보한 원본을 AI가 확인. 요약·정책 해석에 대한 사람의 검수는 미완료. 일부 공식 첨부 다운로드 실패. 수집 기록에 오류를 보존.",
+    "draft": false,
+    "attachments": [],
+    "source_snapshot": {
+      "path": "data/raw/sha256/2e/2edf04e24fe69a1b950c50a1f6dc3d8d44d2a399f1f33c3b44d5667439820981.html",
+      "file_hash": "sha256:2edf04e24fe69a1b950c50a1f6dc3d8d44d2a399f1f33c3b44d5667439820981",
+      "resolved_url": "https://www.motir.go.kr/kor/article/ATCLc01b2801b/70083/view"
+    },
+    "events": [
+      {
+        "date": "2025-02-21",
+        "label": "공고 제2025-169호",
+        "status": "publication",
+        "source_url": "https://www.motir.go.kr/kor/article/ATCLc01b2801b/70083/view"
+      }
+    ],
+    "tags": [
+      "계획/11차",
+      "기본계획",
+      "검수대기"
+    ],
+    "aliases": [],
+    "date": "2025-02-21",
+    "path": "content/documents/p11-final.md",
+    "slug": "documents/p11-final"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "p11-release",
+    "title": "제11차 전력수급기본계획 확정 발표",
+    "organization": "산업통상자원부",
+    "published_date": "2025-02-21",
+    "category": "전력수급계획",
+    "subcategory": "확정발표",
+    "plan_family": "전력수급기본계획",
+    "plan_number": 11,
+    "document_stage": "press_release",
+    "topics": [
+      "전력수급기본계획",
+      "전원구성",
+      "전력수요"
+    ],
+    "source_id": "motie-archive",
+    "source_url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/170183/view",
+    "attachment_url": null,
+    "related_documents": [
+      "[[p11-draft]]",
+      "[[p11-final]]",
+      "[[p11-amend]]"
+    ],
+    "previous_document": null,
+    "next_document": null,
+    "collected_date": "2026-09-09",
+    "file_hash": null,
+    "verification_status": "source_verified",
+    "ai_generated": true,
+    "summary_review_status": "unreviewed",
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "last_verified_date": "2026-09-09",
+    "verification_notes": "공식 게시물 및 확보한 원본을 AI가 확인. 요약·정책 해석에 대한 사람의 검수는 미완료. 일부 공식 첨부 다운로드 실패. 수집 기록에 오류를 보존.",
+    "draft": false,
+    "attachments": [],
+    "source_snapshot": {
+      "path": "data/raw/sha256/4e/4e22e483ade57d8fe8cb51beb1b7927001a7c6b64e959ec5b65b6cdfa0506368.html",
+      "file_hash": "sha256:4e22e483ade57d8fe8cb51beb1b7927001a7c6b64e959ec5b65b6cdfa0506368",
+      "resolved_url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/170183/view"
+    },
+    "events": [
+      {
+        "date": "2025-02-21",
+        "label": "확정 참고자료 등록",
+        "status": "publication",
+        "source_url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/170183/view"
+      }
+    ],
+    "tags": [
+      "계획/11차",
+      "확정발표",
+      "검수대기"
+    ],
+    "aliases": [],
+    "date": "2025-02-21",
+    "path": "content/documents/p11-release.md",
+    "slug": "documents/p11-release"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "p12-forum45",
+    "title": "제12차 전기본 제4·5차 정책토론회 개최 안내",
+    "organization": "기후에너지환경부",
+    "published_date": "2026-08-15",
+    "category": "전력수급계획",
+    "subcategory": "정책토론회안내",
+    "plan_family": "전력수급기본계획",
+    "plan_number": 12,
+    "document_stage": "consultation",
+    "topics": [
+      "전력수급기본계획",
+      "제12차계획",
+      "정책토론회"
+    ],
+    "source_id": "mcee",
+    "source_url": "https://www.mcee.go.kr/home/web/board/read.do?boardId=1884280&boardMasterId=939&menuId=10598",
+    "attachment_url": "https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=330358&fileSeq=2",
+    "related_documents": [
+      "[[p12-launch]]",
+      "[[p12-forum6]]",
+      "[[p11-demand]]"
+    ],
+    "previous_document": "[[p12-launch]]",
+    "next_document": "[[p12-forum6]]",
+    "collected_date": "2026-09-09",
+    "file_hash": "sha256:5b67abde7bc1ac8edfe5b14120481e1e8ea50c53d09a0fde22aac5b75dd0deb2",
+    "verification_status": "source_verified",
+    "ai_generated": true,
+    "summary_review_status": "unreviewed",
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "last_verified_date": "2026-09-09",
+    "verification_notes": "공식 게시물 및 확보한 원본을 AI가 확인. 요약·정책 해석에 대한 사람의 검수는 미완료.",
+    "draft": false,
+    "attachments": [
+      {
+        "url": "https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=330358&fileSeq=1",
+        "title": "전기국가 전환  전력수요 및 재생에너지 보급 전망 논의 4·5차 대국민 정책토론회 개최(기후부 보도참고자료).hwpx (2.1 MB)",
+        "path": "data/raw/sha256/97/97b9ec40363a69b47e37485d1c8bcf4421d4139f90da08b50f9e0ac96e9a58be.hwpx",
+        "file_hash": "sha256:97b9ec40363a69b47e37485d1c8bcf4421d4139f90da08b50f9e0ac96e9a58be",
+        "format": "hwpx",
+        "size_bytes": 2185226,
+        "resolved_url": "https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=330358&fileSeq=1",
+        "collected_at": "2026-09-09T02:33:58.616294+00:00",
+        "rights_status": "check_source_terms"
+      },
+      {
+        "url": "https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=330358&fileSeq=2",
+        "title": "전기국가 전환  전력수요 및 재생에너지 보급 전망 논의 4·5차 대국민 정책토론회 개최(기후부 보도참고자료).pdf (327.7 KB)",
+        "path": "data/raw/sha256/5b/5b67abde7bc1ac8edfe5b14120481e1e8ea50c53d09a0fde22aac5b75dd0deb2.pdf",
+        "file_hash": "sha256:5b67abde7bc1ac8edfe5b14120481e1e8ea50c53d09a0fde22aac5b75dd0deb2",
+        "format": "pdf",
+        "size_bytes": 335550,
+        "resolved_url": "https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=330358&fileSeq=2",
+        "collected_at": "2026-09-09T02:33:58.616294+00:00",
+        "rights_status": "check_source_terms"
+      }
+    ],
+    "source_snapshot": {
+      "path": "data/raw/sha256/6e/6ebd70df0e523aa529e17564706b97ed2f409074978bfbb18d9af001ce8d4c38.html",
+      "file_hash": "sha256:6ebd70df0e523aa529e17564706b97ed2f409074978bfbb18d9af001ce8d4c38",
+      "resolved_url": "https://www.mcee.go.kr/home/web/board/read.do?boardId=1884280&boardMasterId=939&menuId=10598"
+    },
+    "events": [
+      {
+        "date": "2026-08-15",
+        "label": "제4·5차 토론회 안내 등록",
+        "status": "publication",
+        "source_url": "https://www.mcee.go.kr/home/web/board/read.do?boardId=1884280&boardMasterId=939&menuId=10598"
+      },
+      {
+        "date": "2026-08-20",
+        "label": "제4·5차 토론회 개최 예정일(안내문 기준)",
+        "status": "scheduled",
+        "source_url": "https://www.mcee.go.kr/home/web/board/read.do?boardId=1884280&boardMasterId=939&menuId=10598"
+      }
+    ],
+    "tags": [
+      "계획/12차",
+      "정책토론회안내",
+      "검수대기"
+    ],
+    "aliases": [],
+    "date": "2026-08-15",
+    "path": "content/documents/p12-forum45.md",
+    "slug": "documents/p12-forum45"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "p12-forum6",
+    "title": "제12차 전기본 제6차 재생에너지 정책토론회 개최 안내",
+    "organization": "기후에너지환경부",
+    "published_date": "2026-08-20",
+    "category": "전력수급계획",
+    "subcategory": "정책토론회안내",
+    "plan_family": "전력수급기본계획",
+    "plan_number": 12,
+    "document_stage": "consultation",
+    "topics": [
+      "전력수급기본계획",
+      "제12차계획",
+      "정책토론회"
+    ],
+    "source_id": "mcee",
+    "source_url": "https://www.mcee.go.kr/home/web/board/read.do?boardId=1884910&boardMasterId=939&menuId=10598",
+    "attachment_url": "https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=330550&fileSeq=2",
+    "related_documents": [
+      "[[p12-launch]]",
+      "[[p12-forum45]]"
+    ],
+    "previous_document": "[[p12-forum45]]",
+    "next_document": null,
+    "collected_date": "2026-09-09",
+    "file_hash": "sha256:b6cc8e7131b086df32eaa7c2da396194d627dde046c8b6e619c22a7aa6820f88",
+    "verification_status": "source_verified",
+    "ai_generated": true,
+    "summary_review_status": "unreviewed",
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "last_verified_date": "2026-09-09",
+    "verification_notes": "공식 게시물 및 확보한 원본을 AI가 확인. 요약·정책 해석에 대한 사람의 검수는 미완료.",
+    "draft": false,
+    "attachments": [
+      {
+        "url": "https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=330550&fileSeq=1",
+        "title": "제12차 전기본 수립을 위한 재생에너지 보급 전망 정책토론회(6차) 개최(보도참고자료)(재셍에너지 8.20).hwpx (982.4 KB)",
+        "path": "data/raw/sha256/ab/ab2fff224218543e12210276bfd0b48a7229e32564d663de34f81578568c7762.hwpx",
+        "file_hash": "sha256:ab2fff224218543e12210276bfd0b48a7229e32564d663de34f81578568c7762",
+        "format": "hwpx",
+        "size_bytes": 1005951,
+        "resolved_url": "https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=330550&fileSeq=1",
+        "collected_at": "2026-09-09T02:34:04.014986+00:00",
+        "rights_status": "check_source_terms"
+      },
+      {
+        "url": "https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=330550&fileSeq=2",
+        "title": "제12차 전기본 수립을 위한 재생에너지 보급 전망 정책토론회(6차) 개최(보도참고자료)(재셍에너지 8.20).pdf (367.9 KB)",
+        "path": "data/raw/sha256/b6/b6cc8e7131b086df32eaa7c2da396194d627dde046c8b6e619c22a7aa6820f88.pdf",
+        "file_hash": "sha256:b6cc8e7131b086df32eaa7c2da396194d627dde046c8b6e619c22a7aa6820f88",
+        "format": "pdf",
+        "size_bytes": 376723,
+        "resolved_url": "https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=330550&fileSeq=2",
+        "collected_at": "2026-09-09T02:34:04.014986+00:00",
+        "rights_status": "check_source_terms"
+      }
+    ],
+    "source_snapshot": {
+      "path": "data/raw/sha256/85/859e98a3e2526d7adb1fa7f52507b852e844adda905cf2fe0256d3e26f7ee9fa.html",
+      "file_hash": "sha256:859e98a3e2526d7adb1fa7f52507b852e844adda905cf2fe0256d3e26f7ee9fa",
+      "resolved_url": "https://www.mcee.go.kr/home/web/board/read.do?boardId=1884910&boardMasterId=939&menuId=10598"
+    },
+    "events": [
+      {
+        "date": "2026-08-20",
+        "label": "제6차 토론회 안내 등록",
+        "status": "publication",
+        "source_url": "https://www.mcee.go.kr/home/web/board/read.do?boardId=1884910&boardMasterId=939&menuId=10598"
+      },
+      {
+        "date": "2026-08-26",
+        "label": "제6차 토론회 개최 예정일(안내문 기준)",
+        "status": "scheduled",
+        "source_url": "https://www.mcee.go.kr/home/web/board/read.do?boardId=1884910&boardMasterId=939&menuId=10598"
+      }
+    ],
+    "tags": [
+      "계획/12차",
+      "정책토론회안내",
+      "검수대기"
+    ],
+    "aliases": [],
+    "date": "2026-08-20",
+    "path": "content/documents/p12-forum6.md",
+    "slug": "documents/p12-forum6"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "p12-launch",
+    "title": "제12차 전력수급기본계획 수립 착수",
+    "organization": "기후에너지환경부",
+    "published_date": "2025-11-27",
+    "category": "전력수급계획",
+    "subcategory": "수립착수",
+    "plan_family": "전력수급기본계획",
+    "plan_number": 12,
+    "document_stage": "announced",
+    "topics": [
+      "전력수급기본계획",
+      "제12차계획",
+      "정책토론회"
+    ],
+    "source_id": "mcee",
+    "source_url": "https://www.mcee.go.kr/home/web/board/read.do?boardId=1823520&boardMasterId=939&menuId=10598",
+    "attachment_url": "https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=311860&fileSeq=3",
+    "related_documents": [
+      "[[p11-amend]]",
+      "[[p12-forum45]]",
+      "[[p12-forum6]]"
+    ],
+    "previous_document": null,
+    "next_document": "[[p12-forum45]]",
+    "collected_date": "2026-09-09",
+    "file_hash": "sha256:935839fbbfed01d0789d80744bdee3d813e50864c1ad0a50896bf50b8cc0f728",
+    "verification_status": "source_verified",
+    "ai_generated": true,
+    "summary_review_status": "unreviewed",
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "last_verified_date": "2026-09-09",
+    "verification_notes": "공식 게시물 및 확보한 원본을 AI가 확인. 요약·정책 해석에 대한 사람의 검수는 미완료.",
+    "draft": false,
+    "attachments": [
+      {
+        "url": "https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=311860&fileSeq=2",
+        "title": "제12차 전력수급기본계획 수립 착수(보도참고자료)(전력국 11.27).hwpx (966.9 KB)",
+        "path": "data/raw/sha256/1c/1c6d7cfefaeebf82157e4543704e2adb36b34fa8e03fe02a18e7849ef87d5fac.hwpx",
+        "file_hash": "sha256:1c6d7cfefaeebf82157e4543704e2adb36b34fa8e03fe02a18e7849ef87d5fac",
+        "format": "hwpx",
+        "size_bytes": 990142,
+        "resolved_url": "https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=311860&fileSeq=2",
+        "collected_at": "2026-09-09T02:33:52.882278+00:00",
+        "rights_status": "check_source_terms"
+      },
+      {
+        "url": "https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=311860&fileSeq=3",
+        "title": "제12차 전력수급기본계획 수립 착수(보도참고자료)(전력국 11.27).pdf (174.1 KB)",
+        "path": "data/raw/sha256/93/935839fbbfed01d0789d80744bdee3d813e50864c1ad0a50896bf50b8cc0f728.pdf",
+        "file_hash": "sha256:935839fbbfed01d0789d80744bdee3d813e50864c1ad0a50896bf50b8cc0f728",
+        "format": "pdf",
+        "size_bytes": 178228,
+        "resolved_url": "https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=311860&fileSeq=3",
+        "collected_at": "2026-09-09T02:33:52.882278+00:00",
+        "rights_status": "check_source_terms"
+      }
+    ],
+    "source_snapshot": {
+      "path": "data/raw/sha256/b3/b3cd35e2e77f9d422e7ac5e5232302bf89d37f4b68e292853ae55fcc18dcf410.html",
+      "file_hash": "sha256:b3cd35e2e77f9d422e7ac5e5232302bf89d37f4b68e292853ae55fcc18dcf410",
+      "resolved_url": "https://www.mcee.go.kr/home/web/board/read.do?boardId=1823520&boardMasterId=939&menuId=10598"
+    },
+    "events": [
+      {
+        "date": "2025-11-27",
+        "label": "수립 착수 발표",
+        "status": "publication",
+        "source_url": "https://www.mcee.go.kr/home/web/board/read.do?boardId=1823520&boardMasterId=939&menuId=10598"
+      }
+    ],
+    "tags": [
+      "계획/12차",
+      "수립착수",
+      "검수대기"
+    ],
+    "aliases": [],
+    "date": "2025-11-27",
+    "path": "content/documents/p12-launch.md",
+    "slug": "documents/p12-launch"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "t10-explainer",
+    "title": "한국전력 사보 전력망 확충 해설 2025년 2월",
+    "organization": "한국전력공사",
+    "published_date": null,
+    "category": "송변전망",
+    "subcategory": "기관해설",
+    "plan_family": "장기송변전설비계획",
+    "plan_number": 10,
+    "document_stage": "official_explainer",
+    "topics": [
+      "전력수급기본계획",
+      "송변전설비계획",
+      "전력망"
+    ],
+    "source_id": "kepco",
+    "source_url": "https://home.kepco.co.kr/kepco/front/html/WZ/2025_02/heritage.html",
+    "attachment_url": null,
+    "related_documents": [
+      "[[p10-final]]",
+      "[[t11-explainer]]"
+    ],
+    "previous_document": null,
+    "next_document": "[[t11-explainer]]",
+    "collected_date": "2026-09-09",
+    "file_hash": null,
+    "verification_status": "source_verified",
+    "ai_generated": true,
+    "summary_review_status": "unreviewed",
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "last_verified_date": "2026-09-09",
+    "verification_notes": "공식 게시물 및 확보한 원본을 AI가 확인. 요약·정책 해석에 대한 사람의 검수는 미완료. 사보 월호만 확인; 정확한 발행일 미상.",
+    "draft": false,
+    "attachments": [],
+    "source_snapshot": {
+      "path": "data/raw/sha256/28/28800375e6baf3cfde3dd715ddb257767744cd973bb246737aa8fb8b6ed03f99.html",
+      "file_hash": "sha256:28800375e6baf3cfde3dd715ddb257767744cd973bb246737aa8fb8b6ed03f99",
+      "resolved_url": "https://home.kepco.co.kr/kepco/front/html/WZ/2025_02/heritage.html"
+    },
+    "events": [],
+    "tags": [
+      "계획/10차",
+      "기관해설",
+      "검수대기"
+    ],
+    "aliases": [],
+    "date": null,
+    "path": "content/documents/t10-explainer.md",
+    "slug": "documents/t10-explainer"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "t11-explainer",
+    "title": "한국전력 사보 탄소중립과 전력망 2025년 12월",
+    "organization": "한국전력공사",
+    "published_date": null,
+    "category": "송변전망",
+    "subcategory": "기관해설",
+    "plan_family": "장기송변전설비계획",
+    "plan_number": 11,
+    "document_stage": "official_explainer",
+    "topics": [
+      "전력수급기본계획",
+      "송변전설비계획",
+      "전력망"
+    ],
+    "source_id": "kepco",
+    "source_url": "https://www.kepco.co.kr/KEPCO_FILE/html/2025_12/special1.html",
+    "attachment_url": null,
+    "related_documents": [
+      "[[p11-final]]",
+      "[[p11-amend]]",
+      "[[t10-explainer]]"
+    ],
+    "previous_document": "[[t10-explainer]]",
+    "next_document": null,
+    "collected_date": "2026-09-09",
+    "file_hash": null,
+    "verification_status": "source_verified",
+    "ai_generated": true,
+    "summary_review_status": "unreviewed",
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "last_verified_date": "2026-09-09",
+    "verification_notes": "공식 게시물 및 확보한 원본을 AI가 확인. 요약·정책 해석에 대한 사람의 검수는 미완료. 사보 월호만 확인; 정확한 발행일 미상.",
+    "draft": false,
+    "attachments": [],
+    "source_snapshot": {
+      "path": "data/raw/sha256/96/966185838d26a501588564c0314cc687d9aa1c4af31564d75567d6c29c807e35.html",
+      "file_hash": "sha256:966185838d26a501588564c0314cc687d9aa1c4af31564d75567d6c29c807e35",
+      "resolved_url": "https://www.kepco.co.kr/KEPCO_FILE/html/2025_12/special1.html"
+    },
+    "events": [],
+    "tags": [
+      "계획/11차",
+      "기관해설",
+      "검수대기"
+    ],
+    "aliases": [],
+    "date": null,
+    "path": "content/documents/t11-explainer.md",
+    "slug": "documents/t11-explainer"
+  }
+]

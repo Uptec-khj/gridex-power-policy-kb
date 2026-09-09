@@ -1,0 +1,14 @@
+@use "./base.scss";
+
+body { font-family: "Malgun Gothic", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; }
+article { line-height: 1.85; word-break: keep-all; overflow-wrap: anywhere; }
+article h2 { margin-top: 2.5rem; padding-top: .4rem; border-top: 1px solid var(--lightgray); }
+article table { font-size: .88rem; word-break: normal; }
+.page-title { letter-spacing: -.035em; font-weight: 800; }
+.policy-metadata { padding: 1rem 1.2rem; margin: 1rem 0 1.5rem; background: var(--highlight); border-left: 3px solid var(--secondary); border-radius: 0 8px 8px 0; }
+.policy-metadata p { font-size: .86rem; margin: .75rem 0 .3rem; }
+.policy-metadata a { font-size: .86rem; }
+.policy-badges { display: flex; flex-wrap: wrap; gap: .5rem; font-size: .8rem; }
+.policy-badges span { border: 1px solid var(--lightgray); border-radius: 4px; padding: .2rem .55rem; }
+.policy-badges .pending { background: #f5d88f33; }
+.policy-badges .reviewed { background: #138b7033; }

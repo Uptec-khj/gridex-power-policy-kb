@@ -1,0 +1,106 @@
+[
+  {
+    "date": "2023-01-12",
+    "label": "확정 참고자료 등록",
+    "status": "publication",
+    "source_url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/166650/view",
+    "document_id": "p10-release",
+    "title": "제10차 전력수급기본계획 확정 발표"
+  },
+  {
+    "date": "2023-01-13",
+    "label": "제10차 계획 공고",
+    "status": "publication",
+    "source_url": "https://www.kpx.or.kr/board.es?bid=0061&mid=a30700000000",
+    "document_id": "p10-final",
+    "title": "제10차 전력수급기본계획"
+  },
+  {
+    "date": "2023-01-18",
+    "label": "장기 수요전망 게시",
+    "status": "publication",
+    "source_url": "https://www.kpx.or.kr/board.es?act=view&bid=0017&list_no=68649&mid=a10109030400",
+    "document_id": "p10-demand",
+    "title": "장기 전력수요전망 2022-2036"
+  },
+  {
+    "date": "2024-05-31",
+    "label": "실무안 공개",
+    "status": "publication",
+    "source_url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/169132/view",
+    "document_id": "p11-draft",
+    "title": "제11차 전력수급기본계획 실무안 공개"
+  },
+  {
+    "date": "2025-02-21",
+    "label": "공고 제2025-169호",
+    "status": "publication",
+    "source_url": "https://www.motir.go.kr/kor/article/ATCLc01b2801b/70083/view",
+    "document_id": "p11-final",
+    "title": "제11차 전력수급기본계획 최초 공고"
+  },
+  {
+    "date": "2025-02-21",
+    "label": "확정 참고자료 등록",
+    "status": "publication",
+    "source_url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/170183/view",
+    "document_id": "p11-release",
+    "title": "제11차 전력수급기본계획 확정 발표"
+  },
+  {
+    "date": "2025-02-27",
+    "label": "장기 수요전망 게시",
+    "status": "publication",
+    "source_url": "https://www.kpx.or.kr/board.es?act=view&bid=0017&list_no=74523&mid=a10109030400",
+    "document_id": "p11-demand",
+    "title": "장기 전력수요전망 2024-2038"
+  },
+  {
+    "date": "2025-03-13",
+    "label": "공고 제2025-238호 수정 공고",
+    "status": "publication",
+    "source_url": "https://www.motir.go.kr/kor/article/ATCLc01b2801b/70152/view",
+    "document_id": "p11-amend",
+    "title": "제11차 전력수급기본계획 수정 공고"
+  },
+  {
+    "date": "2025-11-27",
+    "label": "수립 착수 발표",
+    "status": "publication",
+    "source_url": "https://www.mcee.go.kr/home/web/board/read.do?boardId=1823520&boardMasterId=939&menuId=10598",
+    "document_id": "p12-launch",
+    "title": "제12차 전력수급기본계획 수립 착수"
+  },
+  {
+    "date": "2026-08-15",
+    "label": "제4·5차 토론회 안내 등록",
+    "status": "publication",
+    "source_url": "https://www.mcee.go.kr/home/web/board/read.do?boardId=1884280&boardMasterId=939&menuId=10598",
+    "document_id": "p12-forum45",
+    "title": "제12차 전기본 제4·5차 정책토론회 개최 안내"
+  },
+  {
+    "date": "2026-08-20",
+    "label": "제4·5차 토론회 개최 예정일(안내문 기준)",
+    "status": "scheduled",
+    "source_url": "https://www.mcee.go.kr/home/web/board/read.do?boardId=1884280&boardMasterId=939&menuId=10598",
+    "document_id": "p12-forum45",
+    "title": "제12차 전기본 제4·5차 정책토론회 개최 안내"
+  },
+  {
+    "date": "2026-08-20",
+    "label": "제6차 토론회 안내 등록",
+    "status": "publication",
+    "source_url": "https://www.mcee.go.kr/home/web/board/read.do?boardId=1884910&boardMasterId=939&menuId=10598",
+    "document_id": "p12-forum6",
+    "title": "제12차 전기본 제6차 재생에너지 정책토론회 개최 안내"
+  },
+  {
+    "date": "2026-08-26",
+    "label": "제6차 토론회 개최 예정일(안내문 기준)",
+    "status": "scheduled",
+    "source_url": "https://www.mcee.go.kr/home/web/board/read.do?boardId=1884910&boardMasterId=939&menuId=10598",
+    "document_id": "p12-forum6",
+    "title": "제12차 전기본 제6차 재생에너지 정책토론회 개최 안내"
+  }
+]

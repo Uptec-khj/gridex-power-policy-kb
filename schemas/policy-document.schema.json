@@ -1,0 +1,325 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GRIDEX policy-document v1.0",
+  "type": "object",
+  "required": [
+    "title",
+    "organization",
+    "published_date",
+    "category",
+    "subcategory",
+    "plan_family",
+    "plan_number",
+    "document_stage",
+    "topics",
+    "source_url",
+    "attachment_url",
+    "related_documents",
+    "previous_document",
+    "next_document",
+    "collected_date",
+    "file_hash",
+    "verification_status",
+    "schema_version",
+    "id",
+    "source_id",
+    "ai_generated",
+    "summary_review_status",
+    "draft",
+    "attachments",
+    "events"
+  ],
+  "properties": {
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "organization": {
+      "type": "string",
+      "minLength": 1
+    },
+    "published_date": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "category": {
+      "enum": [
+        "전력수급계획",
+        "전력수요",
+        "송변전망"
+      ]
+    },
+    "subcategory": {
+      "type": "string",
+      "minLength": 1
+    },
+    "plan_family": {
+      "enum": [
+        "전력수급기본계획",
+        "장기송변전설비계획"
+      ]
+    },
+    "plan_number": {
+      "type": "integer",
+      "enum": [
+        10,
+        11,
+        12
+      ]
+    },
+    "document_stage": {
+      "enum": [
+        "announced",
+        "working_draft",
+        "draft",
+        "consultation",
+        "final",
+        "amended",
+        "press_release",
+        "supporting",
+        "official_explainer"
+      ]
+    },
+    "topics": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "source_url": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https://"
+    },
+    "attachment_url": {
+      "anyOf": [
+        {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "related_documents": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^\\[\\[[a-z0-9][a-z0-9-]*\\]\\]$"
+      }
+    },
+    "previous_document": {
+      "anyOf": [
+        {
+          "type": "string",
+          "pattern": "^\\[\\[[a-z0-9][a-z0-9-]*\\]\\]$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "next_document": {
+      "anyOf": [
+        {
+          "type": "string",
+          "pattern": "^\\[\\[[a-z0-9][a-z0-9-]*\\]\\]$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "collected_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "file_hash": {
+      "anyOf": [
+        {
+          "type": "string",
+          "pattern": "^sha256:[0-9a-f]{64}$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "verification_status": {
+      "enum": [
+        "unverified",
+        "source_verified",
+        "needs_review",
+        "human_verified"
+      ]
+    },
+    "schema_version": {
+      "const": "1.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    },
+    "source_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "ai_generated": {
+      "type": "boolean"
+    },
+    "summary_review_status": {
+      "enum": [
+        "unreviewed",
+        "reviewed"
+      ]
+    },
+    "reviewed_by": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "reviewed_date": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "draft": {
+      "type": "boolean"
+    },
+    "attachments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "url",
+          "path",
+          "file_hash",
+          "format",
+          "size_bytes"
+        ],
+        "properties": {
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https://"
+          },
+          "path": {
+            "type": "string",
+            "pattern": "^data/raw/"
+          },
+          "file_hash": {
+            "type": "string",
+            "pattern": "^sha256:[0-9a-f]{64}$"
+          },
+          "format": {
+            "enum": [
+              "pdf",
+              "hwp",
+              "hwpx"
+            ]
+          },
+          "size_bytes": {
+            "type": "integer",
+            "minimum": 1
+          }
+        }
+      }
+    },
+    "source_snapshot": {
+      "type": "object",
+      "required": [
+        "path",
+        "file_hash"
+      ],
+      "properties": {
+        "path": {
+          "type": "string",
+          "pattern": "^data/raw/"
+        },
+        "file_hash": {
+          "type": "string",
+          "pattern": "^sha256:[0-9a-f]{64}$"
+        }
+      }
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "date",
+          "label",
+          "status",
+          "source_url"
+        ],
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "label": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "enum": [
+              "publication",
+              "scheduled",
+              "confirmed"
+            ]
+          },
+          "source_url": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https://"
+          }
+        }
+      }
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "date": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "last_verified_date": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "verification_notes": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "additionalProperties": false
+}

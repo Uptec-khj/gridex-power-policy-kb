@@ -1,0 +1,75 @@
+schema_version: '1.0'
+documents:
+- id: p10-final
+  source_id: kpx
+  title: 제10차 전력수급기본계획
+  source_url: https://www.kpx.or.kr/board.es?bid=0061&mid=a30700000000
+  expected_text: 10차 전력수급기본계획
+  attachments:
+  - url: https://www.kpx.or.kr/boardDownload.es?bid=0061&list_no=69127&seq=1
+    title: 제10차 전력수급기본계획 원문
+- id: p10-release
+  source_id: motie-archive
+  title: 제10차 전력수급기본계획 확정 발표
+  source_url: https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/166650/view
+  expected_text: 제10차 전력수급기본계획
+- id: p10-demand
+  source_id: kpx
+  title: 장기 전력수요전망 2022-2036
+  source_url: https://www.kpx.or.kr/board.es?act=view&bid=0017&list_no=68649&mid=a10109030400
+  expected_text: 장기 전력수요 전망(2022~2036)
+- id: p11-draft
+  source_id: motie-archive
+  title: 제11차 전력수급기본계획 실무안 공개
+  source_url: https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/169132/view
+  expected_text: 제11차 전력수급기본계획
+- id: p11-release
+  source_id: motie-archive
+  title: 제11차 전력수급기본계획 확정 발표
+  source_url: https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/170183/view
+  expected_text: 제11차 전력수급기본계획
+- id: p11-final
+  source_id: motie-archive
+  title: 제11차 전력수급기본계획 최초 공고
+  source_url: https://www.motir.go.kr/kor/article/ATCLc01b2801b/70083/view
+  expected_text: 제11차 전력수급기본계획
+- id: p11-amend
+  source_id: motie-archive
+  title: 제11차 전력수급기본계획 수정 공고
+  source_url: https://www.motir.go.kr/kor/article/ATCLc01b2801b/70152/view
+  expected_text: 제11차 전력수급기본계획
+  additional_attachments:
+  - url: https://www.kpx.or.kr/boardDownload.es?bid=0061&list_no=74609&seq=1
+    title: 제11차 전력수급기본계획 수정본 PDF (KPX 공식 재게시, 표지 2025-238호)
+- id: p11-demand
+  source_id: kpx
+  title: 장기 전력수요전망 2024-2038
+  source_url: https://www.kpx.or.kr/board.es?act=view&bid=0017&list_no=74523&mid=a10109030400
+  expected_text: 장기 전력수요 전망(2024~2038)
+- id: p12-launch
+  source_id: mcee
+  title: 제12차 전력수급기본계획 수립 착수
+  source_url: https://www.mcee.go.kr/home/web/board/read.do?boardId=1823520&boardMasterId=939&menuId=10598
+  expected_text: 제12차 전력수급기본계획
+- id: p12-forum45
+  source_id: mcee
+  title: 제12차 전기본 제4·5차 정책토론회 개최 안내
+  source_url: https://www.mcee.go.kr/home/web/board/read.do?boardId=1884280&boardMasterId=939&menuId=10598
+  expected_text: 12차 전기본 정책토론회
+- id: p12-forum6
+  source_id: mcee
+  title: 제12차 전기본 제6차 재생에너지 정책토론회 개최 안내
+  source_url: https://www.mcee.go.kr/home/web/board/read.do?boardId=1884910&boardMasterId=939&menuId=10598
+  expected_text: 제12차 전기본 수립을 위한 재생에너지
+- id: t10-explainer
+  source_id: kepco
+  title: 한국전력 사보 전력망 확충 해설 2025년 2월
+  source_url: https://home.kepco.co.kr/kepco/front/html/WZ/2025_02/heritage.html
+  expected_text: 제10차 장기 송변전
+  attachments: []
+- id: t11-explainer
+  source_id: kepco
+  title: 한국전력 사보 탄소중립과 전력망 2025년 12월
+  source_url: https://www.kepco.co.kr/KEPCO_FILE/html/2025_12/special1.html
+  expected_text: 제11차 장기 송변전설비계획
+  attachments: []

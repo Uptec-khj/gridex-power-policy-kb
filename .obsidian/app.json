@@ -1,0 +1,7 @@
+{
+  "useMarkdownLinks": false,
+  "newLinkFormat": "absolute",
+  "attachmentFolderPath": "data/raw",
+  "showUnsupportedFiles": true,
+  "alwaysUpdateLinks": true
+}

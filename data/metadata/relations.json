@@ -1,0 +1,262 @@
+[
+  {
+    "source": "p10-demand",
+    "target": "p10-final",
+    "type": "related_documents"
+  },
+  {
+    "source": "p10-demand",
+    "target": "p11-demand",
+    "type": "related_documents"
+  },
+  {
+    "source": "p10-demand",
+    "target": "p11-demand",
+    "type": "next_document"
+  },
+  {
+    "source": "p10-final",
+    "target": "p10-release",
+    "type": "related_documents"
+  },
+  {
+    "source": "p10-final",
+    "target": "p10-demand",
+    "type": "related_documents"
+  },
+  {
+    "source": "p10-final",
+    "target": "t10-explainer",
+    "type": "related_documents"
+  },
+  {
+    "source": "p10-final",
+    "target": "p11-final",
+    "type": "related_documents"
+  },
+  {
+    "source": "p10-release",
+    "target": "p10-final",
+    "type": "related_documents"
+  },
+  {
+    "source": "p10-release",
+    "target": "p10-demand",
+    "type": "related_documents"
+  },
+  {
+    "source": "p11-amend",
+    "target": "p11-final",
+    "type": "related_documents"
+  },
+  {
+    "source": "p11-amend",
+    "target": "p11-release",
+    "type": "related_documents"
+  },
+  {
+    "source": "p11-amend",
+    "target": "p11-demand",
+    "type": "related_documents"
+  },
+  {
+    "source": "p11-amend",
+    "target": "t11-explainer",
+    "type": "related_documents"
+  },
+  {
+    "source": "p11-amend",
+    "target": "p11-final",
+    "type": "previous_document"
+  },
+  {
+    "source": "p11-demand",
+    "target": "p10-demand",
+    "type": "related_documents"
+  },
+  {
+    "source": "p11-demand",
+    "target": "p11-final",
+    "type": "related_documents"
+  },
+  {
+    "source": "p11-demand",
+    "target": "p11-amend",
+    "type": "related_documents"
+  },
+  {
+    "source": "p11-demand",
+    "target": "p12-forum45",
+    "type": "related_documents"
+  },
+  {
+    "source": "p11-demand",
+    "target": "p10-demand",
+    "type": "previous_document"
+  },
+  {
+    "source": "p11-draft",
+    "target": "p11-release",
+    "type": "related_documents"
+  },
+  {
+    "source": "p11-draft",
+    "target": "p11-final",
+    "type": "related_documents"
+  },
+  {
+    "source": "p11-draft",
+    "target": "p11-final",
+    "type": "next_document"
+  },
+  {
+    "source": "p11-final",
+    "target": "p10-final",
+    "type": "related_documents"
+  },
+  {
+    "source": "p11-final",
+    "target": "p11-draft",
+    "type": "related_documents"
+  },
+  {
+    "source": "p11-final",
+    "target": "p11-release",
+    "type": "related_documents"
+  },
+  {
+    "source": "p11-final",
+    "target": "p11-amend",
+    "type": "related_documents"
+  },
+  {
+    "source": "p11-final",
+    "target": "p11-demand",
+    "type": "related_documents"
+  },
+  {
+    "source": "p11-final",
+    "target": "t11-explainer",
+    "type": "related_documents"
+  },
+  {
+    "source": "p11-final",
+    "target": "p11-draft",
+    "type": "previous_document"
+  },
+  {
+    "source": "p11-final",
+    "target": "p11-amend",
+    "type": "next_document"
+  },
+  {
+    "source": "p11-release",
+    "target": "p11-draft",
+    "type": "related_documents"
+  },
+  {
+    "source": "p11-release",
+    "target": "p11-final",
+    "type": "related_documents"
+  },
+  {
+    "source": "p11-release",
+    "target": "p11-amend",
+    "type": "related_documents"
+  },
+  {
+    "source": "p12-forum45",
+    "target": "p12-launch",
+    "type": "related_documents"
+  },
+  {
+    "source": "p12-forum45",
+    "target": "p12-forum6",
+    "type": "related_documents"
+  },
+  {
+    "source": "p12-forum45",
+    "target": "p11-demand",
+    "type": "related_documents"
+  },
+  {
+    "source": "p12-forum45",
+    "target": "p12-launch",
+    "type": "previous_document"
+  },
+  {
+    "source": "p12-forum45",
+    "target": "p12-forum6",
+    "type": "next_document"
+  },
+  {
+    "source": "p12-forum6",
+    "target": "p12-launch",
+    "type": "related_documents"
+  },
+  {
+    "source": "p12-forum6",
+    "target": "p12-forum45",
+    "type": "related_documents"
+  },
+  {
+    "source": "p12-forum6",
+    "target": "p12-forum45",
+    "type": "previous_document"
+  },
+  {
+    "source": "p12-launch",
+    "target": "p11-amend",
+    "type": "related_documents"
+  },
+  {
+    "source": "p12-launch",
+    "target": "p12-forum45",
+    "type": "related_documents"
+  },
+  {
+    "source": "p12-launch",
+    "target": "p12-forum6",
+    "type": "related_documents"
+  },
+  {
+    "source": "p12-launch",
+    "target": "p12-forum45",
+    "type": "next_document"
+  },
+  {
+    "source": "t10-explainer",
+    "target": "p10-final",
+    "type": "related_documents"
+  },
+  {
+    "source": "t10-explainer",
+    "target": "t11-explainer",
+    "type": "related_documents"
+  },
+  {
+    "source": "t10-explainer",
+    "target": "t11-explainer",
+    "type": "next_document"
+  },
+  {
+    "source": "t11-explainer",
+    "target": "p11-final",
+    "type": "related_documents"
+  },
+  {
+    "source": "t11-explainer",
+    "target": "p11-amend",
+    "type": "related_documents"
+  },
+  {
+    "source": "t11-explainer",
+    "target": "t10-explainer",
+    "type": "related_documents"
+  },
+  {
+    "source": "t11-explainer",
+    "target": "t10-explainer",
+    "type": "previous_document"
+  }
+]

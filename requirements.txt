@@ -1,0 +1,5 @@
+requests==2.33.1
+PyYAML==6.0.3
+jsonschema==4.26.0
+beautifulsoup4==4.15.0
+pypdf==6.12.1

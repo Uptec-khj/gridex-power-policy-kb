@@ -1,0 +1,383 @@
+{
+  "p10-final": {
+    "id": "p10-final",
+    "source_url": "https://www.kpx.or.kr/board.es?bid=0061&mid=a30700000000",
+    "collected_at": "2026-09-09T02:33:27.116494+00:00",
+    "attachments": [
+      {
+        "url": "https://www.kpx.or.kr/boardDownload.es?bid=0061&list_no=69127&seq=1",
+        "title": "제10차 전력수급기본계획 원문",
+        "path": "data/raw/sha256/8e/8ed37705452306eb20b4e6c065f816eb2389e69083d04d7cbad42d28e0f0b175.pdf",
+        "file_hash": "sha256:8ed37705452306eb20b4e6c065f816eb2389e69083d04d7cbad42d28e0f0b175",
+        "format": "pdf",
+        "size_bytes": 5052465,
+        "resolved_url": "https://www.kpx.or.kr/boardDownload.es?bid=0061&list_no=69127&seq=1",
+        "collected_at": "2026-09-09T02:33:27.116494+00:00",
+        "rights_status": "check_source_terms"
+      }
+    ],
+    "errors": [],
+    "source_snapshot": {
+      "path": "data/raw/sha256/19/198c8a716a041bf97df050c939d97e255e47d9b5ace3170c7385a499664d424c.html",
+      "file_hash": "sha256:198c8a716a041bf97df050c939d97e255e47d9b5ace3170c7385a499664d424c",
+      "resolved_url": "https://www.kpx.or.kr/board.es?bid=0061&mid=a30700000000"
+    },
+    "status": "collected"
+  },
+  "p10-release": {
+    "id": "p10-release",
+    "source_url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/166650/view",
+    "collected_at": "2026-09-09T02:33:36.217169+00:00",
+    "attachments": [],
+    "errors": [
+      {
+        "url": "https://www.motir.go.kr/attach/down/095a2dda9c864e1d90d751f7668a1117/0c593cabdfdcefc752733f22bf0447b7/9a9db098b587ee18b321c826f3707a49",
+        "error": "404 Client Error: Not Found for url: https://www.motir.go.kr/attach/down/095a2dda9c864e1d90d751f7668a1117/0c593cabdfdcefc752733f22bf0447b7/9a9db098b587ee18b321c826f3707a49/error/500"
+      },
+      {
+        "url": "https://www.motir.go.kr/attach/down/095a2dda9c864e1d90d751f7668a1117/0c593cabdfdcefc752733f22bf0447b7/778bdbf5db9ced7c8fd52756c00bf0cd",
+        "error": "404 Client Error: Not Found for url: https://www.motir.go.kr/attach/down/095a2dda9c864e1d90d751f7668a1117/0c593cabdfdcefc752733f22bf0447b7/778bdbf5db9ced7c8fd52756c00bf0cd/error/500"
+      },
+      {
+        "url": "https://www.motir.go.kr/attach/down/095a2dda9c864e1d90d751f7668a1117/0c593cabdfdcefc752733f22bf0447b7/13055e35ba7465cb478c5b4be490c5a8",
+        "error": "404 Client Error: Not Found for url: https://www.motir.go.kr/attach/down/095a2dda9c864e1d90d751f7668a1117/0c593cabdfdcefc752733f22bf0447b7/13055e35ba7465cb478c5b4be490c5a8/error/500"
+      },
+      {
+        "url": "https://www.motir.go.kr/attach/down/095a2dda9c864e1d90d751f7668a1117/0c593cabdfdcefc752733f22bf0447b7/007d741c7b5aa2f9ec3e7211ce70c950",
+        "error": "404 Client Error: Not Found for url: https://www.motir.go.kr/attach/down/095a2dda9c864e1d90d751f7668a1117/0c593cabdfdcefc752733f22bf0447b7/007d741c7b5aa2f9ec3e7211ce70c950/error/500"
+      }
+    ],
+    "source_snapshot": {
+      "path": "data/raw/sha256/57/571c08dc6c3a2c54d2081f63f25c05c1f7148c1a7e3c850d3956e4ea96de3c86.html",
+      "file_hash": "sha256:571c08dc6c3a2c54d2081f63f25c05c1f7148c1a7e3c850d3956e4ea96de3c86",
+      "resolved_url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/166650/view"
+    },
+    "status": "partial"
+  },
+  "p10-demand": {
+    "id": "p10-demand",
+    "source_url": "https://www.kpx.or.kr/board.es?act=view&bid=0017&list_no=68649&mid=a10109030400",
+    "collected_at": "2026-09-09T02:33:40.301154+00:00",
+    "attachments": [
+      {
+        "url": "https://www.kpx.or.kr/boardDownload.es?bid=0017&list_no=68649&seq=1",
+        "title": "다운로드",
+        "path": "data/raw/sha256/aa/aa6a2fb0e84a8c7e730d6366b6245235d81af94889c29feb7a8dcca4cbbfa8fa.hwp",
+        "file_hash": "sha256:aa6a2fb0e84a8c7e730d6366b6245235d81af94889c29feb7a8dcca4cbbfa8fa",
+        "format": "hwp",
+        "size_bytes": 133632,
+        "resolved_url": "https://www.kpx.or.kr/boardDownload.es?bid=0017&list_no=68649&seq=1",
+        "collected_at": "2026-09-09T02:33:40.301154+00:00",
+        "rights_status": "check_source_terms"
+      },
+      {
+        "url": "https://www.kpx.or.kr/boardDownload.es?bid=0017&list_no=68649&seq=2",
+        "title": "다운로드",
+        "path": "data/raw/sha256/af/af76e30ecd4a27a2c4040910ba0a3171ed7be33fde79d09204a16e6c43d1365b.pdf",
+        "file_hash": "sha256:af76e30ecd4a27a2c4040910ba0a3171ed7be33fde79d09204a16e6c43d1365b",
+        "format": "pdf",
+        "size_bytes": 85485,
+        "resolved_url": "https://www.kpx.or.kr/boardDownload.es?bid=0017&list_no=68649&seq=2",
+        "collected_at": "2026-09-09T02:33:40.301154+00:00",
+        "rights_status": "check_source_terms"
+      }
+    ],
+    "errors": [],
+    "source_snapshot": {
+      "path": "data/raw/sha256/f3/f3ff814f9389387873576c72438f47ec773e471001eb844ed6c480b0b7e01c53.html",
+      "file_hash": "sha256:f3ff814f9389387873576c72438f47ec773e471001eb844ed6c480b0b7e01c53",
+      "resolved_url": "https://www.kpx.or.kr/board.es?act=view&bid=0017&list_no=68649&mid=a10109030400"
+    },
+    "status": "collected"
+  },
+  "p11-draft": {
+    "id": "p11-draft",
+    "source_url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/169132/view",
+    "collected_at": "2026-09-09T02:33:42.628637+00:00",
+    "attachments": [],
+    "errors": [
+      {
+        "url": "https://www.motir.go.kr/attach/down/095a2dda9c864e1d90d751f7668a1117/5d190fa8f1bd2bc25ffb81be91979932/9a9db098b587ee18b321c826f3707a49",
+        "error": "404 Client Error: Not Found for url: https://www.motir.go.kr/attach/down/095a2dda9c864e1d90d751f7668a1117/5d190fa8f1bd2bc25ffb81be91979932/9a9db098b587ee18b321c826f3707a49/error/500"
+      },
+      {
+        "url": "https://www.motir.go.kr/attach/down/095a2dda9c864e1d90d751f7668a1117/5d190fa8f1bd2bc25ffb81be91979932/778bdbf5db9ced7c8fd52756c00bf0cd",
+        "error": "404 Client Error: Not Found for url: https://www.motir.go.kr/attach/down/095a2dda9c864e1d90d751f7668a1117/5d190fa8f1bd2bc25ffb81be91979932/778bdbf5db9ced7c8fd52756c00bf0cd/error/500"
+      }
+    ],
+    "source_snapshot": {
+      "path": "data/raw/sha256/44/4401ebb96bcdd825cfddce43535fc5c8c5eef07e52fadbee3046a59e543ed42e.html",
+      "file_hash": "sha256:4401ebb96bcdd825cfddce43535fc5c8c5eef07e52fadbee3046a59e543ed42e",
+      "resolved_url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/169132/view"
+    },
+    "status": "partial"
+  },
+  "p11-release": {
+    "id": "p11-release",
+    "source_url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/170183/view",
+    "collected_at": "2026-09-09T02:33:44.793312+00:00",
+    "attachments": [],
+    "errors": [
+      {
+        "url": "https://www.motir.go.kr/attach/down/095a2dda9c864e1d90d751f7668a1117/fcb25bf4e6a063fd16f073fb33c181d7/9a9db098b587ee18b321c826f3707a49",
+        "error": "404 Client Error: Not Found for url: https://www.motir.go.kr/attach/down/095a2dda9c864e1d90d751f7668a1117/fcb25bf4e6a063fd16f073fb33c181d7/9a9db098b587ee18b321c826f3707a49/error/500"
+      },
+      {
+        "url": "https://www.motir.go.kr/attach/down/095a2dda9c864e1d90d751f7668a1117/fcb25bf4e6a063fd16f073fb33c181d7/778bdbf5db9ced7c8fd52756c00bf0cd",
+        "error": "404 Client Error: Not Found for url: https://www.motir.go.kr/attach/down/095a2dda9c864e1d90d751f7668a1117/fcb25bf4e6a063fd16f073fb33c181d7/778bdbf5db9ced7c8fd52756c00bf0cd/error/500"
+      },
+      {
+        "url": "https://www.motir.go.kr/attach/down/095a2dda9c864e1d90d751f7668a1117/fcb25bf4e6a063fd16f073fb33c181d7/13055e35ba7465cb478c5b4be490c5a8",
+        "error": "404 Client Error: Not Found for url: https://www.motir.go.kr/attach/down/095a2dda9c864e1d90d751f7668a1117/fcb25bf4e6a063fd16f073fb33c181d7/13055e35ba7465cb478c5b4be490c5a8/error/500"
+      }
+    ],
+    "source_snapshot": {
+      "path": "data/raw/sha256/4e/4e22e483ade57d8fe8cb51beb1b7927001a7c6b64e959ec5b65b6cdfa0506368.html",
+      "file_hash": "sha256:4e22e483ade57d8fe8cb51beb1b7927001a7c6b64e959ec5b65b6cdfa0506368",
+      "resolved_url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/170183/view"
+    },
+    "status": "partial"
+  },
+  "p11-final": {
+    "id": "p11-final",
+    "source_url": "https://www.motir.go.kr/kor/article/ATCLc01b2801b/70083/view",
+    "collected_at": "2026-09-09T02:33:47.990943+00:00",
+    "attachments": [],
+    "errors": [
+      {
+        "url": "https://www.motir.go.kr/attach/down/c26df36c4f964b1523b31be51e734922/6392dc95aaa9727ceb67dd127856fa91/9a9db098b587ee18b321c826f3707a49",
+        "error": "404 Client Error: Not Found for url: https://www.motir.go.kr/attach/down/c26df36c4f964b1523b31be51e734922/6392dc95aaa9727ceb67dd127856fa91/9a9db098b587ee18b321c826f3707a49/error/500"
+      },
+      {
+        "url": "https://www.motir.go.kr/attach/down/c26df36c4f964b1523b31be51e734922/6392dc95aaa9727ceb67dd127856fa91/778bdbf5db9ced7c8fd52756c00bf0cd",
+        "error": "404 Client Error: Not Found for url: https://www.motir.go.kr/attach/down/c26df36c4f964b1523b31be51e734922/6392dc95aaa9727ceb67dd127856fa91/778bdbf5db9ced7c8fd52756c00bf0cd/error/500"
+      }
+    ],
+    "source_snapshot": {
+      "path": "data/raw/sha256/2e/2edf04e24fe69a1b950c50a1f6dc3d8d44d2a399f1f33c3b44d5667439820981.html",
+      "file_hash": "sha256:2edf04e24fe69a1b950c50a1f6dc3d8d44d2a399f1f33c3b44d5667439820981",
+      "resolved_url": "https://www.motir.go.kr/kor/article/ATCLc01b2801b/70083/view"
+    },
+    "status": "partial"
+  },
+  "p11-amend": {
+    "id": "p11-amend",
+    "source_url": "https://www.motir.go.kr/kor/article/ATCLc01b2801b/70152/view",
+    "collected_at": "2026-09-09T02:37:53.199074+00:00",
+    "attachments": [
+      {
+        "url": "https://www.kpx.or.kr/boardDownload.es?bid=0061&list_no=74609&seq=1",
+        "title": "제11차 전력수급기본계획 수정본 PDF (KPX 공식 재게시, 표지 2025-238호)",
+        "path": "data/raw/sha256/4d/4db38773da86a94fe3752a58376fbc6c33bb0ebfac17473f23a6555ac582d822.pdf",
+        "file_hash": "sha256:4db38773da86a94fe3752a58376fbc6c33bb0ebfac17473f23a6555ac582d822",
+        "format": "pdf",
+        "size_bytes": 4601338,
+        "resolved_url": "https://www.kpx.or.kr/boardDownload.es?bid=0061&list_no=74609&seq=1",
+        "collected_at": "2026-09-09T02:37:53.199074+00:00",
+        "rights_status": "check_source_terms"
+      }
+    ],
+    "errors": [
+      {
+        "url": "https://www.motir.go.kr/attach/down/c26df36c4f964b1523b31be51e734922/f3e75937c6fd925443ad69c810ba811d/9a9db098b587ee18b321c826f3707a49",
+        "error": "404 Client Error: Not Found for url: https://www.motir.go.kr/attach/down/c26df36c4f964b1523b31be51e734922/f3e75937c6fd925443ad69c810ba811d/9a9db098b587ee18b321c826f3707a49/error/500"
+      }
+    ],
+    "history": [
+      {
+        "id": "p11-amend",
+        "source_url": "https://www.motir.go.kr/kor/article/ATCLc01b2801b/70152/view",
+        "collected_at": "2026-09-09T02:33:49.630272+00:00",
+        "attachments": [],
+        "errors": [
+          {
+            "url": "https://www.motir.go.kr/attach/down/c26df36c4f964b1523b31be51e734922/f3e75937c6fd925443ad69c810ba811d/9a9db098b587ee18b321c826f3707a49",
+            "error": "404 Client Error: Not Found for url: https://www.motir.go.kr/attach/down/c26df36c4f964b1523b31be51e734922/f3e75937c6fd925443ad69c810ba811d/9a9db098b587ee18b321c826f3707a49/error/500"
+          }
+        ],
+        "source_snapshot": {
+          "path": "data/raw/sha256/20/20e2edd68792a6636e1b0e99962517a6d535bedaf2650cfdf376b8b0817ab9e9.html",
+          "file_hash": "sha256:20e2edd68792a6636e1b0e99962517a6d535bedaf2650cfdf376b8b0817ab9e9",
+          "resolved_url": "https://www.motir.go.kr/kor/article/ATCLc01b2801b/70152/view"
+        },
+        "status": "partial"
+      }
+    ],
+    "source_snapshot": {
+      "path": "data/raw/sha256/a4/a46be8c5b3e996718bee3a32b96335092d81bc965165c8cc67072b6b47cd55a5.html",
+      "file_hash": "sha256:a46be8c5b3e996718bee3a32b96335092d81bc965165c8cc67072b6b47cd55a5",
+      "resolved_url": "https://www.motir.go.kr/kor/article/ATCLc01b2801b/70152/view"
+    },
+    "status": "partial"
+  },
+  "p11-demand": {
+    "id": "p11-demand",
+    "source_url": "https://www.kpx.or.kr/board.es?act=view&bid=0017&list_no=74523&mid=a10109030400",
+    "collected_at": "2026-09-09T02:33:50.729571+00:00",
+    "attachments": [
+      {
+        "url": "https://www.kpx.or.kr/boardDownload.es?bid=0017&list_no=74523&seq=2",
+        "title": "다운로드",
+        "path": "data/raw/sha256/8f/8f1c87b8ccbc467c5379880aba76cef207c629bc2c491c22df0cb251173b5026.pdf",
+        "file_hash": "sha256:8f1c87b8ccbc467c5379880aba76cef207c629bc2c491c22df0cb251173b5026",
+        "format": "pdf",
+        "size_bytes": 51650,
+        "resolved_url": "https://www.kpx.or.kr/boardDownload.es?bid=0017&list_no=74523&seq=2",
+        "collected_at": "2026-09-09T02:33:50.729571+00:00",
+        "rights_status": "check_source_terms"
+      },
+      {
+        "url": "https://www.kpx.or.kr/boardDownload.es?bid=0017&list_no=74523&seq=3",
+        "title": "다운로드",
+        "path": "data/raw/sha256/be/bee1c4e5a58e68ba98473e8f825391de7041532fa56da8b5fa1131cf145c6275.hwpx",
+        "file_hash": "sha256:bee1c4e5a58e68ba98473e8f825391de7041532fa56da8b5fa1131cf145c6275",
+        "format": "hwpx",
+        "size_bytes": 69562,
+        "resolved_url": "https://www.kpx.or.kr/boardDownload.es?bid=0017&list_no=74523&seq=3",
+        "collected_at": "2026-09-09T02:33:50.729571+00:00",
+        "rights_status": "check_source_terms"
+      }
+    ],
+    "errors": [],
+    "source_snapshot": {
+      "path": "data/raw/sha256/a9/a9a8d695f065c4083f835de5771d0ce8ed9876c66b7153594cf7996ce0175044.html",
+      "file_hash": "sha256:a9a8d695f065c4083f835de5771d0ce8ed9876c66b7153594cf7996ce0175044",
+      "resolved_url": "https://www.kpx.or.kr/board.es?act=view&bid=0017&list_no=74523&mid=a10109030400"
+    },
+    "status": "collected"
+  },
+  "p12-launch": {
+    "id": "p12-launch",
+    "source_url": "https://www.mcee.go.kr/home/web/board/read.do?boardId=1823520&boardMasterId=939&menuId=10598",
+    "collected_at": "2026-09-09T02:33:52.882278+00:00",
+    "attachments": [
+      {
+        "url": "https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=311860&fileSeq=2",
+        "title": "제12차 전력수급기본계획 수립 착수(보도참고자료)(전력국 11.27).hwpx (966.9 KB)",
+        "path": "data/raw/sha256/1c/1c6d7cfefaeebf82157e4543704e2adb36b34fa8e03fe02a18e7849ef87d5fac.hwpx",
+        "file_hash": "sha256:1c6d7cfefaeebf82157e4543704e2adb36b34fa8e03fe02a18e7849ef87d5fac",
+        "format": "hwpx",
+        "size_bytes": 990142,
+        "resolved_url": "https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=311860&fileSeq=2",
+        "collected_at": "2026-09-09T02:33:52.882278+00:00",
+        "rights_status": "check_source_terms"
+      },
+      {
+        "url": "https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=311860&fileSeq=3",
+        "title": "제12차 전력수급기본계획 수립 착수(보도참고자료)(전력국 11.27).pdf (174.1 KB)",
+        "path": "data/raw/sha256/93/935839fbbfed01d0789d80744bdee3d813e50864c1ad0a50896bf50b8cc0f728.pdf",
+        "file_hash": "sha256:935839fbbfed01d0789d80744bdee3d813e50864c1ad0a50896bf50b8cc0f728",
+        "format": "pdf",
+        "size_bytes": 178228,
+        "resolved_url": "https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=311860&fileSeq=3",
+        "collected_at": "2026-09-09T02:33:52.882278+00:00",
+        "rights_status": "check_source_terms"
+      }
+    ],
+    "errors": [],
+    "source_snapshot": {
+      "path": "data/raw/sha256/b3/b3cd35e2e77f9d422e7ac5e5232302bf89d37f4b68e292853ae55fcc18dcf410.html",
+      "file_hash": "sha256:b3cd35e2e77f9d422e7ac5e5232302bf89d37f4b68e292853ae55fcc18dcf410",
+      "resolved_url": "https://www.mcee.go.kr/home/web/board/read.do?boardId=1823520&boardMasterId=939&menuId=10598"
+    },
+    "status": "collected"
+  },
+  "p12-forum45": {
+    "id": "p12-forum45",
+    "source_url": "https://www.mcee.go.kr/home/web/board/read.do?boardId=1884280&boardMasterId=939&menuId=10598",
+    "collected_at": "2026-09-09T02:33:58.616294+00:00",
+    "attachments": [
+      {
+        "url": "https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=330358&fileSeq=1",
+        "title": "전기국가 전환  전력수요 및 재생에너지 보급 전망 논의 4·5차 대국민 정책토론회 개최(기후부 보도참고자료).hwpx (2.1 MB)",
+        "path": "data/raw/sha256/97/97b9ec40363a69b47e37485d1c8bcf4421d4139f90da08b50f9e0ac96e9a58be.hwpx",
+        "file_hash": "sha256:97b9ec40363a69b47e37485d1c8bcf4421d4139f90da08b50f9e0ac96e9a58be",
+        "format": "hwpx",
+        "size_bytes": 2185226,
+        "resolved_url": "https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=330358&fileSeq=1",
+        "collected_at": "2026-09-09T02:33:58.616294+00:00",
+        "rights_status": "check_source_terms"
+      },
+      {
+        "url": "https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=330358&fileSeq=2",
+        "title": "전기국가 전환  전력수요 및 재생에너지 보급 전망 논의 4·5차 대국민 정책토론회 개최(기후부 보도참고자료).pdf (327.7 KB)",
+        "path": "data/raw/sha256/5b/5b67abde7bc1ac8edfe5b14120481e1e8ea50c53d09a0fde22aac5b75dd0deb2.pdf",
+        "file_hash": "sha256:5b67abde7bc1ac8edfe5b14120481e1e8ea50c53d09a0fde22aac5b75dd0deb2",
+        "format": "pdf",
+        "size_bytes": 335550,
+        "resolved_url": "https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=330358&fileSeq=2",
+        "collected_at": "2026-09-09T02:33:58.616294+00:00",
+        "rights_status": "check_source_terms"
+      }
+    ],
+    "errors": [],
+    "source_snapshot": {
+      "path": "data/raw/sha256/6e/6ebd70df0e523aa529e17564706b97ed2f409074978bfbb18d9af001ce8d4c38.html",
+      "file_hash": "sha256:6ebd70df0e523aa529e17564706b97ed2f409074978bfbb18d9af001ce8d4c38",
+      "resolved_url": "https://www.mcee.go.kr/home/web/board/read.do?boardId=1884280&boardMasterId=939&menuId=10598"
+    },
+    "status": "collected"
+  },
+  "p12-forum6": {
+    "id": "p12-forum6",
+    "source_url": "https://www.mcee.go.kr/home/web/board/read.do?boardId=1884910&boardMasterId=939&menuId=10598",
+    "collected_at": "2026-09-09T02:34:04.014986+00:00",
+    "attachments": [
+      {
+        "url": "https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=330550&fileSeq=1",
+        "title": "제12차 전기본 수립을 위한 재생에너지 보급 전망 정책토론회(6차) 개최(보도참고자료)(재셍에너지 8.20).hwpx (982.4 KB)",
+        "path": "data/raw/sha256/ab/ab2fff224218543e12210276bfd0b48a7229e32564d663de34f81578568c7762.hwpx",
+        "file_hash": "sha256:ab2fff224218543e12210276bfd0b48a7229e32564d663de34f81578568c7762",
+        "format": "hwpx",
+        "size_bytes": 1005951,
+        "resolved_url": "https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=330550&fileSeq=1",
+        "collected_at": "2026-09-09T02:34:04.014986+00:00",
+        "rights_status": "check_source_terms"
+      },
+      {
+        "url": "https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=330550&fileSeq=2",
+        "title": "제12차 전기본 수립을 위한 재생에너지 보급 전망 정책토론회(6차) 개최(보도참고자료)(재셍에너지 8.20).pdf (367.9 KB)",
+        "path": "data/raw/sha256/b6/b6cc8e7131b086df32eaa7c2da396194d627dde046c8b6e619c22a7aa6820f88.pdf",
+        "file_hash": "sha256:b6cc8e7131b086df32eaa7c2da396194d627dde046c8b6e619c22a7aa6820f88",
+        "format": "pdf",
+        "size_bytes": 376723,
+        "resolved_url": "https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=330550&fileSeq=2",
+        "collected_at": "2026-09-09T02:34:04.014986+00:00",
+        "rights_status": "check_source_terms"
+      }
+    ],
+    "errors": [],
+    "source_snapshot": {
+      "path": "data/raw/sha256/85/859e98a3e2526d7adb1fa7f52507b852e844adda905cf2fe0256d3e26f7ee9fa.html",
+      "file_hash": "sha256:859e98a3e2526d7adb1fa7f52507b852e844adda905cf2fe0256d3e26f7ee9fa",
+      "resolved_url": "https://www.mcee.go.kr/home/web/board/read.do?boardId=1884910&boardMasterId=939&menuId=10598"
+    },
+    "status": "collected"
+  },
+  "t10-explainer": {
+    "id": "t10-explainer",
+    "source_url": "https://home.kepco.co.kr/kepco/front/html/WZ/2025_02/heritage.html",
+    "collected_at": "2026-09-09T02:34:07.593250+00:00",
+    "attachments": [],
+    "errors": [],
+    "source_snapshot": {
+      "path": "data/raw/sha256/28/28800375e6baf3cfde3dd715ddb257767744cd973bb246737aa8fb8b6ed03f99.html",
+      "file_hash": "sha256:28800375e6baf3cfde3dd715ddb257767744cd973bb246737aa8fb8b6ed03f99",
+      "resolved_url": "https://home.kepco.co.kr/kepco/front/html/WZ/2025_02/heritage.html"
+    },
+    "status": "collected"
+  },
+  "t11-explainer": {
+    "id": "t11-explainer",
+    "source_url": "https://www.kepco.co.kr/KEPCO_FILE/html/2025_12/special1.html",
+    "collected_at": "2026-09-09T02:34:08.757708+00:00",
+    "attachments": [],
+    "errors": [],
+    "source_snapshot": {
+      "path": "data/raw/sha256/96/966185838d26a501588564c0314cc687d9aa1c4af31564d75567d6c29c807e35.html",
+      "file_hash": "sha256:966185838d26a501588564c0314cc687d9aa1c4af31564d75567d6c29c807e35",
+      "resolved_url": "https://www.kepco.co.kr/KEPCO_FILE/html/2025_12/special1.html"
+    },
+    "status": "collected"
+  }
+}
