@@ -197,3 +197,27 @@ documents:
   title: 발전사업자 계통해석 모델 제출 사전안내 및 규정 개정안
   source_url: https://www.kpx.or.kr/board.es?act=view&bid=0042&mid=a11201000000&list_no=77979
   expected_text: 계통해석 모델 제출 사전안내
+- id: energy-3-final
+  source_id: motie-archive
+  title: 제3차 에너지기본계획 2019–2040
+  source_url: https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/161753/view
+  expected_text: 제3차 에너지기본계획
+  attachments:
+  - url: https://kesis.keei.re.kr/boardDownload.es?bid=0025&list_no=1488&seq=1
+    title: 제3차 에너지기본계획 전문 (KESIS 공식 재게시)
+- id: renewable-5-final
+  source_id: motie-archive
+  title: 제5차 신재생에너지 기본계획 2020–2034
+  source_url: https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/163676/view
+  expected_text: 제5차 신재생에너지 기본계획
+  attachments:
+  - url: https://www.knrec.or.kr/biz/introduce/file/File_down.do?file_nm=%28%EB%B3%84%EC%B2%A8%29%EC%A0%9C5%EC%B0%A8%20%EC%8B%A0%EC%9E%AC%EC%83%9D%EC%97%90%EB%84%88%EC%A7%80%20%EA%B8%B0%EB%B3%B8%EA%B3%84%ED%9A%8D.pdf
+    title: 제5차 신재생에너지 기본계획 전문 (한국에너지공단 공식 재게시)
+- id: renewable-1-final-2026
+  source_id: mcee
+  title: 제1차 재생에너지 기본계획 2026–2035
+  source_url: https://www.mcee.go.kr/home/web/board/read.do?boardId=1864660&boardMasterId=939&menuId=10598
+  expected_text: 100GW
+  attachments:
+  - url: https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=324062&fileSeq=3
+    title: 별첨 제1차 재생에너지 기본계획 전문

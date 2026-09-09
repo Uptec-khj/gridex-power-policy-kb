@@ -1,6 +1,78 @@
 [
   {
     "schema_version": "1.0",
+    "id": "energy-3-final",
+    "title": "제3차 에너지기본계획 2019–2040",
+    "organization": "산업통상자원부",
+    "published_date": "2019-06-04",
+    "category": "에너지정책",
+    "subcategory": "기본계획",
+    "plan_family": "에너지기본계획",
+    "plan_number": 3,
+    "document_stage": "final",
+    "topics": [
+      "에너지기본계획",
+      "재생에너지",
+      "계통연계",
+      "에너지정책"
+    ],
+    "source_id": "motie-archive",
+    "source_url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/161753/view",
+    "attachment_url": "https://kesis.keei.re.kr/boardDownload.es?bid=0025&list_no=1488&seq=1",
+    "related_documents": [
+      "[[renewable-5-final]]",
+      "[[p10-final]]",
+      "[[p11-amend]]"
+    ],
+    "previous_document": null,
+    "next_document": null,
+    "collected_date": "2026-09-09",
+    "file_hash": "sha256:ea646eb07761fff06dbcefdc2759ff21a365357c01e57c2a6f11f07453168806",
+    "verification_status": "source_verified",
+    "ai_generated": true,
+    "summary_review_status": "unreviewed",
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "last_verified_date": "2026-09-09",
+    "verification_notes": "정부 확정 발표와 KESIS 공식 재게시 전문 PDF 117쪽 확인. 표지는 2019년 6월이고 KESIS 등록일은 2019-08-02로 구분. 과거 목표를 현행 목표로 표시하지 않음. 사람 검수 대기.",
+    "draft": false,
+    "attachments": [
+      {
+        "url": "https://kesis.keei.re.kr/boardDownload.es?bid=0025&list_no=1488&seq=1",
+        "title": "제3차 에너지기본계획 전문 (KESIS 공식 재게시)",
+        "path": "data/raw/sha256/ea/ea646eb07761fff06dbcefdc2759ff21a365357c01e57c2a6f11f07453168806.pdf",
+        "file_hash": "sha256:ea646eb07761fff06dbcefdc2759ff21a365357c01e57c2a6f11f07453168806",
+        "format": "pdf",
+        "size_bytes": 2213632,
+        "resolved_url": "https://kesis.keei.re.kr/boardDownload.es?bid=0025&list_no=1488&seq=1",
+        "collected_at": "2026-09-09T06:02:42.622315+00:00",
+        "rights_status": "check_source_terms"
+      }
+    ],
+    "source_snapshot": {
+      "path": "data/raw/sha256/15/1588e750c9485525e026c24c87aeb3eb207bb5dd62597c142e60b23cf374e3de.html",
+      "file_hash": "sha256:1588e750c9485525e026c24c87aeb3eb207bb5dd62597c142e60b23cf374e3de",
+      "resolved_url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/161753/view"
+    },
+    "events": [
+      {
+        "date": "2019-06-04",
+        "label": "제3차 에너지기본계획 2019–2040 확정·발표",
+        "status": "publication",
+        "source_url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/161753/view"
+      }
+    ],
+    "tags": [
+      "에너지정책",
+      "검수대기"
+    ],
+    "aliases": [],
+    "date": "2019-06-04",
+    "path": "content/documents/energy-3-final.md",
+    "slug": "documents/energy-3-final"
+  },
+  {
+    "schema_version": "1.0",
     "id": "p10-demand",
     "title": "장기 전력수요전망 2022-2036",
     "organization": "전력거래소",
@@ -1909,6 +1981,169 @@
     "date": "2025-11-27",
     "path": "content/documents/p12-launch.md",
     "slug": "documents/p12-launch"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "renewable-1-final-2026",
+    "title": "제1차 재생에너지 기본계획 2026–2035",
+    "organization": "기후에너지환경부",
+    "published_date": "2026-05-19",
+    "category": "재생에너지정책",
+    "subcategory": "기본계획",
+    "plan_family": "재생에너지기본계획",
+    "plan_number": 1,
+    "document_stage": "final",
+    "topics": [
+      "재생에너지기본계획",
+      "재생에너지",
+      "계통연계",
+      "에너지정책"
+    ],
+    "source_id": "mcee",
+    "source_url": "https://www.mcee.go.kr/home/web/board/read.do?boardId=1864660&boardMasterId=939&menuId=10598",
+    "attachment_url": "https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=324062&fileSeq=3",
+    "related_documents": [
+      "[[renewable-5-final]]",
+      "[[p12-demand-draft-20260519]]",
+      "[[p12-forum6]]",
+      "[[t11-final]]",
+      "[[tech-field-test-appendix6]]"
+    ],
+    "previous_document": null,
+    "next_document": null,
+    "collected_date": "2026-09-09",
+    "file_hash": "sha256:89b9841bf987c71e29a28c5fbea0e9c9b2569ab35f5f80e485cace31a0fe5f5d",
+    "verification_status": "source_verified",
+    "ai_generated": true,
+    "summary_review_status": "unreviewed",
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "last_verified_date": "2026-09-09",
+    "verification_notes": "기후부 별첨 전문 PDF 78쪽 확보. PDF p.17 목표를 AI가 화면 대조. 본계획과 별첨 지방정부 계획(안)을 구분하고 법 시행 예정일을 보존. PDF 빈 면도 유지. 사람 검수 대기.",
+    "draft": false,
+    "attachments": [
+      {
+        "url": "https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=324062&fileSeq=3",
+        "title": "별첨 제1차 재생에너지 기본계획 전문",
+        "path": "data/raw/sha256/89/89b9841bf987c71e29a28c5fbea0e9c9b2569ab35f5f80e485cace31a0fe5f5d.pdf",
+        "file_hash": "sha256:89b9841bf987c71e29a28c5fbea0e9c9b2569ab35f5f80e485cace31a0fe5f5d",
+        "format": "pdf",
+        "size_bytes": 3990669,
+        "resolved_url": "https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=324062&fileSeq=3",
+        "collected_at": "2026-09-09T06:02:51.992398+00:00",
+        "rights_status": "check_source_terms"
+      }
+    ],
+    "source_snapshot": {
+      "path": "data/raw/sha256/4c/4ca836d0625109130eb3e129f7c7b29ba478e39eff161abcbe82084284f59276.html",
+      "file_hash": "sha256:4ca836d0625109130eb3e129f7c7b29ba478e39eff161abcbe82084284f59276",
+      "resolved_url": "https://www.mcee.go.kr/home/web/board/read.do?boardId=1864660&boardMasterId=939&menuId=10598"
+    },
+    "events": [
+      {
+        "date": "2026-05-19",
+        "label": "제1차 재생에너지 기본계획 2026–2035 확정·발표",
+        "status": "publication",
+        "source_url": "https://www.mcee.go.kr/home/web/board/read.do?boardId=1864660&boardMasterId=939&menuId=10598"
+      }
+    ],
+    "tags": [
+      "재생에너지정책",
+      "검수대기"
+    ],
+    "aliases": [],
+    "date": "2026-05-19",
+    "typed_relations": [
+      {
+        "target": "[[renewable-5-final]]",
+        "type": "references",
+        "source_url": "https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=324062&fileSeq=3#page=7",
+        "basis": "직전 기본계획 및 기존 1~5차 계획 평가를 수록한다. 계열 변경으로 이전/다음 버전 링크 대신 참조 관계를 기록한다."
+      }
+    ],
+    "path": "content/documents/renewable-1-final-2026.md",
+    "slug": "documents/renewable-1-final-2026"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "renewable-5-final",
+    "title": "제5차 신재생에너지 기본계획 2020–2034",
+    "organization": "산업통상자원부",
+    "published_date": "2020-12-29",
+    "category": "재생에너지정책",
+    "subcategory": "기본계획",
+    "plan_family": "신재생에너지기본계획",
+    "plan_number": 5,
+    "document_stage": "final",
+    "topics": [
+      "신재생에너지기본계획",
+      "재생에너지",
+      "계통연계",
+      "에너지정책"
+    ],
+    "source_id": "motie-archive",
+    "source_url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/163676/view",
+    "attachment_url": "https://www.knrec.or.kr/biz/introduce/file/File_down.do?file_nm=%28%EB%B3%84%EC%B2%A8%29%EC%A0%9C5%EC%B0%A8%20%EC%8B%A0%EC%9E%AC%EC%83%9D%EC%97%90%EB%84%88%EC%A7%80%20%EA%B8%B0%EB%B3%B8%EA%B3%84%ED%9A%8D.pdf",
+    "related_documents": [
+      "[[energy-3-final]]",
+      "[[renewable-1-final-2026]]",
+      "[[p10-final]]",
+      "[[tech-field-test-appendix6]]"
+    ],
+    "previous_document": null,
+    "next_document": null,
+    "collected_date": "2026-09-09",
+    "file_hash": "sha256:25d568f54b708145cf92591a44520d9c4d7dd378430f3953155b53acaf261744",
+    "verification_status": "source_verified",
+    "ai_generated": true,
+    "summary_review_status": "unreviewed",
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "last_verified_date": "2026-09-09",
+    "verification_notes": "정부 확정 발표와 한국에너지공단 공식 전문 PDF 28쪽 확인. PDF p.6 원표를 AI가 화면 대조. 신재생/재생 및 최종에너지/발전량 비중 구분. 당시 계획의 목표이며 사람 검수 대기.",
+    "draft": false,
+    "attachments": [
+      {
+        "url": "https://www.knrec.or.kr/biz/introduce/file/File_down.do?file_nm=%28%EB%B3%84%EC%B2%A8%29%EC%A0%9C5%EC%B0%A8%20%EC%8B%A0%EC%9E%AC%EC%83%9D%EC%97%90%EB%84%88%EC%A7%80%20%EA%B8%B0%EB%B3%B8%EA%B3%84%ED%9A%8D.pdf",
+        "title": "제5차 신재생에너지 기본계획 전문 (한국에너지공단 공식 재게시)",
+        "path": "data/raw/sha256/25/25d568f54b708145cf92591a44520d9c4d7dd378430f3953155b53acaf261744.pdf",
+        "file_hash": "sha256:25d568f54b708145cf92591a44520d9c4d7dd378430f3953155b53acaf261744",
+        "format": "pdf",
+        "size_bytes": 2427140,
+        "resolved_url": "https://www.knrec.or.kr/biz/introduce/file/File_down.do?file_nm=%28%EB%B3%84%EC%B2%A8%29%EC%A0%9C5%EC%B0%A8%20%EC%8B%A0%EC%9E%AC%EC%83%9D%EC%97%90%EB%84%88%EC%A7%80%20%EA%B8%B0%EB%B3%B8%EA%B3%84%ED%9A%8D.pdf",
+        "collected_at": "2026-09-09T06:02:47.101156+00:00",
+        "rights_status": "check_source_terms"
+      }
+    ],
+    "source_snapshot": {
+      "path": "data/raw/sha256/c2/c2ae67be794edcfc5286ea43bd69b7121eb0d394c97f7c702a0568dbb4078eb0.html",
+      "file_hash": "sha256:c2ae67be794edcfc5286ea43bd69b7121eb0d394c97f7c702a0568dbb4078eb0",
+      "resolved_url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/163676/view"
+    },
+    "events": [
+      {
+        "date": "2020-12-29",
+        "label": "제5차 신재생에너지 기본계획 2020–2034 확정·발표",
+        "status": "publication",
+        "source_url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/163676/view"
+      }
+    ],
+    "tags": [
+      "재생에너지정책",
+      "검수대기"
+    ],
+    "aliases": [],
+    "date": "2020-12-29",
+    "typed_relations": [
+      {
+        "target": "[[energy-3-final]]",
+        "type": "uses_evidence",
+        "source_url": "https://www.knrec.or.kr/biz/introduce/file/File_down.do?file_nm=%28%EB%B3%84%EC%B2%A8%29%EC%A0%9C5%EC%B0%A8%20%EC%8B%A0%EC%9E%AC%EC%83%9D%EC%97%90%EB%84%88%EC%A7%80%20%EA%B8%B0%EB%B3%B8%EA%B3%84%ED%9A%8D.pdf#page=6",
+        "basis": "제3차 에너지기본계획의 목표 시나리오와 정합성을 확보했다고 명시한다."
+      }
+    ],
+    "path": "content/documents/renewable-5-final.md",
+    "slug": "documents/renewable-5-final"
   },
   {
     "schema_version": "1.0",

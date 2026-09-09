@@ -51,7 +51,9 @@
         "전력수요",
         "송변전망",
         "기술기준",
-        "성능평가"
+        "성능평가",
+        "에너지정책",
+        "재생에너지정책"
       ]
     },
     "subcategory": {
@@ -62,7 +64,10 @@
       "enum": [
         "전력수급기본계획",
         "장기송변전설비계획",
-        null
+        null,
+        "에너지기본계획",
+        "신재생에너지기본계획",
+        "재생에너지기본계획"
       ]
     },
     "plan_number": {
@@ -71,6 +76,11 @@
         "null"
       ],
       "enum": [
+        1,
+        2,
+        3,
+        4,
+        5,
         10,
         11,
         12,
@@ -461,6 +471,147 @@
           "required": [
             "technical"
           ]
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "plan_family": {
+            "const": "전력수급기본계획"
+          }
+        },
+        "required": [
+          "plan_family"
+        ]
+      },
+      "then": {
+        "properties": {
+          "plan_number": {
+            "enum": [
+              10,
+              11,
+              12
+            ]
+          },
+          "category": {
+            "enum": [
+              "전력수급계획",
+              "전력수요"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "plan_family": {
+            "const": "장기송변전설비계획"
+          }
+        },
+        "required": [
+          "plan_family"
+        ]
+      },
+      "then": {
+        "properties": {
+          "plan_number": {
+            "enum": [
+              10,
+              11,
+              12
+            ]
+          },
+          "category": {
+            "enum": [
+              "송변전망"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "plan_family": {
+            "const": "에너지기본계획"
+          }
+        },
+        "required": [
+          "plan_family"
+        ]
+      },
+      "then": {
+        "properties": {
+          "plan_number": {
+            "enum": [
+              1,
+              2,
+              3
+            ]
+          },
+          "category": {
+            "enum": [
+              "에너지정책"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "plan_family": {
+            "const": "신재생에너지기본계획"
+          }
+        },
+        "required": [
+          "plan_family"
+        ]
+      },
+      "then": {
+        "properties": {
+          "plan_number": {
+            "enum": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          "category": {
+            "enum": [
+              "재생에너지정책"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "plan_family": {
+            "const": "재생에너지기본계획"
+          }
+        },
+        "required": [
+          "plan_family"
+        ]
+      },
+      "then": {
+        "properties": {
+          "plan_number": {
+            "enum": [
+              1
+            ]
+          },
+          "category": {
+            "enum": [
+              "재생에너지정책"
+            ]
+          }
         }
       }
     }

@@ -45,3 +45,7 @@ PDF를 읽기 전에 실제 바이트의 SHA-256을 대조합니다. 물리적 �
 기술 문서는 plan_family와 plan_number가 null이다. category와 technical 객체의 document_type, standard_id, revision, revised_date, effective_date, applicability, coverage를 편집 청크와 PDF 페이지 색인에 함께 보존한다. null을 임의 차수나 현행 버전으로 바꾸지 않는다. rule_draft와 document_stage=draft는 공개된 공식 개정안이며, 게시 제외용 draft=true와 구분한다.
 
 relations.json의 근거 있는 관계에는 source_url, basis, interpretation_review_status가 있다. 관계 자체도 편집 판단이므로 공식 규정의 명시적 연결인지 KB의 주제 연결인지 basis를 읽는다. 현재 두 가지 사례를 추가했고 기존 일반 관계는 유지한다. technical.effective_date=null인 예정안에서 시행일을 추정하거나 부록 coverage를 전문으로 확장해 답하지 않는다.
+
+## 종합 에너지·재생에너지 계획 (v0.5)
+
+plan_family를 필터에 포함해야 같은 차수의 다른 계획이 혼합되지 않는다. 예: `python scripts/originals.py search "100GW" --family 재생에너지기본계획 --plan 1`. 기술 문서는 기존대로 두 계획 필드가 null이다. 과거 계획 목표, 최신 계획 목표, 지방정부 별첨 계획(안)은 서로 다른 시점·범위의 근거로 취급한다. 문서 단계 final만으로 부록의 모든 숫자까지 확정 수치라고 추론하지 않는다.

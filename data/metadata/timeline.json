@@ -1,5 +1,21 @@
 [
   {
+    "date": "2019-06-04",
+    "label": "제3차 에너지기본계획 2019–2040 확정·발표",
+    "status": "publication",
+    "source_url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/161753/view",
+    "document_id": "energy-3-final",
+    "title": "제3차 에너지기본계획 2019–2040"
+  },
+  {
+    "date": "2020-12-29",
+    "label": "제5차 신재생에너지 기본계획 2020–2034 확정·발표",
+    "status": "publication",
+    "source_url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/163676/view",
+    "document_id": "renewable-5-final",
+    "title": "제5차 신재생에너지 기본계획 2020–2034"
+  },
+  {
     "date": "2022-08-30",
     "label": "제10차 전력수급기본계획 총괄분과위 실무안 공개 공개",
     "status": "publication",
@@ -238,6 +254,14 @@
     "source_url": "https://www.mcee.go.kr/home/web/board/read.do?boardId=1864660&boardMasterId=939&menuId=10598",
     "document_id": "p12-demand-draft-20260519",
     "title": "제12차 전력수급기본계획 수요 전망(안) 2026년 5월"
+  },
+  {
+    "date": "2026-05-19",
+    "label": "제1차 재생에너지 기본계획 2026–2035 확정·발표",
+    "status": "publication",
+    "source_url": "https://www.mcee.go.kr/home/web/board/read.do?boardId=1864660&boardMasterId=939&menuId=10598",
+    "document_id": "renewable-1-final-2026",
+    "title": "제1차 재생에너지 기본계획 2026–2035"
   },
   {
     "date": "2026-08-15",

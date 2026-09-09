@@ -46,6 +46,13 @@ class OriginalEvidenceTests(unittest.TestCase):
         self.assertEqual(len(originals.search_pages(pages, '61183')), 1)
         self.assertEqual(originals.search_pages(pages, '61183', plan=11), [])
 
+    def test_family_filter_separates_same_number(self):
+        self.meta.update(plan_number=1, plan_family='재생에너지기본계획')
+        with patch.object(originals, 'extract_pdf', return_value=[self.page]):
+            pages, _ = originals.build_evidence(self.records(), self.root)
+        self.assertEqual(len(originals.search_pages(pages, '61183', plan=1, family='재생에너지기본계획')), 1)
+        self.assertEqual(originals.search_pages(pages, '61183', plan=1, family='신재생에너지기본계획'), [])
+
     def test_draft_and_unverified_originals_are_excluded(self):
         for changes in ({"draft": True}, {"draft": False, "verification_status": "unverified"}):
             self.meta.update(changes)

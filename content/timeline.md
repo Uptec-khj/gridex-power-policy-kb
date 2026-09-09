@@ -7,6 +7,8 @@ tags: [안내, Timeline]
 
 | 날짜 | 사건 | 구분 | 문서 | 근거 |
 | --- | --- | --- | --- | --- |
+| 2019-06-04 | 제3차 에너지기본계획 2019–2040 확정·발표 | 게시·공고 | [[energy-3-final]] | [공식 출처](https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/161753/view) |
+| 2020-12-29 | 제5차 신재생에너지 기본계획 2020–2034 확정·발표 | 게시·공고 | [[renewable-5-final]] | [공식 출처](https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/163676/view) |
 | 2022-08-30 | 제10차 전력수급기본계획 총괄분과위 실무안 공개 공개 | 게시·공고 | [[p10-draft]] | [공식 출처](https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/165956/view) |
 | 2022-09-15 | 제10차 전력수급기본계획 전략환경영향평가 항목 결정내용 공개 공개 | 게시·공고 | [[p10-sea-scope]] | [공식 출처](https://www.motir.go.kr/kor/article/ATCLc01b2801b/67906/view) |
 | 2022-09-30 | 제10차 전력수급기본계획 전략환경영향평가서 행정예고 공개 | 게시·공고 | [[p10-sea-draft]] | [공식 출처](https://www.motir.go.kr/kor/article/ATCLc01b2801b/67954/view) |
@@ -37,6 +39,7 @@ tags: [안내, Timeline]
 | 2026-05-13 | 신재생발전기 송전계통 연계기술기준 부록6 발전단지 현장 특성시험절차서 게시 | 게시·공고 | [[tech-field-test-appendix6]] | [공식 출처](https://www.kpx.or.kr/board.es?act=view&bid=0042&mid=a11201000000&list_no=77368) |
 | 2026-05-13 | 신재생 발전소 현장성능시험 결과 제출 안내 게시 | 게시·공고 | [[tech-field-test-notice-202605]] | [공식 출처](https://www.kpx.or.kr/board.es?act=view&bid=0042&mid=a11201000000&list_no=77368) |
 | 2026-05-19 | 제12차 전력수급기본계획 수요 전망(안) 2026년 5월 게시 | 게시·공고 | [[p12-demand-draft-20260519]] | [공식 출처](https://www.mcee.go.kr/home/web/board/read.do?boardId=1864660&boardMasterId=939&menuId=10598) |
+| 2026-05-19 | 제1차 재생에너지 기본계획 2026–2035 확정·발표 | 게시·공고 | [[renewable-1-final-2026]] | [공식 출처](https://www.mcee.go.kr/home/web/board/read.do?boardId=1864660&boardMasterId=939&menuId=10598) |
 | 2026-08-15 | 제4·5차 토론회 안내 등록 | 게시·공고 | [[p12-forum45]] | [공식 출처](https://www.mcee.go.kr/home/web/board/read.do?boardId=1884280&boardMasterId=939&menuId=10598) |
 | 2026-08-20 | 제4·5차 토론회 개최 예정일(안내문 기준) | 안내문상 예정 | [[p12-forum45]] | [공식 출처](https://www.mcee.go.kr/home/web/board/read.do?boardId=1884280&boardMasterId=939&menuId=10598) |
 | 2026-08-20 | 제6차 토론회 안내 등록 | 게시·공고 | [[p12-forum6]] | [공식 출처](https://www.mcee.go.kr/home/web/board/read.do?boardId=1884910&boardMasterId=939&menuId=10598) |

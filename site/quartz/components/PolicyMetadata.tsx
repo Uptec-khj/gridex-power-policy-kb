@@ -13,7 +13,7 @@ export default (() => {
     const reviewed = m.verification_status === "human_verified"
     return <aside class="policy-metadata" aria-label="문서 출처와 검수 상태">
       <div class="policy-badges">
-        <span>{m.plan_number == null ? String(m.category) : `제${String(m.plan_number)}차`}</span>
+        <span>{m.plan_number == null ? String(m.category) : `제${String(m.plan_number)}차 ${String(m.plan_family)}`}</span>
         <span>{stages[String(m.document_stage)] ?? String(m.document_stage)}</span>
         <span class={reviewed ? "reviewed" : "pending"}>{reviewed ? "사람 검수 완료" : "AI 요약 · 검수 대기"}</span>
       </div>

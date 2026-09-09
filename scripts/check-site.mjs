@@ -75,4 +75,17 @@ assert(content['technical-documents'].links.includes('documents/tech-field-test-
 assert(content['project/review-queue'].links.includes('documents/tech-grid-model-draft-202608'))
 const relations = JSON.parse(fs.readFileSync(path.join(root, 'data/metadata/relations.json'), 'utf8'))
 assert(relations.some(r => r.type === 'explains' && r.target === 'tech-field-test-appendix6' && r.source_url && r.basis))
+for (const [family, query, id, page] of [
+  ['에너지기본계획', '재생에너지', 'energy-3-final', 53],
+  ['신재생에너지기본계획', '25.8', 'renewable-5-final', 6],
+  ['재생에너지기본계획', '100GW', 'renewable-1-final-2026', 17],
+]) {
+  const found = rankEvidence(evidence.pages, query, 'family:' + family, 'final')
+  assert(found.some(p => p.document_id === id && p.pdf_page === page))
+  assert(found.every(p => p.plan_family === family))
+}
+const collision = [{ ...evidence.pages[0], text: 'same', plan_number: 1, plan_family: '에너지기본계획' },
+  { ...evidence.pages[0], text: 'same', plan_number: 1, plan_family: '재생에너지기본계획' }]
+assert.equal(rankEvidence(collision, 'same', 'family:재생에너지기본계획').length, 1)
+assert(content['energy-renewable-plans'].links.includes('documents/renewable-1-final-2026'))
 console.log(`Original search passed: ${evidence.report.searchable_pages} pages with text, PDF citations and plan/stage filters`)

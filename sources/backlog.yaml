@@ -86,7 +86,7 @@ items:
   priority: P1
   title: 총 30~50개 공식 문서로 확장
   status: minimum_count_reached
-  next_action: 34건 기반 링크·검수 품질 보강, 기술기준 전문 및 후속 수요 원표 수집
+  next_action: 37건 기반 출처·검수 품질 보강. 새로운 계획 계열은 실제 공식 문서명과 차수를 유지.
   notes: 형식·페이지 수로 문서 수를 늘리지 않음. 사람 검수 완료와 구분.
 - id: human-review
   priority: P0
@@ -115,3 +115,18 @@ items:
   document_ids:
   - p12-demand-draft-20260519
   next_action: 후속 재전망과 비교, 시나리오 수치 구조화 및 사람 검수
+- id: energy-renewable-core
+  priority: P0
+  title: 에너지·재생에너지 기본계획 핵심 전문
+  status: collected
+  document_ids:
+  - energy-3-final
+  - renewable-5-final
+  - renewable-1-final-2026
+  next_action: 정책 시점·지표 정의·원문 수치 사람 검수
+- id: energy-renewable-history
+  priority: P1
+  title: 기본계획 과거 차수와 관련 종합 에너지정책
+  status: discovery_pending
+  next_action: 제1·2차 에너지기본계획, 제1~4차 신재생 계획, 이후 종합정책·법적 계획 체계 변화 확인. 공식 출처와 관계 검증 후
+    등록.

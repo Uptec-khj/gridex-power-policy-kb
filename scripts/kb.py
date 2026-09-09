@@ -164,8 +164,8 @@ def build():
     labels = {"publication": "게시·공고", "scheduled": "안내문상 예정", "confirmed": "실제 발생 확인"}
     rows += [f"| {e['date']} | {e['label']} | {labels[e['status']]} | [[{e['document_id']}]] | [공식 출처]({e['source_url']}) |" for e in timeline]
     (CONTENT / "timeline.md").write_text("\n".join(rows) + "\n", encoding="utf-8")
-    rows = ["---", 'title: "공식 문서 목록"', "tags: [안내]", "---", "", f"공식 자료 {len(documents)}건. 사보 해설은 계획 전문과 구분하며, AI 요약은 아직 사람의 검수를 거치지 않았습니다.", "", "| 문서 | 발행일 | 차수 | 문서 단계 | 검증 |", "| --- | --- | --- | --- | --- |"]
-    rows += [f"| {m['title']} · [[{m['id']}]] | {m['published_date'] or '일자 미확인'} | {m['plan_number'] if m['plan_number'] is not None else '기술 문서'} | {m['document_stage']} | {'사람 검수 완료' if m['verification_status'] == 'human_verified' else '공식 출처 확인 · 요약 검수 대기'} |" for m in documents]
+    rows = ["---", 'title: "공식 문서 목록"', "tags: [안내]", "---", "", f"공식 자료 {len(documents)}건. 사보 해설은 계획 전문과 구분하며, AI 요약은 아직 사람의 검수를 거치지 않았습니다.", "", "| 문서 | 발행일 | 계획·차수 | 문서 단계 | 검증 |", "| --- | --- | --- | --- | --- |"]
+    rows += [f"| {m['title']} · [[{m['id']}]] | {m['published_date'] or '일자 미확인'} | {('제' + str(m['plan_number']) + '차 ' + m['plan_family']) if m['plan_number'] is not None else '기술 문서'} | {m['document_stage']} | {'사람 검수 완료' if m['verification_status'] == 'human_verified' else '공식 출처 확인 · 요약 검수 대기'} |" for m in documents]
     (CONTENT / "catalog.md").write_text("\n".join(rows) + "\n", encoding="utf-8")
     pending = [m for m in documents if m['verification_status'] != 'human_verified' or m['summary_review_status'] != 'reviewed']
     rows = ['---', 'title: 콘텐츠 검수 대기 목록', 'tags: [프로젝트, 검수]', '---', '',

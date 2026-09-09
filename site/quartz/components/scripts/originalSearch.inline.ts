@@ -57,7 +57,7 @@ document.addEventListener("nav", () => {
         const card = document.createElement("article")
         const heading = document.createElement("h3")
         heading.append(link(page.title, `${root}/${page.slug}`))
-        card.append(heading, element("p", `${page.plan_number == null ? "기술 문서" : `제${page.plan_number}차`} · ${stageLabels[page.document_stage] ?? page.document_stage} · PDF p.${page.pdf_page} · ${page.published_date ?? "발행일 미확인"}`))
+        card.append(heading, element("p", `${page.plan_number == null ? "기술 문서" : `제${page.plan_number}차 ${page.plan_family ?? ""}`} · ${stageLabels[page.document_stage] ?? page.document_stage} · PDF p.${page.pdf_page} · ${page.published_date ?? "발행일 미확인"}`))
         card.append(element("p", evidenceSnippet(page.text, value)))
         if (page.sparse_text) card.append(element("p", "추출된 글자가 적은 페이지입니다. 표지 또는 이미지 포함 여부를 PDF에서 확인하세요."))
         const actions = document.createElement("p")

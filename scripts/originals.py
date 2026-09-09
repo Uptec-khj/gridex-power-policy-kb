@@ -133,13 +133,15 @@ def normalize(text):
     return re.sub(r"\s+", "", re.sub(r"(?<=\d),(?=\d)", "", text))
 
 
-def search_pages(pages, query, plan=None, stage=None, limit=10):
+def search_pages(pages, query, plan=None, stage=None, limit=10, family=None):
     terms = [normalize(t) for t in query.split() if normalize(t)]
     if not terms:
         return []
     ranked = []
     for p in pages:
         if not p['text'] or (plan is not None and p['plan_number'] != plan) or (stage and p['document_stage'] != stage):
+            continue
+        if family and p.get('plan_family') != family:
             continue
         title, body = normalize(p['title']), normalize(p['text'])
         if all(t in title or t in body for t in terms):
@@ -155,8 +157,9 @@ if __name__ == '__main__':
     sub.add_parser('build')
     query = sub.add_parser('search')
     query.add_argument('query')
-    query.add_argument('--plan', type=int, choices=[10, 11, 12])
+    query.add_argument('--plan', type=int, choices=[1, 2, 3, 4, 5, 10, 11, 12])
     query.add_argument('--stage')
+    query.add_argument('--family')
     query.add_argument('--limit', type=int, default=10)
     args = parser.parse_args()
     if args.command == 'build':
@@ -167,4 +170,4 @@ if __name__ == '__main__':
         if not path.exists():
             parser.error('Run build first')
         pages = [json.loads(line) for line in path.read_text(encoding='utf-8').splitlines()]
-        print(json.dumps(search_pages(pages, args.query, args.plan, args.stage, max(1, args.limit)), ensure_ascii=False, indent=2))
+        print(json.dumps(search_pages(pages, args.query, args.plan, args.stage, max(1, args.limit), family=args.family), ensure_ascii=False, indent=2))

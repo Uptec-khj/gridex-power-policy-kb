@@ -1,5 +1,20 @@
 [
   {
+    "source": "energy-3-final",
+    "target": "renewable-5-final",
+    "type": "related_documents"
+  },
+  {
+    "source": "energy-3-final",
+    "target": "p10-final",
+    "type": "related_documents"
+  },
+  {
+    "source": "energy-3-final",
+    "target": "p11-amend",
+    "type": "related_documents"
+  },
+  {
     "source": "p10-demand",
     "target": "p10-final",
     "type": "related_documents"
@@ -478,6 +493,67 @@
     "source": "p12-launch",
     "target": "p12-forum45",
     "type": "next_document"
+  },
+  {
+    "source": "renewable-1-final-2026",
+    "target": "renewable-5-final",
+    "type": "related_documents"
+  },
+  {
+    "source": "renewable-1-final-2026",
+    "target": "p12-demand-draft-20260519",
+    "type": "related_documents"
+  },
+  {
+    "source": "renewable-1-final-2026",
+    "target": "p12-forum6",
+    "type": "related_documents"
+  },
+  {
+    "source": "renewable-1-final-2026",
+    "target": "t11-final",
+    "type": "related_documents"
+  },
+  {
+    "source": "renewable-1-final-2026",
+    "target": "tech-field-test-appendix6",
+    "type": "related_documents"
+  },
+  {
+    "target": "renewable-5-final",
+    "type": "references",
+    "source_url": "https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=324062&fileSeq=3#page=7",
+    "basis": "직전 기본계획 및 기존 1~5차 계획 평가를 수록한다. 계열 변경으로 이전/다음 버전 링크 대신 참조 관계를 기록한다.",
+    "source": "renewable-1-final-2026",
+    "interpretation_review_status": "unreviewed"
+  },
+  {
+    "source": "renewable-5-final",
+    "target": "energy-3-final",
+    "type": "related_documents"
+  },
+  {
+    "source": "renewable-5-final",
+    "target": "renewable-1-final-2026",
+    "type": "related_documents"
+  },
+  {
+    "source": "renewable-5-final",
+    "target": "p10-final",
+    "type": "related_documents"
+  },
+  {
+    "source": "renewable-5-final",
+    "target": "tech-field-test-appendix6",
+    "type": "related_documents"
+  },
+  {
+    "target": "energy-3-final",
+    "type": "uses_evidence",
+    "source_url": "https://www.knrec.or.kr/biz/introduce/file/File_down.do?file_nm=%28%EB%B3%84%EC%B2%A8%29%EC%A0%9C5%EC%B0%A8%20%EC%8B%A0%EC%9E%AC%EC%83%9D%EC%97%90%EB%84%88%EC%A7%80%20%EA%B8%B0%EB%B3%B8%EA%B3%84%ED%9A%8D.pdf#page=6",
+    "basis": "제3차 에너지기본계획의 목표 시나리오와 정합성을 확보했다고 명시한다.",
+    "source": "renewable-5-final",
+    "interpretation_review_status": "unreviewed"
   },
   {
     "source": "t10-explainer",

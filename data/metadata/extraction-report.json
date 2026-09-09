@@ -1,13 +1,13 @@
 {
   "schema_version": "1.0",
   "extraction_engine": "pypdf/6.12.1:layout-v1",
-  "document_count": 34,
-  "documents_with_pdf": 20,
-  "unique_pdf_count": 22,
-  "page_records": 534,
-  "searchable_pages": 534,
-  "empty_pages": 0,
-  "sparse_pages": 12,
+  "document_count": 37,
+  "documents_with_pdf": 23,
+  "unique_pdf_count": 25,
+  "page_records": 757,
+  "searchable_pages": 755,
+  "empty_pages": 2,
+  "sparse_pages": 28,
   "failed_files": 0,
   "documents_without_pdf": [
     "p10-draft",
@@ -26,6 +26,30 @@
     "tech-field-test-notice-202605"
   ],
   "files": [
+    {
+      "document_id": "energy-3-final",
+      "title": "제3차 에너지기본계획 전문 (KESIS 공식 재게시)",
+      "file_hash": "sha256:ea646eb07761fff06dbcefdc2759ff21a365357c01e57c2a6f11f07453168806",
+      "page_count": 117,
+      "empty_pages": [],
+      "sparse_pages": [
+        1,
+        4,
+        11,
+        25,
+        32,
+        34,
+        51,
+        69,
+        81,
+        99,
+        108,
+        113,
+        117
+      ],
+      "status": "extracted",
+      "error": null
+    },
     {
       "document_id": "p10-demand",
       "title": "다운로드",
@@ -199,6 +223,34 @@
       "page_count": 3,
       "empty_pages": [],
       "sparse_pages": [],
+      "status": "extracted",
+      "error": null
+    },
+    {
+      "document_id": "renewable-1-final-2026",
+      "title": "별첨 제1차 재생에너지 기본계획 전문",
+      "file_hash": "sha256:89b9841bf987c71e29a28c5fbea0e9c9b2569ab35f5f80e485cace31a0fe5f5d",
+      "page_count": 78,
+      "empty_pages": [
+        2,
+        4
+      ],
+      "sparse_pages": [
+        1,
+        61
+      ],
+      "status": "extracted",
+      "error": null
+    },
+    {
+      "document_id": "renewable-5-final",
+      "title": "제5차 신재생에너지 기본계획 전문 (한국에너지공단 공식 재게시)",
+      "file_hash": "sha256:25d568f54b708145cf92591a44520d9c4d7dd378430f3953155b53acaf261744",
+      "page_count": 28,
+      "empty_pages": [],
+      "sparse_pages": [
+        28
+      ],
       "status": "extracted",
       "error": null
     },

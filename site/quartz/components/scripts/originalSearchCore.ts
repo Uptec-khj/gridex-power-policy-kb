@@ -9,6 +9,7 @@ export interface EvidencePage {
   pdf_page: number
   printed_page: null
   plan_number: number | null
+  plan_family: string | null
   document_stage: string
   published_date: string | null
   citation_url: string
@@ -30,7 +31,7 @@ export function normalizeEvidence(text: string): string {
 export function rankEvidence(pages: EvidencePage[], query: string, plan = "", stage = "") {
   const terms = query.trim().split(/\s+/).map(normalizeEvidence).filter(Boolean)
   if (!terms.length) return []
-  return pages.filter(p => p.text && (!plan || (plan === "technical" ? p.plan_number === null : String(p.plan_number) === plan)) && (!stage || p.document_stage === stage))
+  return pages.filter(p => p.text && (!plan || (plan === "technical" ? p.plan_number === null : plan.startsWith("family:") ? p.plan_family === plan.slice(7) : String(p.plan_number) === plan)) && (!stage || p.document_stage === stage))
     .map(page => {
       const title = normalizeEvidence(page.title), body = normalizeEvidence(page.text)
       const score = terms.every(t => title.includes(t) || body.includes(t))

@@ -36,6 +36,21 @@ class TechnicalSchemaTests(unittest.TestCase):
         note = {**self.technical, 'typed_relations': [{'target': '[[p11-final]]', 'type': 'references'}]}
         self.assertTrue(list(self.validator.iter_errors(note)))
 
+    def test_new_plan_families_are_valid(self):
+        for key in ('energy-3-final', 'renewable-5-final', 'renewable-1-final-2026'):
+            note, _ = read_note(ROOT / f'content/documents/{key}.md')
+            self.assertEqual(list(self.validator.iter_errors(note)), [])
+
+    def test_number_must_belong_to_its_plan_family(self):
+        note, _ = read_note(ROOT / 'content/documents/energy-3-final.md')
+        self.assertTrue(list(self.validator.iter_errors({**note, 'plan_number': 10})))
+        self.assertTrue(list(self.validator.iter_errors({**self.plan, 'plan_number': 3})))
+
+    def test_renewable_family_is_not_legacy_sixth_plan(self):
+        note, _ = read_note(ROOT / 'content/documents/renewable-1-final-2026.md')
+        self.assertTrue(list(self.validator.iter_errors({**note, 'plan_number': 6})))
+        self.assertTrue(list(self.validator.iter_errors({**note, 'category': '전력수급계획'})))
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -15,6 +15,8 @@ sources:
   scope:
   - 전력수급기본계획-10
   - 전력수급기본계획-11
+  - 에너지기본계획
+  - 신재생에너지기본계획
   notes: 발행 당시 기관명 보존. 현재 도메인과 발행기관은 동일 개념이 아니다.
 - id: mcee
   organization: 기후에너지환경부
@@ -29,6 +31,7 @@ sources:
   scope:
   - 전력수급기본계획-11-후속이행
   - 전력수급기본계획-12
+  - 재생에너지기본계획
   notes: 이관된 보도자료의 boardMasterId=939 경로를 확인. 세션 식별자는 저장하지 않는다.
 - id: kpx
   organization: 전력거래소
@@ -84,3 +87,31 @@ sources:
   - 전기사업법
   - 전기사업법시행령
   notes: 현행 링크와 문서 발표 당시 시행 법령을 구분. 자동 법률 해석 제외.
+- id: keei
+  organization: 에너지경제연구원
+  authority: official_agency
+  homepage: https://www.keei.re.kr
+  allowed_domains:
+  - www.keei.re.kr
+  - keei.re.kr
+  - kesis.keei.re.kr
+  adapter: manual
+  priority: 1
+  scope:
+  - 에너지기본계획
+  - 장기에너지수요전망
+  notes: 정부 계획 공식 재게시. KESIS 등록일과 정부 확정·발행일 구분.
+- id: kea-renewable
+  organization: 한국에너지공단 신·재생에너지센터
+  authority: official_agency
+  homepage: https://www.knrec.or.kr
+  allowed_domains:
+  - www.knrec.or.kr
+  - knrec.or.kr
+  - www.energy.or.kr
+  adapter: manual
+  priority: 1
+  scope:
+  - 신재생에너지기본계획
+  - 재생에너지기본계획
+  notes: 기존 신재생 계획 자료실과 신규 재생 계획을 구분. 관찰한 파일 링크만 수집.
