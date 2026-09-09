@@ -2,8 +2,8 @@ import { QuartzComponent, QuartzComponentConstructor } from "./types"
 
 const stages: Record<string, string> = {
   final: "확정 계획", amended: "수정 공고", working_draft: "실무안",
-  draft: "초안", consultation: "의견수렴·토론회", announced: "수립 착수",
-  supporting: "지원·수요전망", press_release: "공식 발표자료", official_explainer: "기관 해설",
+  draft: "초안", consultation: "의견수렴·토론회", announced: "수립 절차",
+  supporting: "공식 보조자료", press_release: "공식 발표자료", official_explainer: "기관 해설",
 }
 
 export default (() => {

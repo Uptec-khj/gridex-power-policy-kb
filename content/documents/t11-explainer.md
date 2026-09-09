@@ -20,6 +20,7 @@ related_documents:
 - '[[p11-final]]'
 - '[[p11-amend]]'
 - '[[t10-explainer]]'
+- '[[t11-final]]'
 previous_document: '[[t10-explainer]]'
 next_document: null
 collected_date: '2026-09-09'
@@ -74,8 +75,8 @@ date: null
 
 | 지표·연도 | 값 | 단위 | 범위·기준·쪽수 | 근거 |
 | --- | --- | --- | --- | --- |
-| 2038년 송전선로 목표 | 61,183 | c-km | 사보 본문·계획 원문 대조 필요 | [출처](https://www.kepco.co.kr/KEPCO_FILE/html/2025_12/special1.html) |
-| 2038년 변전소 목표 | 1,297 | 개 | 사보 본문·계획 원문 대조 필요 | [출처](https://www.kepco.co.kr/KEPCO_FILE/html/2025_12/special1.html) |
+| 2038년 송전선로 목표 | 61,183 | c-km | 사보 본문 · 계획 PDF p.14 총량과 일치(AI 대조) | [출처](https://www.kepco.co.kr/KEPCO_FILE/html/2025_12/special1.html) |
+| 2038년 변전소 목표 | 1,297 | 개 | 사보 본문 · 계획 PDF p.14 총량과 일치(AI 대조) | [출처](https://www.kepco.co.kr/KEPCO_FILE/html/2025_12/special1.html) |
 
 ## 주요 정책 변화
 
@@ -88,6 +89,8 @@ date: null
 전체 흐름: [[timeline|정책 Timeline]]
 
 ## 관련 문서
+
+- [[t11-final|제11차 장기 송변전설비계획 전문]] — 후속 수집에서 원본 확보. 이 페이지는 사보 해설로 유지합니다.
 
 - [[p11-final|제11차 전력수급기본계획 최초 공고]]
 - [[p11-amend|제11차 전력수급기본계획 수정 공고]]

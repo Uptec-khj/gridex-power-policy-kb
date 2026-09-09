@@ -73,3 +73,97 @@ documents:
   source_url: https://www.kepco.co.kr/KEPCO_FILE/html/2025_12/special1.html
   expected_text: 제11차 장기 송변전설비계획
   attachments: []
+- id: t10-final
+  source_id: kepco
+  title: 제10차 장기 송변전설비계획 2022–2036
+  source_url: https://www.kepco.co.kr/home/media/newsroom/pr/boardView.do?boardMngNo=15&boardNo=447
+  expected_text: 장기 송변전설비계획
+  attachments:
+  - url: https://www.kepco.co.kr/c2r/FileDownload.do?fileNo=P%2FvVfXe7XHnAbYRUs7gDfw%3D%3D&fileSeq=DIMtNyzfJ3kKEXQCksqfEQ%3D%3D
+    title: 다운로드
+- id: t11-final
+  source_id: kepco
+  title: 제11차 장기 송변전설비계획 2024–2038
+  source_url: https://www.kepco.co.kr/home/media/newsroom/pr/boardView.do?boardMngNo=15&boardNo=2904
+  expected_text: 장기 송변전설비계획
+  attachments:
+  - url: https://www.kepco.co.kr/c2r/FileDownload.do?fileNo=bQSK6KNFNAG9cfWeYpeHWA%3D%3D&fileSeq=Snw2%2Bh9Sw1L2yimBGsLgBA%3D%3D
+    title: 다운로드
+- id: t11-release
+  source_id: kepco
+  title: 제11차 장기 송변전설비계획 수립 발표 보도자료
+  source_url: https://www.kepco.co.kr/home/media/newsroom/pr/boardView.do?boardMngNo=15&boardNo=2904
+  expected_text: 장기 송변전설비계획
+  attachments:
+  - url: https://www.kepco.co.kr/c2r/FileDownload.do?fileNo=bQSK6KNFNAG9cfWeYpeHWA%3D%3D&fileSeq=DIMtNyzfJ3kKEXQCksqfEQ%3D%3D
+    title: 다운로드
+- id: p10-hearing
+  source_id: motie-archive
+  title: 제10차 전력수급기본계획 수립 공청회 개최 공고
+  source_url: https://www.motir.go.kr/kor/article/ATCLc01b2801b/68020/view
+  expected_text: 전력수급기본계획
+- id: p10-sea-draft
+  source_id: motie-archive
+  title: 제10차 전력수급기본계획 전략환경영향평가서 행정예고
+  source_url: https://www.motir.go.kr/kor/article/ATCLc01b2801b/67954/view
+  expected_text: 전력수급기본계획
+- id: p10-sea-scope
+  source_id: motie-archive
+  title: 제10차 전력수급기본계획 전략환경영향평가 항목 결정내용 공개
+  source_url: https://www.motir.go.kr/kor/article/ATCLc01b2801b/67906/view
+  expected_text: 전력수급기본계획
+- id: p11-hearing
+  source_id: motie-archive
+  title: 제11차 전력수급기본계획 수립 공청회 개최 공고
+  source_url: https://www.motir.go.kr/kor/article/ATCLc01b2801b/69720/view
+  expected_text: 전력수급기본계획
+- id: p11-sea-draft
+  source_id: motie-archive
+  title: 제11차 전력수급기본계획 전략환경영향평가서 행정예고
+  source_url: https://www.motir.go.kr/kor/article/ATCLc01b2801b/69589/view
+  expected_text: 전력수급기본계획
+- id: p11-sea-scope
+  source_id: motie-archive
+  title: 제11차 전력수급기본계획 전략환경영향평가 항목 결정내용 공개
+  source_url: https://www.motir.go.kr/kor/article/ATCLc01b2801b/69540/view
+  expected_text: 전력수급기본계획
+- id: p11-committee
+  source_id: motie-archive
+  title: 제11차 전력수급기본계획 총괄위원회 첫 회의
+  source_url: https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/167618/view
+  expected_text: 전기본
+- id: p12-forum3
+  source_id: mcee
+  title: 제12차 전기본 제3차 전력수요 전망 정책토론회 안내
+  source_url: https://www.mcee.go.kr/home/web/board/read.do?boardId=1858100&boardMasterId=939&menuId=10598
+  expected_text: 전력수급기본계획
+- id: p12-forum7
+  source_id: mcee
+  title: 제12차 전기본 제7차 석탄발전 조기폐지 정책토론회 안내
+  source_url: https://www.mcee.go.kr/home/web/board/read.do?boardId=1889590&boardMasterId=939&menuId=10598
+  expected_text: 전기본
+- id: p12-forum1
+  source_id: mcee
+  title: 제12차 계획 관련 제1차 에너지믹스 정책토론회 안내
+  source_url: https://www.mcee.go.kr/home/web/board/read.do?boardId=1830350&boardMasterId=939&menuId=10598
+  expected_text: 에너지믹스
+- id: p12-committee
+  source_id: mcee
+  title: 제12차 전력수급기본계획 제1차 총괄위원회 개최 안내
+  source_url: https://www.mcee.go.kr/home/web/board/read.do?boardId=1826720&boardMasterId=939&menuId=10598
+  expected_text: 전기본
+- id: p11-implementation
+  source_id: mcee
+  title: 제11차 신규원전 건설 계획대로 추진 발표
+  source_url: https://www.mcee.go.kr/home/web/board/read.do?boardId=1837310&boardMasterId=939&menuId=10598
+  expected_text: 전기본
+- id: p11-poll
+  source_id: mcee
+  title: 제11차 신규원전 계획 관련 대국민 여론조사 결과 발표
+  source_url: https://www.mcee.go.kr/home/web/board/read.do?boardId=1836550&boardMasterId=939&menuId=10598
+  expected_text: 전기본
+- id: p10-draft
+  source_id: motie-archive
+  title: 제10차 전력수급기본계획 총괄분과위 실무안 공개
+  source_url: https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/165956/view
+  expected_text: 총괄분과위 실무안 공개

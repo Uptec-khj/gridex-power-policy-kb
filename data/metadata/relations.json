@@ -15,6 +15,26 @@
     "type": "next_document"
   },
   {
+    "source": "p10-draft",
+    "target": "p10-final",
+    "type": "related_documents"
+  },
+  {
+    "source": "p10-draft",
+    "target": "p10-demand",
+    "type": "related_documents"
+  },
+  {
+    "source": "p10-draft",
+    "target": "p10-sea-scope",
+    "type": "related_documents"
+  },
+  {
+    "source": "p10-draft",
+    "target": "p10-hearing",
+    "type": "related_documents"
+  },
+  {
     "source": "p10-final",
     "target": "p10-release",
     "type": "related_documents"
@@ -35,13 +55,58 @@
     "type": "related_documents"
   },
   {
-    "source": "p10-release",
-    "target": "p10-final",
+    "source": "p10-hearing",
+    "target": "p10-draft",
+    "type": "related_documents"
+  },
+  {
+    "source": "p10-hearing",
+    "target": "p10-sea-draft",
+    "type": "related_documents"
+  },
+  {
+    "source": "p10-hearing",
+    "target": "p10-release",
     "type": "related_documents"
   },
   {
     "source": "p10-release",
+    "target": "p10-final",
+    "type": "related_documents"
+  },
+  {
+    "source": "p10-release",
     "target": "p10-demand",
+    "type": "related_documents"
+  },
+  {
+    "source": "p10-sea-draft",
+    "target": "p10-sea-scope",
+    "type": "related_documents"
+  },
+  {
+    "source": "p10-sea-draft",
+    "target": "p10-hearing",
+    "type": "related_documents"
+  },
+  {
+    "source": "p10-sea-draft",
+    "target": "p10-final",
+    "type": "related_documents"
+  },
+  {
+    "source": "p10-sea-scope",
+    "target": "p10-draft",
+    "type": "related_documents"
+  },
+  {
+    "source": "p10-sea-scope",
+    "target": "p10-sea-draft",
+    "type": "related_documents"
+  },
+  {
+    "source": "p10-sea-scope",
+    "target": "p10-final",
     "type": "related_documents"
   },
   {
@@ -68,6 +133,21 @@
     "source": "p11-amend",
     "target": "p11-final",
     "type": "previous_document"
+  },
+  {
+    "source": "p11-committee",
+    "target": "p10-final",
+    "type": "related_documents"
+  },
+  {
+    "source": "p11-committee",
+    "target": "p11-draft",
+    "type": "related_documents"
+  },
+  {
+    "source": "p11-committee",
+    "target": "p12-committee",
+    "type": "related_documents"
   },
   {
     "source": "p11-demand",
@@ -150,6 +230,56 @@
     "type": "next_document"
   },
   {
+    "source": "p11-hearing",
+    "target": "p11-draft",
+    "type": "related_documents"
+  },
+  {
+    "source": "p11-hearing",
+    "target": "p11-sea-draft",
+    "type": "related_documents"
+  },
+  {
+    "source": "p11-hearing",
+    "target": "p11-release",
+    "type": "related_documents"
+  },
+  {
+    "source": "p11-implementation",
+    "target": "p11-amend",
+    "type": "related_documents"
+  },
+  {
+    "source": "p11-implementation",
+    "target": "p11-poll",
+    "type": "related_documents"
+  },
+  {
+    "source": "p11-implementation",
+    "target": "p12-forum1",
+    "type": "related_documents"
+  },
+  {
+    "source": "p11-implementation",
+    "target": "p12-committee",
+    "type": "related_documents"
+  },
+  {
+    "source": "p11-poll",
+    "target": "p11-amend",
+    "type": "related_documents"
+  },
+  {
+    "source": "p11-poll",
+    "target": "p12-forum1",
+    "type": "related_documents"
+  },
+  {
+    "source": "p11-poll",
+    "target": "p11-implementation",
+    "type": "related_documents"
+  },
+  {
     "source": "p11-release",
     "target": "p11-draft",
     "type": "related_documents"
@@ -162,6 +292,96 @@
   {
     "source": "p11-release",
     "target": "p11-amend",
+    "type": "related_documents"
+  },
+  {
+    "source": "p11-sea-draft",
+    "target": "p11-sea-scope",
+    "type": "related_documents"
+  },
+  {
+    "source": "p11-sea-draft",
+    "target": "p11-hearing",
+    "type": "related_documents"
+  },
+  {
+    "source": "p11-sea-draft",
+    "target": "p11-final",
+    "type": "related_documents"
+  },
+  {
+    "source": "p11-sea-scope",
+    "target": "p11-draft",
+    "type": "related_documents"
+  },
+  {
+    "source": "p11-sea-scope",
+    "target": "p11-sea-draft",
+    "type": "related_documents"
+  },
+  {
+    "source": "p11-sea-scope",
+    "target": "p11-final",
+    "type": "related_documents"
+  },
+  {
+    "source": "p12-committee",
+    "target": "p12-launch",
+    "type": "related_documents"
+  },
+  {
+    "source": "p12-committee",
+    "target": "p11-committee",
+    "type": "related_documents"
+  },
+  {
+    "source": "p12-committee",
+    "target": "p12-forum1",
+    "type": "related_documents"
+  },
+  {
+    "source": "p12-committee",
+    "target": "p11-implementation",
+    "type": "related_documents"
+  },
+  {
+    "source": "p12-forum1",
+    "target": "p12-committee",
+    "type": "related_documents"
+  },
+  {
+    "source": "p12-forum1",
+    "target": "p11-poll",
+    "type": "related_documents"
+  },
+  {
+    "source": "p12-forum1",
+    "target": "p11-implementation",
+    "type": "related_documents"
+  },
+  {
+    "source": "p12-forum1",
+    "target": "p12-forum3",
+    "type": "related_documents"
+  },
+  {
+    "source": "p12-forum3",
+    "target": "p12-launch",
+    "type": "related_documents"
+  },
+  {
+    "source": "p12-forum3",
+    "target": "p12-forum1",
+    "type": "related_documents"
+  },
+  {
+    "source": "p12-forum3",
+    "target": "p12-forum45",
+    "type": "related_documents"
+  },
+  {
+    "source": "p12-forum3",
+    "target": "p11-demand",
     "type": "related_documents"
   },
   {
@@ -205,6 +425,26 @@
     "type": "previous_document"
   },
   {
+    "source": "p12-forum7",
+    "target": "p12-launch",
+    "type": "related_documents"
+  },
+  {
+    "source": "p12-forum7",
+    "target": "p12-forum3",
+    "type": "related_documents"
+  },
+  {
+    "source": "p12-forum7",
+    "target": "p12-forum45",
+    "type": "related_documents"
+  },
+  {
+    "source": "p12-forum7",
+    "target": "p12-forum6",
+    "type": "related_documents"
+  },
+  {
     "source": "p12-launch",
     "target": "p11-amend",
     "type": "related_documents"
@@ -236,8 +476,33 @@
   },
   {
     "source": "t10-explainer",
+    "target": "t10-final",
+    "type": "related_documents"
+  },
+  {
+    "source": "t10-explainer",
     "target": "t11-explainer",
     "type": "next_document"
+  },
+  {
+    "source": "t10-final",
+    "target": "p10-final",
+    "type": "related_documents"
+  },
+  {
+    "source": "t10-final",
+    "target": "p10-demand",
+    "type": "related_documents"
+  },
+  {
+    "source": "t10-final",
+    "target": "t10-explainer",
+    "type": "related_documents"
+  },
+  {
+    "source": "t10-final",
+    "target": "t11-final",
+    "type": "related_documents"
   },
   {
     "source": "t11-explainer",
@@ -256,7 +521,57 @@
   },
   {
     "source": "t11-explainer",
+    "target": "t11-final",
+    "type": "related_documents"
+  },
+  {
+    "source": "t11-explainer",
     "target": "t10-explainer",
     "type": "previous_document"
+  },
+  {
+    "source": "t11-final",
+    "target": "p11-final",
+    "type": "related_documents"
+  },
+  {
+    "source": "t11-final",
+    "target": "p11-amend",
+    "type": "related_documents"
+  },
+  {
+    "source": "t11-final",
+    "target": "p11-demand",
+    "type": "related_documents"
+  },
+  {
+    "source": "t11-final",
+    "target": "t10-final",
+    "type": "related_documents"
+  },
+  {
+    "source": "t11-final",
+    "target": "t11-release",
+    "type": "related_documents"
+  },
+  {
+    "source": "t11-final",
+    "target": "t11-explainer",
+    "type": "related_documents"
+  },
+  {
+    "source": "t11-release",
+    "target": "t11-final",
+    "type": "related_documents"
+  },
+  {
+    "source": "t11-release",
+    "target": "t10-final",
+    "type": "related_documents"
+  },
+  {
+    "source": "t11-release",
+    "target": "p11-amend",
+    "type": "related_documents"
   }
 ]

@@ -16,6 +16,11 @@ spec.loader.exec_module(kb)
 
 
 class SourceSafetyTests(unittest.TestCase):
+    def test_kepco_opaque_ids_preserve_plus_and_slash(self):
+        from urllib.parse import parse_qs, urlparse
+        result = discover("<a href=\"javascript:G_FILE.downloadFile('a/b+c==','d+e/f==');\">plan</a>", "https://www.kepco.co.kr/home/media/newsroom/pr/boardView.do")
+        self.assertEqual(parse_qs(urlparse(result[0]["url"]).query), {"fileNo": ["a/b+c=="], "fileSeq": ["d+e/f=="]})
+
     def test_html_error_is_not_a_pdf(self):
         with self.assertRaisesRegex(ValueError, "not a supported"):
             detect_type(b"<!DOCTYPE html><title>Download error</title>")

@@ -19,6 +19,7 @@ attachment_url: null
 related_documents:
 - '[[p10-final]]'
 - '[[t11-explainer]]'
+- '[[t10-final]]'
 previous_document: null
 next_document: '[[t11-explainer]]'
 collected_date: '2026-09-09'
@@ -67,7 +68,7 @@ date: null
 
 ## 핵심 내용
 
-기존 전력망 사업과 제10차 설비계획 이후 보강 필요성을 설명한다. 원본 계획의 상세 설비 목록은 미확보 상태다. [원문 근거](https://home.kepco.co.kr/kepco/front/html/WZ/2025_02/heritage.html)
+기존 전력망 사업과 제10차 설비계획 이후 보강 필요성을 설명한다. 후속 수집에서 확보한 계획 전문과 상세 설비 목록은 [[t10-final|제10차 장기 송변전설비계획]]에서 확인할 수 있다. [원문 근거](https://home.kepco.co.kr/kepco/front/html/WZ/2025_02/heritage.html)
 
 ## 핵심 수치
 
@@ -84,6 +85,8 @@ date: null
 전체 흐름: [[timeline|정책 Timeline]]
 
 ## 관련 문서
+
+- [[t10-final|제10차 장기 송변전설비계획 전문]] — 후속 수집에서 원본 확보. 이 페이지는 사보 해설로 유지합니다.
 
 - [[p10-final|제10차 전력수급기본계획]]
 - [[t11-explainer|한국전력 사보 탄소중립과 전력망 2025년 12월]]

@@ -1,5 +1,37 @@
 [
   {
+    "date": "2022-08-30",
+    "label": "제10차 전력수급기본계획 총괄분과위 실무안 공개 공개",
+    "status": "publication",
+    "source_url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/165956/view",
+    "document_id": "p10-draft",
+    "title": "제10차 전력수급기본계획 총괄분과위 실무안 공개"
+  },
+  {
+    "date": "2022-09-15",
+    "label": "제10차 전력수급기본계획 전략환경영향평가 항목 결정내용 공개 공개",
+    "status": "publication",
+    "source_url": "https://www.motir.go.kr/kor/article/ATCLc01b2801b/67906/view",
+    "document_id": "p10-sea-scope",
+    "title": "제10차 전력수급기본계획 전략환경영향평가 항목 결정내용 공개"
+  },
+  {
+    "date": "2022-09-30",
+    "label": "제10차 전력수급기본계획 전략환경영향평가서 행정예고 공개",
+    "status": "publication",
+    "source_url": "https://www.motir.go.kr/kor/article/ATCLc01b2801b/67954/view",
+    "document_id": "p10-sea-draft",
+    "title": "제10차 전력수급기본계획 전략환경영향평가서 행정예고"
+  },
+  {
+    "date": "2022-11-14",
+    "label": "제10차 전력수급기본계획 수립 공청회 개최 공고 공개",
+    "status": "publication",
+    "source_url": "https://www.motir.go.kr/kor/article/ATCLc01b2801b/68020/view",
+    "document_id": "p10-hearing",
+    "title": "제10차 전력수급기본계획 수립 공청회 개최 공고"
+  },
+  {
     "date": "2023-01-12",
     "label": "확정 참고자료 등록",
     "status": "publication",
@@ -24,12 +56,52 @@
     "title": "장기 전력수요전망 2022-2036"
   },
   {
+    "date": "2023-05-08",
+    "label": "제10차 장기 송변전설비계획 2022–2036 공개",
+    "status": "publication",
+    "source_url": "https://www.kepco.co.kr/home/media/newsroom/pr/boardView.do?boardMngNo=15&boardNo=447",
+    "document_id": "t10-final",
+    "title": "제10차 장기 송변전설비계획 2022–2036"
+  },
+  {
+    "date": "2023-07-27",
+    "label": "제11차 전력수급기본계획 총괄위원회 첫 회의 공개",
+    "status": "publication",
+    "source_url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/167618/view",
+    "document_id": "p11-committee",
+    "title": "제11차 전력수급기본계획 총괄위원회 첫 회의"
+  },
+  {
     "date": "2024-05-31",
     "label": "실무안 공개",
     "status": "publication",
     "source_url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/169132/view",
     "document_id": "p11-draft",
     "title": "제11차 전력수급기본계획 실무안 공개"
+  },
+  {
+    "date": "2024-06-21",
+    "label": "제11차 전력수급기본계획 전략환경영향평가 항목 결정내용 공개 공개",
+    "status": "publication",
+    "source_url": "https://www.motir.go.kr/kor/article/ATCLc01b2801b/69540/view",
+    "document_id": "p11-sea-scope",
+    "title": "제11차 전력수급기본계획 전략환경영향평가 항목 결정내용 공개"
+  },
+  {
+    "date": "2024-07-10",
+    "label": "제11차 전력수급기본계획 전략환경영향평가서 행정예고 공개",
+    "status": "publication",
+    "source_url": "https://www.motir.go.kr/kor/article/ATCLc01b2801b/69589/view",
+    "document_id": "p11-sea-draft",
+    "title": "제11차 전력수급기본계획 전략환경영향평가서 행정예고"
+  },
+  {
+    "date": "2024-09-12",
+    "label": "제11차 전력수급기본계획 수립 공청회 개최 공고 공개",
+    "status": "publication",
+    "source_url": "https://www.motir.go.kr/kor/article/ATCLc01b2801b/69720/view",
+    "document_id": "p11-hearing",
+    "title": "제11차 전력수급기본계획 수립 공청회 개최 공고"
   },
   {
     "date": "2025-02-21",
@@ -64,12 +136,84 @@
     "title": "제11차 전력수급기본계획 수정 공고"
   },
   {
+    "date": "2025-05-27",
+    "label": "제11차 장기 송변전설비계획 2024–2038 공개",
+    "status": "publication",
+    "source_url": "https://www.kepco.co.kr/home/media/newsroom/pr/boardView.do?boardMngNo=15&boardNo=2904",
+    "document_id": "t11-final",
+    "title": "제11차 장기 송변전설비계획 2024–2038"
+  },
+  {
+    "date": "2025-05-27",
+    "label": "제11차 장기 송변전설비계획 수립 발표 보도자료 공개",
+    "status": "publication",
+    "source_url": "https://www.kepco.co.kr/home/media/newsroom/pr/boardView.do?boardMngNo=15&boardNo=2904",
+    "document_id": "t11-release",
+    "title": "제11차 장기 송변전설비계획 수립 발표 보도자료"
+  },
+  {
     "date": "2025-11-27",
     "label": "수립 착수 발표",
     "status": "publication",
     "source_url": "https://www.mcee.go.kr/home/web/board/read.do?boardId=1823520&boardMasterId=939&menuId=10598",
     "document_id": "p12-launch",
     "title": "제12차 전력수급기본계획 수립 착수"
+  },
+  {
+    "date": "2025-12-09",
+    "label": "제12차 전력수급기본계획 제1차 총괄위원회 개최 안내 공개",
+    "status": "publication",
+    "source_url": "https://www.mcee.go.kr/home/web/board/read.do?boardId=1826720&boardMasterId=939&menuId=10598",
+    "document_id": "p12-committee",
+    "title": "제12차 전력수급기본계획 제1차 총괄위원회 개최 안내"
+  },
+  {
+    "date": "2025-12-22",
+    "label": "제12차 계획 관련 제1차 에너지믹스 정책토론회 안내 공개",
+    "status": "publication",
+    "source_url": "https://www.mcee.go.kr/home/web/board/read.do?boardId=1830350&boardMasterId=939&menuId=10598",
+    "document_id": "p12-forum1",
+    "title": "제12차 계획 관련 제1차 에너지믹스 정책토론회 안내"
+  },
+  {
+    "date": "2025-12-30",
+    "label": "제1차 에너지믹스 토론회 예정(안내문 기준)",
+    "status": "scheduled",
+    "source_url": "https://www.mcee.go.kr/home/web/board/read.do?boardId=1830350&boardMasterId=939&menuId=10598",
+    "document_id": "p12-forum1",
+    "title": "제12차 계획 관련 제1차 에너지믹스 정책토론회 안내"
+  },
+  {
+    "date": "2026-01-21",
+    "label": "제11차 신규원전 계획 관련 대국민 여론조사 결과 발표 공개",
+    "status": "publication",
+    "source_url": "https://www.mcee.go.kr/home/web/board/read.do?boardId=1836550&boardMasterId=939&menuId=10598",
+    "document_id": "p11-poll",
+    "title": "제11차 신규원전 계획 관련 대국민 여론조사 결과 발표"
+  },
+  {
+    "date": "2026-01-26",
+    "label": "제11차 신규원전 건설 계획대로 추진 발표 공개",
+    "status": "publication",
+    "source_url": "https://www.mcee.go.kr/home/web/board/read.do?boardId=1837310&boardMasterId=939&menuId=10598",
+    "document_id": "p11-implementation",
+    "title": "제11차 신규원전 건설 계획대로 추진 발표"
+  },
+  {
+    "date": "2026-04-17",
+    "label": "제12차 전기본 제3차 전력수요 전망 정책토론회 안내 공개",
+    "status": "publication",
+    "source_url": "https://www.mcee.go.kr/home/web/board/read.do?boardId=1858100&boardMasterId=939&menuId=10598",
+    "document_id": "p12-forum3",
+    "title": "제12차 전기본 제3차 전력수요 전망 정책토론회 안내"
+  },
+  {
+    "date": "2026-04-22",
+    "label": "제3차 수요전망 토론회 예정(안내문 기준)",
+    "status": "scheduled",
+    "source_url": "https://www.mcee.go.kr/home/web/board/read.do?boardId=1858100&boardMasterId=939&menuId=10598",
+    "document_id": "p12-forum3",
+    "title": "제12차 전기본 제3차 전력수요 전망 정책토론회 안내"
   },
   {
     "date": "2026-08-15",
@@ -102,5 +246,21 @@
     "source_url": "https://www.mcee.go.kr/home/web/board/read.do?boardId=1884910&boardMasterId=939&menuId=10598",
     "document_id": "p12-forum6",
     "title": "제12차 전기본 제6차 재생에너지 정책토론회 개최 안내"
+  },
+  {
+    "date": "2026-09-09",
+    "label": "제12차 전기본 제7차 석탄발전 조기폐지 정책토론회 안내 공개",
+    "status": "publication",
+    "source_url": "https://www.mcee.go.kr/home/web/board/read.do?boardId=1889590&boardMasterId=939&menuId=10598",
+    "document_id": "p12-forum7",
+    "title": "제12차 전기본 제7차 석탄발전 조기폐지 정책토론회 안내"
+  },
+  {
+    "date": "2026-09-18",
+    "label": "제7차 석탄발전 조기폐지 토론회 개최 예정",
+    "status": "scheduled",
+    "source_url": "https://www.mcee.go.kr/home/web/board/read.do?boardId=1889590&boardMasterId=939&menuId=10598",
+    "document_id": "p12-forum7",
+    "title": "제12차 전기본 제7차 석탄발전 조기폐지 정책토론회 안내"
   }
 ]

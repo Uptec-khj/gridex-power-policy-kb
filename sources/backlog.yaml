@@ -5,61 +5,91 @@ mvp_target:
   maximum_documents: 50
   counting_rule: 서로 다른 공식 자료만 계산. 파일 형식 차이와 탐색 허브 제외.
 items:
-  - id: transmission-10-original
-    priority: P0
-    title: 제10차 장기 송변전설비계획 공식 전문
-    organization: 한국전력공사
-    status: access_failed
-    candidate_url: https://home.kepco.co.kr/kepco/PR/ntcob/ntcobView.do?boardCd=BRD_000117&boardSeq=21061873&menuCd=FN06030103&pageIndex=1
-    next_action: 현재 한전 게시판의 이관 경로 확인 후 원문 다운로드 및 공고일 대조
-    notes: 후보 URL은 원문 진위·본문 미검증. 사보 해설로 전문을 대체하지 않음.
-  - id: transmission-11-original
-    priority: P0
-    title: 제11차 장기 송변전설비계획 공식 전문과 발표자료
-    organization: 한국전력공사
-    status: discovery_pending
-    candidate_url: null
-    next_action: 한전 공식 자료실에서 원문·첨부 주소 확인
-  - id: motir-downloads
-    priority: P0
-    title: 산업부 첨부 오류 재확인
-    status: retry_pending
-    document_ids: [p10-release, p11-draft, p11-release, p11-final, p11-amend]
-    next_action: 획득 이력의 실패 URL 재확인, 정부·KPX 공식 보존 경로 대조
-  - id: amendment-diff
-    priority: P0
-    title: 제11차 최초 공고·수정 공고 비교
-    status: original_required
-    document_ids: [p11-final, p11-amend]
-    next_action: 최초 공고 당시 원본 확보 후 표·숫자·본문 비교 및 사람 검수
-  - id: p12-briefing
-    priority: P1
-    title: 제12차 추진 방향 브리핑 원문
-    status: discovery_pending
-    candidate_url: null
-    next_action: 기후부 2026-01-26 브리핑 전문과 첨부 확인; 사진자료와 구분
-  - id: p12-forum1-3
-    priority: P1
-    title: 제12차 1·2·3차 토론회 공식 발표·수요전망 자료
-    status: discovery_pending
-    next_action: 2025-12-30, 2026-01-07, 2026-04-22 행사의 공식 공지·발표·결과를 각각 확인
-  - id: p12-forum4-6-presentations
-    priority: P0
-    title: 제12차 4·5·6차 실제 발표자료와 토론 결과
-    status: discovery_pending
-    next_action: 현재 보유한 개최 예고와 실제 수요·재생에너지 잠정안 구분
-  - id: p12-latest
-    priority: P1
-    title: 제12차 추가 공개자료 확인
-    status: research_pending
-    next_action: 2026-09-09 이후 및 조사에서 누락된 공식 공청회·평가·실무안·공고 조사
-  - id: mvp-expansion
-    priority: P1
-    title: 총 30~50개 공식 문서로 확장
-    status: planned
-    next_action: 10·11차 수립착수·공청회·전략환경영향평가·수요전망 설명자료, 12차 공개자료 중 직접 관련 문서만 선별
-  - id: human-review
-    priority: P0
-    title: 초기 콘텐츠 사람 검수 및 원문별 권리 확인
-    status: pending
-    next_action: 발행일·버전·수치·요약·링크·이용조건 대조 후 reviewed_by와 reviewed_date 기록
+- id: transmission-10-original
+  priority: P0
+  title: 제10차 장기 송변전설비계획 공식 전문
+  organization: 한국전력공사
+  status: collected
+  candidate_url: https://www.kepco.co.kr/home/media/newsroom/pr/boardView.do?boardMngNo=15&boardNo=447
+  next_action: 설비별 목록·준공 일정·원문 이용조건 및 사람 검수
+  notes: 새 공식 게시판에서 계획 PDF 확보. 표지 월호와 등록일 구분. 핵심 설비 총량·증가분 표 대조 완료(AI).
+  document_ids:
+  - t10-final
+- id: transmission-11-original
+  priority: P0
+  title: 제11차 장기 송변전설비계획 공식 전문과 발표자료
+  organization: 한국전력공사
+  status: collected
+  candidate_url: https://www.kepco.co.kr/home/media/newsroom/pr/boardView.do?boardMngNo=15&boardNo=2904
+  next_action: 설비별 목록·준공 일정·원문 이용조건 및 사람 검수
+  document_ids:
+  - t11-final
+  notes: 새 공식 게시판에서 계획 PDF 확보. 표지 월호와 등록일 구분. 핵심 설비 총량·증가분 표 대조 완료(AI).
+- id: motir-downloads
+  priority: P0
+  title: 산업부 첨부 오류 재확인
+  status: retry_pending
+  document_ids:
+  - p10-release
+  - p11-draft
+  - p11-release
+  - p11-final
+  - p11-amend
+  - p10-draft
+  - p10-hearing
+  - p10-sea-draft
+  - p10-sea-scope
+  - p11-committee
+  - p11-hearing
+  - p11-sea-draft
+  - p11-sea-scope
+  next_action: 획득 이력의 실패 URL 재확인, 정부·KPX 공식 보존 경로 대조
+- id: amendment-diff
+  priority: P0
+  title: 제11차 최초 공고·수정 공고 비교
+  status: original_required
+  document_ids:
+  - p11-final
+  - p11-amend
+  next_action: 최초 공고 당시 원본 확보 후 표·숫자·본문 비교 및 사람 검수
+- id: p12-briefing
+  priority: P1
+  title: 제12차 추진 방향 브리핑 원문
+  status: collected
+  candidate_url: https://www.mcee.go.kr/home/web/board/read.do?boardId=1837310&boardMasterId=939&menuId=10598
+  next_action: 확보한 공식 보도자료와 별도의 브리핑 전문 존재 여부 확인
+  document_ids:
+  - p11-implementation
+  notes: 제11차 신규원전 후속이행 자료로 분류. 제12차 확정 계획 아님.
+- id: p12-forum1-3
+  priority: P1
+  title: 제12차 1·2·3차 토론회 공식 발표·수요전망 자료
+  status: partially_collected
+  next_action: 1·3차 공지는 확보. 2차 독립 공지와 1~3차 실제 발표자료·결과를 확보
+  document_ids:
+  - p12-forum1
+  - p12-forum3
+- id: p12-forum4-6-presentations
+  priority: P0
+  title: 제12차 4·5·6차 실제 발표자료와 토론 결과
+  status: discovery_pending
+  next_action: 현재 보유한 개최 예고와 실제 수요·재생에너지 잠정안 구분
+- id: p12-latest
+  priority: P1
+  title: 제12차 추가 공개자료 확인
+  status: checked_at_cutoff
+  next_action: 9월 18일 예정 토론회 이후 발표자료·결과와 신규 실무안·공고 조사
+  document_ids:
+  - p12-forum7
+  notes: 9월 9일 게시된 7차 안내까지 확인. 자동 모니터 미설정.
+- id: mvp-expansion
+  priority: P1
+  title: 총 30~50개 공식 문서로 확장
+  status: minimum_count_reached
+  next_action: 30건 기반 링크·검수 품질을 보강하고 미확보 핵심 원문 우선 수집
+  notes: 형식·페이지 수로 문서 수를 늘리지 않음. 사람 검수 완료와 구분.
+- id: human-review
+  priority: P0
+  title: 초기 콘텐츠 사람 검수 및 원문별 권리 확인
+  status: pending
+  next_action: 발행일·버전·수치·요약·링크·이용조건 대조 후 reviewed_by와 reviewed_date 기록
