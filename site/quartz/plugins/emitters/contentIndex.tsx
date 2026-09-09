@@ -18,6 +18,7 @@ export type ContentDetails = {
   content: string
   richContent?: string
   date?: Date
+  published_date?: string | null
   description?: string
 }
 
@@ -114,6 +115,7 @@ export const ContentIndex: QuartzEmitterPlugin<Partial<Options>> = (opts) => {
               ? escapeHTML(toHtml(tree as Root, { allowDangerousHtml: true }))
               : undefined,
             date: date,
+            published_date: typeof file.data.frontmatter?.published_date === "string" ? file.data.frontmatter.published_date : null,
             description: file.data.description ?? "",
           })
         }

@@ -36,7 +36,7 @@ export const knowledgeExplorer: Partial<Options> = {
     const difference = (priority[a.slug] ?? 100) - (priority[b.slug] ?? 100)
     if (difference) return difference
     if (a.slug.startsWith("documents/") && b.slug.startsWith("documents/")) {
-      const byDate = (Date.parse(String(b.data?.date ?? "")) || 0) - (Date.parse(String(a.data?.date ?? "")) || 0)
+      const byDate = (Date.parse(String(b.data?.published_date ?? "")) || 0) - (Date.parse(String(a.data?.published_date ?? "")) || 0)
       if (byDate) return byDate
     }
     return a.displayName.localeCompare(b.displayName, "ko", {numeric:true, sensitivity:"base"})
