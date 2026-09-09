@@ -88,7 +88,7 @@ def build_evidence(records, root=ROOT):
                     "archive_url": "https://github.com/Uptec-khj/gridex-power-policy-kb/blob/main/" + attachment["path"],
                     "file_hash": digest, "plan_family": meta["plan_family"], "plan_number": meta["plan_number"],
                     "category": meta.get("category"), "technical": meta.get("technical"),
-                    "document_stage": meta["document_stage"], "published_date": meta["published_date"], **page})
+                    "document_stage": meta["document_stage"], "published_date": meta["published_date"], **kb.international_metadata(meta), **page})
     pages.sort(key=lambda p: (p["document_id"], p["file_hash"], p["pdf_page"]))
     report = {"schema_version": "1.0", "extraction_engine": ENGINE,
               "document_count": len(public), "documents_with_pdf": len({f["document_id"] for f in files}),
@@ -133,7 +133,8 @@ def normalize(text):
     return re.sub(r"\s+", "", re.sub(r"(?<=\d),(?=\d)", "", text))
 
 
-def search_pages(pages, query, plan=None, stage=None, limit=10, family=None):
+def search_pages(pages, query, plan=None, stage=None, limit=10, family=None,
+                 region=None, jurisdiction=None, language=None, document_type=None, market=None):
     terms = [normalize(t) for t in query.split() if normalize(t)]
     if not terms:
         return []
@@ -143,7 +144,13 @@ def search_pages(pages, query, plan=None, stage=None, limit=10, family=None):
             continue
         if family and p.get('plan_family') != family:
             continue
-        title, body = normalize(p['title']), normalize(p['text'])
+        if ((region and p.get('region_group') != region) or
+            (jurisdiction and jurisdiction not in (p.get('jurisdictions') or [])) or
+            (market and market not in (p.get('market_regions') or [])) or
+            (language and p.get('document_language') != language) or
+            (document_type and p.get('document_type') != document_type)):
+            continue
+        title, body = normalize(p['title'] + ' ' + (p.get('title_original') or '')), normalize(p['text'])
         if all(t in title or t in body for t in terms):
             score = sum((3 if t in title else 0) + (1 if t in body else 0) for t in terms)
             ranked.append((score, p))
@@ -160,6 +167,11 @@ if __name__ == '__main__':
     query.add_argument('--plan', type=int, choices=[1, 2, 3, 4, 5, 10, 11, 12])
     query.add_argument('--stage')
     query.add_argument('--family')
+    query.add_argument('--region')
+    query.add_argument('--jurisdiction')
+    query.add_argument('--language')
+    query.add_argument('--document-type')
+    query.add_argument('--market')
     query.add_argument('--limit', type=int, default=10)
     args = parser.parse_args()
     if args.command == 'build':
@@ -170,4 +182,6 @@ if __name__ == '__main__':
         if not path.exists():
             parser.error('Run build first')
         pages = [json.loads(line) for line in path.read_text(encoding='utf-8').splitlines()]
-        print(json.dumps(search_pages(pages, args.query, args.plan, args.stage, max(1, args.limit), family=args.family), ensure_ascii=False, indent=2))
+        print(json.dumps(search_pages(pages, args.query, args.plan, args.stage, max(1, args.limit), family=args.family,
+                                     region=args.region, jurisdiction=args.jurisdiction, language=args.language,
+                                     document_type=args.document_type, market=args.market), ensure_ascii=False, indent=2))

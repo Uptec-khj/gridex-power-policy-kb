@@ -1,4 +1,4 @@
-# GRIDEX Frontmatter 표준 v1.0
+# GRIDEX Frontmatter 표준 v1.1
 
 공식 자료는 `content/documents/<id>.md`에 UTF-8 YAML Frontmatter와 Markdown 본문으로 저장한다. 기계 검증 규칙은 `schemas/policy-document.schema.json`이다. 허브·Timeline은 탐색 문서로서 공식 자료 수에 포함하지 않는다.
 
@@ -7,7 +7,7 @@
 | title | 문자열 | 원문 식별에 충실한 제목. 편집 제목은 기본정보에 명시 |
 | organization | 문자열 | 발행 당시 기관명. 현재 호스팅 기관명으로 소급 변경 금지 |
 | published_date | 날짜 문자열 또는 null | 따옴표로 감싼 YYYY-MM-DD. 미상은 null, 수집일·월초로 추정 금지 |
-| category | 열거형 | 전력수급계획 / 전력수요 / 송변전망 / 기술기준 / 성능평가 / 에너지정책 / 재생에너지정책 |
+| category | 열거형 | 전력수급계획 / 전력수요 / 송변전망 / 기술기준 / 성능평가 / 에너지정책 / 재생에너지정책 / 전력시장 |
 | subcategory | 문자열 | 기본계획 / 확정발표 / 수정공고 / 장기전력수요전망 / 수립착수 / 정책토론회안내 / 기관해설 등 |
 | plan_family | 열거형 또는 null | 전력수급기본계획 / 장기송변전설비계획 / 에너지기본계획 / 신재생에너지기본계획 / 재생에너지기본계획. 기술 문서는 null |
 | plan_number | 정수 또는 null | 계획 계열별 허용 차수는 아래 표 참조. 기술 문서는 null |
@@ -25,7 +25,7 @@
 ## 확장 필드
 
 - `id`: 안정적인 ASCII 식별자이며 파일명과 동일. 제목 변경으로 ID를 바꾸지 않는다.
-- `schema_version`: 문자열 '1.0'. `source_id`: Source Registry 키.
+- `schema_version`: 새 문서는 문자열 '1.1'. 기존 '1.0'은 국내 계획 규칙으로 계속 검증한다. `source_id`: Source Registry 키.
 - `attachments`: 첨부별 URL·제목·보존 경로·해시·형식·크기·수집 시각·권리 확인 상태.
 - `source_snapshot`: 게시물 HTML의 보존 경로와 SHA-256. 대표 첨부 해시와 분리.
 - `ai_generated`: AI 작성·편집 포함 여부. `summary_review_status`: unreviewed / reviewed.
@@ -37,7 +37,36 @@
 
 확장 시 스키마를 함께 갱신한다. 예약되지 않은 필드는 CI에서 거부한다.
 
-## 문서 단계
+## 국제 문서 필수 필드 (v1.1)
+
+기존 17개 필드와 10개 본문 절을 유지한다. 분류 사전은 `schemas/international-taxonomy.json`이며 새 관할·계열을 추가할 때 JSON Schema의 조합 규칙과 함께 갱신한다. 국가 허브·문서 찾기·PDF 검색·편집 RAG와 원문 색인에 같은 필드를 전달한다.
+
+| 필드 | 규칙 |
+| --- | --- |
+| region_group | KR / AU / US / CN / Europe. 국가·지역 메뉴를 위한 그룹 |
+| jurisdictions | 관할 ID 목록. KR, AU, AU-WA, US, US-CA, US-TX, CN, EU, PAN-EUROPE, GB, DE, FR 중 그룹과 일치하는 값. 비어 있으면 안 됨 |
+| market_regions | NEM / WEM / CAISO / PJM / ERCOT의 확인된 적용 시장. 미확인·비해당은 빈 목록 |
+| document_language | 현재 지원하는 원어 코드 ko / en / zh-Hans / de / fr. 한국어 요약을 썼다고 원어를 ko로 변경하지 않음 |
+| document_type | plan / forecast / transmission_plan / technical_standard / test_procedure / technical_notice / rule_draft / regulation / guide / study / notice / press_release / official_explainer |
+| title_original | 원문과 대조한 원어 제목. 기존 국내 문서 이관 시 미대조는 null. 해외 신규 문서는 원어 제목 필수 |
+| title_ko | 한국어 표시 제목 또는 null. 비공식 번역이면 본문에 AI 번역임을 표시 |
+| document_identifier | 명령·법령·기준의 식별번호 또는 null |
+| edition_year | 확인된 연도판 연도 또는 null. 발행연도를 자동 복사하지 않음 |
+| version | 확인된 판본 표기 또는 null |
+
+EU와 PAN-EUROPE는 국가코드가 아니다. 사전에서 각각 초국가 관할·범유럽 계통 범위로 구분하고 `country_code: null`로 둔다. 복수 관할 문서는 한 번 저장하고 해당 관할 필터마다 검색되게 한다. 국가 분류는 법률 적용에 대한 검수 완료를 뜻하지 않는다. 실제 적용 전압·설비·지역과 근거는 본문 및 기술문서의 `technical.applicability`에 적는다.
+
+NEM은 AU, WEM은 AU-WA, 미국 시장은 US 관할과 함께 사용해야 한다. 미확인 시장을 국가명에서 추정하지 않는다. 기존 국내 37건은 KR·ko로 이관했으며 세부 시장을 추정하지 않아 `market_regions: []`로 유지한다.
+
+기존 KB의 편집 제목은 `title`과 `title_ko`로 유지하고, 공식 게시물 제목과의 일치 대조 전에는 `title_original: null`로 둔다. 본문·원본·문서 관계는 바꾸지 않는다.
+
+국외 계획 계열은 `integrated-system-plan`(AU), `national-transmission-needs-study`·`national-transmission-planning-study`(US), `tyndp`(Europe), `cn-energy-system-plan`(CN)을 예약했다. 아직 문서 수집을 뜻하지 않는다. 연도판 계열의 `plan_number`는 null이고 `edition_year`를 사용한다. 중국 계열은 확인한 14·15차 또는 null을 허용한다. 국외 규정·가이드·연구는 계열이 없으면 `plan_family`와 `plan_number`를 모두 null로 둔다. 국내 계획 계열·차수 제약은 기존과 같다.
+
+`category`에 전력시장을 추가했다. 기술기준·성능평가 분류에서는 `technical`이 필수이며 최상위 `document_type`과 `technical.document_type`이 일치해야 한다. 차수가 null이라는 이유만으로 기술 문서로 분류하지 않는다.
+
+자동 추정하지 않는 후속 항목: 비기술 문서의 별도 채택·시행·폐지 상태, 법적 효력, 번역 검수, 국제 원문 재배포 권리의 상세 스키마. 해외 자료를 공개 수집하는 G2 이전에 실제 문서·이용조건을 확인해 보강한다. 이 단계는 국가 탐색과 분류 기반이며 이 필드들에 대한 법적 검증을 구현한 것은 아니다.
+
+## 문서 단계와 검수 상태
 
 | 값 | 의미 |
 | --- | --- |

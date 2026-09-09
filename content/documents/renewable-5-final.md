@@ -1,5 +1,5 @@
 ---
-schema_version: '1.0'
+schema_version: '1.1'
 id: renewable-5-final
 title: 제5차 신재생에너지 기본계획 2020–2034
 organization: 산업통상자원부
@@ -32,8 +32,8 @@ summary_review_status: unreviewed
 reviewed_by: null
 reviewed_date: null
 last_verified_date: '2026-09-09'
-verification_notes: 정부 확정 발표와 한국에너지공단 공식 전문 PDF 28쪽 확인. PDF p.6 원표를 AI가 화면 대조. 신재생/재생
-  및 최종에너지/발전량 비중 구분. 당시 계획의 목표이며 사람 검수 대기.
+verification_notes: 정부 확정 발표와 한국에너지공단 공식 전문 PDF 28쪽 확인. PDF p.6 원표를 AI가 화면 대조. 신재생/재생 및 최종에너지/발전량 비중 구분. 당시 계획의 목표이며 사람 검수
+  대기.
 draft: false
 attachments:
 - url: https://www.knrec.or.kr/biz/introduce/file/File_down.do?file_nm=%28%EB%B3%84%EC%B2%A8%29%EC%A0%9C5%EC%B0%A8%20%EC%8B%A0%EC%9E%AC%EC%83%9D%EC%97%90%EB%84%88%EC%A7%80%20%EA%B8%B0%EB%B3%B8%EA%B3%84%ED%9A%8D.pdf
@@ -64,6 +64,17 @@ typed_relations:
   type: uses_evidence
   source_url: https://www.knrec.or.kr/biz/introduce/file/File_down.do?file_nm=%28%EB%B3%84%EC%B2%A8%29%EC%A0%9C5%EC%B0%A8%20%EC%8B%A0%EC%9E%AC%EC%83%9D%EC%97%90%EB%84%88%EC%A7%80%20%EA%B8%B0%EB%B3%B8%EA%B3%84%ED%9A%8D.pdf#page=6
   basis: 제3차 에너지기본계획의 목표 시나리오와 정합성을 확보했다고 명시한다.
+region_group: KR
+jurisdictions:
+- KR
+market_regions: []
+document_language: ko
+document_type: plan
+title_original: null
+title_ko: 제5차 신재생에너지 기본계획 2020–2034
+document_identifier: null
+edition_year: null
+version: null
 ---
 
 > [!warning] 공식 출처 확인 · AI 요약 검수 대기

@@ -1,5 +1,5 @@
 ---
-schema_version: '1.0'
+schema_version: '1.1'
 id: p10-hearing
 title: 제10차 전력수급기본계획 수립 공청회 개최 공고
 organization: 산업통상자원부
@@ -48,6 +48,17 @@ tags:
 - 검수대기
 aliases: []
 date: '2022-11-14'
+region_group: KR
+jurisdictions:
+- KR
+market_regions: []
+document_language: ko
+document_type: notice
+title_original: null
+title_ko: 제10차 전력수급기본계획 수립 공청회 개최 공고
+document_identifier: null
+edition_year: null
+version: null
 ---
 
 > [!warning] 공식 출처 확인 · AI 요약 검수 대기

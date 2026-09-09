@@ -1,5 +1,15 @@
 ---
-schema_version: '1.0'
+schema_version: '1.1'
+region_group: KR
+jurisdictions: [KR]
+market_regions: []
+document_language: ko
+document_type: technical_standard
+title_original: '{{title}}'
+title_ko: '{{title}}'
+document_identifier: null
+edition_year: null
+version: null
 id: replace-with-stable-id
 title: '{{title}}'
 organization: ''

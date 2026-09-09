@@ -20,12 +20,14 @@
 
 ## 구성
 
-[국가별 확장 로드맵](content/project/international-roadmap.md)에 호주·미국·중국·유럽의 탐색 메뉴, 관할·언어·버전 표준, 공식 자료원, 해외 24건 파일럿과 지속 수집 흐름을 정리했습니다. [국제 자료원 후보](sources/international-candidates.yaml) 11개는 **비활성 설계 목록**이며 현재 수집기와 연결되지 않습니다. 해외 문서·국가별 탭·정기 실행은 후속 개발 범위입니다.
+[국가별 확장 로드맵](content/project/international-roadmap.md)의 G1을 구현했습니다. 대한민국·호주·미국·중국·유럽 메뉴와 [국가별 문서 찾기](content/document-search.md), PDF 원문 검색의 관할·시장·언어·종류 필터를 제공합니다. 기존 국내 37건은 v1.1 표준으로 이관했으며 본문·원본·출처·관계를 보존했습니다. [국제 자료원 후보](sources/international-candidates.yaml) 11개는 **비활성 설계 목록**입니다. 해외 메뉴는 0건·수집 준비 중으로 표시하며, 실제 해외 수집·정기 실행은 G2 이후 진행합니다.
 
 ```text
 content/                  Obsidian Markdown: 유일한 콘텐츠 편집 원본
   documents/              안정적인 ID를 파일명으로 쓰는 공식 자료 노트
   plans/                  10·11·12차 탐색 허브
+  regions/                국가별 문서 목록과 수집 준비 상태 (자동 생성)
+  document-search.md      제목·주제·관할·언어별 문서 찾기
   project/                개발 로드맵·백로그·개발 기록
   original-search.md      공식 PDF 페이지 검색
   extraction-status.md    자동 생성한 PDF 추출 현황

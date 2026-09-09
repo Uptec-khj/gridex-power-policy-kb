@@ -1,5 +1,5 @@
 ---
-schema_version: '1.0'
+schema_version: '1.1'
 id: tech-field-test-appendix6
 title: 신재생발전기 송전계통 연계기술기준 부록6 발전단지 현장 특성시험절차서
 organization: 한국전력공사
@@ -32,8 +32,8 @@ summary_review_status: unreviewed
 reviewed_by: null
 reviewed_date: null
 last_verified_date: '2026-09-09'
-verification_notes: KPX 공식 첨부와 한전 머리글 확인. 게시일은 KPX 게시일이고 제·개정일과 다르다. 확보본은 인쇄쪽 89~101
-  발췌이며 전체 103쪽 전문은 미확보. 시험 판정 수치·적용 범위·요약의 사람 검수 미완료.
+verification_notes: KPX 공식 첨부와 한전 머리글 확인. 게시일은 KPX 게시일이고 제·개정일과 다르다. 확보본은 인쇄쪽 89~101 발췌이며 전체 103쪽 전문은 미확보. 시험 판정 수치·적용 범위·요약의
+  사람 검수 미완료.
 draft: false
 attachments:
 - url: https://www.kpx.or.kr/boardDownload.es?bid=0042&list_no=77368&seq=1
@@ -67,6 +67,17 @@ technical:
   effective_date: null
   applicability: 인버터 발전단지 제어를 위한 현장 특성시험 방법 및 평가 기준
   coverage: 부록6 발전단지 현장 특성시험절차서(예시); PDF 13쪽, 인쇄쪽 89~101/103; 전체 기준 미확보
+region_group: KR
+jurisdictions:
+- KR
+market_regions: []
+document_language: ko
+document_type: test_procedure
+title_original: null
+title_ko: 신재생발전기 송전계통 연계기술기준 부록6 발전단지 현장 특성시험절차서
+document_identifier: null
+edition_year: null
+version: null
 ---
 
 > [!warning] 공식 출처 확인 · AI 요약 검수 대기

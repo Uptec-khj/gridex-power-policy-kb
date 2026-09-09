@@ -1,5 +1,5 @@
 ---
-schema_version: '1.0'
+schema_version: '1.1'
 id: t10-explainer
 title: 한국전력 사보 전력망 확충 해설 2025년 2월
 organization: 한국전력공사
@@ -44,6 +44,17 @@ tags:
 - 검수대기
 aliases: []
 date: null
+region_group: KR
+jurisdictions:
+- KR
+market_regions: []
+document_language: ko
+document_type: official_explainer
+title_original: null
+title_ko: 한국전력 사보 전력망 확충 해설 2025년 2월
+document_identifier: null
+edition_year: null
+version: null
 ---
 
 > [!warning] 공식 출처 확인 · AI 요약 검수 대기

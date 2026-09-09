@@ -1,5 +1,5 @@
 ---
-schema_version: '1.0'
+schema_version: '1.1'
 id: tech-field-test-notice-202605
 title: 신재생 발전소 현장성능시험 결과 제출 안내
 organization: 전력거래소
@@ -29,8 +29,7 @@ summary_review_status: unreviewed
 reviewed_by: null
 reviewed_date: null
 last_verified_date: '2026-09-09'
-verification_notes: 공식 HTML 보존. 제목의 6월과 본문의 5월 27일을 구분. 안내 내용·적용 대상 및 현행성에 대한 사람 검수
-  미완료.
+verification_notes: 공식 HTML 보존. 제목의 6월과 본문의 5월 27일을 구분. 안내 내용·적용 대상 및 현행성에 대한 사람 검수 미완료.
 draft: false
 attachments: []
 source_snapshot:
@@ -60,6 +59,17 @@ typed_relations:
   type: explains
   source_url: https://www.kpx.or.kr/board.es?act=view&bid=0042&mid=a11201000000&list_no=77368
   basis: 게시물 5항은 구체적인 시험항목·절차·판정기준을 붙임 부록6에서 확인하도록 안내한다.
+region_group: KR
+jurisdictions:
+- KR
+market_regions: []
+document_language: ko
+document_type: technical_notice
+title_original: null
+title_ko: 신재생 발전소 현장성능시험 결과 제출 안내
+document_identifier: null
+edition_year: null
+version: null
 ---
 
 > [!warning] 공식 출처 확인 · AI 요약 검수 대기

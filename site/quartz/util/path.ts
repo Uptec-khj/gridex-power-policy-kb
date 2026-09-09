@@ -227,6 +227,16 @@ export interface TransformOptions {
 }
 
 export function transformLink(src: FullSlug, target: string, opts: TransformOptions): RelativeURL {
+  // Preserve search filters separately from file-name and anchor slugification.
+  const queryStart = target.indexOf("?")
+  const hashStart = target.indexOf("#")
+  if (queryStart >= 0 && (hashStart < 0 || queryStart < hashStart)) {
+    const query = target.slice(queryStart, hashStart < 0 ? undefined : hashStart)
+    const clean = target.slice(0, queryStart) + (hashStart < 0 ? "" : target.slice(hashStart))
+    const transformed = transformLink(src, clean, opts)
+    const [pathname, anchor] = splitAnchor(transformed)
+    return (pathname + query + anchor) as RelativeURL
+  }
   let targetSlug = transformInternalLink(target)
 
   if (opts.strategy === "relative") {

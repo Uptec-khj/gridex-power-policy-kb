@@ -1,5 +1,5 @@
 ---
-schema_version: '1.0'
+schema_version: '1.1'
 id: energy-3-final
 title: 제3차 에너지기본계획 2019–2040
 organization: 산업통상자원부
@@ -31,8 +31,8 @@ summary_review_status: unreviewed
 reviewed_by: null
 reviewed_date: null
 last_verified_date: '2026-09-09'
-verification_notes: 정부 확정 발표와 KESIS 공식 재게시 전문 PDF 117쪽 확인. 표지는 2019년 6월이고 KESIS 등록일은
-  2019-08-02로 구분. 과거 목표를 현행 목표로 표시하지 않음. 사람 검수 대기.
+verification_notes: 정부 확정 발표와 KESIS 공식 재게시 전문 PDF 117쪽 확인. 표지는 2019년 6월이고 KESIS 등록일은 2019-08-02로 구분. 과거 목표를 현행 목표로 표시하지 않음.
+  사람 검수 대기.
 draft: false
 attachments:
 - url: https://kesis.keei.re.kr/boardDownload.es?bid=0025&list_no=1488&seq=1
@@ -58,6 +58,17 @@ tags:
 - 검수대기
 aliases: []
 date: '2019-06-04'
+region_group: KR
+jurisdictions:
+- KR
+market_regions: []
+document_language: ko
+document_type: plan
+title_original: null
+title_ko: 제3차 에너지기본계획 2019–2040
+document_identifier: null
+edition_year: null
+version: null
 ---
 
 > [!warning] 공식 출처 확인 · AI 요약 검수 대기

@@ -1,0 +1,45 @@
+{
+  "regions": [
+    {"id":"KR","label":"대한민국","slug":"kr"},
+    {"id":"AU","label":"호주","slug":"au"},
+    {"id":"US","label":"미국","slug":"us"},
+    {"id":"CN","label":"중국","slug":"cn"},
+    {"id":"Europe","label":"유럽","slug":"europe"}
+  ],
+  "jurisdictions": [
+    {"id":"KR","label":"대한민국","region":"KR","kind":"national","country_code":"KR"},
+    {"id":"AU","label":"호주","region":"AU","kind":"national","country_code":"AU"},
+    {"id":"AU-WA","label":"서호주","region":"AU","kind":"subnational","country_code":"AU"},
+    {"id":"US","label":"미국","region":"US","kind":"national","country_code":"US"},
+    {"id":"US-CA","label":"캘리포니아","region":"US","kind":"subnational","country_code":"US"},
+    {"id":"US-TX","label":"텍사스","region":"US","kind":"subnational","country_code":"US"},
+    {"id":"CN","label":"중국","region":"CN","kind":"national","country_code":"CN"},
+    {"id":"EU","label":"EU 공통","region":"Europe","kind":"supranational","country_code":null},
+    {"id":"PAN-EUROPE","label":"범유럽 계통","region":"Europe","kind":"regional","country_code":null},
+    {"id":"GB","label":"영국","region":"Europe","kind":"national","country_code":"GB"},
+    {"id":"DE","label":"독일","region":"Europe","kind":"national","country_code":"DE"},
+    {"id":"FR","label":"프랑스","region":"Europe","kind":"national","country_code":"FR"}
+  ],
+  "markets": [
+    {"id":"NEM","label":"NEM","region":"AU","jurisdiction":"AU"},
+    {"id":"WEM","label":"WEM","region":"AU","jurisdiction":"AU-WA"},
+    {"id":"CAISO","label":"CAISO","region":"US","jurisdiction":"US"},
+    {"id":"PJM","label":"PJM","region":"US","jurisdiction":"US"},
+    {"id":"ERCOT","label":"ERCOT","region":"US","jurisdiction":"US"}
+  ],
+  "languages": {"ko":"한국어","en":"영어","zh-Hans":"중국어(간체)","de":"독일어","fr":"프랑스어"},
+  "document_types": {
+    "plan":"정책·기본계획","forecast":"수요전망","transmission_plan":"송전망계획",
+    "technical_standard":"기술기준","test_procedure":"시험 절차","technical_notice":"기술 안내",
+    "rule_draft":"규칙 개정안","regulation":"법령·규정","guide":"가이드","study":"연구보고서",
+    "notice":"공고·행사 안내","press_release":"발표자료","official_explainer":"기관 해설"
+  },
+  "technical_types": ["technical_standard","test_procedure","technical_notice","rule_draft"],
+  "plan_families": [
+    {"id":"integrated-system-plan","label":"Integrated System Plan","region":"AU","categories":["전력수급계획","전력수요","송변전망"]},
+    {"id":"national-transmission-needs-study","label":"National Transmission Needs Study","region":"US","categories":["송변전망"]},
+    {"id":"national-transmission-planning-study","label":"National Transmission Planning Study","region":"US","categories":["송변전망"]},
+    {"id":"tyndp","label":"Ten-Year Network Development Plan","region":"Europe","categories":["송변전망","전력수요"]},
+    {"id":"cn-energy-system-plan","label":"중국 에너지체계 계획","region":"CN","categories":["에너지정책"]}
+  ]
+}

@@ -7,7 +7,7 @@ import { createRequire } from "node:module"
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..")
 const require = createRequire(path.join(root, "site/package.json"))
-const { transformSync } = require("esbuild")
+const { transformSync, buildSync } = require("esbuild")
 const FlexSearch = require("flexsearch")
 const content = JSON.parse(fs.readFileSync(path.join(root, "site/public/static/contentIndex.json"), "utf8"))
 const source = fs.readFileSync(path.join(root, "site/quartz/components/scripts/search.inline.ts"), "utf8")
@@ -40,7 +40,7 @@ console.log(`Site smoke checks passed: ${Object.keys(content).length} indexed pa
 // Exercise the exact ranking code shipped to the browser against real PDF pages.
 const evidence = JSON.parse(fs.readFileSync(path.join(root, "site/public/static/official-pages.json"), "utf8"))
 const core = fs.readFileSync(path.join(root, "site/quartz/components/scripts/originalSearchCore.ts"), "utf8")
-const coreCode = transformSync(core, { loader: "ts", format: "cjs" }).code
+const coreCode = buildSync({stdin:{contents:core, loader:'ts', resolveDir:path.join(root,'site/quartz/components/scripts')}, bundle:true, write:false, format:'cjs', platform:'browser'}).outputFiles[0].text
 const coreModule = { exports: {} }
 new Function("module", "exports", coreCode)(coreModule, coreModule.exports)
 const { rankEvidence } = coreModule.exports
@@ -89,3 +89,29 @@ const collision = [{ ...evidence.pages[0], text: 'same', plan_number: 1, plan_fa
 assert.equal(rankEvidence(collision, 'same', 'family:재생에너지기본계획').length, 1)
 assert(content['energy-renewable-plans'].links.includes('documents/renewable-1-final-2026'))
 console.log(`Original search passed: ${evidence.report.searchable_pages} pages with text, PDF citations and plan/stage filters`)
+
+// Region filters must never broaden to Korea when the requested region is empty.
+assert.equal(rankEvidence(evidence.pages, '전력', '', '', {region:'AU'}).length, 0)
+assert(rankEvidence(evidence.pages, '전력', '', '', {region:'KR', jurisdiction:'KR', language:'ko'}).length > 0)
+assert.equal(rankEvidence(evidence.pages, '전력', '', '', {region:'KR', language:'en'}).length, 0)
+const fixture = {...evidence.pages[0], title:'국제 계획', title_original:'Integrated System Plan', text:'power',
+  region_group:'AU', jurisdictions:['AU'], market_regions:['NEM'], document_language:'en', document_type:'plan', plan_number:null}
+assert.equal(rankEvidence([fixture], 'Integrated', '', '', {region:'AU', market:'NEM'}).length, 1)
+assert.equal(rankEvidence([fixture], 'power', 'technical').length, 0, 'Null plan number is not a technical document')
+assert.equal(rankEvidence([fixture], 'power', '', '', {market:'WEM'}).length, 0)
+const multi = {...fixture, region_group:'Europe', jurisdictions:['EU','DE']}
+for (const jurisdiction of ['EU','DE']) assert.equal(rankEvidence([multi], 'power', '', '', {jurisdiction}).length, 1)
+for (const region of ['kr','au','us','cn','europe']) {
+  const html = fs.readFileSync(path.join(root, 'site/public/regions', region + '.html'), 'utf8')
+  assert(html.includes('aria-label="국가·지역별 자료"'))
+  assert(html.includes(`href="../regions/${region}"`))
+  const group = {kr:'KR',au:'AU',us:'US',cn:'CN',europe:'Europe'}[region]
+  assert(html.includes(`document-search?region=${group}`), 'Country hub must retain its search filter URL')
+  assert(region === 'kr' ? content['regions/kr'].links.includes('documents/p11-final') : html.includes('수집 준비 중'))
+}
+for (const slug of ['original-search','document-search']) {
+  const html = fs.readFileSync(path.join(root, 'site/public', slug + '.html'), 'utf8')
+  for (const name of ['region','jurisdiction','market','language','type']) assert(html.includes(`name="${name}"`))
+}
+assert(evidence.pages.every(p => p.region_group === 'KR' && p.document_language === 'ko' && p.document_type))
+console.log('International navigation, region isolation, language/market filters and null-plan classification passed')

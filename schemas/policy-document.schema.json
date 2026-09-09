@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "GRIDEX policy-document v1.0",
+  "title": "GRIDEX policy-document v1.1 (v1.0 compatible)",
   "type": "object",
   "required": [
     "title",
@@ -53,7 +53,8 @@
         "기술기준",
         "성능평가",
         "에너지정책",
-        "재생에너지정책"
+        "재생에너지정책",
+        "전력시장"
       ]
     },
     "subcategory": {
@@ -67,7 +68,12 @@
         null,
         "에너지기본계획",
         "신재생에너지기본계획",
-        "재생에너지기본계획"
+        "재생에너지기본계획",
+        "integrated-system-plan",
+        "national-transmission-needs-study",
+        "national-transmission-planning-study",
+        "tyndp",
+        "cn-energy-system-plan"
       ]
     },
     "plan_number": {
@@ -75,17 +81,7 @@
         "integer",
         "null"
       ],
-      "enum": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        10,
-        11,
-        12,
-        null
-      ]
+      "minimum": 1
     },
     "document_stage": {
       "enum": [
@@ -180,7 +176,10 @@
       ]
     },
     "schema_version": {
-      "const": "1.0"
+      "enum": [
+        "1.0",
+        "1.1"
+      ]
     },
     "id": {
       "type": "string",
@@ -430,10 +429,800 @@
           }
         }
       }
+    },
+    "region_group": {
+      "enum": [
+        "KR",
+        "AU",
+        "US",
+        "CN",
+        "Europe"
+      ]
+    },
+    "jurisdictions": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "KR",
+          "AU",
+          "AU-WA",
+          "US",
+          "US-CA",
+          "US-TX",
+          "CN",
+          "EU",
+          "PAN-EUROPE",
+          "GB",
+          "DE",
+          "FR"
+        ]
+      }
+    },
+    "market_regions": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "NEM",
+          "WEM",
+          "CAISO",
+          "PJM",
+          "ERCOT"
+        ]
+      }
+    },
+    "document_language": {
+      "enum": [
+        "ko",
+        "en",
+        "zh-Hans",
+        "de",
+        "fr"
+      ]
+    },
+    "document_type": {
+      "enum": [
+        "plan",
+        "forecast",
+        "transmission_plan",
+        "technical_standard",
+        "test_procedure",
+        "technical_notice",
+        "rule_draft",
+        "regulation",
+        "guide",
+        "study",
+        "notice",
+        "press_release",
+        "official_explainer"
+      ]
+    },
+    "title_original": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1
+    },
+    "title_ko": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1
+    },
+    "document_identifier": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1
+    },
+    "edition_year": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1900,
+      "maximum": 2200
+    },
+    "version": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1
     }
   },
   "additionalProperties": false,
   "allOf": [
+    {
+      "if": {
+        "properties": {
+          "schema_version": {
+            "const": "1.0"
+          }
+        },
+        "required": [
+          "schema_version"
+        ]
+      },
+      "then": {
+        "allOf": [
+          {
+            "$ref": "#/$defs/koreanPlanRules"
+          },
+          {
+            "not": {
+              "anyOf": [
+                {
+                  "required": [
+                    "region_group"
+                  ]
+                },
+                {
+                  "required": [
+                    "jurisdictions"
+                  ]
+                },
+                {
+                  "required": [
+                    "market_regions"
+                  ]
+                },
+                {
+                  "required": [
+                    "document_language"
+                  ]
+                },
+                {
+                  "required": [
+                    "document_type"
+                  ]
+                },
+                {
+                  "required": [
+                    "title_original"
+                  ]
+                },
+                {
+                  "required": [
+                    "title_ko"
+                  ]
+                },
+                {
+                  "required": [
+                    "document_identifier"
+                  ]
+                },
+                {
+                  "required": [
+                    "edition_year"
+                  ]
+                },
+                {
+                  "required": [
+                    "version"
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "schema_version": {
+            "const": "1.1"
+          }
+        },
+        "required": [
+          "schema_version"
+        ]
+      },
+      "then": {
+        "required": [
+          "region_group",
+          "jurisdictions",
+          "market_regions",
+          "document_language",
+          "document_type",
+          "title_original",
+          "title_ko",
+          "document_identifier",
+          "edition_year",
+          "version"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "region_group": {
+            "const": "KR"
+          }
+        },
+        "required": [
+          "region_group"
+        ]
+      },
+      "then": {
+        "$ref": "#/$defs/koreanPlanRules"
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "region_group": {
+            "const": "KR"
+          }
+        },
+        "required": [
+          "region_group"
+        ]
+      },
+      "then": {
+        "properties": {
+          "jurisdictions": {
+            "items": {
+              "enum": [
+                "KR"
+              ]
+            }
+          },
+          "market_regions": {
+            "items": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "region_group": {
+            "const": "AU"
+          }
+        },
+        "required": [
+          "region_group"
+        ]
+      },
+      "then": {
+        "properties": {
+          "jurisdictions": {
+            "items": {
+              "enum": [
+                "AU",
+                "AU-WA"
+              ]
+            }
+          },
+          "market_regions": {
+            "items": {
+              "enum": [
+                "NEM",
+                "WEM"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "region_group": {
+            "const": "US"
+          }
+        },
+        "required": [
+          "region_group"
+        ]
+      },
+      "then": {
+        "properties": {
+          "jurisdictions": {
+            "items": {
+              "enum": [
+                "US",
+                "US-CA",
+                "US-TX"
+              ]
+            }
+          },
+          "market_regions": {
+            "items": {
+              "enum": [
+                "CAISO",
+                "PJM",
+                "ERCOT"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "region_group": {
+            "const": "CN"
+          }
+        },
+        "required": [
+          "region_group"
+        ]
+      },
+      "then": {
+        "properties": {
+          "jurisdictions": {
+            "items": {
+              "enum": [
+                "CN"
+              ]
+            }
+          },
+          "market_regions": {
+            "items": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "region_group": {
+            "const": "Europe"
+          }
+        },
+        "required": [
+          "region_group"
+        ]
+      },
+      "then": {
+        "properties": {
+          "jurisdictions": {
+            "items": {
+              "enum": [
+                "EU",
+                "PAN-EUROPE",
+                "GB",
+                "DE",
+                "FR"
+              ]
+            }
+          },
+          "market_regions": {
+            "items": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "market_regions": {
+            "contains": {
+              "const": "NEM"
+            }
+          }
+        },
+        "required": [
+          "market_regions"
+        ]
+      },
+      "then": {
+        "properties": {
+          "jurisdictions": {
+            "contains": {
+              "const": "AU"
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "market_regions": {
+            "contains": {
+              "const": "WEM"
+            }
+          }
+        },
+        "required": [
+          "market_regions"
+        ]
+      },
+      "then": {
+        "properties": {
+          "jurisdictions": {
+            "contains": {
+              "const": "AU-WA"
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "market_regions": {
+            "contains": {
+              "const": "CAISO"
+            }
+          }
+        },
+        "required": [
+          "market_regions"
+        ]
+      },
+      "then": {
+        "properties": {
+          "jurisdictions": {
+            "contains": {
+              "const": "US"
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "market_regions": {
+            "contains": {
+              "const": "PJM"
+            }
+          }
+        },
+        "required": [
+          "market_regions"
+        ]
+      },
+      "then": {
+        "properties": {
+          "jurisdictions": {
+            "contains": {
+              "const": "US"
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "market_regions": {
+            "contains": {
+              "const": "ERCOT"
+            }
+          }
+        },
+        "required": [
+          "market_regions"
+        ]
+      },
+      "then": {
+        "properties": {
+          "jurisdictions": {
+            "contains": {
+              "const": "US"
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "plan_family": {
+            "const": "integrated-system-plan"
+          }
+        },
+        "required": [
+          "plan_family"
+        ]
+      },
+      "then": {
+        "required": [
+          "region_group"
+        ],
+        "properties": {
+          "schema_version": {
+            "const": "1.1"
+          },
+          "region_group": {
+            "const": "AU"
+          },
+          "category": {
+            "enum": [
+              "전력수급계획",
+              "전력수요",
+              "송변전망"
+            ]
+          },
+          "plan_number": {
+            "type": "null"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "plan_family": {
+            "const": "national-transmission-needs-study"
+          }
+        },
+        "required": [
+          "plan_family"
+        ]
+      },
+      "then": {
+        "required": [
+          "region_group"
+        ],
+        "properties": {
+          "schema_version": {
+            "const": "1.1"
+          },
+          "region_group": {
+            "const": "US"
+          },
+          "category": {
+            "enum": [
+              "송변전망"
+            ]
+          },
+          "plan_number": {
+            "type": "null"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "plan_family": {
+            "const": "national-transmission-planning-study"
+          }
+        },
+        "required": [
+          "plan_family"
+        ]
+      },
+      "then": {
+        "required": [
+          "region_group"
+        ],
+        "properties": {
+          "schema_version": {
+            "const": "1.1"
+          },
+          "region_group": {
+            "const": "US"
+          },
+          "category": {
+            "enum": [
+              "송변전망"
+            ]
+          },
+          "plan_number": {
+            "type": "null"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "plan_family": {
+            "const": "tyndp"
+          }
+        },
+        "required": [
+          "plan_family"
+        ]
+      },
+      "then": {
+        "required": [
+          "region_group"
+        ],
+        "properties": {
+          "schema_version": {
+            "const": "1.1"
+          },
+          "region_group": {
+            "const": "Europe"
+          },
+          "category": {
+            "enum": [
+              "송변전망",
+              "전력수요"
+            ]
+          },
+          "plan_number": {
+            "type": "null"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "plan_family": {
+            "const": "cn-energy-system-plan"
+          }
+        },
+        "required": [
+          "plan_family"
+        ]
+      },
+      "then": {
+        "required": [
+          "region_group"
+        ],
+        "properties": {
+          "schema_version": {
+            "const": "1.1"
+          },
+          "region_group": {
+            "const": "CN"
+          },
+          "category": {
+            "enum": [
+              "에너지정책"
+            ]
+          },
+          "plan_number": {
+            "enum": [
+              14,
+              15,
+              null
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "schema_version": {
+            "const": "1.1"
+          },
+          "plan_family": {
+            "const": "전력수급기본계획"
+          }
+        },
+        "required": [
+          "schema_version",
+          "plan_family"
+        ]
+      },
+      "then": {
+        "properties": {
+          "region_group": {
+            "const": "KR"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "schema_version": {
+            "const": "1.1"
+          },
+          "plan_family": {
+            "const": "장기송변전설비계획"
+          }
+        },
+        "required": [
+          "schema_version",
+          "plan_family"
+        ]
+      },
+      "then": {
+        "properties": {
+          "region_group": {
+            "const": "KR"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "schema_version": {
+            "const": "1.1"
+          },
+          "plan_family": {
+            "const": "에너지기본계획"
+          }
+        },
+        "required": [
+          "schema_version",
+          "plan_family"
+        ]
+      },
+      "then": {
+        "properties": {
+          "region_group": {
+            "const": "KR"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "schema_version": {
+            "const": "1.1"
+          },
+          "plan_family": {
+            "const": "신재생에너지기본계획"
+          }
+        },
+        "required": [
+          "schema_version",
+          "plan_family"
+        ]
+      },
+      "then": {
+        "properties": {
+          "region_group": {
+            "const": "KR"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "schema_version": {
+            "const": "1.1"
+          },
+          "plan_family": {
+            "const": "재생에너지기본계획"
+          }
+        },
+        "required": [
+          "schema_version",
+          "plan_family"
+        ]
+      },
+      "then": {
+        "properties": {
+          "region_group": {
+            "const": "KR"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "plan_family": {
+            "type": "null"
+          }
+        },
+        "required": [
+          "plan_family"
+        ]
+      },
+      "then": {
+        "properties": {
+          "plan_number": {
+            "type": "null"
+          }
+        }
+      }
+    },
     {
       "if": {
         "properties": {
@@ -443,7 +1232,10 @@
               "성능평가"
             ]
           }
-        }
+        },
+        "required": [
+          "category"
+        ]
       },
       "then": {
         "required": [
@@ -455,49 +1247,35 @@
           },
           "plan_number": {
             "type": "null"
+          },
+          "document_type": {
+            "enum": [
+              "technical_standard",
+              "test_procedure",
+              "technical_notice",
+              "rule_draft"
+            ]
           }
         }
       },
       "else": {
-        "properties": {
-          "plan_family": {
-            "type": "string"
-          },
-          "plan_number": {
-            "type": "integer"
-          }
-        },
         "not": {
           "required": [
             "technical"
           ]
-        }
-      }
-    },
-    {
-      "if": {
-        "properties": {
-          "plan_family": {
-            "const": "전력수급기본계획"
-          }
         },
-        "required": [
-          "plan_family"
-        ]
-      },
-      "then": {
         "properties": {
-          "plan_number": {
+          "document_type": {
             "enum": [
-              10,
-              11,
-              12
-            ]
-          },
-          "category": {
-            "enum": [
-              "전력수급계획",
-              "전력수요"
+              "plan",
+              "forecast",
+              "transmission_plan",
+              "regulation",
+              "guide",
+              "study",
+              "notice",
+              "press_release",
+              "official_explainer"
             ]
           }
         }
@@ -506,26 +1284,30 @@
     {
       "if": {
         "properties": {
-          "plan_family": {
-            "const": "장기송변전설비계획"
+          "document_type": {
+            "const": "technical_standard"
           }
         },
         "required": [
-          "plan_family"
+          "document_type"
         ]
       },
       "then": {
+        "required": [
+          "technical"
+        ],
         "properties": {
-          "plan_number": {
-            "enum": [
-              10,
-              11,
-              12
-            ]
+          "technical": {
+            "properties": {
+              "document_type": {
+                "const": "technical_standard"
+              }
+            }
           },
           "category": {
             "enum": [
-              "송변전망"
+              "기술기준",
+              "성능평가"
             ]
           }
         }
@@ -534,26 +1316,30 @@
     {
       "if": {
         "properties": {
-          "plan_family": {
-            "const": "에너지기본계획"
+          "document_type": {
+            "const": "test_procedure"
           }
         },
         "required": [
-          "plan_family"
+          "document_type"
         ]
       },
       "then": {
+        "required": [
+          "technical"
+        ],
         "properties": {
-          "plan_number": {
-            "enum": [
-              1,
-              2,
-              3
-            ]
+          "technical": {
+            "properties": {
+              "document_type": {
+                "const": "test_procedure"
+              }
+            }
           },
           "category": {
             "enum": [
-              "에너지정책"
+              "기술기준",
+              "성능평가"
             ]
           }
         }
@@ -562,28 +1348,30 @@
     {
       "if": {
         "properties": {
-          "plan_family": {
-            "const": "신재생에너지기본계획"
+          "document_type": {
+            "const": "technical_notice"
           }
         },
         "required": [
-          "plan_family"
+          "document_type"
         ]
       },
       "then": {
+        "required": [
+          "technical"
+        ],
         "properties": {
-          "plan_number": {
-            "enum": [
-              1,
-              2,
-              3,
-              4,
-              5
-            ]
+          "technical": {
+            "properties": {
+              "document_type": {
+                "const": "technical_notice"
+              }
+            }
           },
           "category": {
             "enum": [
-              "재생에너지정책"
+              "기술기준",
+              "성능평가"
             ]
           }
         }
@@ -592,28 +1380,271 @@
     {
       "if": {
         "properties": {
-          "plan_family": {
-            "const": "재생에너지기본계획"
+          "document_type": {
+            "const": "rule_draft"
           }
         },
         "required": [
-          "plan_family"
+          "document_type"
         ]
       },
       "then": {
+        "required": [
+          "technical"
+        ],
         "properties": {
-          "plan_number": {
-            "enum": [
-              1
-            ]
+          "technical": {
+            "properties": {
+              "document_type": {
+                "const": "rule_draft"
+              }
+            }
           },
           "category": {
             "enum": [
-              "재생에너지정책"
+              "기술기준",
+              "성능평가"
             ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "required": [
+          "region_group"
+        ],
+        "properties": {
+          "region_group": {
+            "not": {
+              "const": "KR"
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "title_original": {
+            "type": "string"
           }
         }
       }
     }
-  ]
+  ],
+  "$defs": {
+    "koreanPlanRules": {
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "category": {
+                "enum": [
+                  "기술기준",
+                  "성능평가"
+                ]
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "technical"
+            ],
+            "properties": {
+              "plan_family": {
+                "type": "null"
+              },
+              "plan_number": {
+                "type": "null"
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "plan_family": {
+                "type": "string"
+              },
+              "plan_number": {
+                "type": "integer"
+              }
+            },
+            "not": {
+              "required": [
+                "technical"
+              ]
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "plan_family": {
+                "const": "전력수급기본계획"
+              }
+            },
+            "required": [
+              "plan_family"
+            ]
+          },
+          "then": {
+            "properties": {
+              "plan_number": {
+                "enum": [
+                  10,
+                  11,
+                  12
+                ]
+              },
+              "category": {
+                "enum": [
+                  "전력수급계획",
+                  "전력수요"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "plan_family": {
+                "const": "장기송변전설비계획"
+              }
+            },
+            "required": [
+              "plan_family"
+            ]
+          },
+          "then": {
+            "properties": {
+              "plan_number": {
+                "enum": [
+                  10,
+                  11,
+                  12
+                ]
+              },
+              "category": {
+                "enum": [
+                  "송변전망"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "plan_family": {
+                "const": "에너지기본계획"
+              }
+            },
+            "required": [
+              "plan_family"
+            ]
+          },
+          "then": {
+            "properties": {
+              "plan_number": {
+                "enum": [
+                  1,
+                  2,
+                  3
+                ]
+              },
+              "category": {
+                "enum": [
+                  "에너지정책"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "plan_family": {
+                "const": "신재생에너지기본계획"
+              }
+            },
+            "required": [
+              "plan_family"
+            ]
+          },
+          "then": {
+            "properties": {
+              "plan_number": {
+                "enum": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              },
+              "category": {
+                "enum": [
+                  "재생에너지정책"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "plan_family": {
+                "const": "재생에너지기본계획"
+              }
+            },
+            "required": [
+              "plan_family"
+            ]
+          },
+          "then": {
+            "properties": {
+              "plan_number": {
+                "enum": [
+                  1
+                ]
+              },
+              "category": {
+                "enum": [
+                  "재생에너지정책"
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "properties": {
+        "plan_family": {
+          "enum": [
+            "전력수급기본계획",
+            "장기송변전설비계획",
+            null,
+            "에너지기본계획",
+            "신재생에너지기본계획",
+            "재생에너지기본계획"
+          ]
+        },
+        "plan_number": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "enum": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            10,
+            11,
+            12,
+            null
+          ]
+        }
+      }
+    }
+  }
 }

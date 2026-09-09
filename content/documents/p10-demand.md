@@ -1,5 +1,5 @@
 ---
-schema_version: '1.0'
+schema_version: '1.1'
 id: p10-demand
 title: 장기 전력수요전망 2022-2036
 organization: 전력거래소
@@ -65,6 +65,17 @@ tags:
 - 검수대기
 aliases: []
 date: '2023-01-18'
+region_group: KR
+jurisdictions:
+- KR
+market_regions: []
+document_language: ko
+document_type: forecast
+title_original: null
+title_ko: 장기 전력수요전망 2022-2036
+document_identifier: null
+edition_year: null
+version: null
 ---
 
 > [!warning] 공식 출처 확인 · AI 요약 검수 대기

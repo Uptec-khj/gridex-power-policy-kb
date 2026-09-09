@@ -1,5 +1,5 @@
 ---
-schema_version: '1.0'
+schema_version: '1.1'
 id: renewable-1-final-2026
 title: 제1차 재생에너지 기본계획 2026–2035
 organization: 기후에너지환경부
@@ -33,8 +33,8 @@ summary_review_status: unreviewed
 reviewed_by: null
 reviewed_date: null
 last_verified_date: '2026-09-09'
-verification_notes: 기후부 별첨 전문 PDF 78쪽 확보. PDF p.17 목표를 AI가 화면 대조. 본계획과 별첨 지방정부 계획(안)을
-  구분하고 법 시행 예정일을 보존. PDF 빈 면도 유지. 사람 검수 대기.
+verification_notes: 기후부 별첨 전문 PDF 78쪽 확보. PDF p.17 목표를 AI가 화면 대조. 본계획과 별첨 지방정부 계획(안)을 구분하고 법 시행 예정일을 보존. PDF 빈 면도 유지. 사람 검수
+  대기.
 draft: false
 attachments:
 - url: https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=324062&fileSeq=3
@@ -65,6 +65,17 @@ typed_relations:
   type: references
   source_url: https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=324062&fileSeq=3#page=7
   basis: 직전 기본계획 및 기존 1~5차 계획 평가를 수록한다. 계열 변경으로 이전/다음 버전 링크 대신 참조 관계를 기록한다.
+region_group: KR
+jurisdictions:
+- KR
+market_regions: []
+document_language: ko
+document_type: plan
+title_original: null
+title_ko: 제1차 재생에너지 기본계획 2026–2035
+document_identifier: null
+edition_year: null
+version: null
 ---
 
 > [!warning] 공식 출처 확인 · AI 요약 검수 대기

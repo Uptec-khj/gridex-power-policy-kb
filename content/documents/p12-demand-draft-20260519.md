@@ -1,5 +1,5 @@
 ---
-schema_version: '1.0'
+schema_version: '1.1'
 id: p12-demand-draft-20260519
 title: 제12차 전력수급기본계획 수요 전망(안) 2026년 5월
 organization: 기후에너지환경부
@@ -32,8 +32,7 @@ summary_review_status: unreviewed
 reviewed_by: null
 reviewed_date: null
 last_verified_date: '2026-09-09'
-verification_notes: 공식 PDF 붙임3 확보, p.6 시나리오 원표를 AI가 화면 대조. 확정 계획 아님. p.8의 토론회 일자 표기와
-  별도 개최 공지의 날짜 대조 필요. 수치·요약 사람 검수 미완료.
+verification_notes: 공식 PDF 붙임3 확보, p.6 시나리오 원표를 AI가 화면 대조. 확정 계획 아님. p.8의 토론회 일자 표기와 별도 개최 공지의 날짜 대조 필요. 수치·요약 사람 검수 미완료.
 draft: false
 attachments:
 - url: https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=324062&fileSeq=2
@@ -59,6 +58,17 @@ tags:
 - 검수대기
 aliases: []
 date: '2026-05-19'
+region_group: KR
+jurisdictions:
+- KR
+market_regions: []
+document_language: ko
+document_type: forecast
+title_original: null
+title_ko: 제12차 전력수급기본계획 수요 전망(안) 2026년 5월
+document_identifier: null
+edition_year: null
+version: null
 ---
 
 > [!warning] 공식 출처 확인 · AI 요약 검수 대기

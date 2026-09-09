@@ -1,5 +1,5 @@
 ---
-schema_version: '1.0'
+schema_version: '1.1'
 id: p10-draft
 title: 제10차 전력수급기본계획 총괄분과위 실무안 공개
 organization: 산업통상자원부
@@ -49,6 +49,17 @@ tags:
 - 검수대기
 aliases: []
 date: '2022-08-30'
+region_group: KR
+jurisdictions:
+- KR
+market_regions: []
+document_language: ko
+document_type: plan
+title_original: null
+title_ko: 제10차 전력수급기본계획 총괄분과위 실무안 공개
+document_identifier: null
+edition_year: null
+version: null
 ---
 
 > [!warning] 공식 출처 확인 · AI 요약 검수 대기

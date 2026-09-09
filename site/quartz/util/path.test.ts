@@ -3,6 +3,12 @@ import * as path from "./path"
 import assert from "node:assert"
 import { FullSlug, TransformOptions, SimpleSlug } from "./path"
 
+test("search filter URLs preserve query, encoding and anchor", () => {
+  const opts: TransformOptions = {strategy:"shortest", allSlugs:["document-search" as FullSlug]}
+  assert.strictEqual(path.transformLink("regions/au" as FullSlug, "document-search?region=AU&query=%EC%A0%84%EB%A0%A5#Results", opts), "../document-search?region=AU&query=%EC%A0%84%EB%A0%A5#results")
+  assert.strictEqual(path.transformLink("regions/au" as FullSlug, "../document-search?region=AU", {...opts,strategy:"relative"}), "../document-search?region=AU")
+})
+
 describe("typeguards", () => {
   test("isSimpleSlug", () => {
     assert(path.isSimpleSlug(""))

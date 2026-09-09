@@ -1,5 +1,5 @@
 ---
-schema_version: '1.0'
+schema_version: '1.1'
 id: p12-committee
 title: 제12차 전력수급기본계획 제1차 총괄위원회 개최 안내
 organization: 기후에너지환경부
@@ -76,6 +76,17 @@ tags:
 - 검수대기
 aliases: []
 date: '2025-12-09'
+region_group: KR
+jurisdictions:
+- KR
+market_regions: []
+document_language: ko
+document_type: notice
+title_original: null
+title_ko: 제12차 전력수급기본계획 제1차 총괄위원회 개최 안내
+document_identifier: null
+edition_year: null
+version: null
 ---
 
 > [!warning] 공식 출처 확인 · AI 요약 검수 대기

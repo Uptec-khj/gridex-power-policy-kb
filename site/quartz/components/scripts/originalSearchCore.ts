@@ -1,4 +1,6 @@
-export interface EvidencePage {
+import { InternationalMetadata, DocumentFilters, matchesFilters, taxonomy } from "../international"
+
+export interface EvidencePage extends InternationalMetadata {
   chunk_id: string
   document_id: string
   title: string
@@ -28,12 +30,12 @@ export function normalizeEvidence(text: string): string {
   return text.normalize("NFKC").toLowerCase().replace(/(?<=\d),(?=\d)/g, "").replace(/\s+/g, "")
 }
 
-export function rankEvidence(pages: EvidencePage[], query: string, plan = "", stage = "") {
+export function rankEvidence(pages: EvidencePage[], query: string, plan = "", stage = "", filters: DocumentFilters = {}) {
   const terms = query.trim().split(/\s+/).map(normalizeEvidence).filter(Boolean)
   if (!terms.length) return []
-  return pages.filter(p => p.text && (!plan || (plan === "technical" ? p.plan_number === null : plan.startsWith("family:") ? p.plan_family === plan.slice(7) : String(p.plan_number) === plan)) && (!stage || p.document_stage === stage))
+  return pages.filter(p => p.text && matchesFilters(p, filters) && (!plan || (plan === "technical" ? taxonomy.technical_types.includes(p.document_type ?? "") : plan.startsWith("family:") ? p.plan_family === plan.slice(7) : String(p.plan_number) === plan)) && (!stage || p.document_stage === stage))
     .map(page => {
-      const title = normalizeEvidence(page.title), body = normalizeEvidence(page.text)
+      const title = normalizeEvidence(page.title + " " + (page.title_original ?? "")), body = normalizeEvidence(page.text)
       const score = terms.every(t => title.includes(t) || body.includes(t))
         ? terms.reduce((sum, t) => sum + (title.includes(t) ? 3 : 0) + (body.includes(t) ? 1 : 0), 0) : 0
       return { page, score }

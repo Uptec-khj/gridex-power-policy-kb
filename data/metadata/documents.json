@@ -1,6 +1,6 @@
 [
   {
-    "schema_version": "1.0",
+    "schema_version": "1.1",
     "id": "energy-3-final",
     "title": "제3차 에너지기본계획 2019–2040",
     "organization": "산업통상자원부",
@@ -68,11 +68,23 @@
     ],
     "aliases": [],
     "date": "2019-06-04",
+    "region_group": "KR",
+    "jurisdictions": [
+      "KR"
+    ],
+    "market_regions": [],
+    "document_language": "ko",
+    "document_type": "plan",
+    "title_original": null,
+    "title_ko": "제3차 에너지기본계획 2019–2040",
+    "document_identifier": null,
+    "edition_year": null,
+    "version": null,
     "path": "content/documents/energy-3-final.md",
     "slug": "documents/energy-3-final"
   },
   {
-    "schema_version": "1.0",
+    "schema_version": "1.1",
     "id": "p10-demand",
     "title": "장기 전력수요전망 2022-2036",
     "organization": "전력거래소",
@@ -150,11 +162,23 @@
     ],
     "aliases": [],
     "date": "2023-01-18",
+    "region_group": "KR",
+    "jurisdictions": [
+      "KR"
+    ],
+    "market_regions": [],
+    "document_language": "ko",
+    "document_type": "forecast",
+    "title_original": null,
+    "title_ko": "장기 전력수요전망 2022-2036",
+    "document_identifier": null,
+    "edition_year": null,
+    "version": null,
     "path": "content/documents/p10-demand.md",
     "slug": "documents/p10-demand"
   },
   {
-    "schema_version": "1.0",
+    "schema_version": "1.1",
     "id": "p10-draft",
     "title": "제10차 전력수급기본계획 총괄분과위 실무안 공개",
     "organization": "산업통상자원부",
@@ -211,11 +235,23 @@
     ],
     "aliases": [],
     "date": "2022-08-30",
+    "region_group": "KR",
+    "jurisdictions": [
+      "KR"
+    ],
+    "market_regions": [],
+    "document_language": "ko",
+    "document_type": "plan",
+    "title_original": null,
+    "title_ko": "제10차 전력수급기본계획 총괄분과위 실무안 공개",
+    "document_identifier": null,
+    "edition_year": null,
+    "version": null,
     "path": "content/documents/p10-draft.md",
     "slug": "documents/p10-draft"
   },
   {
-    "schema_version": "1.0",
+    "schema_version": "1.1",
     "id": "p10-final",
     "title": "제10차 전력수급기본계획",
     "organization": "산업통상자원부",
@@ -284,11 +320,23 @@
     ],
     "aliases": [],
     "date": "2023-01-13",
+    "region_group": "KR",
+    "jurisdictions": [
+      "KR"
+    ],
+    "market_regions": [],
+    "document_language": "ko",
+    "document_type": "plan",
+    "title_original": null,
+    "title_ko": "제10차 전력수급기본계획",
+    "document_identifier": null,
+    "edition_year": null,
+    "version": null,
     "path": "content/documents/p10-final.md",
     "slug": "documents/p10-final"
   },
   {
-    "schema_version": "1.0",
+    "schema_version": "1.1",
     "id": "p10-hearing",
     "title": "제10차 전력수급기본계획 수립 공청회 개최 공고",
     "organization": "산업통상자원부",
@@ -344,11 +392,23 @@
     ],
     "aliases": [],
     "date": "2022-11-14",
+    "region_group": "KR",
+    "jurisdictions": [
+      "KR"
+    ],
+    "market_regions": [],
+    "document_language": "ko",
+    "document_type": "notice",
+    "title_original": null,
+    "title_ko": "제10차 전력수급기본계획 수립 공청회 개최 공고",
+    "document_identifier": null,
+    "edition_year": null,
+    "version": null,
     "path": "content/documents/p10-hearing.md",
     "slug": "documents/p10-hearing"
   },
   {
-    "schema_version": "1.0",
+    "schema_version": "1.1",
     "id": "p10-release",
     "title": "제10차 전력수급기본계획 확정 발표",
     "organization": "산업통상자원부",
@@ -403,11 +463,23 @@
     ],
     "aliases": [],
     "date": "2023-01-12",
+    "region_group": "KR",
+    "jurisdictions": [
+      "KR"
+    ],
+    "market_regions": [],
+    "document_language": "ko",
+    "document_type": "press_release",
+    "title_original": null,
+    "title_ko": "제10차 전력수급기본계획 확정 발표",
+    "document_identifier": null,
+    "edition_year": null,
+    "version": null,
     "path": "content/documents/p10-release.md",
     "slug": "documents/p10-release"
   },
   {
-    "schema_version": "1.0",
+    "schema_version": "1.1",
     "id": "p10-sea-draft",
     "title": "제10차 전력수급기본계획 전략환경영향평가서 행정예고",
     "organization": "산업통상자원부",
@@ -463,11 +535,23 @@
     ],
     "aliases": [],
     "date": "2022-09-30",
+    "region_group": "KR",
+    "jurisdictions": [
+      "KR"
+    ],
+    "market_regions": [],
+    "document_language": "ko",
+    "document_type": "notice",
+    "title_original": null,
+    "title_ko": "제10차 전력수급기본계획 전략환경영향평가서 행정예고",
+    "document_identifier": null,
+    "edition_year": null,
+    "version": null,
     "path": "content/documents/p10-sea-draft.md",
     "slug": "documents/p10-sea-draft"
   },
   {
-    "schema_version": "1.0",
+    "schema_version": "1.1",
     "id": "p10-sea-scope",
     "title": "제10차 전력수급기본계획 전략환경영향평가 항목 결정내용 공개",
     "organization": "산업통상자원부",
@@ -523,11 +607,23 @@
     ],
     "aliases": [],
     "date": "2022-09-15",
+    "region_group": "KR",
+    "jurisdictions": [
+      "KR"
+    ],
+    "market_regions": [],
+    "document_language": "ko",
+    "document_type": "notice",
+    "title_original": null,
+    "title_ko": "제10차 전력수급기본계획 전략환경영향평가 항목 결정내용 공개",
+    "document_identifier": null,
+    "edition_year": null,
+    "version": null,
     "path": "content/documents/p10-sea-scope.md",
     "slug": "documents/p10-sea-scope"
   },
   {
-    "schema_version": "1.0",
+    "schema_version": "1.1",
     "id": "p11-amend",
     "title": "제11차 전력수급기본계획 수정 공고",
     "organization": "산업통상자원부",
@@ -596,11 +692,23 @@
     ],
     "aliases": [],
     "date": "2025-03-13",
+    "region_group": "KR",
+    "jurisdictions": [
+      "KR"
+    ],
+    "market_regions": [],
+    "document_language": "ko",
+    "document_type": "plan",
+    "title_original": null,
+    "title_ko": "제11차 전력수급기본계획 수정 공고",
+    "document_identifier": null,
+    "edition_year": null,
+    "version": null,
     "path": "content/documents/p11-amend.md",
     "slug": "documents/p11-amend"
   },
   {
-    "schema_version": "1.0",
+    "schema_version": "1.1",
     "id": "p11-committee",
     "title": "제11차 전력수급기본계획 총괄위원회 첫 회의",
     "organization": "산업통상자원부",
@@ -656,11 +764,23 @@
     ],
     "aliases": [],
     "date": "2023-07-27",
+    "region_group": "KR",
+    "jurisdictions": [
+      "KR"
+    ],
+    "market_regions": [],
+    "document_language": "ko",
+    "document_type": "notice",
+    "title_original": null,
+    "title_ko": "제11차 전력수급기본계획 총괄위원회 첫 회의",
+    "document_identifier": null,
+    "edition_year": null,
+    "version": null,
     "path": "content/documents/p11-committee.md",
     "slug": "documents/p11-committee"
   },
   {
-    "schema_version": "1.0",
+    "schema_version": "1.1",
     "id": "p11-demand",
     "title": "장기 전력수요전망 2024-2038",
     "organization": "전력거래소",
@@ -740,11 +860,23 @@
     ],
     "aliases": [],
     "date": "2025-02-27",
+    "region_group": "KR",
+    "jurisdictions": [
+      "KR"
+    ],
+    "market_regions": [],
+    "document_language": "ko",
+    "document_type": "forecast",
+    "title_original": null,
+    "title_ko": "장기 전력수요전망 2024-2038",
+    "document_identifier": null,
+    "edition_year": null,
+    "version": null,
     "path": "content/documents/p11-demand.md",
     "slug": "documents/p11-demand"
   },
   {
-    "schema_version": "1.0",
+    "schema_version": "1.1",
     "id": "p11-draft",
     "title": "제11차 전력수급기본계획 실무안 공개",
     "organization": "산업통상자원부",
@@ -799,11 +931,23 @@
     ],
     "aliases": [],
     "date": "2024-05-31",
+    "region_group": "KR",
+    "jurisdictions": [
+      "KR"
+    ],
+    "market_regions": [],
+    "document_language": "ko",
+    "document_type": "plan",
+    "title_original": null,
+    "title_ko": "제11차 전력수급기본계획 실무안 공개",
+    "document_identifier": null,
+    "edition_year": null,
+    "version": null,
     "path": "content/documents/p11-draft.md",
     "slug": "documents/p11-draft"
   },
   {
-    "schema_version": "1.0",
+    "schema_version": "1.1",
     "id": "p11-final",
     "title": "제11차 전력수급기본계획 최초 공고",
     "organization": "산업통상자원부",
@@ -874,11 +1018,23 @@
     ],
     "aliases": [],
     "date": "2025-02-21",
+    "region_group": "KR",
+    "jurisdictions": [
+      "KR"
+    ],
+    "market_regions": [],
+    "document_language": "ko",
+    "document_type": "plan",
+    "title_original": null,
+    "title_ko": "제11차 전력수급기본계획 최초 공고",
+    "document_identifier": null,
+    "edition_year": null,
+    "version": null,
     "path": "content/documents/p11-final.md",
     "slug": "documents/p11-final"
   },
   {
-    "schema_version": "1.0",
+    "schema_version": "1.1",
     "id": "p11-hearing",
     "title": "제11차 전력수급기본계획 수립 공청회 개최 공고",
     "organization": "산업통상자원부",
@@ -934,11 +1090,23 @@
     ],
     "aliases": [],
     "date": "2024-09-12",
+    "region_group": "KR",
+    "jurisdictions": [
+      "KR"
+    ],
+    "market_regions": [],
+    "document_language": "ko",
+    "document_type": "notice",
+    "title_original": null,
+    "title_ko": "제11차 전력수급기본계획 수립 공청회 개최 공고",
+    "document_identifier": null,
+    "edition_year": null,
+    "version": null,
     "path": "content/documents/p11-hearing.md",
     "slug": "documents/p11-hearing"
   },
   {
-    "schema_version": "1.0",
+    "schema_version": "1.1",
     "id": "p11-implementation",
     "title": "제11차 신규원전 건설 계획대로 추진 발표",
     "organization": "기후에너지환경부",
@@ -1018,11 +1186,23 @@
     ],
     "aliases": [],
     "date": "2026-01-26",
+    "region_group": "KR",
+    "jurisdictions": [
+      "KR"
+    ],
+    "market_regions": [],
+    "document_language": "ko",
+    "document_type": "press_release",
+    "title_original": null,
+    "title_ko": "제11차 신규원전 건설 계획대로 추진 발표",
+    "document_identifier": null,
+    "edition_year": null,
+    "version": null,
     "path": "content/documents/p11-implementation.md",
     "slug": "documents/p11-implementation"
   },
   {
-    "schema_version": "1.0",
+    "schema_version": "1.1",
     "id": "p11-poll",
     "title": "제11차 신규원전 계획 관련 대국민 여론조사 결과 발표",
     "organization": "기후에너지환경부",
@@ -1101,11 +1281,23 @@
     ],
     "aliases": [],
     "date": "2026-01-21",
+    "region_group": "KR",
+    "jurisdictions": [
+      "KR"
+    ],
+    "market_regions": [],
+    "document_language": "ko",
+    "document_type": "study",
+    "title_original": null,
+    "title_ko": "제11차 신규원전 계획 관련 대국민 여론조사 결과 발표",
+    "document_identifier": null,
+    "edition_year": null,
+    "version": null,
     "path": "content/documents/p11-poll.md",
     "slug": "documents/p11-poll"
   },
   {
-    "schema_version": "1.0",
+    "schema_version": "1.1",
     "id": "p11-release",
     "title": "제11차 전력수급기본계획 확정 발표",
     "organization": "산업통상자원부",
@@ -1161,11 +1353,23 @@
     ],
     "aliases": [],
     "date": "2025-02-21",
+    "region_group": "KR",
+    "jurisdictions": [
+      "KR"
+    ],
+    "market_regions": [],
+    "document_language": "ko",
+    "document_type": "press_release",
+    "title_original": null,
+    "title_ko": "제11차 전력수급기본계획 확정 발표",
+    "document_identifier": null,
+    "edition_year": null,
+    "version": null,
     "path": "content/documents/p11-release.md",
     "slug": "documents/p11-release"
   },
   {
-    "schema_version": "1.0",
+    "schema_version": "1.1",
     "id": "p11-sea-draft",
     "title": "제11차 전력수급기본계획 전략환경영향평가서 행정예고",
     "organization": "산업통상자원부",
@@ -1221,11 +1425,23 @@
     ],
     "aliases": [],
     "date": "2024-07-10",
+    "region_group": "KR",
+    "jurisdictions": [
+      "KR"
+    ],
+    "market_regions": [],
+    "document_language": "ko",
+    "document_type": "notice",
+    "title_original": null,
+    "title_ko": "제11차 전력수급기본계획 전략환경영향평가서 행정예고",
+    "document_identifier": null,
+    "edition_year": null,
+    "version": null,
     "path": "content/documents/p11-sea-draft.md",
     "slug": "documents/p11-sea-draft"
   },
   {
-    "schema_version": "1.0",
+    "schema_version": "1.1",
     "id": "p11-sea-scope",
     "title": "제11차 전력수급기본계획 전략환경영향평가 항목 결정내용 공개",
     "organization": "산업통상자원부",
@@ -1281,11 +1497,23 @@
     ],
     "aliases": [],
     "date": "2024-06-21",
+    "region_group": "KR",
+    "jurisdictions": [
+      "KR"
+    ],
+    "market_regions": [],
+    "document_language": "ko",
+    "document_type": "notice",
+    "title_original": null,
+    "title_ko": "제11차 전력수급기본계획 전략환경영향평가 항목 결정내용 공개",
+    "document_identifier": null,
+    "edition_year": null,
+    "version": null,
     "path": "content/documents/p11-sea-scope.md",
     "slug": "documents/p11-sea-scope"
   },
   {
-    "schema_version": "1.0",
+    "schema_version": "1.1",
     "id": "p12-committee",
     "title": "제12차 전력수급기본계획 제1차 총괄위원회 개최 안내",
     "organization": "기후에너지환경부",
@@ -1376,11 +1604,23 @@
     ],
     "aliases": [],
     "date": "2025-12-09",
+    "region_group": "KR",
+    "jurisdictions": [
+      "KR"
+    ],
+    "market_regions": [],
+    "document_language": "ko",
+    "document_type": "notice",
+    "title_original": null,
+    "title_ko": "제12차 전력수급기본계획 제1차 총괄위원회 개최 안내",
+    "document_identifier": null,
+    "edition_year": null,
+    "version": null,
     "path": "content/documents/p12-committee.md",
     "slug": "documents/p12-committee"
   },
   {
-    "schema_version": "1.0",
+    "schema_version": "1.1",
     "id": "p12-demand-draft-20260519",
     "title": "제12차 전력수급기본계획 수요 전망(안) 2026년 5월",
     "organization": "기후에너지환경부",
@@ -1449,11 +1689,23 @@
     ],
     "aliases": [],
     "date": "2026-05-19",
+    "region_group": "KR",
+    "jurisdictions": [
+      "KR"
+    ],
+    "market_regions": [],
+    "document_language": "ko",
+    "document_type": "forecast",
+    "title_original": null,
+    "title_ko": "제12차 전력수급기본계획 수요 전망(안) 2026년 5월",
+    "document_identifier": null,
+    "edition_year": null,
+    "version": null,
     "path": "content/documents/p12-demand-draft-20260519.md",
     "slug": "documents/p12-demand-draft-20260519"
   },
   {
-    "schema_version": "1.0",
+    "schema_version": "1.1",
     "id": "p12-forum1",
     "title": "제12차 계획 관련 제1차 에너지믹스 정책토론회 안내",
     "organization": "기후에너지환경부",
@@ -1539,11 +1791,23 @@
     ],
     "aliases": [],
     "date": "2025-12-22",
+    "region_group": "KR",
+    "jurisdictions": [
+      "KR"
+    ],
+    "market_regions": [],
+    "document_language": "ko",
+    "document_type": "notice",
+    "title_original": null,
+    "title_ko": "제12차 계획 관련 제1차 에너지믹스 정책토론회 안내",
+    "document_identifier": null,
+    "edition_year": null,
+    "version": null,
     "path": "content/documents/p12-forum1.md",
     "slug": "documents/p12-forum1"
   },
   {
-    "schema_version": "1.0",
+    "schema_version": "1.1",
     "id": "p12-forum3",
     "title": "제12차 전기본 제3차 전력수요 전망 정책토론회 안내",
     "organization": "기후에너지환경부",
@@ -1628,11 +1892,23 @@
     ],
     "aliases": [],
     "date": "2026-04-17",
+    "region_group": "KR",
+    "jurisdictions": [
+      "KR"
+    ],
+    "market_regions": [],
+    "document_language": "ko",
+    "document_type": "notice",
+    "title_original": null,
+    "title_ko": "제12차 전기본 제3차 전력수요 전망 정책토론회 안내",
+    "document_identifier": null,
+    "edition_year": null,
+    "version": null,
     "path": "content/documents/p12-forum3.md",
     "slug": "documents/p12-forum3"
   },
   {
-    "schema_version": "1.0",
+    "schema_version": "1.1",
     "id": "p12-forum45",
     "title": "제12차 전기본 제4·5차 정책토론회 개최 안내",
     "organization": "기후에너지환경부",
@@ -1717,11 +1993,23 @@
     ],
     "aliases": [],
     "date": "2026-08-15",
+    "region_group": "KR",
+    "jurisdictions": [
+      "KR"
+    ],
+    "market_regions": [],
+    "document_language": "ko",
+    "document_type": "notice",
+    "title_original": null,
+    "title_ko": "제12차 전기본 제4·5차 정책토론회 개최 안내",
+    "document_identifier": null,
+    "edition_year": null,
+    "version": null,
     "path": "content/documents/p12-forum45.md",
     "slug": "documents/p12-forum45"
   },
   {
-    "schema_version": "1.0",
+    "schema_version": "1.1",
     "id": "p12-forum6",
     "title": "제12차 전기본 제6차 재생에너지 정책토론회 개최 안내",
     "organization": "기후에너지환경부",
@@ -1805,11 +2093,23 @@
     ],
     "aliases": [],
     "date": "2026-08-20",
+    "region_group": "KR",
+    "jurisdictions": [
+      "KR"
+    ],
+    "market_regions": [],
+    "document_language": "ko",
+    "document_type": "notice",
+    "title_original": null,
+    "title_ko": "제12차 전기본 제6차 재생에너지 정책토론회 개최 안내",
+    "document_identifier": null,
+    "edition_year": null,
+    "version": null,
     "path": "content/documents/p12-forum6.md",
     "slug": "documents/p12-forum6"
   },
   {
-    "schema_version": "1.0",
+    "schema_version": "1.1",
     "id": "p12-forum7",
     "title": "제12차 전기본 제7차 석탄발전 조기폐지 정책토론회 안내",
     "organization": "기후에너지환경부",
@@ -1896,11 +2196,23 @@
     ],
     "aliases": [],
     "date": "2026-09-09",
+    "region_group": "KR",
+    "jurisdictions": [
+      "KR"
+    ],
+    "market_regions": [],
+    "document_language": "ko",
+    "document_type": "notice",
+    "title_original": null,
+    "title_ko": "제12차 전기본 제7차 석탄발전 조기폐지 정책토론회 안내",
+    "document_identifier": null,
+    "edition_year": null,
+    "version": null,
     "path": "content/documents/p12-forum7.md",
     "slug": "documents/p12-forum7"
   },
   {
-    "schema_version": "1.0",
+    "schema_version": "1.1",
     "id": "p12-launch",
     "title": "제12차 전력수급기본계획 수립 착수",
     "organization": "기후에너지환경부",
@@ -1979,11 +2291,23 @@
     ],
     "aliases": [],
     "date": "2025-11-27",
+    "region_group": "KR",
+    "jurisdictions": [
+      "KR"
+    ],
+    "market_regions": [],
+    "document_language": "ko",
+    "document_type": "notice",
+    "title_original": null,
+    "title_ko": "제12차 전력수급기본계획 수립 착수",
+    "document_identifier": null,
+    "edition_year": null,
+    "version": null,
     "path": "content/documents/p12-launch.md",
     "slug": "documents/p12-launch"
   },
   {
-    "schema_version": "1.0",
+    "schema_version": "1.1",
     "id": "renewable-1-final-2026",
     "title": "제1차 재생에너지 기본계획 2026–2035",
     "organization": "기후에너지환경부",
@@ -2061,11 +2385,23 @@
         "basis": "직전 기본계획 및 기존 1~5차 계획 평가를 수록한다. 계열 변경으로 이전/다음 버전 링크 대신 참조 관계를 기록한다."
       }
     ],
+    "region_group": "KR",
+    "jurisdictions": [
+      "KR"
+    ],
+    "market_regions": [],
+    "document_language": "ko",
+    "document_type": "plan",
+    "title_original": null,
+    "title_ko": "제1차 재생에너지 기본계획 2026–2035",
+    "document_identifier": null,
+    "edition_year": null,
+    "version": null,
     "path": "content/documents/renewable-1-final-2026.md",
     "slug": "documents/renewable-1-final-2026"
   },
   {
-    "schema_version": "1.0",
+    "schema_version": "1.1",
     "id": "renewable-5-final",
     "title": "제5차 신재생에너지 기본계획 2020–2034",
     "organization": "산업통상자원부",
@@ -2142,11 +2478,23 @@
         "basis": "제3차 에너지기본계획의 목표 시나리오와 정합성을 확보했다고 명시한다."
       }
     ],
+    "region_group": "KR",
+    "jurisdictions": [
+      "KR"
+    ],
+    "market_regions": [],
+    "document_language": "ko",
+    "document_type": "plan",
+    "title_original": null,
+    "title_ko": "제5차 신재생에너지 기본계획 2020–2034",
+    "document_identifier": null,
+    "edition_year": null,
+    "version": null,
     "path": "content/documents/renewable-5-final.md",
     "slug": "documents/renewable-5-final"
   },
   {
-    "schema_version": "1.0",
+    "schema_version": "1.1",
     "id": "t10-explainer",
     "title": "한국전력 사보 전력망 확충 해설 2025년 2월",
     "organization": "한국전력공사",
@@ -2195,11 +2543,23 @@
     ],
     "aliases": [],
     "date": null,
+    "region_group": "KR",
+    "jurisdictions": [
+      "KR"
+    ],
+    "market_regions": [],
+    "document_language": "ko",
+    "document_type": "official_explainer",
+    "title_original": null,
+    "title_ko": "한국전력 사보 전력망 확충 해설 2025년 2월",
+    "document_identifier": null,
+    "edition_year": null,
+    "version": null,
     "path": "content/documents/t10-explainer.md",
     "slug": "documents/t10-explainer"
   },
   {
-    "schema_version": "1.0",
+    "schema_version": "1.1",
     "id": "t10-final",
     "title": "제10차 장기 송변전설비계획 2022–2036",
     "organization": "한국전력공사",
@@ -2268,11 +2628,23 @@
     ],
     "aliases": [],
     "date": "2023-05-08",
+    "region_group": "KR",
+    "jurisdictions": [
+      "KR"
+    ],
+    "market_regions": [],
+    "document_language": "ko",
+    "document_type": "transmission_plan",
+    "title_original": null,
+    "title_ko": "제10차 장기 송변전설비계획 2022–2036",
+    "document_identifier": null,
+    "edition_year": null,
+    "version": null,
     "path": "content/documents/t10-final.md",
     "slug": "documents/t10-final"
   },
   {
-    "schema_version": "1.0",
+    "schema_version": "1.1",
     "id": "t11-explainer",
     "title": "한국전력 사보 탄소중립과 전력망 2025년 12월",
     "organization": "한국전력공사",
@@ -2322,11 +2694,23 @@
     ],
     "aliases": [],
     "date": null,
+    "region_group": "KR",
+    "jurisdictions": [
+      "KR"
+    ],
+    "market_regions": [],
+    "document_language": "ko",
+    "document_type": "official_explainer",
+    "title_original": null,
+    "title_ko": "한국전력 사보 탄소중립과 전력망 2025년 12월",
+    "document_identifier": null,
+    "edition_year": null,
+    "version": null,
     "path": "content/documents/t11-explainer.md",
     "slug": "documents/t11-explainer"
   },
   {
-    "schema_version": "1.0",
+    "schema_version": "1.1",
     "id": "t11-final",
     "title": "제11차 장기 송변전설비계획 2024–2038",
     "organization": "한국전력공사",
@@ -2397,11 +2781,23 @@
     ],
     "aliases": [],
     "date": "2025-05-27",
+    "region_group": "KR",
+    "jurisdictions": [
+      "KR"
+    ],
+    "market_regions": [],
+    "document_language": "ko",
+    "document_type": "transmission_plan",
+    "title_original": null,
+    "title_ko": "제11차 장기 송변전설비계획 2024–2038",
+    "document_identifier": null,
+    "edition_year": null,
+    "version": null,
     "path": "content/documents/t11-final.md",
     "slug": "documents/t11-final"
   },
   {
-    "schema_version": "1.0",
+    "schema_version": "1.1",
     "id": "t11-release",
     "title": "제11차 장기 송변전설비계획 수립 발표 보도자료",
     "organization": "한국전력공사",
@@ -2469,11 +2865,23 @@
     ],
     "aliases": [],
     "date": "2025-05-27",
+    "region_group": "KR",
+    "jurisdictions": [
+      "KR"
+    ],
+    "market_regions": [],
+    "document_language": "ko",
+    "document_type": "press_release",
+    "title_original": null,
+    "title_ko": "제11차 장기 송변전설비계획 수립 발표 보도자료",
+    "document_identifier": null,
+    "edition_year": null,
+    "version": null,
     "path": "content/documents/t11-release.md",
     "slug": "documents/t11-release"
   },
   {
-    "schema_version": "1.0",
+    "schema_version": "1.1",
     "id": "tech-field-test-appendix6",
     "title": "신재생발전기 송전계통 연계기술기준 부록6 발전단지 현장 특성시험절차서",
     "organization": "한국전력공사",
@@ -2551,11 +2959,23 @@
       "applicability": "인버터 발전단지 제어를 위한 현장 특성시험 방법 및 평가 기준",
       "coverage": "부록6 발전단지 현장 특성시험절차서(예시); PDF 13쪽, 인쇄쪽 89~101/103; 전체 기준 미확보"
     },
+    "region_group": "KR",
+    "jurisdictions": [
+      "KR"
+    ],
+    "market_regions": [],
+    "document_language": "ko",
+    "document_type": "test_procedure",
+    "title_original": null,
+    "title_ko": "신재생발전기 송전계통 연계기술기준 부록6 발전단지 현장 특성시험절차서",
+    "document_identifier": null,
+    "edition_year": null,
+    "version": null,
     "path": "content/documents/tech-field-test-appendix6.md",
     "slug": "documents/tech-field-test-appendix6"
   },
   {
-    "schema_version": "1.0",
+    "schema_version": "1.1",
     "id": "tech-field-test-notice-202605",
     "title": "신재생 발전소 현장성능시험 결과 제출 안내",
     "organization": "전력거래소",
@@ -2626,11 +3046,23 @@
         "basis": "게시물 5항은 구체적인 시험항목·절차·판정기준을 붙임 부록6에서 확인하도록 안내한다."
       }
     ],
+    "region_group": "KR",
+    "jurisdictions": [
+      "KR"
+    ],
+    "market_regions": [],
+    "document_language": "ko",
+    "document_type": "technical_notice",
+    "title_original": null,
+    "title_ko": "신재생 발전소 현장성능시험 결과 제출 안내",
+    "document_identifier": null,
+    "edition_year": null,
+    "version": null,
     "path": "content/documents/tech-field-test-notice-202605.md",
     "slug": "documents/tech-field-test-notice-202605"
   },
   {
-    "schema_version": "1.0",
+    "schema_version": "1.1",
     "id": "tech-grid-model-draft-202608",
     "title": "발전사업자 계통해석 모델 제출 사전안내 및 규정 개정안",
     "organization": "전력거래소",
@@ -2726,6 +3158,18 @@
         "basis": "신설안 13.2.4.1은 현장시험 방법과 판정기준에 송전계통 연계기준을 참조한다. KB 편집 관계로 해당 기준의 확보 부록6에 연결하며 판본 동일성은 별도 대조 대상이다."
       }
     ],
+    "region_group": "KR",
+    "jurisdictions": [
+      "KR"
+    ],
+    "market_regions": [],
+    "document_language": "ko",
+    "document_type": "rule_draft",
+    "title_original": null,
+    "title_ko": "발전사업자 계통해석 모델 제출 사전안내 및 규정 개정안",
+    "document_identifier": null,
+    "edition_year": null,
+    "version": null,
     "path": "content/documents/tech-grid-model-draft-202608.md",
     "slug": "documents/tech-grid-model-draft-202608"
   }

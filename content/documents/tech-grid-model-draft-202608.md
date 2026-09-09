@@ -1,5 +1,5 @@
 ---
-schema_version: '1.0'
+schema_version: '1.1'
 id: tech-grid-model-draft-202608
 title: 발전사업자 계통해석 모델 제출 사전안내 및 규정 개정안
 organization: 전력거래소
@@ -31,8 +31,7 @@ summary_review_status: unreviewed
 reviewed_by: null
 reviewed_date: null
 last_verified_date: '2026-09-09'
-verification_notes: 공식 사전안내와 개정안 PDF 2개 확보. 확정 공고 미확인; 시행 예정월과 확정 시행일 구분. 모델 시험항목·판정기준의
-  사람 검수 미완료.
+verification_notes: 공식 사전안내와 개정안 PDF 2개 확보. 확정 공고 미확인; 시행 예정월과 확정 시행일 구분. 모델 시험항목·판정기준의 사람 검수 미완료.
 draft: false
 attachments:
 - url: https://www.kpx.or.kr/boardDownload.es?bid=0042&list_no=77979&seq=1
@@ -80,6 +79,17 @@ typed_relations:
   type: references
   source_url: https://www.kpx.or.kr/boardDownload.es?bid=0042&list_no=77979&seq=3
   basis: 신설안 13.2.4.1은 현장시험 방법과 판정기준에 송전계통 연계기준을 참조한다. KB 편집 관계로 해당 기준의 확보 부록6에 연결하며 판본 동일성은 별도 대조 대상이다.
+region_group: KR
+jurisdictions:
+- KR
+market_regions: []
+document_language: ko
+document_type: rule_draft
+title_original: null
+title_ko: 발전사업자 계통해석 모델 제출 사전안내 및 규정 개정안
+document_identifier: null
+edition_year: null
+version: null
 ---
 
 > [!warning] 공식 출처 확인 · AI 요약 검수 대기

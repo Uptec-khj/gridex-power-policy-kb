@@ -15,6 +15,12 @@ ROOT = Path(__file__).resolve().parents[1]
 CONTENT = ROOT / "content"
 HEADINGS = ["기본정보", "3줄 요약", "핵심 내용", "핵심 수치", "주요 정책 변화", "Timeline", "관련 문서", "관련 법령", "원문 링크", "원본 첨부파일"]
 WIKI = re.compile(r"\[\[([^\]|#]+)(?:#[^\]|]*)?(?:\|[^\]]*)?\]\]")
+INTERNATIONAL_FIELDS = ('region_group', 'jurisdictions', 'market_regions', 'document_language',
+                        'document_type', 'title_original', 'title_ko', 'document_identifier', 'edition_year', 'version')
+
+
+def international_metadata(meta):
+    return {key: meta.get(key) for key in INTERNATIONAL_FIELDS}
 
 
 def read_note(path):
@@ -42,7 +48,7 @@ def validate(generating=False):
     known = {p.stem for p in CONTENT.rglob("*.md")}
     actual_basenames = set(known)
     if generating:
-        known.update({"catalog", "timeline", "review-queue"})
+        known.update({"catalog", "timeline", "review-queue", "kr", "au", "us", "cn", "europe"})
     ids = {m["id"]: m for _, m, _ in records}
     registry = yaml.safe_load((ROOT / "sources/registry.yaml").read_text(encoding="utf-8"))["sources"]
     sources = {s["id"]: s for s in registry}
@@ -131,7 +137,7 @@ def build():
         edges.extend({**r, "source": meta["id"], "target": target_id(r["target"]),
                       "interpretation_review_status": meta["summary_review_status"]}
                      for r in meta.get("typed_relations", []))
-        timeline.extend({**e, "document_id": meta["id"], "title": meta["title"]} for e in meta.get("events", []))
+        timeline.extend({**e, "document_id": meta["id"], "title": meta["title"], **international_metadata(meta)} for e in meta.get("events", []))
         # Chunk Markdown at section/paragraph boundaries; never index the raw PDF as AI prose.
         for section in re.split(r"(?=^## )", body, flags=re.M):
             if not section.startswith("## "):
@@ -153,7 +159,7 @@ def build():
                     "plan_family": meta["plan_family"], "plan_number": meta["plan_number"],
                     "category": meta["category"], "technical": meta.get("technical"),
                     "document_stage": meta["document_stage"], "published_date": meta["published_date"],
-                    "collected_date": meta["collected_date"], "topics": meta["topics"]})
+                    "collected_date": meta["collected_date"], "topics": meta["topics"], **international_metadata(meta)})
     timeline.sort(key=lambda e: (e["date"], e["document_id"]))
     write_json(ROOT / "data/metadata/documents.json", documents)
     write_json(ROOT / "data/metadata/relations.json", edges)
@@ -165,7 +171,8 @@ def build():
     rows += [f"| {e['date']} | {e['label']} | {labels[e['status']]} | [[{e['document_id']}]] | [공식 출처]({e['source_url']}) |" for e in timeline]
     (CONTENT / "timeline.md").write_text("\n".join(rows) + "\n", encoding="utf-8")
     rows = ["---", 'title: "공식 문서 목록"', "tags: [안내]", "---", "", f"공식 자료 {len(documents)}건. 사보 해설은 계획 전문과 구분하며, AI 요약은 아직 사람의 검수를 거치지 않았습니다.", "", "| 문서 | 발행일 | 계획·차수 | 문서 단계 | 검증 |", "| --- | --- | --- | --- | --- |"]
-    rows += [f"| {m['title']} · [[{m['id']}]] | {m['published_date'] or '일자 미확인'} | {('제' + str(m['plan_number']) + '차 ' + m['plan_family']) if m['plan_number'] is not None else '기술 문서'} | {m['document_stage']} | {'사람 검수 완료' if m['verification_status'] == 'human_verified' else '공식 출처 확인 · 요약 검수 대기'} |" for m in documents]
+    rows.insert(6, '[[document-search|국가·관할·언어별 문서 찾기]] · [[kr|대한민국]] · [[au|호주]] · [[us|미국]] · [[cn|중국]] · [[europe|유럽]]\n')
+    rows += [f"| {m['title']} · [[{m['id']}]] | {m['published_date'] or '일자 미확인'} | {('제' + str(m['plan_number']) + '차 ' + m['plan_family']) if m['plan_number'] is not None else (m['plan_family'] or m['category'])} | {m['document_stage']} | {'사람 검수 완료' if m['verification_status'] == 'human_verified' else '공식 출처 확인 · 요약 검수 대기'} |" for m in documents]
     (CONTENT / "catalog.md").write_text("\n".join(rows) + "\n", encoding="utf-8")
     pending = [m for m in documents if m['verification_status'] != 'human_verified' or m['summary_review_status'] != 'reviewed']
     rows = ['---', 'title: 콘텐츠 검수 대기 목록', 'tags: [프로젝트, 검수]', '---', '',
@@ -175,11 +182,36 @@ def build():
             '| 문서 | 문서 단계 | 첨부 | 확인 범위와 남은 사항 |', '| --- | --- | --- | --- |']
     rows += [f"| [[{m['id']}]] | {m['document_stage']} | {len(m['attachments'])}개 | {m.get('verification_notes', '').replace('|', '/')} |" for m in pending]
     (CONTENT / 'project/review-queue.md').write_text('\n'.join(rows) + '\n', encoding='utf-8')
+    build_regions(documents)
     validate()
     print(f"Built {len(documents)} documents, {len(edges)} relationships, {len(timeline)} events, {len(chunks)} RAG chunks")
 
 
-def search(query, verified_only=False):
+def build_regions(documents):
+    taxonomy = json.loads((ROOT / 'schemas/international-taxonomy.json').read_text(encoding='utf-8'))
+    folder = CONTENT / 'regions'
+    folder.mkdir(exist_ok=True)
+    candidates = yaml.safe_load((ROOT / 'sources/international-candidates.yaml').read_text(encoding='utf-8'))['sources']
+    for region in taxonomy['regions']:
+        selected = [m for m in documents if m.get('region_group') == region['id']]
+        rows = ['---', f"title: {region['label']} 전력정책·기술 문서", f"region_group: {region['id']}",
+                'type: region_hub', 'tags: [국가별자료]', '---', '',
+                f"공개 공식 자료 **{len(selected)}건**. " + ('AI 요약의 사람 검수 상태는 각 문서에서 확인하세요.' if selected else '공식 문서 수집 준비 중입니다. 아래 자료원 후보는 아직 수집·검수된 문서가 아닙니다.'), '',
+                f"[이 지역 문서 찾기](../document-search?region={region['id']}) · [이 지역 PDF 검색](../original-search?region={region['id']}) · [[international-roadmap|확장 로드맵]]", '',
+                '적용 관할·시장은 문서별 범위입니다. 국가 분류만으로 모든 지역·설비에 동일한 규정이 적용된다는 뜻은 아닙니다.', '']
+        for category in ['에너지정책','재생에너지정책','전력수급계획','전력수요','송변전망','기술기준','성능평가','전력시장']:
+            rows += [f'## {category}', '']
+            items = [m for m in selected if m['category'] == category]
+            rows += [f"- [[{m['id']}|{m['title']}]] · {m['published_date'] or '발행일 미확인'}" for m in items] or ['수집 예정 · 현재 공개 문서 0건.']
+            rows.append('')
+        if not selected:
+            rows += ['## 공식 자료원 후보', '', '원문·이용조건 확인 후 수집할 후보입니다.', '']
+            rows += [f"- [{s['organization']}]({s['entrypoints'][0]}) — {s['scope']}" for s in candidates if s['region_group'] == region['id']]
+        rows += ['', '[[index|전체 홈]] · [[catalog|전체 문서 목록]]', '']
+        (folder / (region['slug'] + '.md')).write_text('\n'.join(rows), encoding='utf-8')
+
+
+def search(query, verified_only=False, region=None, jurisdiction=None, language=None, document_type=None, market=None):
     path = ROOT / "ai/index/chunks.jsonl"
     if not path.exists():
         raise ValueError("Run build before search")
@@ -187,9 +219,15 @@ def search(query, verified_only=False):
     ranked = []
     for line in path.read_text(encoding="utf-8").splitlines():
         c = json.loads(line)
+        if ((region and c.get('region_group') != region) or
+            (jurisdiction and jurisdiction not in (c.get('jurisdictions') or [])) or
+            (market and market not in (c.get('market_regions') or [])) or
+            (language and c.get('document_language') != language) or
+            (document_type and c.get('document_type') != document_type)):
+            continue
         if verified_only and c["verification_status"] != "human_verified":
             continue
-        haystack = (c["title"] + " " + c["text"]).casefold()
+        haystack = (c["title"] + " " + (c.get('title_original') or '') + " " + c["text"]).casefold()
         score = sum(3 if t in c["title"].casefold() else 1 for t in terms if t in haystack)
         if score: ranked.append((score, c))
     ranked.sort(key=lambda item: (-item[0], item[1]["chunk_id"]))
@@ -201,8 +239,13 @@ if __name__ == "__main__":
     parser.add_argument("command", choices=["validate", "build", "search"])
     parser.add_argument("query", nargs="?")
     parser.add_argument("--verified-only", action="store_true")
+    parser.add_argument("--region")
+    parser.add_argument("--jurisdiction")
+    parser.add_argument("--language")
+    parser.add_argument("--document-type")
+    parser.add_argument("--market")
     args = parser.parse_args()
     if args.command == "validate": print(f"Validated {len(validate())} policy documents")
     elif args.command == "build": build()
     elif not args.query: parser.error("search requires a query")
-    else: search(args.query, args.verified_only)
+    else: search(args.query, args.verified_only, args.region, args.jurisdiction, args.language, args.document_type, args.market)

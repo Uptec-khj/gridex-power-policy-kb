@@ -1,5 +1,5 @@
 ---
-schema_version: '1.0'
+schema_version: '1.1'
 id: p11-final
 title: 제11차 전력수급기본계획 최초 공고
 organization: 산업통상자원부
@@ -33,8 +33,8 @@ summary_review_status: unreviewed
 reviewed_by: null
 reviewed_date: null
 last_verified_date: '2026-09-09'
-verification_notes: KPX 공식 재게시 PDF 표지의 2025-169호·2025-02-21 확인. 현재 확보한 바이트이며 최초 게시
-  당시와 동일하다는 보장은 없음. 산업부 첨부 오류 이력 보존. 수정본과 본문 비교·사람 검수 대기.
+verification_notes: KPX 공식 재게시 PDF 표지의 2025-169호·2025-02-21 확인. 현재 확보한 바이트이며 최초 게시 당시와 동일하다는 보장은 없음. 산업부 첨부 오류 이력 보존. 수정본과
+  본문 비교·사람 검수 대기.
 draft: false
 attachments:
 - url: https://www.kpx.or.kr/boardDownload.es?bid=ATT&list_no=74548&seq=1
@@ -61,6 +61,17 @@ tags:
 - 검수대기
 aliases: []
 date: '2025-02-21'
+region_group: KR
+jurisdictions:
+- KR
+market_regions: []
+document_language: ko
+document_type: plan
+title_original: null
+title_ko: 제11차 전력수급기본계획 최초 공고
+document_identifier: null
+edition_year: null
+version: null
 ---
 
 > [!warning] 공식 출처 확인 · AI 요약 검수 대기

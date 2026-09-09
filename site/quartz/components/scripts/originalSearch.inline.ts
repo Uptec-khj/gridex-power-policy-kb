@@ -1,7 +1,8 @@
 import { EvidencePage, evidenceSnippet, rankEvidence, stageLabels } from "./originalSearchCore"
+import { setupRegionFilters, regionLabel, typeLabel } from "../international"
 
 document.addEventListener("nav", () => {
-  const host = document.querySelector<HTMLElement>(".original-search")
+  const host = document.querySelector<HTMLElement>(".original-search[data-root]")
   if (!host) return
   const form = host.querySelector<HTMLFormElement>("form")!
   const query = form.elements.namedItem("query") as HTMLInputElement
@@ -17,6 +18,7 @@ document.addEventListener("nav", () => {
 
   // Populate all choices before loading, so filters work on the first query.
   for (const [value, label] of Object.entries(stageLabels)) stage.add(new Option(label, value))
+  const readFilters = setupRegionFilters(form)
   const element = (tag: string, text: string) => {
     const node = document.createElement(tag)
     node.textContent = text
@@ -45,19 +47,20 @@ document.addEventListener("nav", () => {
     event?.preventDefault()
     const current = ++generation
     const value = query.value.trim()
+    const filters = readFilters()
     results.replaceChildren()
     if (!value) { state.textContent = "검색어를 입력하세요."; return }
     state.textContent = "원문 색인을 불러오는 중입니다…"
     try {
       const evidence = await load()
       if (controller.signal.aborted || current !== generation) return
-      const found = rankEvidence(evidence, value, plan.value, stage.value)
+      const found = rankEvidence(evidence, value, plan.value, stage.value, filters)
       state.textContent = found.length ? `${found.length}개 페이지를 찾았습니다. 최대 25개를 표시합니다. PDF 파일의 쪽수입니다.` : "일치하는 원문 페이지가 없습니다. 검색어나 필터를 바꿔보세요. PDF 미확보·이미지 페이지는 검색되지 않습니다."
       for (const page of found.slice(0, 25)) {
         const card = document.createElement("article")
         const heading = document.createElement("h3")
         heading.append(link(page.title, `${root}/${page.slug}`))
-        card.append(heading, element("p", `${page.plan_number == null ? "기술 문서" : `제${page.plan_number}차 ${page.plan_family ?? ""}`} · ${stageLabels[page.document_stage] ?? page.document_stage} · PDF p.${page.pdf_page} · ${page.published_date ?? "발행일 미확인"}`))
+        card.append(heading, element("p", `${regionLabel(page.region_group)} · ${page.plan_number == null ? typeLabel(page.document_type) : `제${page.plan_number}차 ${page.plan_family ?? ""}`} · ${stageLabels[page.document_stage] ?? page.document_stage} · PDF p.${page.pdf_page} · ${page.published_date ?? "발행일 미확인"}`))
         card.append(element("p", evidenceSnippet(page.text, value)))
         if (page.sparse_text) card.append(element("p", "추출된 글자가 적은 페이지입니다. 표지 또는 이미지 포함 여부를 PDF에서 확인하세요."))
         const actions = document.createElement("p")
@@ -74,12 +77,11 @@ document.addEventListener("nav", () => {
     }
   }
   form.addEventListener("submit", run)
-  plan.addEventListener("change", run)
-  stage.addEventListener("change", run)
+  form.addEventListener("change", run)
+  if (query.value.trim()) run()
   window.addCleanup(() => {
     controller.abort()
     form.removeEventListener("submit", run)
-    plan.removeEventListener("change", run)
-    stage.removeEventListener("change", run)
+    form.removeEventListener("change", run)
   })
 })
