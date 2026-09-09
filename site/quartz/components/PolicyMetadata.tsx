@@ -10,7 +10,9 @@ const stages: Record<string, string> = {
 export default (() => {
   const PolicyMetadata: QuartzComponent = ({ fileData }) => {
     const m = fileData.frontmatter as Record<string, unknown> | undefined
-    if (!m?.id) return null
+    // This card is for documents that use the policy-document schema. GFM hubs and
+    // editorial pages also have IDs, but expose their sources inside the article.
+    if (!m?.id || !m.source_url) return null
     const reviewed = m.verification_status === "human_verified"
     return <aside class="policy-metadata" aria-label="문서 출처와 검수 상태">
       <div class="policy-badges">

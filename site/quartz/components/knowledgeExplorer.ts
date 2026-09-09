@@ -10,6 +10,7 @@ export const knowledgeExplorer: Partial<Options> = {
   filterFn: (node) => node.slugSegment !== "tags",
   mapFn: (node) => {
     const labels: Record<string, string> = {
+      "gfm/index": "GFM 지식창고",
       "regions/index": "국가별 자료", "plans/index": "전력수급계획", "documents/index": "공식 문서 전체",
       "project/index": "자료 검수", "regions/kr": "대한민국", "regions/au": "호주",
       "regions/us": "미국", "regions/cn": "중국", "regions/europe": "유럽",
@@ -25,7 +26,7 @@ export const knowledgeExplorer: Partial<Options> = {
   },
   sortFn: (a, b) => {
     const priority: Record<string, number> = {
-      "regions/index": 0, "plans/index": 10, "energy-renewable-plans": 11,
+      "regions/index": 0, "gfm/index": 1, "plans/index": 10, "energy-renewable-plans": 11,
       "transmission-plans": 12, "demand-outlook": 13, "technical-documents": 14,
       "documents/index": 20, "document-search": 30, "original-search": 31,
       "catalog": 32, "timeline": 33, "reading-guide": 40, "legal-basis": 41,

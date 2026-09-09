@@ -136,7 +136,8 @@ for (const action of knowledgeExplorer.order) {
   const fn = new Function('return ' + knowledgeExplorer[action + 'Fn'].toString())()
   trie[action](fn)
 }
-assert.deepEqual(trie.children.map(n => n.slug), ['regions/index','plans/index','energy-renewable-plans','transmission-plans','demand-outlook','technical-documents','documents/index','document-search','original-search','catalog','timeline','reading-guide','legal-basis','collection-status','extraction-status','project/index'])
+assert.deepEqual(trie.children.map(n => n.slug), ['regions/index','gfm/index','plans/index','energy-renewable-plans','transmission-plans','demand-outlook','technical-documents','documents/index','document-search','original-search','catalog','timeline','reading-guide','legal-basis','collection-status','extraction-status','project/index'])
+assert.equal(trie.findNode(['gfm']).displayName, 'GFM 지식창고')
 assert.deepEqual(trie.findNode(['regions']).children.map(n => n.displayName), ['대한민국','호주','미국','중국','유럽'])
 assert.deepEqual(trie.findNode(['plans']).children.map(n => n.slug), ['plans/plan-10','plans/plan-11','plans/plan-12'])
 assert.equal(trie.findNode(['project']).displayName,'자료 검수')
@@ -146,3 +147,40 @@ const dates = trie.findNode(['documents']).children.map(n => Date.parse(n.data.p
 assert(dates.some(date => date > 0), 'Explorer sorting needs actual publication dates, not missing values')
 assert(dates.every((date,i) => !i || dates[i-1] >= date))
 console.log('Development documents excluded; compatibility redirects and Korean Explorer ordering passed')
+
+// The public GFM pilot must remain reachable from the home page and its hub links must
+// resolve after Quartz rewrites nested Markdown paths for GitHub Pages.
+const gfmPages = [
+  'index',
+  'gfm/gfm-dashboard',
+  'gfm/00_Home/Home',
+  'gfm/00_Home/공개_설계_및_로드맵',
+  'gfm/03_Regions/한국',
+  'gfm/03_Regions/호주',
+  'gfm/03_Regions/영국',
+  'gfm/03_Regions/EU',
+  'gfm/03_Regions/독일',
+  'gfm/03_Regions/미국',
+  'gfm/03_Regions/중국',
+  'gfm/10_Comparisons/초기_요구사항_시험_비교',
+]
+for (const slug of gfmPages) {
+  const htmlPath = path.join(root, 'site/public', slug + '.html')
+  assert(fs.existsSync(htmlPath), `GFM page must be emitted: ${slug}`)
+  const html = fs.readFileSync(htmlPath, 'utf8')
+  for (const match of html.matchAll(/href="([^"]+)"/g)) {
+    const href = match[1]
+    if (/^(?:https?:|mailto:|#)/.test(href)) continue
+    const relative = decodeURIComponent(href.split(/[?#]/, 1)[0])
+    if (!relative) continue
+    const target = path.resolve(path.dirname(htmlPath), relative)
+    const candidates = [target, target + '.html', path.join(target, 'index.html')]
+    assert(candidates.some(candidate => fs.existsSync(candidate)), `${slug} has an unresolved local link: ${href}`)
+  }
+}
+const homeHtml = fs.readFileSync(path.join(root, 'site/public/index.html'), 'utf8')
+assert(homeHtml.includes('href="./gfm/gfm-dashboard"'), 'Home page must link to the GFM dashboard')
+const dashboardHtml = fs.readFileSync(path.join(root, 'site/public/gfm/gfm-dashboard.html'), 'utf8')
+assert(dashboardHtml.includes('GFM 세계 규격·시험·인증'))
+assert(dashboardHtml.includes('href="./03_Regions/한국"'))
+console.log(`GFM navigation passed: ${gfmPages.length} hubs and representative pages with resolved local links`)

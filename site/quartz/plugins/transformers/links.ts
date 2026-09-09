@@ -44,7 +44,10 @@ export const CrawlLinks: QuartzTransformerPlugin<Partial<Options>> = (userOpts) 
             const outgoing: Set<SimpleSlug> = new Set()
 
             const transformOptions: TransformOptions = {
-              strategy: opts.markdownLinkResolution,
+              // The imported GFM vault uses ordinary Markdown paths relative to each
+              // note. Preserve that authored structure; the legacy policy notes rely
+              // on Quartz's shortest-name resolution for Obsidian-style links.
+              strategy: file.data.slug!.startsWith("gfm/") ? "relative" : opts.markdownLinkResolution,
               allSlugs: ctx.allSlugs,
             }
 
