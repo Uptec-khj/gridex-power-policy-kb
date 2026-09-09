@@ -1,12 +1,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url>
     <loc>https://uptec-khj.github.io/gridex-power-policy-kb/catalog</loc>
-    <lastmod>2026-09-09T06:35:35.666Z</lastmod>
+    <lastmod>2026-09-09T07:01:48.634Z</lastmod>
   </url><url>
     <loc>https://uptec-khj.github.io/gridex-power-policy-kb/collection-status</loc>
-    <lastmod>2026-09-09T06:35:35.701Z</lastmod>
+    <lastmod>2026-09-09T07:01:48.687Z</lastmod>
   </url><url>
     <loc>https://uptec-khj.github.io/gridex-power-policy-kb/demand-outlook</loc>
-    <lastmod>2026-09-09T06:35:35.710Z</lastmod>
+    <lastmod>2026-09-09T07:01:48.702Z</lastmod>
+  </url><url>
+    <loc>https://uptec-khj.github.io/gridex-power-policy-kb/document-search</loc>
+    <lastmod>2026-09-09T07:01:48.707Z</lastmod>
   </url><url>
     <loc>https://uptec-khj.github.io/gridex-power-policy-kb/documents/energy-3-final</loc>
     <lastmod>2019-06-03T15:00:00.000Z</lastmod>
@@ -96,13 +99,13 @@
     <lastmod>2020-12-28T15:00:00.000Z</lastmod>
   </url><url>
     <loc>https://uptec-khj.github.io/gridex-power-policy-kb/documents/t10-explainer</loc>
-    <lastmod>2026-09-09T06:35:36.017Z</lastmod>
+    <lastmod>2026-09-09T07:01:49.035Z</lastmod>
   </url><url>
     <loc>https://uptec-khj.github.io/gridex-power-policy-kb/documents/t10-final</loc>
     <lastmod>2023-05-07T15:00:00.000Z</lastmod>
   </url><url>
     <loc>https://uptec-khj.github.io/gridex-power-policy-kb/documents/t11-explainer</loc>
-    <lastmod>2026-09-09T06:35:36.034Z</lastmod>
+    <lastmod>2026-09-09T07:01:49.053Z</lastmod>
   </url><url>
     <loc>https://uptec-khj.github.io/gridex-power-policy-kb/documents/t11-final</loc>
     <lastmod>2025-05-26T15:00:00.000Z</lastmod>
@@ -120,53 +123,68 @@
     <lastmod>2026-08-24T15:00:00.000Z</lastmod>
   </url><url>
     <loc>https://uptec-khj.github.io/gridex-power-policy-kb/energy-renewable-plans</loc>
-    <lastmod>2026-09-09T06:35:36.085Z</lastmod>
+    <lastmod>2026-09-09T07:01:49.110Z</lastmod>
   </url><url>
     <loc>https://uptec-khj.github.io/gridex-power-policy-kb/extraction-status</loc>
-    <lastmod>2026-09-09T06:35:36.095Z</lastmod>
+    <lastmod>2026-09-09T07:01:49.121Z</lastmod>
   </url><url>
     <loc>https://uptec-khj.github.io/gridex-power-policy-kb/</loc>
-    <lastmod>2026-09-09T06:35:36.104Z</lastmod>
+    <lastmod>2026-09-09T07:01:49.134Z</lastmod>
   </url><url>
     <loc>https://uptec-khj.github.io/gridex-power-policy-kb/legal-basis</loc>
-    <lastmod>2026-09-09T06:35:36.109Z</lastmod>
+    <lastmod>2026-09-09T07:01:49.138Z</lastmod>
   </url><url>
     <loc>https://uptec-khj.github.io/gridex-power-policy-kb/original-search</loc>
-    <lastmod>2026-09-09T06:35:36.111Z</lastmod>
+    <lastmod>2026-09-09T07:01:49.143Z</lastmod>
   </url><url>
     <loc>https://uptec-khj.github.io/gridex-power-policy-kb/plans/plan-10</loc>
-    <lastmod>2026-09-09T06:35:36.114Z</lastmod>
+    <lastmod>2026-09-09T07:01:49.150Z</lastmod>
   </url><url>
     <loc>https://uptec-khj.github.io/gridex-power-policy-kb/plans/plan-11</loc>
-    <lastmod>2026-09-09T06:35:36.118Z</lastmod>
+    <lastmod>2026-09-09T07:01:49.152Z</lastmod>
   </url><url>
     <loc>https://uptec-khj.github.io/gridex-power-policy-kb/plans/plan-12</loc>
-    <lastmod>2026-09-09T06:35:36.120Z</lastmod>
+    <lastmod>2026-09-09T07:01:49.156Z</lastmod>
   </url><url>
     <loc>https://uptec-khj.github.io/gridex-power-policy-kb/project/development-backlog</loc>
-    <lastmod>2026-09-09T06:35:36.130Z</lastmod>
+    <lastmod>2026-09-09T07:01:49.166Z</lastmod>
   </url><url>
     <loc>https://uptec-khj.github.io/gridex-power-policy-kb/project/international-roadmap</loc>
-    <lastmod>2026-09-09T06:35:36.149Z</lastmod>
+    <lastmod>2026-09-09T07:01:49.192Z</lastmod>
   </url><url>
     <loc>https://uptec-khj.github.io/gridex-power-policy-kb/project/release-log</loc>
-    <lastmod>2026-09-09T06:35:36.174Z</lastmod>
+    <lastmod>2026-09-09T07:01:49.219Z</lastmod>
   </url><url>
     <loc>https://uptec-khj.github.io/gridex-power-policy-kb/project/review-queue</loc>
-    <lastmod>2026-09-09T06:35:36.184Z</lastmod>
+    <lastmod>2026-09-09T07:01:49.237Z</lastmod>
   </url><url>
     <loc>https://uptec-khj.github.io/gridex-power-policy-kb/project/roadmap</loc>
-    <lastmod>2026-09-09T06:35:36.200Z</lastmod>
+    <lastmod>2026-09-09T07:01:49.256Z</lastmod>
   </url><url>
     <loc>https://uptec-khj.github.io/gridex-power-policy-kb/reading-guide</loc>
-    <lastmod>2026-09-09T06:35:36.207Z</lastmod>
+    <lastmod>2026-09-09T07:01:49.266Z</lastmod>
+  </url><url>
+    <loc>https://uptec-khj.github.io/gridex-power-policy-kb/regions/au</loc>
+    <lastmod>2026-09-09T07:01:49.269Z</lastmod>
+  </url><url>
+    <loc>https://uptec-khj.github.io/gridex-power-policy-kb/regions/cn</loc>
+    <lastmod>2026-09-09T07:01:49.276Z</lastmod>
+  </url><url>
+    <loc>https://uptec-khj.github.io/gridex-power-policy-kb/regions/europe</loc>
+    <lastmod>2026-09-09T07:01:49.282Z</lastmod>
+  </url><url>
+    <loc>https://uptec-khj.github.io/gridex-power-policy-kb/regions/kr</loc>
+    <lastmod>2026-09-09T07:01:49.291Z</lastmod>
+  </url><url>
+    <loc>https://uptec-khj.github.io/gridex-power-policy-kb/regions/us</loc>
+    <lastmod>2026-09-09T07:01:49.299Z</lastmod>
   </url><url>
     <loc>https://uptec-khj.github.io/gridex-power-policy-kb/technical-documents</loc>
-    <lastmod>2026-09-09T06:35:36.210Z</lastmod>
+    <lastmod>2026-09-09T07:01:49.303Z</lastmod>
   </url><url>
     <loc>https://uptec-khj.github.io/gridex-power-policy-kb/timeline</loc>
-    <lastmod>2026-09-09T06:35:36.219Z</lastmod>
+    <lastmod>2026-09-09T07:01:49.314Z</lastmod>
   </url><url>
     <loc>https://uptec-khj.github.io/gridex-power-policy-kb/transmission-plans</loc>
-    <lastmod>2026-09-09T06:35:36.231Z</lastmod>
+    <lastmod>2026-09-09T07:01:49.327Z</lastmod>
   </url></urlset>
