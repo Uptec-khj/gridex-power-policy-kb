@@ -11,7 +11,7 @@ license: 미선택
 
 국제 공식 핵심 문서 20건과 한국 공식 자료 2건의 서지, 자체 한국어 요약, 국가별 허브, 요구사항·시험·증빙 연결을 담은 Obsidian/GitHub 호환 파일럿입니다. KSGA 개정 준비와 한전 공청회·기준 수립 이력은 공식 현행본과 분리된 추적 항목으로 관리합니다. 원문 파일은 포함하지 않으며 공식 페이지·원문 URL만 제공합니다.
 
-시작: [대시보드](index.md) · [홈](00_Home/Home.md) · [자료 확보 현황](00_Home/자료_확보_현황.md) · [비교표](10_Comparisons/초기_요구사항_시험_비교.md) · [저작권 정책](00_Home/COPYRIGHT_POLICY.md)
+시작: [대시보드](gfm-dashboard.md) · [홈](00_Home/Home.md) · [자료 확보 현황](00_Home/자료_확보_현황.md) · [비교표](10_Comparisons/초기_요구사항_시험_비교.md) · [저작권 정책](00_Home/COPYRIGHT_POLICY.md)
 
 ## 조사 기준
 

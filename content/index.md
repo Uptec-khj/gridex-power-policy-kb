@@ -35,7 +35,7 @@ tags: [안내]
 
 ## GFM 세계 규격·시험·인증
 
-[[gfm/index|GFM 대시보드]]에서 AEMO·NESO·ENTSO-E·VDE FNN·FGW·UNIFI·NERC·ERCOT·IEEE·CQC·GB/T의 국제 핵심문서 20건과 한국 공식 자료 2건을 탐색할 수 있습니다.
+[[gfm/gfm-dashboard|GFM 대시보드]]에서 AEMO·NESO·ENTSO-E·VDE FNN·FGW·UNIFI·NERC·ERCOT·IEEE·CQC·GB/T의 국제 핵심문서 20건과 한국 공식 자료 2건을 탐색할 수 있습니다.
 
 - [[gfm/03_Regions/한국|한국 GFM 허브]] — KSGA 단체표준과 한전·KPX 계통연계/시장 트랙
 - [[gfm/10_Comparisons/초기_요구사항_시험_비교|초기 요구사항·시험 비교]] — 시험조건이 다른 문서를 동등하다고 보지 않는 비교
