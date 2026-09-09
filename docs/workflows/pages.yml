@@ -32,11 +32,11 @@ jobs:
       - run: python -m pip install -r requirements.txt
       - run: python -m unittest discover -s tests -v
       - run: python scripts/kb.py build
-      - name: Check generated indexes are committed
-        run: git diff --exit-code -- content/catalog.md content/timeline.md data/metadata/documents.json data/metadata/relations.json data/metadata/timeline.json ai/index/chunks.jsonl
       - run: npm --prefix site ci --no-audit --no-fund
       - run: npm --prefix site run build
       - run: node scripts/check-site.mjs
+      - name: Check generated indexes are committed
+        run: git diff --exit-code -- content/catalog.md content/timeline.md content/extraction-status.md data/metadata ai/index
       - uses: actions/upload-pages-artifact@v3
         if: github.event_name != 'pull_request'
         with:

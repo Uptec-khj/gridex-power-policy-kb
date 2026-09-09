@@ -2,7 +2,7 @@
 
 대한민국 전력정책의 **공식 원문을 연결하는 Markdown Knowledge Base**입니다. PDF를 내려받지 않아도 정책의 맥락·수치·변화·연관 문서를 탐색할 수 있도록 만듭니다.
 
-[공개 Knowledge Base](https://uptec-khj.github.io/gridex-power-policy-kb/) · [문서 표준](docs/frontmatter-standard.md) · [자료 확보 현황](content/collection-status.md) · [작성 템플릿](templates/policy-document.md)
+[공개 Knowledge Base](https://uptec-khj.github.io/gridex-power-policy-kb/) · [개발 로드맵](content/project/roadmap.md) · [문서 표준](docs/frontmatter-standard.md) · [자료 확보 현황](content/collection-status.md) · [작성 템플릿](templates/policy-document.md)
 
 ## 현재 범위
 
@@ -20,6 +20,9 @@
 content/                  Obsidian Markdown: 유일한 콘텐츠 편집 원본
   documents/              안정적인 ID를 파일명으로 쓰는 공식 자료 노트
   plans/                  10·11·12차 탐색 허브
+  project/                개발 로드맵·백로그·개발 기록
+  original-search.md      공식 PDF 페이지 검색
+  extraction-status.md    자동 생성한 PDF 추출 현황
   index.md                공개 KB 첫 화면
   catalog.md, timeline.md  Markdown에서 생성한 문서 목록·연표
 templates/                Obsidian 정책문서 작성 양식
@@ -28,7 +31,7 @@ collector/                공식 게시물·첨부 수집, 기관별 링크 해�
 data/
   raw/sha256/             해시 기반 원본 PDF/HWP/HWPX·HTML 보존
   metadata/               수집 이력·문서 목록·관계·Timeline JSON
-  extracted/              재생성 가능한 추출 텍스트, Git 제외
+  extracted/              향후 추출 중간 산출물·캐시, Git 제외
 site/                     Quartz 4.5.2 엔진·설정·스타일
 ai/                       인용 지침·RAG 설계·파생 JSONL 검색 인덱스
 schemas/                  Frontmatter JSON Schema
@@ -58,7 +61,7 @@ npm --prefix site run build
 npm --prefix site run preview
 ```
 
-미리보기 주소는 `http://localhost:8080`입니다. Quartz가 `../content`를 직접 읽으므로 Markdown 복사본을 만들지 않습니다. 검색, 태그, 백링크, 관계 그래프, 목차가 포함됩니다. 공개 사이트 생성물은 `site/public/`이며 Git에는 커밋하지 않습니다.
+미리보기 주소는 `http://localhost:8080`입니다. Quartz가 `../content`를 직접 읽으므로 Markdown 복사본을 만들지 않습니다. 검색, 태그, 백링크, 관계 그래프, 목차가 포함됩니다. `npm run build`와 `preview`의 선행 단계에서 보존 PDF의 원문 색인·추출 현황을 재생성합니다. 공개 사이트의 `original-search`에서 차수·단계별 PDF 페이지 검색을 사용할 수 있습니다. 공개 사이트 생성물은 `site/public/`이며 Git에는 커밋하지 않습니다.
 
 ## 공식 자료 수집
 
@@ -79,6 +82,8 @@ HTML 오류를 PDF로 저장하지 않습니다. 다운로드 실패는 `data/me
 python scripts/kb.py build
 python scripts/kb.py search "11차 전력수요"
 python scripts/kb.py search "전력수요" --verified-only
+python scripts/originals.py build
+python scripts/originals.py search "송변전 61183" --plan 11 --stage final
 ```
 
 JSONL 청크에는 문서 ID·절·차수·문서 단계·원문 URL·해시·검증 상태를 포함합니다. 기본 검색은 간단한 키워드 검색입니다. 임베딩·벡터 DB·생성형 답변 서비스는 아직 연결하지 않았습니다. `--verified-only`는 사람 검수 완료 문서만 반환하므로 초기 데이터에서는 결과가 없습니다. [RAG 설계](ai/README.md)를 참고하세요.
@@ -100,3 +105,14 @@ JSONL 청크에는 문서 ID·절·차수·문서 단계·원문 URL·해시·�
 ## 권리와 출처
 
 GRIDEX 신규 코드에는 [MIT License](LICENSE)를 적용합니다. 공식 원문, 발행기관의 저작물, 인용문, 제3자 이미지에는 적용하지 않습니다. 원본의 이용조건·공공누리 유형은 자료별로 확인하며 확인하지 않은 권리를 추정하지 않습니다. 초기 획득 기록의 `rights_status: check_source_terms`는 별도 확인이 남아 있다는 뜻입니다. Quartz의 MIT 라이선스와 [고정한 upstream 기록](site/UPSTREAM.md)을 보존합니다.
+
+
+## 개발 관리
+
+Obsidian에서 [개발 로드맵](content/project/roadmap.md)을 열고 [백로그](content/project/development-backlog.md), [개발 기록](content/project/release-log.md)을 함께 사용합니다. 새 작업에는 [development-task 템플릿](templates/development-task.md)을 적용합니다. 플러그인 없이 Frontmatter·체크박스·Wiki Link로 동작하며 Quartz에서도 공개됩니다.
+
+## 원문 검색의 범위
+
+`ai/index/official-pages.jsonl`은 PDF의 물리적 페이지 단위 추출 텍스트입니다. `ai/index/chunks.jsonl`의 AI 편집 요약과 분리합니다. 원본 SHA-256, 첨부 URL, PDF 쪽수, 차수·단계, 추출 도구 버전을 보존합니다. 표 구조·인쇄 쪽수·OCR 정확도를 추정하지 않습니다. PDF가 없는 문서와 텍스트가 없거나 적은 페이지는 [추출 현황](content/extraction-status.md)에 표시합니다.
+
+공개 검색 색인 `site/quartz/static/official-pages.json`은 매 빌드에 생성하는 파생 파일이므로 Git에서 제외합니다. HTML 출력과 함께 GitHub Pages에 배포됩니다. 검색어를 서버나 생성형 AI에 전달하지 않으며, 여러 단어는 AND 조건으로 검색합니다. 의미 검색과 생성형 답변은 후속 단계입니다.

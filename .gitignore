@@ -17,3 +17,4 @@ data/extracted/
 data/logs/
 *.log
 *.tsbuildinfo
+site/quartz/static/official-pages.json

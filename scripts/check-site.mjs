@@ -36,3 +36,27 @@ for (const slug of ["index", "timeline", "catalog", "documents/p11-amend"]) {
   }
 }
 console.log(`Site smoke checks passed: ${Object.keys(content).length} indexed pages, Korean search, graph edge, review labels`)
+
+// Exercise the exact ranking code shipped to the browser against real PDF pages.
+const evidence = JSON.parse(fs.readFileSync(path.join(root, "site/public/static/official-pages.json"), "utf8"))
+const core = fs.readFileSync(path.join(root, "site/quartz/components/scripts/originalSearchCore.ts"), "utf8")
+const coreCode = transformSync(core, { loader: "ts", format: "cjs" }).code
+const coreModule = { exports: {} }
+new Function("module", "exports", coreCode)(coreModule, coreModule.exports)
+const { rankEvidence } = coreModule.exports
+for (const [query, plan, stage, id, page] of [
+  ["송변전 61183", "11", "final", "t11-final", 14],
+  ["송변전 57,681", "10", "final", "t10-final", 13],
+  ["72.8", "11", "press_release", "t11-release", 2],
+]) {
+  const found = rankEvidence(evidence.pages, query, plan, stage)
+  assert(found.some(p => p.document_id === id && p.pdf_page === page), `Original search: ${query}`)
+  assert(found.every(p => String(p.plan_number) === plan && p.document_stage === stage))
+}
+assert.equal(rankEvidence(evidence.pages, "", "", "").length, 0)
+assert.equal(rankEvidence(evidence.pages, "송변전 zzz-does-not-exist", "", "").length, 0)
+assert(evidence.pages.every(p => p.content_origin === "official_extraction" && p.extraction_review_status === "unreviewed"))
+const originalPage = fs.readFileSync(path.join(root, "site/public/original-search.html"), "utf8")
+assert(originalPage.includes('class="original-search"') && originalPage.includes('name="stage"'))
+assert(content["project/roadmap"].links.includes("project/development-backlog"))
+console.log(`Original search passed: ${evidence.report.searchable_pages} pages with text, PDF citations and plan/stage filters`)

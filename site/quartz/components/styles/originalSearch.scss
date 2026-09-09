@@ -1,0 +1,17 @@
+.original-search {
+  margin: 1.5rem 0;
+  padding: 1.25rem;
+  border: 1px solid var(--lightgray);
+  border-radius: 10px;
+  label { display: flex; flex-direction: column; gap: .4rem; font-weight: 600; }
+  input, select, button { font: inherit; padding: .65rem; border: 1px solid var(--gray); border-radius: 5px; background: var(--light); color: var(--dark); min-width: 0; }
+  input { width: 100%; box-sizing: border-box; }
+  input:focus-visible, select:focus-visible, button:focus-visible { outline: 2px solid var(--secondary); outline-offset: 2px; }
+  button { cursor: pointer; background: var(--secondary); color: var(--light); font-weight: 600; }
+  .original-search-filters { display: flex; flex-wrap: wrap; align-items: end; gap: .8rem; margin-top: .9rem; label { flex: 1; min-width: 130px; } }
+  .original-search-state { font-size: .9rem; }
+  article { border-top: 1px solid var(--lightgray); padding: 1rem 0; h3 { margin-top: .3rem; } }
+  .original-search-links { display: flex; flex-wrap: wrap; gap: 1rem; }
+  summary { cursor: pointer; color: var(--secondary); }
+  pre { white-space: pre-wrap; overflow-wrap: anywhere; max-height: 24rem; overflow-y: auto; padding: .8rem; font-size: .8rem; }
+}

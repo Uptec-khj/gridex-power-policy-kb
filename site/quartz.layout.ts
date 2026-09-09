@@ -1,4 +1,5 @@
 import PolicyMetadata from "./quartz/components/PolicyMetadata"
+import OriginalSearch from "./quartz/components/OriginalSearch"
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
 
@@ -24,6 +25,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.ArticleTitle(),
     PolicyMetadata(),
     Component.TagList(),
+    OriginalSearch(),
   ],
   left: [
     Component.PageTitle(),
