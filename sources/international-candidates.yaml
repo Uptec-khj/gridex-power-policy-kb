@@ -1,0 +1,135 @@
+# Planning inventory only. Not consumed by collector or the operational registry.
+schema_version: 'proposal-1'
+research_cutoff: '2026-09-09'
+status: proposed
+enabled: false
+roadmap: content/project/international-roadmap.md
+defaults:
+  collection_feasibility: untested
+  robots_review: pending
+  rights_review: pending
+  public_original_archive: blocked_pending_rights_review
+  discovery_preference: [official_api_or_feed_if_available, official_listing, manual_registration]
+  proposed_listing_cadence: weekly
+  activation_gate: 공식 경로·적용 범위·이용조건·파서 검증 후 실행 Registry로 개별 승격
+sources:
+  - id: au-aemo
+    enabled: false
+    phase: G2
+    region_group: AU
+    organization: Australian Energy Market Operator
+    languages: [en]
+    scope: NEM 계획·성능기준 안내와 WEM GPS를 구분해 조사
+    entrypoints:
+      - https://www.aemo.com.au/energy-systems/major-publications/integrated-system-plan-isp
+      - https://aemo.com.au/consultations/current-and-closed-consultations/gps-template
+      - https://www.aemo.com.au/energy-systems/electricity/wholesale-electricity-market-wem/system-operations/gps-framework
+    observation: 공식 안내 확인. PDF·부속자료·협의 공지의 독립 문서 여부를 수집 단계에서 판정.
+  - id: au-aemc
+    enabled: false
+    phase: G2
+    region_group: AU
+    organization: Australian Energy Market Commission
+    languages: [en]
+    scope: National Electricity Rules와 개정·시행 이력
+    entrypoints:
+      - https://www.aemc.gov.au/regulation/energy-rules/national-electricity-rules
+    observation: 검색에서 공식 안내 확인. 직접 페이지 열기는 403; 자동 수집 경로 미검증.
+  - id: us-doe
+    enabled: false
+    phase: G3
+    region_group: US
+    organization: U.S. Department of Energy
+    languages: [en]
+    scope: 송전 수요·장기 계획 연구
+    entrypoints:
+      - https://www.energy.gov/oe/national-transmission-needs-study
+      - https://www.energy.gov/oe/national-transmission-planning-study-0
+    observation: 2026 Needs Study는 안내 페이지상 초안. 기존 확정 보고서와 별도 식별.
+  - id: us-ferc
+    enabled: false
+    phase: G3
+    region_group: US
+    organization: Federal Energy Regulatory Commission
+    languages: [en]
+    scope: 발전설비 접속 명령·설명·이행 자료
+    entrypoints:
+      - https://www.ferc.gov/electric-transmission/generator-interconnection
+    observation: Order 2023·2023-A 원문과 설명자료를 구분하여 후속 수집.
+  - id: us-nerc
+    enabled: false
+    phase: G3
+    region_group: US
+    organization: North American Electric Reliability Corporation
+    languages: [en]
+    scope: 미국 적용 신뢰도 표준 및 IBR·모델·EMT 가이드
+    entrypoints:
+      - https://www.nerc.com/standards/reliability-standards
+      - https://www.nerc.com/our-work/guidelines/reliability-guidelines
+    observation: 기관의 전체 범위를 미국으로 제한 해석하지 않음. 관할별 적용 상태·시행일 확인 필요.
+  - id: us-caiso
+    enabled: false
+    phase: G3
+    region_group: US
+    organization: California Independent System Operator
+    languages: [en]
+    scope: 지역 송전계획·발전설비 접속 사례
+    entrypoints:
+      - https://www.caiso.com/generation-transmission/transmission/transmission-planning
+      - https://www.caiso.com/generation-transmission/generation/generator-interconnection
+    observation: 파일럿 지역 운영자 후보. 전체 미국 또는 캘리포니아 전체 계통으로 적용 범위를 추정하지 않음.
+  - id: europe-entsoe
+    enabled: false
+    phase: G4
+    region_group: Europe
+    organization: European Network of Transmission System Operators for Electricity
+    languages: [en]
+    scope: 범유럽 TYNDP·EU 접속 규정 관련 적용 가이드
+    entrypoints:
+      - https://tyndp.entsoe.eu/
+      - https://www.entsoe.eu/news/2026/04/02/tyndp-2026-project-portfolio-expands-further-to-199-transmission-and-69-storage-project/
+      - https://www.entsoe.eu/network_codes/rfg/
+      - https://www.entsoe.eu/network_codes/cnc/cnc-igds/
+    observation: 공식 공지·가이드 확인. TYNDP 포털 직접 열기는 추출 본문 없음. EU 법적 관할과 범유럽 계통 범위 구분.
+  - id: eu-eurlex
+    enabled: false
+    phase: G4
+    region_group: Europe
+    organization: Publications Office of the European Union / EUR-Lex
+    languages: [en]
+    scope: EU 법령 원문·개정·통합본
+    entrypoints:
+      - https://eur-lex.europa.eu/eli/reg/2016/631/oj/eng
+    observation: 직접 열기에서 브라우저 검증 화면. 전문 확인·다운로드 미완료. 공식 공개 접근 방식 조사 필요.
+  - id: cn-nea
+    enabled: false
+    phase: G4
+    region_group: CN
+    organization: 国家能源局 / 国家发展改革委 공동 발행 문서 포함
+    languages: [zh-Hans]
+    scope: 에너지체계·전력·재생에너지 계획
+    entrypoints:
+      - https://www.nea.gov.cn/20260625/0ccfdc1674e84868b49480edf584eb5f/c.html
+      - https://zfxxgk.nea.gov.cn/2022-01/29/c_1310524241.htm
+    observation: 제15차 계획 공고 본문·첨부 링크 확인. 첨부 전문 미검토. 발표 기관과 게시 기관을 문서별 확인.
+  - id: cn-samr-standards
+    enabled: false
+    phase: G4
+    region_group: CN
+    organization: 全国标准信息公共服务平台
+    languages: [zh-Hans]
+    scope: 국가표준 식별·상태·대체 관계·계통연계 및 시험 기준
+    entrypoints:
+      - https://std.samr.gov.cn/gb/search/gbDetailed?id=p3zoY65no%2FU%3D&mode=p
+    observation: GB/T 19964-2024 상세·기존 판본 대체 정보 확인. 전문 다운로드·재배포 조건 미확인.
+  - id: gb-neso
+    enabled: false
+    phase: post_pilot
+    region_group: Europe
+    organization: National Energy System Operator
+    languages: [en]
+    scope: 영국 Grid Code·개정 이력, 실제 적용 계통 확인
+    entrypoints:
+      - https://www.neso.energy/industry-information/codes/grid-code-gc/grid-code-documents
+      - https://www.neso.energy/industry-information/codes/grid-code-gc/grid-code-modifications
+    observation: 유럽 국가별 확장의 후속 후보. EU 공통 규정과 별도 관할.

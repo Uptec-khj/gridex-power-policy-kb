@@ -20,6 +20,8 @@
 
 ## 구성
 
+[국가별 확장 로드맵](content/project/international-roadmap.md)에 호주·미국·중국·유럽의 탐색 메뉴, 관할·언어·버전 표준, 공식 자료원, 해외 24건 파일럿과 지속 수집 흐름을 정리했습니다. [국제 자료원 후보](sources/international-candidates.yaml) 11개는 **비활성 설계 목록**이며 현재 수집기와 연결되지 않습니다. 해외 문서·국가별 탭·정기 실행은 후속 개발 범위입니다.
+
 ```text
 content/                  Obsidian Markdown: 유일한 콘텐츠 편집 원본
   documents/              안정적인 ID를 파일명으로 쓰는 공식 자료 노트
