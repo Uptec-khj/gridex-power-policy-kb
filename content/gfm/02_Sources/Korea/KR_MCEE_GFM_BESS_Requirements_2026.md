@@ -14,7 +14,7 @@ effective_date:
 facility_cutoff_date: 2027-12
 official_page_url: https://mcee.go.kr/home/web/newsRead.do?boardId=1872760&boardMasterId=939&menuId=10607
 official_document_url:
-relevant_clauses_pages: "공식 웹 본문; 붙임1 세부 성능요건은 후속 조항 대조"
+relevant_clauses_pages: "공식 웹 본문; 전력시장운영규칙 제15.3.2조⑨·별표3 24.0~25.3과 대조"
 access_status: 공식 본문·첨부 공개
 document_status: 확정 발표
 applicability: 시장·계약 조건 및 관련 규정 준수; 정확한 조항 후속 확인
@@ -24,7 +24,7 @@ terms_url: https://mcee.go.kr
 redistribution: 미확인
 rights_checked_on: 2026-09-09
 publication_mode: 링크·자체 한국어 요약
-review_status: 공식 본문 핵심 검토
+review_status: 공식 본문 검토·KPX 시행 규칙 연결
 verified_on: 2026-09-09
 ---
 
@@ -37,9 +37,8 @@ verified_on: 2026-09-09
 ## 해석 경계
 
 - 이 보도자료는 성능요건 마련과 적용 대상을 확인하는 공식 근거다.
-- 한전 이용규정과 KPX 시장운영규칙의 정확한 개정 조항·별표·시행일은 별도 원문 대조가 필요하다.
+- KPX 규칙은 별도 원문 대조를 완료했다. 한전 이용규정의 정확한 개정 조항·별표·시행본은 계속 확인이 필요하다.
 - 성능요건 준수, 제품 인증, 시험성적서, 계통연계 승인과 보조서비스 참여는 동일한 증빙이 아니다.
 - 첨부 원문은 공식 페이지에서 제공되지만 재배포 조건을 확인하지 않았으므로 이 저장소에 포함하지 않는다.
 
-관련: [KSGA 일반 요구사항](KSGA_025_18_1_2023_Ed1.md) · [한전 공청회·기준 수립 추적](../../01_Inbox/KEPCO_GFM_공청회_기준수립_추적.md)
-
+관련: [KPX 시행 규칙](KPX_Market_Rules_2026_04_29.md) · [한국 요구사항 색인](../../06_Requirements/한국_GFM_BESS_요구사항_색인.md) · [KSGA 일반 요구사항](KSGA_025_18_1_2023_Ed1.md) · [한전 공청회·기준 수립 추적](../../01_Inbox/KEPCO_GFM_공청회_기준수립_추적.md)
