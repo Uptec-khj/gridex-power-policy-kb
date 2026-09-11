@@ -122,6 +122,8 @@ JSONL 청크에는 문서 ID·절·차수·문서 단계·원문 URL·해시·�
 
 ## 권리와 출처
 
+2026-09-11 사용자 지시로 **원문은 비공개 개발 저장소에 보관하고 공개 사이트에는 공식 원문 링크·서지·자체 요약만 제공**하는 전환을 진행합니다. 현재 개발 저장소가 Public으로 확인되어 원문 이관은 보류 중입니다. GFM 영역은 이미 원문 사본을 포함하지 않지만, 기존 정책 영역의 `data/raw/sha256/` 75개 파일과 원문 전문 색인은 아직 이관·공개 제외·재배포 검증이 남아 있습니다. 아래 기존 보존 설명은 전환 전 상태이며 완료를 뜻하지 않습니다. [이관 계획](https://github.com/Uptec-khj/gridex-project-management/blob/main/content/original-archive-migration.md)을 따릅니다.
+
 GRIDEX 신규 코드에는 [MIT License](LICENSE)를 적용합니다. 공식 원문, 발행기관의 저작물, 인용문, 제3자 이미지에는 적용하지 않습니다. 원본의 이용조건·공공누리 유형은 자료별로 확인하며 확인하지 않은 권리를 추정하지 않습니다. 초기 획득 기록의 `rights_status: check_source_terms`는 별도 확인이 남아 있다는 뜻입니다. Quartz의 MIT 라이선스와 [고정한 upstream 기록](site/UPSTREAM.md)을 보존합니다.
 
 
