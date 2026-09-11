@@ -64,6 +64,10 @@ Obsidian에서 이 저장소 **루트 폴더**를 보관함으로 엽니다. `co
 
 ## 실행
 
+### GFM 메타데이터 품질 점검
+
+[Knowledge Base Generator 연동 안내](docs/gfm-generator-integration.md)에 따라 기존 GFM 노트를 비파괴 감사합니다. `python scripts/gfm_audit.py`는 원본을 바꾸지 않고 출처 필드·ID·날짜·내부 파일 링크·첨부 경계를 검사합니다. `--write`는 재생성 가능한 공개 메타데이터만 갱신합니다. 공식 출처 확인과 주장·사람 검수 수준을 자동으로 동일시하지 않습니다.
+
 Python 3.12 이상, Node.js 22 이상, npm 10.9.2 이상이 필요합니다. Windows PowerShell에서는 정책에 따라 `npm` 대신 `npm.cmd`를 사용할 수 있습니다.
 
 ```sh
