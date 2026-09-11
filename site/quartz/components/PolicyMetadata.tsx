@@ -6,6 +6,10 @@ const stages: Record<string, string> = {
   draft: "초안", consultation: "의견수렴·토론회", announced: "추진·사전 안내",
   supporting: "공식 보조자료", press_release: "공식 발표자료", official_explainer: "기관 해설",
 }
+const validity: Record<string, string> = {
+  draft: "초안", current: "현행", superseded: "대체됨", future: "장래 시행",
+  repealed: "폐지", unknown: "유효 상태 미확인",
+}
 
 export default (() => {
   const PolicyMetadata: QuartzComponent = ({ fileData }) => {
@@ -24,6 +28,8 @@ export default (() => {
       <p>{typeLabel(String(m.document_type ?? ""))} · 원문 {taxonomy.languages[String(m.document_language) as keyof typeof taxonomy.languages] ?? "언어 미확인"} · 관할 {(Array.isArray(m.jurisdictions) ? m.jurisdictions : []).map(id => taxonomy.jurisdictions.find(j => j.id === id)?.label ?? id).join(", ") || "미확인"}</p>
       {m.title_original && m.title_original !== m.title && <p lang={String(m.document_language)}>{String(m.title_original)}</p>}
       {(m.document_identifier || m.edition_year || m.version) && <p>{[m.document_identifier, m.edition_year ? `${m.edition_year}년판` : null, m.version].filter(Boolean).join(" · ")}</p>}
+      {m.validity_status && <p>유효 상태 {validity[String(m.validity_status)] ?? String(m.validity_status)} · 시행 {m.effective_date ? String(m.effective_date) : "별도 시행일 없음·미표기"} · 상태 확인 {String(m.status_checked_date)}</p>}
+      {m.applicability && <p>적용 범위: {String(m.applicability)}</p>}
       <p>{String(m.organization)} · 발행 {m.published_date ? String(m.published_date) : "일자 미확인"}</p>
       <a href={String(m.source_url)} target="_blank" rel="noopener noreferrer">공식 출처 확인 ↗</a>
     </aside>

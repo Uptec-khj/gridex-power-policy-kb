@@ -1,10 +1,27 @@
 schema_version: '1.0'
-research_cutoff: '2026-09-09'
+research_cutoff: '2026-09-11'
 mvp_target:
   minimum_documents: 30
   maximum_documents: 50
   counting_rule: 서로 다른 공식 자료만 계산. 파일 형식 차이와 탐색 허브 제외.
 items:
+- id: australia-g2-pilot
+  priority: P0
+  title: AEMO/AEMC 호주 G2 파일럿
+  status: link_only_collected_review_pending
+  document_ids:
+  - au-isp-2026-draft
+  - au-isp-2026-final
+  - au-nem-esoo-2026
+  - au-wem-esoo-2026
+  - au-ner-v254
+  - au-wem-gps-framework
+  - au-nem-gps-template-2023
+  - au-wem-gps-registration
+  - au-wem-gps-testing
+  - au-gpsrr-2026
+  next_action: 국제 원본 재배포 조건, WEM 웹 안내의 발행일·버전, AEMO 자동 접근 제한을 재확인하고 사람 검수 진행
+  notes: 핵심 6건과 보완 4건. NEM/WEM·초안/확정·v1/v2·시행 상태를 분리했으며 원본은 공식 링크만 제공.
 - id: transmission-10-original
   priority: P0
   title: 제10차 장기 송변전설비계획 공식 전문

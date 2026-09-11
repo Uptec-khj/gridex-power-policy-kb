@@ -1,0 +1,71 @@
+schema_version: '1.0'
+pilot: G2
+research_cutoff: '2026-09-11'
+selection_rule: 핵심 6건은 G2 통과 수량, 보완 4건은 사용자가 선택한 계획·전망·기술 범위를 함께 제공하되 핵심 수량에는 중복 집계하지 않는다.
+archive_policy: 국제 원본 재배포 이용조건 확인 전에는 공식 링크만 제공한다.
+documents:
+- id: au-isp-2026-draft
+  tier: core
+  source_id: au-aemo
+  market: NEM
+  source_url: https://www.aemo.com.au/consultations/current-and-closed-consultations/draft-2026-isp-consultation
+  expected_terms: [Draft 2026 ISP, 10 December 2025, 25 June 2026]
+- id: au-isp-2026-final
+  tier: core
+  source_id: au-aemo
+  market: NEM
+  source_url: https://www.aemo.com.au/energy-systems/major-publications/integrated-system-plan-isp/2026-integrated-system-plan-isp
+  attachment_url: https://www.aemo.com.au/-/media/files/major-publications/isp/2026/2026-integrated-system-plan-isp.pdf?rev=f2f142d0a8d740a986f186da17bb8a9d&sc_lang=en
+  expected_terms: [2026 Integrated System Plan, 25 June 2026]
+- id: au-nem-esoo-2026
+  tier: core
+  source_id: au-aemo
+  market: NEM
+  source_url: https://www.aemo.com.au/energy-systems/electricity/national-electricity-market-nem/nem-forecasting-and-planning/forecasting-and-reliability/nem-electricity-statement-of-opportunities-esoo
+  attachment_url: https://www.aemo.com.au/-/media/files/electricity/nem/planning_and_forecasting/nem_esoo/2026/2026-electricity-statement-of-opportunities.pdf?rev=4f2e73fbd906456288198fdbc24b335a&sc_lang=en
+  expected_terms: [2026 Electricity Statement of Opportunities, 25/08/2026]
+- id: au-wem-esoo-2026
+  tier: core
+  source_id: au-aemo
+  market: WEM
+  source_url: https://www.aemo.com.au/energy-systems/electricity/wholesale-electricity-market-wem/wem-forecasting-and-planning/wem-electricity-statement-of-opportunities-wem-esoo
+  attachment_url: https://www.aemo.com.au/-/media/files/electricity/wem/planning_and_forecasting/esoo/2026/2026-wem-electricity-statement-of-opportunities.pdf?rev=3aa69153c92f4437ac7032402a261f9c&sc_lang=en
+  expected_terms: [2026 WEM Electricity Statement of Opportunities, 15/07/2026]
+- id: au-ner-v254
+  tier: core
+  source_id: au-aemc
+  market: NEM
+  source_url: https://energy-rules.aemc.gov.au/ner/818
+  attachment_url: https://aemc-dra-production-s3.s3.ap-southeast-2.amazonaws.com/rules/bc0d2a8e1cf523289a553dfefbec0a3b359f4b5b/assets/files/NER%20-%20v254%20-%20Full.pdf
+  expected_terms: [NER Version 254, 4 September 2026]
+- id: au-wem-gps-framework
+  tier: core
+  source_id: au-aemo
+  market: WEM
+  source_url: https://www.aemo.com.au/energy-systems/electricity/wholesale-electricity-market-wem/system-operations/gps-framework
+  expected_terms: [Generator Performance Standards, Chapter 3A, Appendix 12]
+- id: au-nem-gps-template-2023
+  tier: supplemental
+  source_id: au-aemo
+  market: NEM
+  source_url: https://www.aemo.com.au/consultations/current-and-closed-consultations/gps-template
+  attachment_url: https://www.aemo.com.au/-/media/files/stakeholder_consultation/consultations/nem-consultations/2023/gps-template/generator-or-integrated-resource-provider-performance-standards-template-final.docx?rev=9e5cafa148164d6ea855ada2d78a6675&sc_lang=en
+  expected_terms: [Generator or Integrated Resource Provider, 16/03/2023]
+- id: au-wem-gps-registration
+  tier: supplemental
+  source_id: au-aemo
+  market: WEM
+  source_url: https://www.aemo.com.au/energy-systems/electricity/wholesale-electricity-market-wem/system-operations/gps-framework/registration-of-generator-performance-standards
+  expected_terms: [1 February 2021, section 1.40, Chapter 3A]
+- id: au-wem-gps-testing
+  tier: supplemental
+  source_id: au-aemo
+  market: WEM
+  source_url: https://www.aemo.com.au/energy-systems/electricity/wholesale-electricity-market-wem/system-operations/gps-framework/generator-performance-testing-and-monitoring
+  expected_terms: [GPS compliance tests, Generator Monitoring Plan]
+- id: au-gpsrr-2026
+  tier: supplemental
+  source_id: au-aemo
+  market: NEM
+  source_url: https://www.aemo.com.au/energy-systems/electricity/national-electricity-market-nem/system-operations/general-power-system-risk-review
+  expected_terms: [2026 GPSRR, 31 July 2026, National Electricity Market]

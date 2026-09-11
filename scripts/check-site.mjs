@@ -100,7 +100,7 @@ assert.equal(rankEvidence(collision, 'same', 'family:재생에너지기본계획
 assert(content['energy-renewable-plans'].links.includes('documents/renewable-1-final-2026'))
 console.log(`Original search passed: ${evidence.report.searchable_pages} pages with text, PDF citations and plan/stage filters`)
 
-// Region filters must never broaden to Korea when the requested region is empty.
+// Region filters must never broaden to Korea; AU editorial notes are link-only until rights review.
 assert.equal(rankEvidence(evidence.pages, '전력', '', '', {region:'AU'}).length, 0)
 assert(rankEvidence(evidence.pages, '전력', '', '', {region:'KR', jurisdiction:'KR', language:'ko'}).length > 0)
 assert.equal(rankEvidence(evidence.pages, '전력', '', '', {region:'KR', language:'en'}).length, 0)
@@ -117,7 +117,11 @@ for (const region of ['kr','au','us','cn','europe']) {
   assert(html.includes(`href="../regions/${region}"`))
   const group = {kr:'KR',au:'AU',us:'US',cn:'CN',europe:'Europe'}[region]
   assert(html.includes(`document-search?region=${group}`), 'Country hub must retain its search filter URL')
-  assert(region === 'kr' ? content['regions/kr'].links.includes('documents/p11-final') : html.includes('수집 준비 중'))
+  if (region === 'kr') assert(content['regions/kr'].links.includes('documents/p11-final'))
+  else if (region === 'au') {
+    assert(content['regions/au'].links.includes('documents/au-ner-v254'))
+    assert(html.includes('핵심') && html.includes('6건') && html.includes('WEM'))
+  } else assert(html.includes('수집 준비 중'))
 }
 for (const slug of ['original-search','document-search']) {
   const html = fs.readFileSync(path.join(root, 'site/public', slug + '.html'), 'utf8')

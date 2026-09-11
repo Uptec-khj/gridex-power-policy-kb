@@ -1,6 +1,6 @@
 # Planning inventory only. Not consumed by collector or the operational registry.
 schema_version: 'proposal-1'
-research_cutoff: '2026-09-09'
+research_cutoff: '2026-09-11'
 status: proposed
 enabled: false
 roadmap: https://github.com/Uptec-khj/gridex-project-management/blob/main/content/international-roadmap.md
@@ -14,7 +14,7 @@ defaults:
   activation_gate: 공식 경로·적용 범위·이용조건·파서 검증 후 실행 Registry로 개별 승격
 sources:
   - id: au-aemo
-    enabled: false
+    enabled: true
     phase: G2
     region_group: AU
     organization: Australian Energy Market Operator
@@ -24,9 +24,9 @@ sources:
       - https://www.aemo.com.au/energy-systems/major-publications/integrated-system-plan-isp
       - https://aemo.com.au/consultations/current-and-closed-consultations/gps-template
       - https://www.aemo.com.au/energy-systems/electricity/wholesale-electricity-market-wem/system-operations/gps-framework
-    observation: 공식 안내 확인. PDF·부속자료·협의 공지의 독립 문서 여부를 수집 단계에서 판정.
+    observation: G2에서 링크 전용 Registry로 승격. AEMO 자동 접근은 Cloudflare 제한을 기록하고 우회하지 않으며, 공식 페이지와 PDF 쪽수는 수동 대조했다.
   - id: au-aemc
-    enabled: false
+    enabled: true
     phase: G2
     region_group: AU
     organization: Australian Energy Market Commission
@@ -34,7 +34,7 @@ sources:
     scope: National Electricity Rules와 개정·시행 이력
     entrypoints:
       - https://www.aemc.gov.au/regulation/energy-rules/national-electricity-rules
-    observation: 검색에서 공식 안내 확인. 직접 페이지 열기는 403; 자동 수집 경로 미검증.
+    observation: G2에서 링크 전용 Registry로 승격. 공식 Energy Rules의 NER v254와 2026-09-04 통합 시행 상태를 대조했다.
   - id: us-doe
     enabled: false
     phase: G3

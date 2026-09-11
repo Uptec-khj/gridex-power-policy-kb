@@ -12,6 +12,13 @@ export interface InternationalMetadata {
   document_identifier?: string | null
   edition_year?: number | null
   version?: string | null
+  effective_date?: string | null
+  validity_status?: string
+  status_checked_date?: string
+  legal_force?: string
+  applicability?: string
+  rights_status?: string
+  archive_access?: string
 }
 export interface DocumentFilters {
   region?: string; jurisdiction?: string; market?: string; language?: string; type?: string

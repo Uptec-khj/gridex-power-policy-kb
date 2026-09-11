@@ -7,10 +7,20 @@ Markdown 검수 상태에서 자동 생성합니다. 사람 검수 양식은 저
 
 [[technical-documents|기술 문서]] · [[collection-status|자료 확보 현황]]
 
-검수 대기 37건. 출처·버전·적용 범위·수치/단위·쪽수·요약·이용조건을 대조하세요.
+검수 대기 47건. 출처·버전·적용 범위·수치/단위·쪽수·요약·이용조건을 대조하세요.
 
 | 문서 | 문서 단계 | 첨부 | 확인 범위와 남은 사항 |
 | --- | --- | --- | --- |
+| [[au-gpsrr-2026]] | final | 0개 | AEMO 공식 GPSRR 페이지에서 NER 5.20A 근거, 연례 NEM 범위, 최종보고서 공개일을 확인. 보고서 본문 수치 추출은 미실시. |
+| [[au-isp-2026-draft]] | consultation | 0개 | AEMO 공식 협의 페이지에서 공개일·의견 마감일·확정본 발행일을 확인. 초안 PDF는 재배포하지 않고 공식 페이지에서 연결한다. |
+| [[au-isp-2026-final]] | final | 0개 | AEMO 공식 페이지와 PDF 표지·버전관리·요약 쪽을 대조. PDF 물리적 쪽수는 뷰어의 1-based 페이지로 표기하고 원본은 링크만 제공. |
+| [[au-nem-esoo-2026]] | final | 0개 | 공식 페이지 공개일과 PDF 목적·전망기간·정보 기준일을 대조. 정부 제도 포함/제외 시나리오를 구분하며 수치는 사람 검수 대기. |
+| [[au-nem-gps-template-2023]] | final | 0개 | AEMO 협의 페이지에서 최종 DOCX 공개일과 EMSS·IESS 관련 기준 적용일을 확인. DOCX 내용 전체는 사람 검수 전이며 링크만 제공. |
+| [[au-ner-v254]] | amended | 0개 | AEMC Energy Rules의 v254 페이지와 전체 PDF 표지를 대조. 2026-09-04 통합 갱신과 현재 표시 조항의 시행 상태를 확인했으나 장래 시행 일정은 별도 추적 필요. |
+| [[au-wem-esoo-2026]] | amended | 0개 | PDF 버전관리에서 v1 2026-06-23과 v2 2026-07-15를 확인. published_date는 최초 공개일, version은 현재 파일의 2로 분리. |
+| [[au-wem-gps-framework]] | official_explainer | 0개 | 공식 페이지에 자체 발행일·버전 표기가 없어 null 유지. 적용 시작일은 연결된 등록 안내가 명시한 2021-02-01을 사용. |
+| [[au-wem-gps-registration]] | official_explainer | 0개 | 공식 페이지에 발행일·버전 표기가 없어 null. 2021-02-01 적용 시작과 ESM Rules s1.40·Ch3A·App12 경로를 확인. |
+| [[au-wem-gps-testing]] | official_explainer | 0개 | AEMO 공식 페이지에서 운전 전 GPS 준수시험과 운전 중 Generator Monitoring Plan을 분리 확인. 페이지 발행일·버전은 미표기. |
 | [[energy-3-final]] | final | 1개 | 정부 확정 발표와 KESIS 공식 재게시 전문 PDF 117쪽 확인. 표지는 2019년 6월이고 KESIS 등록일은 2019-08-02로 구분. 과거 목표를 현행 목표로 표시하지 않음. 사람 검수 대기. |
 | [[p10-demand]] | supporting | 2개 | 공식 게시물 및 확보한 원본을 AI가 확인. 요약·정책 해석에 대한 사람의 검수는 미완료. |
 | [[p10-draft]] | working_draft | 0개 | 공식 게시물 및 확보한 원본을 AI가 확인. 요약·정책 해석에 대한 사람의 검수는 미완료. 일부 공식 첨부 다운로드 실패. 수집 기록에 오류를 보존. |

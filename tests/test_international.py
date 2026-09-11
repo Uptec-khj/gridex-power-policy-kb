@@ -22,7 +22,12 @@ class InternationalTests(unittest.TestCase):
     def foreign(self):
         return {**self.kr, 'region_group': 'AU', 'jurisdictions': ['AU'], 'market_regions': ['NEM'],
                 'document_language': 'en', 'document_type': 'plan', 'title_original': 'Test plan',
-                'plan_family': 'integrated-system-plan', 'plan_number': None, 'edition_year': 2026}
+                'plan_family': 'integrated-system-plan', 'plan_number': None, 'edition_year': 2026,
+                'adopted_date': None, 'effective_date': None, 'validity_status': 'current',
+                'status_checked_date': '2026-09-11', 'legal_force': 'statutory_plan',
+                'applicability': 'NEM test fixture', 'translation_status': 'ai_summary_ko',
+                'translation_review_status': 'unreviewed', 'rights_status': 'link_only_pending_terms',
+                'rights_url': None, 'archive_access': 'link_only'}
 
     def test_country_and_jurisdiction_cannot_conflict(self):
         self.assertTrue(self.errors(jurisdictions=['EU']))
@@ -93,7 +98,10 @@ class InternationalTests(unittest.TestCase):
         output = io.StringIO()
         with contextlib.redirect_stdout(output):
             kb.search('수요', region='AU')
-        self.assertEqual(json.loads(output.getvalue()), [])
+        australian = json.loads(output.getvalue())
+        self.assertTrue(australian)
+        self.assertTrue(all(item['region_group'] == 'AU' for item in australian))
+        self.assertTrue(any(item['market_regions'] == ['WEM'] for item in australian))
         output = io.StringIO()
         with contextlib.redirect_stdout(output):
             kb.search('수요', region='KR', language='ko')

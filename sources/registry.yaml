@@ -1,5 +1,5 @@
 schema_version: '1.0'
-research_cutoff: '2026-09-09'
+research_cutoff: '2026-09-11'
 sources:
 - id: motie-archive
   organization: 산업통상자원부
@@ -115,3 +115,36 @@ sources:
   - 신재생에너지기본계획
   - 재생에너지기본계획
   notes: 기존 신재생 계획 자료실과 신규 재생 계획을 구분. 관찰한 파일 링크만 수집.
+- id: au-aemo
+  organization: Australian Energy Market Operator
+  authority: official_system_market_operator
+  homepage: https://www.aemo.com.au
+  allowed_domains:
+  - www.aemo.com.au
+  - aemo.com.au
+  adapter: aemo_discovery
+  priority: 1
+  scope:
+  - NEM-계획-전망-계통위험-성능기준
+  - WEM-전망-발전기성능기준
+  entrypoints:
+  - https://www.aemo.com.au/energy-systems/major-publications/integrated-system-plan-isp
+  - https://www.aemo.com.au/energy-systems/electricity/national-electricity-market-nem/system-operations/general-power-system-risk-review
+  - https://www.aemo.com.au/energy-systems/electricity/wholesale-electricity-market-wem/system-operations/gps-framework
+  notes: G2 링크 전용 파일럿. 자동 접근의 Cloudflare 차단을 우회하지 않으며 국제 원본 재배포 권리는 미확인 상태로 둔다.
+- id: au-aemc
+  organization: Australian Energy Market Commission
+  authority: official_rule_maker
+  homepage: https://www.aemc.gov.au
+  allowed_domains:
+  - www.aemc.gov.au
+  - aemc.gov.au
+  - energy-rules.aemc.gov.au
+  - aemc-dra-production-s3.s3.ap-southeast-2.amazonaws.com
+  adapter: aemc_rules_discovery
+  priority: 1
+  scope:
+  - NEM-National-Electricity-Rules
+  entrypoints:
+  - https://energy-rules.aemc.gov.au/ner
+  notes: G2 링크 전용 파일럿. 통합본 버전·시행일과 장래 미시행 조항을 분리하며 원본은 공식 URL로만 연결한다.

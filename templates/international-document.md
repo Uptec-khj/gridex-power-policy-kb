@@ -11,6 +11,17 @@ title_ko: '{{title}}'
 document_identifier: null
 edition_year: null
 version: null
+adopted_date: null
+effective_date: null
+validity_status: unknown
+status_checked_date: '{{date:YYYY-MM-DD}}'
+legal_force: unknown
+applicability: ''
+translation_status: ai_summary_ko
+translation_review_status: unreviewed
+rights_status: unknown
+rights_url: null
+archive_access: link_only
 id: replace-with-stable-id
 title: '{{title}}'
 organization: ''
@@ -42,7 +53,7 @@ aliases: []
 ---
 
 > [!warning] AI 작성 초안 · 검수 전
-> 공식 원문과 AI 요약을 구분합니다. 빈칸을 채우고 출처를 대조하기 전에는 공개하지 않습니다. AU는 양식의 예시이며 실제 관할·언어·계열로 수정하세요. source_id는 접근·이용조건 검증 후 실행 Registry에 등록해야 합니다. AI 번역은 공식 번역과 구분하고 재배포 미확인 파일은 공개 저장소에 넣지 않습니다.
+> 공식 원문과 AI 요약을 구분합니다. 빈칸을 채우고 출처를 대조하기 전에는 공개하지 않습니다. AU는 양식의 예시이며 실제 관할·언어·계열로 수정하세요. source_id는 접근·이용조건 검증 후 실행 Registry에 등록해야 합니다. 발행·채택·시행·유효 상태를 분리하고, AI 번역은 공식 번역과 구분하며 재배포 미확인 파일은 공개 저장소에 넣지 않습니다.
 
 ## 기본정보
 

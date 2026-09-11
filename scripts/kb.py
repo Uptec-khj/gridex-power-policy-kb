@@ -16,7 +16,10 @@ CONTENT = ROOT / "content"
 HEADINGS = ["기본정보", "3줄 요약", "핵심 내용", "핵심 수치", "주요 정책 변화", "Timeline", "관련 문서", "관련 법령", "원문 링크", "원본 첨부파일"]
 WIKI = re.compile(r"\[\[([^\]|#]+)(?:#[^\]|]*)?(?:\|[^\]]*)?\]\]")
 INTERNATIONAL_FIELDS = ('region_group', 'jurisdictions', 'market_regions', 'document_language',
-                        'document_type', 'title_original', 'title_ko', 'document_identifier', 'edition_year', 'version')
+                        'document_type', 'title_original', 'title_ko', 'document_identifier', 'edition_year', 'version',
+                        'adopted_date', 'effective_date', 'validity_status', 'status_checked_date', 'legal_force',
+                        'applicability', 'translation_status', 'translation_review_status', 'rights_status',
+                        'rights_url', 'archive_access')
 
 
 def international_metadata(meta):
@@ -199,10 +202,25 @@ def build_regions(documents):
                 f"공개 공식 자료 **{len(selected)}건**. " + ('AI 요약의 사람 검수 상태는 각 문서에서 확인하세요.' if selected else '공식 문서 수집 준비 중입니다. 아래 자료원 후보는 아직 수집·검수된 문서가 아닙니다.'), '',
                 f"[이 지역 문서 찾기](../document-search?region={region['id']}) · [이 지역 PDF 검색](../original-search?region={region['id']}) · [[reading-guide|이용 안내]]", '',
                 '적용 관할·시장은 문서별 범위입니다. 국가 분류만으로 모든 지역·설비에 동일한 규정이 적용된다는 뜻은 아닙니다.', '']
+        if region['id'] == 'AU' and selected:
+            pilot = yaml.safe_load((ROOT / 'sources/australia-pilot.yaml').read_text(encoding='utf-8'))['documents']
+            tiers = {item['id']: item['tier'] for item in pilot}
+            selected_by_id = {m['id']: m for m in selected}
+            rows += ['## G2 호주 파일럿', '',
+                     f"핵심 **{sum(v == 'core' for v in tiers.values())}건**과 보완 **{sum(v == 'supplemental' for v in tiers.values())}건**을 공개합니다. 보완 자료는 G2의 6건 완료 수량에 중복 집계하지 않습니다.", '',
+                     '| 문서 | 묶음 | 시장 | 판본 | 시행·유효 상태 |', '| --- | --- | --- | --- | --- |']
+            for item in pilot:
+                m = selected_by_id[item['id']]
+                tier = '핵심 6건' if tiers.get(m['id']) == 'core' else '보완 4건'
+                rows.append(f"| [[{m['id']}|{m['title']}]] | {tier} | {', '.join(m.get('market_regions') or [])} | {m.get('version') or '미표기'} | {m.get('effective_date') or '별도 시행일 없음'} · {m.get('validity_status') or '미확인'} |")
+            rows += ['', '기존 GFM 기술 노트는 중복 문서로 세지 않고 [[gfm/03_Regions/호주|호주 NEM GFM 허브]]에서 연결합니다.', '']
         for category in ['에너지정책','재생에너지정책','전력수급계획','전력수요','송변전망','기술기준','성능평가','전력시장']:
             rows += [f'## {category}', '']
             items = [m for m in selected if m['category'] == category]
-            rows += [f"- [[{m['id']}|{m['title']}]] · {m['published_date'] or '발행일 미확인'}" for m in items] or ['수집 예정 · 현재 공개 문서 0건.']
+            if region['id'] == 'AU':
+                rows += [f"- [[{m['id']}|{m['title']}]] · {m['published_date'] or '발행일 미확인'} · {', '.join(m.get('market_regions') or []) or '시장 미표기'} · {m.get('validity_status') or '상태 미표기'}" for m in items] or ['수집 예정 · 현재 공개 문서 0건.']
+            else:
+                rows += [f"- [[{m['id']}|{m['title']}]] · {m['published_date'] or '발행일 미확인'}" for m in items] or ['수집 예정 · 현재 공개 문서 0건.']
             rows.append('')
         if not selected:
             rows += ['## 공식 자료원 후보', '', '원문·이용조건 확인 후 수집할 후보입니다.', '']

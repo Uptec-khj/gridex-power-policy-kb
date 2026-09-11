@@ -1,5 +1,110 @@
 [
   {
+    "source": "au-gpsrr-2026",
+    "target": "au-isp-2026-final",
+    "type": "related_documents"
+  },
+  {
+    "source": "au-gpsrr-2026",
+    "target": "au-ner-v254",
+    "type": "related_documents"
+  },
+  {
+    "source": "au-isp-2026-draft",
+    "target": "au-isp-2026-final",
+    "type": "related_documents"
+  },
+  {
+    "source": "au-isp-2026-draft",
+    "target": "au-isp-2026-final",
+    "type": "next_document"
+  },
+  {
+    "source": "au-isp-2026-final",
+    "target": "au-isp-2026-draft",
+    "type": "related_documents"
+  },
+  {
+    "source": "au-isp-2026-final",
+    "target": "au-nem-esoo-2026",
+    "type": "related_documents"
+  },
+  {
+    "source": "au-isp-2026-final",
+    "target": "au-gpsrr-2026",
+    "type": "related_documents"
+  },
+  {
+    "source": "au-isp-2026-final",
+    "target": "au-isp-2026-draft",
+    "type": "previous_document"
+  },
+  {
+    "source": "au-nem-esoo-2026",
+    "target": "au-isp-2026-final",
+    "type": "related_documents"
+  },
+  {
+    "source": "au-nem-esoo-2026",
+    "target": "au-ner-v254",
+    "type": "related_documents"
+  },
+  {
+    "source": "au-nem-gps-template-2023",
+    "target": "au-ner-v254",
+    "type": "related_documents"
+  },
+  {
+    "source": "au-ner-v254",
+    "target": "au-isp-2026-final",
+    "type": "related_documents"
+  },
+  {
+    "source": "au-ner-v254",
+    "target": "au-nem-gps-template-2023",
+    "type": "related_documents"
+  },
+  {
+    "source": "au-wem-esoo-2026",
+    "target": "au-wem-gps-framework",
+    "type": "related_documents"
+  },
+  {
+    "source": "au-wem-gps-framework",
+    "target": "au-wem-esoo-2026",
+    "type": "related_documents"
+  },
+  {
+    "source": "au-wem-gps-framework",
+    "target": "au-wem-gps-registration",
+    "type": "related_documents"
+  },
+  {
+    "source": "au-wem-gps-framework",
+    "target": "au-wem-gps-testing",
+    "type": "related_documents"
+  },
+  {
+    "source": "au-wem-gps-registration",
+    "target": "au-wem-gps-framework",
+    "type": "related_documents"
+  },
+  {
+    "source": "au-wem-gps-registration",
+    "target": "au-wem-gps-testing",
+    "type": "related_documents"
+  },
+  {
+    "source": "au-wem-gps-testing",
+    "target": "au-wem-gps-framework",
+    "type": "related_documents"
+  },
+  {
+    "source": "au-wem-gps-testing",
+    "target": "au-wem-gps-registration",
+    "type": "related_documents"
+  },
+  {
     "source": "energy-3-final",
     "target": "renewable-5-final",
     "type": "related_documents"

@@ -31,7 +31,8 @@ export default (() => {
           data-search={[m.title, m.title_original, m.title_ko, ...(m.topics ?? []), m.organization, m.document_identifier].filter(Boolean).join(" ")}>
           <h3><a class="internal" href={`${root}/${f.slug}`}>{m.title}</a></h3>
           {m.title_original && m.title_original !== m.title && <p lang={m.document_language}>{m.title_original}</p>}
-          <p>{regionLabel(m.region_group)} · {typeLabel(m.document_type)} · {stageLabels[m.document_stage] ?? m.document_stage} · {m.published_date ?? "발행일 미확인"}</p>
+          <p>{regionLabel(m.region_group)} · {(m.market_regions ?? []).join(", ") || "시장 미표기"} · {typeLabel(m.document_type)} · {stageLabels[m.document_stage] ?? m.document_stage} · {m.published_date ?? "발행일 미확인"}</p>
+          {m.validity_status && <p>판본 {m.version ?? "미표기"} · 시행 {m.effective_date ?? "별도 시행일 없음·미표기"} · {m.validity_status}</p>}
           <p>{m.organization} · {taxonomy.languages[m.document_language as keyof typeof taxonomy.languages] ?? "언어 미확인"} · {m.verification_status === "human_verified" ? "사람 검수 완료" : "AI 요약 · 검수 대기"}</p>
         </article>
       })}</div>

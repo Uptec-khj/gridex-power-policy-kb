@@ -54,6 +54,16 @@
 | edition_year | 확인된 연도판 연도 또는 null. 발행연도를 자동 복사하지 않음 |
 | version | 확인된 판본 표기 또는 null |
 
+호주 G2부터 아래 시행·적용·권리 필드를 AU 문서에 필수로 검증한다. 기존 국내 v1.1 문서는 소급해 추정값을 넣지 않는다.
+
+| 필드 | 규칙 |
+| --- | --- |
+| adopted_date / effective_date | 채택일과 시행일을 발행일과 분리. 해당 없음·미표기는 null |
+| validity_status / status_checked_date | draft / current / superseded / future / repealed / unknown과 실제 확인일 |
+| legal_force / applicability | 규칙·법정계획·법정전망·기술양식·공식안내·정보보고서의 성격과 NEM/WEM 적용 범위 |
+| translation_status / translation_review_status | 한국어 AI 요약과 공식 번역, 사람 검수 여부를 분리 |
+| rights_status / rights_url / archive_access | 공개 열람과 저장소 재배포를 분리. G2는 `link_only_pending_terms`·`link_only` |
+
 EU와 PAN-EUROPE는 국가코드가 아니다. 사전에서 각각 초국가 관할·범유럽 계통 범위로 구분하고 `country_code: null`로 둔다. 복수 관할 문서는 한 번 저장하고 해당 관할 필터마다 검색되게 한다. 국가 분류는 법률 적용에 대한 검수 완료를 뜻하지 않는다. 실제 적용 전압·설비·지역과 근거는 본문 및 기술문서의 `technical.applicability`에 적는다.
 
 NEM은 AU, WEM은 AU-WA, 미국 시장은 US 관할과 함께 사용해야 한다. 미확인 시장을 국가명에서 추정하지 않는다. 기존 국내 37건은 KR·ko로 이관했으며 세부 시장을 추정하지 않아 `market_regions: []`로 유지한다.
@@ -64,7 +74,7 @@ NEM은 AU, WEM은 AU-WA, 미국 시장은 US 관할과 함께 사용해야 한�
 
 `category`에 전력시장을 추가했다. 기술기준·성능평가 분류에서는 `technical`이 필수이며 최상위 `document_type`과 `technical.document_type`이 일치해야 한다. 차수가 null이라는 이유만으로 기술 문서로 분류하지 않는다.
 
-자동 추정하지 않는 후속 항목: 비기술 문서의 별도 채택·시행·폐지 상태, 법적 효력, 번역 검수, 국제 원문 재배포 권리의 상세 스키마. 해외 자료를 공개 수집하는 G2 이전에 실제 문서·이용조건을 확인해 보강한다. 이 단계는 국가 탐색과 분류 기반이며 이 필드들에 대한 법적 검증을 구현한 것은 아니다.
+호주 G2는 위 필드를 실제 문서에 적용했다. 값이 없는 공식 웹 안내의 발행일·버전은 null로 유지하고, WEM ESOO의 최초 공개일과 v2 수정일처럼 다른 개념은 별도 필드·사건으로 보존한다. 다른 지역에 필수화하는 것은 각 파일럿에서 공식 사례를 확인한 뒤 진행한다.
 
 ## 문서 단계와 검수 상태
 
