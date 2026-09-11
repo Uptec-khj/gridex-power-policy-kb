@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GFM kbgen metadata projection (not claim verification)",
+  "type": "object",
+  "required": ["schema_version", "upstream_commit", "scope", "sources"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {"const": 1},
+    "upstream_commit": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "scope": {"type": "string"},
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "type", "source_ids", "published", "effective", "last_verified", "evidence_level", "evidence_assignment", "note_path", "note_sha256", "collection_mode", "publication_policy", "source_metadata"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "title": {"type": "string", "minLength": 1},
+          "type": {"const": "source"},
+          "source_ids": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+          "published": {"type": ["string", "integer", "null"]},
+          "effective": {"type": ["string", "integer", "null"]},
+          "last_verified": {"type": ["string", "null"]},
+          "evidence_level": {"enum": ["Confirmed", "Supported", "Reported", "Inferred", "Unverified"]},
+          "evidence_assignment": {"enum": ["explicit", "not_assessed"]},
+          "note_path": {"type": "string", "pattern": "^content/gfm/02_Sources/.+\\.md$"},
+          "note_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "collection_mode": {"const": "Manual"},
+          "publication_policy": {"const": "link-only"},
+          "source_metadata": {"type": "object"}
+        }
+      }
+    }
+  }
+}
