@@ -2,8 +2,8 @@
 id: HUB-HOME
 title: GFM 세계 지식창고
 type: hub
-review_status: 파일럿 완료
-verified_on: 2026-09-09
+review_status: 한국 GFM 근거공백 재점검
+verified_on: 2026-09-11
 ---
 
 # GFM 세계 지식창고
@@ -12,7 +12,7 @@ verified_on: 2026-09-09
 
 - 지역: [호주](../03_Regions/호주.md) · [영국](../03_Regions/영국.md) · [EU](../03_Regions/EU.md) · [독일](../03_Regions/독일.md) · [미국](../03_Regions/미국.md) · [중국](../03_Regions/중국.md) · [한국](../03_Regions/한국.md)
 - 분석: [초기 요구사항·시험 비교](../10_Comparisons/초기_요구사항_시험_비교.md) · [요구→시험→증빙 예제](../10_Comparisons/요구_시험_증빙_연결_예제.md)
-- 한국: [KSGA 현행 단체표준](../02_Sources/Korea/KSGA_025_18_1_2023_Ed1.md) · [KPX 시행 규칙](../02_Sources/Korea/KPX_Market_Rules_2026_04_29.md) · [공개 계통평가세부운영규정](../02_Sources/Korea/KPX_Grid_Assessment_Detailed_Rules_2026_02.md) · [모델 제출 사전안내](../02_Sources/Korea/KPX_Inverter_Model_Submission_PreNotice_2026.md) · [KTL 시험 안내](../02_Sources/Korea/KTL_PCS_Test_Service_KSGA_025_18_1.md) · [한국 요구사항 색인](../06_Requirements/한국_GFM_BESS_요구사항_색인.md) · [개정·공청회 추적](../03_Regions/한국.md)
+- 한국: [KSGA 현행 단체표준](../02_Sources/Korea/KSGA_025_18_1_2023_Ed1.md) · [한전 GFM 연계기술기준 개정안](../02_Sources/Korea/KEPCO_Renewable_Transmission_Interconnection_GFM_Draft_2026_05.md) · [KPX 시행 규칙](../02_Sources/Korea/KPX_Market_Rules_2026_04_29.md) · [공개 계통평가세부운영규정](../02_Sources/Korea/KPX_Grid_Assessment_Detailed_Rules_2026_02.md) · [모델 제출 사전안내](../02_Sources/Korea/KPX_Inverter_Model_Submission_PreNotice_2026.md) · [KTL 시험 안내](../02_Sources/Korea/KTL_PCS_Test_Service_KSGA_025_18_1.md) · [한국 요구사항 색인](../06_Requirements/한국_GFM_BESS_요구사항_색인.md) · [근거공백 점검](한국_GFM_근거공백_점검_2026_09_11.md)
 - 운영: [자료 확보 현황](자료_확보_현황.md) · [검증 로그](검증_로그.md) · [저작권 정책](COPYRIGHT_POLICY.md)
 - 설계: [공개 저장소 구조와 로드맵](공개_설계_및_로드맵.md)
 - 개념: [GFM 핵심 개념](../05_Concepts/GFM_핵심_개념.md) · [증빙 유형](../08_Certification/증빙_유형_구분.md)

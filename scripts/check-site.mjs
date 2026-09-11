@@ -155,6 +155,8 @@ const gfmPages = [
   'gfm/gfm-dashboard',
   'gfm/00_Home/Home',
   'gfm/00_Home/공개_설계_및_로드맵',
+  'gfm/00_Home/한국_GFM_근거공백_점검_2026_09_11',
+  'gfm/02_Sources/Korea/KEPCO_Renewable_Transmission_Interconnection_GFM_Draft_2026_05',
   'gfm/03_Regions/한국',
   'gfm/03_Regions/호주',
   'gfm/03_Regions/영국',
@@ -183,4 +185,10 @@ assert(homeHtml.includes('href="./gfm/gfm-dashboard"'), 'Home page must link to 
 const dashboardHtml = fs.readFileSync(path.join(root, 'site/public/gfm/gfm-dashboard.html'), 'utf8')
 assert(dashboardHtml.includes('GFM 세계 규격·시험·인증'))
 assert(dashboardHtml.includes('href="./03_Regions/한국"'))
+const kepcoGfmHtml = fs.readFileSync(
+  path.join(root, 'site/public/gfm/02_Sources/Korea/KEPCO_Renewable_Transmission_Interconnection_GFM_Draft_2026_05.html'),
+  'utf8',
+)
+assert(kepcoGfmHtml.includes('11.1~11.8'))
+assert(kepcoGfmHtml.includes('자료제출과 이용 절차의 근거'))
 console.log(`GFM navigation passed: ${gfmPages.length} hubs and representative pages with resolved local links`)
