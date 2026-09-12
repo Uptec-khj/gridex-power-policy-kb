@@ -50,6 +50,8 @@ npm --prefix site run preview
 
 변경은 branch/PR에서 검토합니다. 공개 사이트 배포는 검증 후 별도로 수행하며 `python scripts/publish-pages.py`도 공개 경계 검사를 통과해야 합니다. 과거 Git 이력 및 이미 게시된 사이트의 정리는 현재 작업본 전환과 별개입니다. 이 재구성은 과거 이력을 재작성하지 않습니다.
 
+배포 도구는 변경 없는 작업본이 원격 `main`과 같은 커밋일 때만 실행하며, 사이트를 새로 빌드한 후 게시합니다. 기존 `gh-pages`의 workflow 파일은 동일한 Git blob으로 보존하고 이전 사이트·전문 검색 파일은 새 산출물로 교체합니다. 배포 명령의 push 성공과 Pages 서비스 반영 성공은 별도로 확인합니다. 검증 실패·미병합 브랜치·원격 main 변경 시에는 게시하지 않습니다.
+
 검증 workflow는 `docs/workflows/validate.yml`에 준비했습니다. 현재 GitHub OAuth 인증에 workflow 권한이 없어 등록이 거절됐으므로 자동 CI는 아직 활성화되지 않았습니다. 해당 권한으로 `.github/workflows/validate.yml`에 등록하면 같은 검증·테스트·빌드를 PR에서 실행합니다.
 
 신규 코드에는 [MIT License](LICENSE)를 적용합니다. 제3자 원문·이미지·인용에는 적용하지 않습니다. Quartz 라이선스와 [upstream 기록](site/UPSTREAM.md)을 보존합니다.
