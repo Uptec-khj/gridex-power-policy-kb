@@ -37,7 +37,6 @@ draft: false
 attachments:
 - url: https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=324062&fileSeq=2
   title: 재생에너지 보급 전략 보도자료 — 붙임3 제12차 수요 전망(안) 포함
-  path: data/raw/sha256/a8/a89688dec4f1542d5c5cc5f34b9936a56b510afcccaa629e057c5507bb3b78a0.pdf
   file_hash: sha256:a89688dec4f1542d5c5cc5f34b9936a56b510afcccaa629e057c5507bb3b78a0
   format: pdf
   size_bytes: 576495
@@ -45,7 +44,6 @@ attachments:
   collected_at: '2026-09-09T05:08:57.609390+00:00'
   rights_status: check_source_terms
 source_snapshot:
-  path: data/raw/sha256/37/374217cf933dbc4fe91e36249a7e76bb91671146ccde3169e4d0452797d85ac6.html
   file_hash: sha256:374217cf933dbc4fe91e36249a7e76bb91671146ccde3169e4d0452797d85ac6
   resolved_url: https://www.mcee.go.kr/home/web/board/read.do?boardId=1864660&boardMasterId=939&menuId=10598
 events:
@@ -69,6 +67,19 @@ title_ko: 제12차 전력수급기본계획 수요 전망(안) 2026년 5월
 document_identifier: null
 edition_year: null
 version: null
+archive_access: link_only
+type: forecast
+status: draft
+source_ids:
+- SRC-POLICY-P12-DEMAND-DRAFT-20260519
+evidence_level: Unverified
+published: '2026-05-19'
+effective: null
+last_verified: '2026-09-09'
+valid_from: null
+valid_to: null
+supersedes: []
+superseded_by: []
 ---
 
 > [!warning] 공식 출처 확인 · AI 요약 검수 대기
@@ -132,11 +143,9 @@ version: null
 - [공식 게시물](https://www.mcee.go.kr/home/web/board/read.do?boardId=1864660&boardMasterId=939&menuId=10598)
 - 확인일: 2026-09-09
 
-## 원본 첨부파일
+## 공식 원문 형식
 
-- **재생에너지 보급 전략 보도자료 — 붙임3 제12차 수요 전망(안) 포함** (PDF, 576,495 bytes): [공식 다운로드](https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=324062&fileSeq=2) · [보존본](https://github.com/Uptec-khj/gridex-power-policy-kb/blob/main/data/raw/sha256/a8/a89688dec4f1542d5c5cc5f34b9936a56b510afcccaa629e057c5507bb3b78a0.pdf)
+- **재생에너지 보급 전략 보도자료 — 붙임3 제12차 수요 전망(안) 포함** (PDF, 576,495 bytes): [공식 다운로드](https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=324062&fileSeq=2)
   - SHA-256: `sha256:a89688dec4f1542d5c5cc5f34b9936a56b510afcccaa629e057c5507bb3b78a0`
-
-[공식 게시물 보존본](https://github.com/Uptec-khj/gridex-power-policy-kb/blob/main/data/raw/sha256/37/374217cf933dbc4fe91e36249a7e76bb91671146ccde3169e4d0452797d85ac6.html)
 
 원문 파일의 권리는 발행기관·원저작자에게 있습니다. 원본 이용조건 검수는 대기 상태입니다.

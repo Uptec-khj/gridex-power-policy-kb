@@ -36,7 +36,6 @@ draft: false
 attachments:
 - url: https://www.kepco.co.kr/c2r/FileDownload.do?fileNo=P%2FvVfXe7XHnAbYRUs7gDfw%3D%3D&fileSeq=DIMtNyzfJ3kKEXQCksqfEQ%3D%3D
   title: 다운로드
-  path: data/raw/sha256/02/02357633fa4c9383ad6a498320e99887ca7f0a28623883b549fb8abbd326e5b5.pdf
   file_hash: sha256:02357633fa4c9383ad6a498320e99887ca7f0a28623883b549fb8abbd326e5b5
   format: pdf
   size_bytes: 674530
@@ -44,7 +43,6 @@ attachments:
   collected_at: '2026-09-09T03:19:57.410128+00:00'
   rights_status: check_source_terms
 source_snapshot:
-  path: data/raw/sha256/51/51d1df81c020fa96c34af37336e58e36bad4eb13592c579121436177ac596b26.html
   file_hash: sha256:51d1df81c020fa96c34af37336e58e36bad4eb13592c579121436177ac596b26
   resolved_url: https://www.kepco.co.kr/home/media/newsroom/pr/boardView.do?boardMngNo=15&boardNo=447
 events:
@@ -69,6 +67,19 @@ title_ko: 제10차 장기 송변전설비계획 2022–2036
 document_identifier: null
 edition_year: null
 version: null
+archive_access: link_only
+type: transmission_plan
+status: final
+source_ids:
+- SRC-POLICY-T10-FINAL
+evidence_level: Unverified
+published: '2023-05-08'
+effective: null
+last_verified: '2026-09-09'
+valid_from: null
+valid_to: null
+supersedes: []
+superseded_by: []
 ---
 
 > [!warning] 공식 출처 확인 · AI 요약 검수 대기
@@ -136,10 +147,9 @@ PDF p.13(인쇄 p.12)의 송전선로에는 신규 발전소 접속설비가 포
 - [공식 게시물 / 공식 자료실](https://www.kepco.co.kr/home/media/newsroom/pr/boardView.do?boardMngNo=15&boardNo=447)
 - 출처 확인일: 2026-09-09
 
-## 원본 첨부파일
+## 공식 원문 형식
 
-- **PDF** · 674,530 bytes · [공식 다운로드](https://www.kepco.co.kr/c2r/FileDownload.do?fileNo=P%2FvVfXe7XHnAbYRUs7gDfw%3D%3D&fileSeq=DIMtNyzfJ3kKEXQCksqfEQ%3D%3D) · [보존 원본](https://github.com/Uptec-khj/gridex-power-policy-kb/blob/main/data/raw/sha256/02/02357633fa4c9383ad6a498320e99887ca7f0a28623883b549fb8abbd326e5b5.pdf)
-  - 원본 경로: `data/raw/sha256/02/02357633fa4c9383ad6a498320e99887ca7f0a28623883b549fb8abbd326e5b5.pdf`
+- **PDF** · 674,530 bytes · [공식 다운로드](https://www.kepco.co.kr/c2r/FileDownload.do?fileNo=P%2FvVfXe7XHnAbYRUs7gDfw%3D%3D&fileSeq=DIMtNyzfJ3kKEXQCksqfEQ%3D%3D)
   - 해시: `sha256:02357633fa4c9383ad6a498320e99887ca7f0a28623883b549fb8abbd326e5b5`
 
 게시물 스냅샷: `{r["source_snapshot"]["path"]}`

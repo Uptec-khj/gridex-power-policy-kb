@@ -39,7 +39,6 @@ draft: false
 attachments:
 - url: https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=324062&fileSeq=3
   title: 별첨 제1차 재생에너지 기본계획 전문
-  path: data/raw/sha256/89/89b9841bf987c71e29a28c5fbea0e9c9b2569ab35f5f80e485cace31a0fe5f5d.pdf
   file_hash: sha256:89b9841bf987c71e29a28c5fbea0e9c9b2569ab35f5f80e485cace31a0fe5f5d
   format: pdf
   size_bytes: 3990669
@@ -47,7 +46,6 @@ attachments:
   collected_at: '2026-09-09T06:02:51.992398+00:00'
   rights_status: check_source_terms
 source_snapshot:
-  path: data/raw/sha256/4c/4ca836d0625109130eb3e129f7c7b29ba478e39eff161abcbe82084284f59276.html
   file_hash: sha256:4ca836d0625109130eb3e129f7c7b29ba478e39eff161abcbe82084284f59276
   resolved_url: https://www.mcee.go.kr/home/web/board/read.do?boardId=1864660&boardMasterId=939&menuId=10598
 events:
@@ -76,6 +74,19 @@ title_ko: 제1차 재생에너지 기본계획 2026–2035
 document_identifier: null
 edition_year: null
 version: null
+archive_access: link_only
+type: plan
+status: final
+source_ids:
+- SRC-POLICY-RENEWABLE-1-FINAL-2026
+evidence_level: Unverified
+published: '2026-05-19'
+effective: null
+last_verified: '2026-09-09'
+valid_from: null
+valid_to: null
+supersedes: []
+superseded_by: []
 ---
 
 > [!warning] 공식 출처 확인 · AI 요약 검수 대기
@@ -147,11 +158,11 @@ version: null
 - [전문 PDF](https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=324062&fileSeq=3)
 - 확인일: 2026-09-09
 
-## 원본 첨부파일
+## 공식 원문 형식
 
 - **별첨 제1차 재생에너지 기본계획 전문** · 3,990,669 bytes
-- [공식 원본](https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=324062&fileSeq=3) · [GitHub 보존본](https://github.com/Uptec-khj/gridex-power-policy-kb/blob/main/data/raw/sha256/89/89b9841bf987c71e29a28c5fbea0e9c9b2569ab35f5f80e485cace31a0fe5f5d.pdf)
+- [공식 원본](https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=324062&fileSeq=3)
 - SHA-256: `sha256:89b9841bf987c71e29a28c5fbea0e9c9b2569ab35f5f80e485cace31a0fe5f5d`
-- [공식 발표 HTML 보존본](https://github.com/Uptec-khj/gridex-power-policy-kb/blob/main/data/raw/sha256/4c/4ca836d0625109130eb3e129f7c7b29ba478e39eff161abcbe82084284f59276.html)
+-
 
 원문 권리는 발행기관·원저작자에게 있습니다. 이용조건과 AI 요약에 대한 사람 검수는 대기 상태입니다.

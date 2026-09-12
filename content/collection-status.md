@@ -7,7 +7,7 @@ tags: [안내, 수집현황]
 
 ## 확인·보존한 자료
 
-공식 게시물의 HTML과 원본 첨부를 보존했습니다. 고유 첨부파일은 **36개(PDF 25개, HWP/HWPX 11개)**입니다. 동일 자료의 파일 형식 차이, 탐색 허브는 문서 수에 포함하지 않습니다. 같은 게시물에 별도 첨부된 11차 송변전계획 전문과 보도자료는 서로 다른 두 문서입니다.
+공식 게시물의 HTML과 원본 첨부를 내부 보관했습니다. 고유 첨부파일은 **36개(PDF 25개, HWP/HWPX 11개)**이며 사이트에서는 공식 URL로만 제공합니다. 동일 자료의 파일 형식 차이, 탐색 허브는 문서 수에 포함하지 않습니다. 같은 게시물에 별도 첨부된 11차 송변전계획 전문과 보도자료는 서로 다른 두 문서입니다.
 
 호주 G2는 국제 원본 재배포 이용조건 확인 전이므로 **공식 링크 전용 10건**으로 등록했습니다. 핵심 6건과 보완 4건을 구분하며 기존 GFM 요약은 중복 집계하지 않습니다.
 
@@ -34,4 +34,4 @@ tags: [안내, 수집현황]
 
 **47건으로 확장했지만, AI 요약의 사람 검수는 완료되지 않았습니다.** `source_verified`는 공식 출처 확인 상태입니다. 문서들을 검수 완료로 자동 전환하지 않습니다.
 
-[Source Registry·백로그](https://github.com/Uptec-khj/gridex-power-policy-kb/tree/main/sources) · [획득 기록과 오류 이력](https://github.com/Uptec-khj/gridex-power-policy-kb/blob/main/data/metadata/acquisitions.json)
+[공개 Source Registry](https://github.com/Uptec-khj/gridex-power-policy-kb/blob/main/data/source-registry.yaml) · [[original-search|공식 원문 이용 안내]]

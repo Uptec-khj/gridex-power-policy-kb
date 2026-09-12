@@ -1,0 +1,21 @@
+version: 1
+topic: "전력정책 및 GFM 규격·시험·인증"
+name: "GRIDEX Power Policy Knowledge Base"
+slug: "gridex-power-policy"
+kb_type: "Mixed"
+language: "ko"
+countries:
+  - "KR"
+  - "AU"
+  - "US"
+  - "CN"
+  - "DE"
+  - "GB"
+site: "quartz"
+gcp_level: 0
+public: true
+created: 2026-09-12
+public_repository: "gridex-power-policy-kb"
+development_repository: "gridex-power-policy-kb-dev"
+development_visibility: private
+source_policy: link-only

@@ -38,7 +38,6 @@ draft: false
 attachments:
 - url: https://www.kepco.co.kr/c2r/FileDownload.do?fileNo=bQSK6KNFNAG9cfWeYpeHWA%3D%3D&fileSeq=Snw2%2Bh9Sw1L2yimBGsLgBA%3D%3D
   title: 다운로드
-  path: data/raw/sha256/73/73c1b0c26a5efb96b864a4ee7ce59a5ff8ccc5bbc665aed7649934144c5d5f95.pdf
   file_hash: sha256:73c1b0c26a5efb96b864a4ee7ce59a5ff8ccc5bbc665aed7649934144c5d5f95
   format: pdf
   size_bytes: 694914
@@ -46,7 +45,6 @@ attachments:
   collected_at: '2026-09-09T03:20:01.636988+00:00'
   rights_status: check_source_terms
 source_snapshot:
-  path: data/raw/sha256/6c/6c7a5d4f7811c9c6d13ec53ae848042fb9550fe0e709cc3cd4fb9b422e4f42a4.html
   file_hash: sha256:6c7a5d4f7811c9c6d13ec53ae848042fb9550fe0e709cc3cd4fb9b422e4f42a4
   resolved_url: https://www.kepco.co.kr/home/media/newsroom/pr/boardView.do?boardMngNo=15&boardNo=2904
 events:
@@ -71,6 +69,19 @@ title_ko: 제11차 장기 송변전설비계획 2024–2038
 document_identifier: null
 edition_year: null
 version: null
+archive_access: link_only
+type: transmission_plan
+status: final
+source_ids:
+- SRC-POLICY-T11-FINAL
+evidence_level: Unverified
+published: '2025-05-27'
+effective: null
+last_verified: '2026-09-09'
+valid_from: null
+valid_to: null
+supersedes: []
+superseded_by: []
 ---
 
 > [!warning] 공식 출처 확인 · AI 요약 검수 대기
@@ -141,10 +152,9 @@ PDF p.3의 수립 방향은 호남–수도권 HVDC 운영을 위한 계통 재�
 - [공식 게시물 / 공식 자료실](https://www.kepco.co.kr/home/media/newsroom/pr/boardView.do?boardMngNo=15&boardNo=2904)
 - 출처 확인일: 2026-09-09
 
-## 원본 첨부파일
+## 공식 원문 형식
 
-- **PDF** · 694,914 bytes · [공식 다운로드](https://www.kepco.co.kr/c2r/FileDownload.do?fileNo=bQSK6KNFNAG9cfWeYpeHWA%3D%3D&fileSeq=Snw2%2Bh9Sw1L2yimBGsLgBA%3D%3D) · [보존 원본](https://github.com/Uptec-khj/gridex-power-policy-kb/blob/main/data/raw/sha256/73/73c1b0c26a5efb96b864a4ee7ce59a5ff8ccc5bbc665aed7649934144c5d5f95.pdf)
-  - 원본 경로: `data/raw/sha256/73/73c1b0c26a5efb96b864a4ee7ce59a5ff8ccc5bbc665aed7649934144c5d5f95.pdf`
+- **PDF** · 694,914 bytes · [공식 다운로드](https://www.kepco.co.kr/c2r/FileDownload.do?fileNo=bQSK6KNFNAG9cfWeYpeHWA%3D%3D&fileSeq=Snw2%2Bh9Sw1L2yimBGsLgBA%3D%3D)
   - 해시: `sha256:73c1b0c26a5efb96b864a4ee7ce59a5ff8ccc5bbc665aed7649934144c5d5f95`
 
 게시물 스냅샷: `{r["source_snapshot"]["path"]}`

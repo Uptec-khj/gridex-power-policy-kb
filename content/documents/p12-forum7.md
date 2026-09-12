@@ -37,7 +37,6 @@ draft: false
 attachments:
 - url: https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=331844&fileSeq=2
   title: 제12차 전기본 수립을 위한 2040년 석탄발전 조기폐지 방안  정책토론회(7차) 개최(기후부 보도참고자료).pdf (302.5 KB)
-  path: data/raw/sha256/80/803250b635cbf1af8c217226504784c7a78cf42116b9a654c86148dc0bbbdb64.pdf
   file_hash: sha256:803250b635cbf1af8c217226504784c7a78cf42116b9a654c86148dc0bbbdb64
   format: pdf
   size_bytes: 309734
@@ -46,7 +45,6 @@ attachments:
   rights_status: check_source_terms
 - url: https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=331844&fileSeq=3
   title: 제12차 전기본 수립을 위한 2040년 석탄발전 조기폐지 방안  정책토론회(7차) 개최(기후부 보도참고자료).hwpx (703.3 KB)
-  path: data/raw/sha256/9b/9bd4a74403e6826bb8aceab713ba1c7e648dbbff303d8257f03334850b633f65.hwpx
   file_hash: sha256:9bd4a74403e6826bb8aceab713ba1c7e648dbbff303d8257f03334850b633f65
   format: hwpx
   size_bytes: 720166
@@ -54,7 +52,6 @@ attachments:
   collected_at: '2026-09-09T03:20:31.464578+00:00'
   rights_status: check_source_terms
 source_snapshot:
-  path: data/raw/sha256/cf/cfb02dd2b4636eb1fc9a13b764cd1e86ad7b87cd71740c8098978f9d415b5a90.html
   file_hash: sha256:cfb02dd2b4636eb1fc9a13b764cd1e86ad7b87cd71740c8098978f9d415b5a90
   resolved_url: https://www.mcee.go.kr/home/web/board/read.do?boardId=1889590&boardMasterId=939&menuId=10598
 events:
@@ -83,6 +80,19 @@ title_ko: 제12차 전기본 제7차 석탄발전 조기폐지 정책토론회 �
 document_identifier: null
 edition_year: null
 version: null
+archive_access: link_only
+type: notice
+status: consultation
+source_ids:
+- SRC-POLICY-P12-FORUM7
+evidence_level: Unverified
+published: '2026-09-09'
+effective: null
+last_verified: '2026-09-09'
+valid_from: null
+valid_to: null
+supersedes: []
+superseded_by: []
 ---
 
 > [!warning] 공식 출처 확인 · AI 요약 검수 대기
@@ -145,13 +155,11 @@ version: null
 - [공식 게시물 / 공식 자료실](https://www.mcee.go.kr/home/web/board/read.do?boardId=1889590&boardMasterId=939&menuId=10598)
 - 출처 확인일: 2026-09-09
 
-## 원본 첨부파일
+## 공식 원문 형식
 
-- **PDF** · 309,734 bytes · [공식 다운로드](https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=331844&fileSeq=2) · [보존 원본](https://github.com/Uptec-khj/gridex-power-policy-kb/blob/main/data/raw/sha256/80/803250b635cbf1af8c217226504784c7a78cf42116b9a654c86148dc0bbbdb64.pdf)
-  - 원본 경로: `data/raw/sha256/80/803250b635cbf1af8c217226504784c7a78cf42116b9a654c86148dc0bbbdb64.pdf`
+- **PDF** · 309,734 bytes · [공식 다운로드](https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=331844&fileSeq=2)
   - 해시: `sha256:803250b635cbf1af8c217226504784c7a78cf42116b9a654c86148dc0bbbdb64`
-- **HWPX** · 720,166 bytes · [공식 다운로드](https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=331844&fileSeq=3) · [보존 원본](https://github.com/Uptec-khj/gridex-power-policy-kb/blob/main/data/raw/sha256/9b/9bd4a74403e6826bb8aceab713ba1c7e648dbbff303d8257f03334850b633f65.hwpx)
-  - 원본 경로: `data/raw/sha256/9b/9bd4a74403e6826bb8aceab713ba1c7e648dbbff303d8257f03334850b633f65.hwpx`
+- **HWPX** · 720,166 bytes · [공식 다운로드](https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=331844&fileSeq=3)
   - 해시: `sha256:9bd4a74403e6826bb8aceab713ba1c7e648dbbff303d8257f03334850b633f65`
 
 게시물 스냅샷: `{r["source_snapshot"]["path"]}`

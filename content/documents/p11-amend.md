@@ -36,7 +36,6 @@ draft: false
 attachments:
 - url: https://www.kpx.or.kr/boardDownload.es?bid=0061&list_no=74609&seq=1
   title: 제11차 전력수급기본계획 수정본 PDF (KPX 공식 재게시, 표지 2025-238호)
-  path: data/raw/sha256/4d/4db38773da86a94fe3752a58376fbc6c33bb0ebfac17473f23a6555ac582d822.pdf
   file_hash: sha256:4db38773da86a94fe3752a58376fbc6c33bb0ebfac17473f23a6555ac582d822
   format: pdf
   size_bytes: 4601338
@@ -44,7 +43,6 @@ attachments:
   collected_at: '2026-09-09T02:37:53.199074+00:00'
   rights_status: check_source_terms
 source_snapshot:
-  path: data/raw/sha256/a4/a46be8c5b3e996718bee3a32b96335092d81bc965165c8cc67072b6b47cd55a5.html
   file_hash: sha256:a46be8c5b3e996718bee3a32b96335092d81bc965165c8cc67072b6b47cd55a5
   resolved_url: https://www.motir.go.kr/kor/article/ATCLc01b2801b/70152/view
 events:
@@ -69,6 +67,19 @@ title_ko: 제11차 전력수급기본계획 수정 공고
 document_identifier: null
 edition_year: null
 version: null
+archive_access: link_only
+type: plan
+status: amended
+source_ids:
+- SRC-POLICY-P11-AMEND
+evidence_level: Unverified
+published: '2025-03-13'
+effective: null
+last_verified: '2026-09-09'
+valid_from: null
+valid_to: null
+supersedes: []
+superseded_by: []
 ---
 
 > [!warning] 공식 출처 확인 · AI 요약 검수 대기
@@ -131,10 +142,9 @@ version: null
 - 출처 확인일: 2026-09-09
 - [KPX 공식 재게시 자료실](https://www.kpx.or.kr/board.es?bid=0061&mid=a30700000000): 확보한 PDF 표지는 공고 제2025-238호, 2025-03-13. 최초 공고로 오인하지 않습니다.
 
-## 원본 첨부파일
+## 공식 원문 형식
 
-- **PDF** · 4,601,338 bytes · [공식 다운로드](https://www.kpx.or.kr/boardDownload.es?bid=0061&list_no=74609&seq=1) · [보존 원본](https://github.com/Uptec-khj/gridex-power-policy-kb/blob/main/data/raw/sha256/4d/4db38773da86a94fe3752a58376fbc6c33bb0ebfac17473f23a6555ac582d822.pdf)
-  - 원본 경로: `data/raw/sha256/4d/4db38773da86a94fe3752a58376fbc6c33bb0ebfac17473f23a6555ac582d822.pdf`
+- **PDF** · 4,601,338 bytes · [공식 다운로드](https://www.kpx.or.kr/boardDownload.es?bid=0061&list_no=74609&seq=1)
   - 해시: `sha256:4db38773da86a94fe3752a58376fbc6c33bb0ebfac17473f23a6555ac582d822`
 
 일부 공식 첨부 경로가 오류를 반환했습니다. 확보하지 못한 파일의 해시는 생성하지 않았습니다. 상세 상태: [[collection-status|자료 확보 현황]].

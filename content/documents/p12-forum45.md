@@ -35,7 +35,6 @@ draft: false
 attachments:
 - url: https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=330358&fileSeq=1
   title: 전기국가 전환  전력수요 및 재생에너지 보급 전망 논의 4·5차 대국민 정책토론회 개최(기후부 보도참고자료).hwpx (2.1 MB)
-  path: data/raw/sha256/97/97b9ec40363a69b47e37485d1c8bcf4421d4139f90da08b50f9e0ac96e9a58be.hwpx
   file_hash: sha256:97b9ec40363a69b47e37485d1c8bcf4421d4139f90da08b50f9e0ac96e9a58be
   format: hwpx
   size_bytes: 2185226
@@ -44,7 +43,6 @@ attachments:
   rights_status: check_source_terms
 - url: https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=330358&fileSeq=2
   title: 전기국가 전환  전력수요 및 재생에너지 보급 전망 논의 4·5차 대국민 정책토론회 개최(기후부 보도참고자료).pdf (327.7 KB)
-  path: data/raw/sha256/5b/5b67abde7bc1ac8edfe5b14120481e1e8ea50c53d09a0fde22aac5b75dd0deb2.pdf
   file_hash: sha256:5b67abde7bc1ac8edfe5b14120481e1e8ea50c53d09a0fde22aac5b75dd0deb2
   format: pdf
   size_bytes: 335550
@@ -52,7 +50,6 @@ attachments:
   collected_at: '2026-09-09T02:33:58.616294+00:00'
   rights_status: check_source_terms
 source_snapshot:
-  path: data/raw/sha256/6e/6ebd70df0e523aa529e17564706b97ed2f409074978bfbb18d9af001ce8d4c38.html
   file_hash: sha256:6ebd70df0e523aa529e17564706b97ed2f409074978bfbb18d9af001ce8d4c38
   resolved_url: https://www.mcee.go.kr/home/web/board/read.do?boardId=1884280&boardMasterId=939&menuId=10598
 events:
@@ -81,6 +78,19 @@ title_ko: 제12차 전기본 제4·5차 정책토론회 개최 안내
 document_identifier: null
 edition_year: null
 version: null
+archive_access: link_only
+type: notice
+status: consultation
+source_ids:
+- SRC-POLICY-P12-FORUM45
+evidence_level: Unverified
+published: '2026-08-15'
+effective: null
+last_verified: '2026-09-09'
+valid_from: null
+valid_to: null
+supersedes: []
+superseded_by: []
 ---
 
 > [!warning] 공식 출처 확인 · AI 요약 검수 대기
@@ -142,13 +152,11 @@ version: null
 - [공식 게시물 / 공식 자료실](https://www.mcee.go.kr/home/web/board/read.do?boardId=1884280&boardMasterId=939&menuId=10598)
 - 출처 확인일: 2026-09-09
 
-## 원본 첨부파일
+## 공식 원문 형식
 
-- **HWPX** · 2,185,226 bytes · [공식 다운로드](https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=330358&fileSeq=1) · [보존 원본](https://github.com/Uptec-khj/gridex-power-policy-kb/blob/main/data/raw/sha256/97/97b9ec40363a69b47e37485d1c8bcf4421d4139f90da08b50f9e0ac96e9a58be.hwpx)
-  - 원본 경로: `data/raw/sha256/97/97b9ec40363a69b47e37485d1c8bcf4421d4139f90da08b50f9e0ac96e9a58be.hwpx`
+- **HWPX** · 2,185,226 bytes · [공식 다운로드](https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=330358&fileSeq=1)
   - 해시: `sha256:97b9ec40363a69b47e37485d1c8bcf4421d4139f90da08b50f9e0ac96e9a58be`
-- **PDF** · 335,550 bytes · [공식 다운로드](https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=330358&fileSeq=2) · [보존 원본](https://github.com/Uptec-khj/gridex-power-policy-kb/blob/main/data/raw/sha256/5b/5b67abde7bc1ac8edfe5b14120481e1e8ea50c53d09a0fde22aac5b75dd0deb2.pdf)
-  - 원본 경로: `data/raw/sha256/5b/5b67abde7bc1ac8edfe5b14120481e1e8ea50c53d09a0fde22aac5b75dd0deb2.pdf`
+- **PDF** · 335,550 bytes · [공식 다운로드](https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=330358&fileSeq=2)
   - 해시: `sha256:5b67abde7bc1ac8edfe5b14120481e1e8ea50c53d09a0fde22aac5b75dd0deb2`
 
 게시물 스냅샷: `{r["source_snapshot"]["path"]}`

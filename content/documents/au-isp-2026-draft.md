@@ -9,11 +9,16 @@ subcategory: 통합계통계획 초안·의견수렴
 plan_family: integrated-system-plan
 plan_number: null
 document_stage: consultation
-topics: [NEM, Integrated System Plan, 송전망, 의견수렴]
+topics:
+- NEM
+- Integrated System Plan
+- 송전망
+- 의견수렴
 source_id: au-aemo
 source_url: https://www.aemo.com.au/consultations/current-and-closed-consultations/draft-2026-isp-consultation
 attachment_url: null
-related_documents: ['[[au-isp-2026-final]]']
+related_documents:
+- '[[au-isp-2026-final]]'
 previous_document: null
 next_document: '[[au-isp-2026-final]]'
 collected_date: '2026-09-11'
@@ -32,12 +37,20 @@ events:
   label: Draft 2026 ISP 공개
   status: publication
   source_url: https://www.aemo.com.au/consultations/current-and-closed-consultations/draft-2026-isp-consultation
-tags: [호주, NEM, ISP, 초안, 검수대기]
-aliases: [Draft 2026 ISP]
+tags:
+- 호주
+- NEM
+- ISP
+- 초안
+- 검수대기
+aliases:
+- Draft 2026 ISP
 date: '2025-12-10'
 region_group: AU
-jurisdictions: [AU]
-market_regions: [NEM]
+jurisdictions:
+- AU
+market_regions:
+- NEM
 document_language: en
 document_type: transmission_plan
 title_original: Draft 2026 Integrated System Plan
@@ -56,6 +69,18 @@ translation_review_status: unreviewed
 rights_status: link_only_pending_terms
 rights_url: null
 archive_access: link_only
+type: transmission_plan
+status: consultation
+source_ids:
+- SRC-POLICY-AU-ISP-2026-DRAFT
+evidence_level: Unverified
+published: '2025-12-10'
+effective: null
+last_verified: '2026-09-11'
+valid_from: null
+valid_to: null
+supersedes: []
+superseded_by: []
 ---
 
 > [!warning] 공식 출처 확인 · AI 요약 검수 대기
@@ -107,6 +132,6 @@ archive_access: link_only
 - [AEMO Draft 2026 ISP consultation](https://www.aemo.com.au/consultations/current-and-closed-consultations/draft-2026-isp-consultation)
 - 확인일: 2026-09-11
 
-## 원본 첨부파일
+## 공식 원문 형식
 
 국제 원문 재배포 이용조건이 확인되지 않아 저장소에 복제하지 않았다. 공식 협의 페이지에서 초안 링크를 이용한다.

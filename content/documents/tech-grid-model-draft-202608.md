@@ -36,7 +36,6 @@ draft: false
 attachments:
 - url: https://www.kpx.or.kr/boardDownload.es?bid=0042&list_no=77979&seq=1
   title: 첨부1 전력시장운영규칙 개정(안)
-  path: data/raw/sha256/b4/b47df5a187e4243d0ce3f049244ce925cc7fcbefe2594740f11a3c12e128e136.pdf
   file_hash: sha256:b47df5a187e4243d0ce3f049244ce925cc7fcbefe2594740f11a3c12e128e136
   format: pdf
   size_bytes: 56704
@@ -45,7 +44,6 @@ attachments:
   rights_status: check_source_terms
 - url: https://www.kpx.or.kr/boardDownload.es?bid=0042&list_no=77979&seq=3
   title: 첨부2 계통평가세부운영규정 신설(안)
-  path: data/raw/sha256/39/39984bbe9610d1bd23b0cea3f34052003e8d089b75a894750ee1c50d5d75c392.pdf
   file_hash: sha256:39984bbe9610d1bd23b0cea3f34052003e8d089b75a894750ee1c50d5d75c392
   format: pdf
   size_bytes: 470685
@@ -53,7 +51,6 @@ attachments:
   collected_at: '2026-09-09T05:08:53.263250+00:00'
   rights_status: check_source_terms
 source_snapshot:
-  path: data/raw/sha256/17/175c4fc16a4437756849fa33de332a795083622202888cb69d065672bafae8d9.html
   file_hash: sha256:175c4fc16a4437756849fa33de332a795083622202888cb69d065672bafae8d9
   resolved_url: https://www.kpx.or.kr/board.es?act=view&bid=0042&mid=a11201000000&list_no=77979
 events:
@@ -90,6 +87,19 @@ title_ko: 발전사업자 계통해석 모델 제출 사전안내 및 규정 개
 document_identifier: null
 edition_year: null
 version: null
+archive_access: link_only
+type: rule_draft
+status: draft
+source_ids:
+- SRC-POLICY-TECH-GRID-MODEL-DRAFT-202608
+evidence_level: Unverified
+published: '2026-08-25'
+effective: null
+last_verified: '2026-09-09'
+valid_from: null
+valid_to: null
+supersedes: []
+superseded_by: []
 ---
 
 > [!warning] 공식 출처 확인 · AI 요약 검수 대기
@@ -160,13 +170,11 @@ version: null
 - [공식 게시물](https://www.kpx.or.kr/board.es?act=view&bid=0042&mid=a11201000000&list_no=77979)
 - 확인일: 2026-09-09
 
-## 원본 첨부파일
+## 공식 원문 형식
 
-- **첨부1 전력시장운영규칙 개정(안)** (PDF, 56,704 bytes): [공식 다운로드](https://www.kpx.or.kr/boardDownload.es?bid=0042&list_no=77979&seq=1) · [보존본](https://github.com/Uptec-khj/gridex-power-policy-kb/blob/main/data/raw/sha256/b4/b47df5a187e4243d0ce3f049244ce925cc7fcbefe2594740f11a3c12e128e136.pdf)
+- **첨부1 전력시장운영규칙 개정(안)** (PDF, 56,704 bytes): [공식 다운로드](https://www.kpx.or.kr/boardDownload.es?bid=0042&list_no=77979&seq=1)
   - SHA-256: `sha256:b47df5a187e4243d0ce3f049244ce925cc7fcbefe2594740f11a3c12e128e136`
-- **첨부2 계통평가세부운영규정 신설(안)** (PDF, 470,685 bytes): [공식 다운로드](https://www.kpx.or.kr/boardDownload.es?bid=0042&list_no=77979&seq=3) · [보존본](https://github.com/Uptec-khj/gridex-power-policy-kb/blob/main/data/raw/sha256/39/39984bbe9610d1bd23b0cea3f34052003e8d089b75a894750ee1c50d5d75c392.pdf)
+- **첨부2 계통평가세부운영규정 신설(안)** (PDF, 470,685 bytes): [공식 다운로드](https://www.kpx.or.kr/boardDownload.es?bid=0042&list_no=77979&seq=3)
   - SHA-256: `sha256:39984bbe9610d1bd23b0cea3f34052003e8d089b75a894750ee1c50d5d75c392`
-
-[공식 게시물 보존본](https://github.com/Uptec-khj/gridex-power-policy-kb/blob/main/data/raw/sha256/17/175c4fc16a4437756849fa33de332a795083622202888cb69d065672bafae8d9.html)
 
 원문 파일의 권리는 발행기관·원저작자에게 있습니다. 원본 이용조건 검수는 대기 상태입니다.

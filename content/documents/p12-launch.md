@@ -35,7 +35,6 @@ draft: false
 attachments:
 - url: https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=311860&fileSeq=2
   title: 제12차 전력수급기본계획 수립 착수(보도참고자료)(전력국 11.27).hwpx (966.9 KB)
-  path: data/raw/sha256/1c/1c6d7cfefaeebf82157e4543704e2adb36b34fa8e03fe02a18e7849ef87d5fac.hwpx
   file_hash: sha256:1c6d7cfefaeebf82157e4543704e2adb36b34fa8e03fe02a18e7849ef87d5fac
   format: hwpx
   size_bytes: 990142
@@ -44,7 +43,6 @@ attachments:
   rights_status: check_source_terms
 - url: https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=311860&fileSeq=3
   title: 제12차 전력수급기본계획 수립 착수(보도참고자료)(전력국 11.27).pdf (174.1 KB)
-  path: data/raw/sha256/93/935839fbbfed01d0789d80744bdee3d813e50864c1ad0a50896bf50b8cc0f728.pdf
   file_hash: sha256:935839fbbfed01d0789d80744bdee3d813e50864c1ad0a50896bf50b8cc0f728
   format: pdf
   size_bytes: 178228
@@ -52,7 +50,6 @@ attachments:
   collected_at: '2026-09-09T02:33:52.882278+00:00'
   rights_status: check_source_terms
 source_snapshot:
-  path: data/raw/sha256/b3/b3cd35e2e77f9d422e7ac5e5232302bf89d37f4b68e292853ae55fcc18dcf410.html
   file_hash: sha256:b3cd35e2e77f9d422e7ac5e5232302bf89d37f4b68e292853ae55fcc18dcf410
   resolved_url: https://www.mcee.go.kr/home/web/board/read.do?boardId=1823520&boardMasterId=939&menuId=10598
 events:
@@ -77,6 +74,19 @@ title_ko: 제12차 전력수급기본계획 수립 착수
 document_identifier: null
 edition_year: null
 version: null
+archive_access: link_only
+type: notice
+status: announced
+source_ids:
+- SRC-POLICY-P12-LAUNCH
+evidence_level: Unverified
+published: '2025-11-27'
+effective: null
+last_verified: '2026-09-09'
+valid_from: null
+valid_to: null
+supersedes: []
+superseded_by: []
 ---
 
 > [!warning] 공식 출처 확인 · AI 요약 검수 대기
@@ -137,13 +147,11 @@ version: null
 - [공식 게시물 / 공식 자료실](https://www.mcee.go.kr/home/web/board/read.do?boardId=1823520&boardMasterId=939&menuId=10598)
 - 출처 확인일: 2026-09-09
 
-## 원본 첨부파일
+## 공식 원문 형식
 
-- **HWPX** · 990,142 bytes · [공식 다운로드](https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=311860&fileSeq=2) · [보존 원본](https://github.com/Uptec-khj/gridex-power-policy-kb/blob/main/data/raw/sha256/1c/1c6d7cfefaeebf82157e4543704e2adb36b34fa8e03fe02a18e7849ef87d5fac.hwpx)
-  - 원본 경로: `data/raw/sha256/1c/1c6d7cfefaeebf82157e4543704e2adb36b34fa8e03fe02a18e7849ef87d5fac.hwpx`
+- **HWPX** · 990,142 bytes · [공식 다운로드](https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=311860&fileSeq=2)
   - 해시: `sha256:1c6d7cfefaeebf82157e4543704e2adb36b34fa8e03fe02a18e7849ef87d5fac`
-- **PDF** · 178,228 bytes · [공식 다운로드](https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=311860&fileSeq=3) · [보존 원본](https://github.com/Uptec-khj/gridex-power-policy-kb/blob/main/data/raw/sha256/93/935839fbbfed01d0789d80744bdee3d813e50864c1ad0a50896bf50b8cc0f728.pdf)
-  - 원본 경로: `data/raw/sha256/93/935839fbbfed01d0789d80744bdee3d813e50864c1ad0a50896bf50b8cc0f728.pdf`
+- **PDF** · 178,228 bytes · [공식 다운로드](https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=311860&fileSeq=3)
   - 해시: `sha256:935839fbbfed01d0789d80744bdee3d813e50864c1ad0a50896bf50b8cc0f728`
 
 게시물 스냅샷: `{r["source_snapshot"]["path"]}`

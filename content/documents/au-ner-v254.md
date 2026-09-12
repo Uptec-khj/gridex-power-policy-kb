@@ -9,11 +9,17 @@ subcategory: NEM 통합 규칙
 plan_family: null
 plan_number: null
 document_stage: amended
-topics: [NEM, National Electricity Rules, 계통연계, 시행일]
+topics:
+- NEM
+- National Electricity Rules
+- 계통연계
+- 시행일
 source_id: au-aemc
 source_url: https://energy-rules.aemc.gov.au/ner/818
 attachment_url: null
-related_documents: ['[[au-isp-2026-final]]', '[[au-nem-gps-template-2023]]']
+related_documents:
+- '[[au-isp-2026-final]]'
+- '[[au-nem-gps-template-2023]]'
 previous_document: null
 next_document: null
 collected_date: '2026-09-11'
@@ -32,12 +38,21 @@ events:
   label: NER v254 통합본 갱신·시행
   status: publication
   source_url: https://energy-rules.aemc.gov.au/ner/818
-tags: [호주, NEM, NER, 규칙, 검수대기]
-aliases: [NER v254, National Electricity Rules Version 254]
+tags:
+- 호주
+- NEM
+- NER
+- 규칙
+- 검수대기
+aliases:
+- NER v254
+- National Electricity Rules Version 254
 date: '2026-09-04'
 region_group: AU
-jurisdictions: [AU]
-market_regions: [NEM]
+jurisdictions:
+- AU
+market_regions:
+- NEM
 document_language: en
 document_type: regulation
 title_original: National Electricity Rules Version 254
@@ -56,6 +71,18 @@ translation_review_status: unreviewed
 rights_status: link_only_pending_terms
 rights_url: null
 archive_access: link_only
+type: regulation
+status: amended
+source_ids:
+- SRC-POLICY-AU-NER-V254
+evidence_level: Unverified
+published: '2026-09-04'
+effective: '2026-09-04'
+last_verified: '2026-09-11'
+valid_from: null
+valid_to: null
+supersedes: []
+superseded_by: []
 ---
 
 > [!warning] 공식 원문 확인 · AI 요약 검수 대기
@@ -108,6 +135,6 @@ NER 5.22.10~5.22.11은 ISP와 초안 절차를 다룬다. Schedule 5.2에는 발
 - [NER v254 전체 PDF](https://aemc-dra-production-s3.s3.ap-southeast-2.amazonaws.com/rules/bc0d2a8e1cf523289a553dfefbec0a3b359f4b5b/assets/files/NER%20-%20v254%20-%20Full.pdf)
 - 확인일: 2026-09-11
 
-## 원본 첨부파일
+## 공식 원문 형식
 
 공식 PDF의 표지와 관련 조항을 대조했으나 재배포하지 않고 공식 링크만 제공한다.

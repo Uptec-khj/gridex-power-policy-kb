@@ -1,0 +1,24 @@
+{
+  "topic": "전력정책 및 GFM 규격·시험·인증",
+  "name": "GRIDEX Power Policy Knowledge Base",
+  "slug": "gridex-power-policy",
+  "kb_type": "Mixed",
+  "language": "ko",
+  "countries": [
+    "KR",
+    "AU",
+    "US",
+    "CN",
+    "DE",
+    "GB"
+  ],
+  "site": "quartz",
+  "gcp_level": 0,
+  "public": true,
+  "created": "2026-09-12",
+  "generator_repository": "https://github.com/UPTEC-KOREA/knowledge-base-generator",
+  "generator_commit": "5fff2140909089a85cdb5bd92b24db2ee1e44418",
+  "integration_mode": "existing-kb-adapter",
+  "content_root": "content",
+  "source_policy": "link-only"
+}

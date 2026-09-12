@@ -82,6 +82,19 @@
     "rights_status": "link_only_pending_terms",
     "rights_url": null,
     "archive_access": "link_only",
+    "type": "study",
+    "status": "final",
+    "source_ids": [
+      "SRC-POLICY-AU-GPSRR-2026"
+    ],
+    "evidence_level": "Unverified",
+    "published": "2026-07-31",
+    "effective": null,
+    "last_verified": "2026-09-11",
+    "valid_from": null,
+    "valid_to": null,
+    "supersedes": [],
+    "superseded_by": [],
     "path": "content/documents/au-gpsrr-2026.md",
     "slug": "documents/au-gpsrr-2026"
   },
@@ -165,6 +178,19 @@
     "rights_status": "link_only_pending_terms",
     "rights_url": null,
     "archive_access": "link_only",
+    "type": "transmission_plan",
+    "status": "consultation",
+    "source_ids": [
+      "SRC-POLICY-AU-ISP-2026-DRAFT"
+    ],
+    "evidence_level": "Unverified",
+    "published": "2025-12-10",
+    "effective": null,
+    "last_verified": "2026-09-11",
+    "valid_from": null,
+    "valid_to": null,
+    "supersedes": [],
+    "superseded_by": [],
     "path": "content/documents/au-isp-2026-draft.md",
     "slug": "documents/au-isp-2026-draft"
   },
@@ -251,6 +277,19 @@
     "rights_status": "link_only_pending_terms",
     "rights_url": null,
     "archive_access": "link_only",
+    "type": "transmission_plan",
+    "status": "final",
+    "source_ids": [
+      "SRC-POLICY-AU-ISP-2026-FINAL"
+    ],
+    "evidence_level": "Unverified",
+    "published": "2026-06-25",
+    "effective": null,
+    "last_verified": "2026-09-11",
+    "valid_from": null,
+    "valid_to": null,
+    "supersedes": [],
+    "superseded_by": [],
     "path": "content/documents/au-isp-2026-final.md",
     "slug": "documents/au-isp-2026-final"
   },
@@ -335,6 +374,19 @@
     "rights_status": "link_only_pending_terms",
     "rights_url": null,
     "archive_access": "link_only",
+    "type": "forecast",
+    "status": "final",
+    "source_ids": [
+      "SRC-POLICY-AU-NEM-ESOO-2026"
+    ],
+    "evidence_level": "Unverified",
+    "published": "2026-08-25",
+    "effective": null,
+    "last_verified": "2026-09-11",
+    "valid_from": null,
+    "valid_to": null,
+    "supersedes": [],
+    "superseded_by": [],
     "path": "content/documents/au-nem-esoo-2026.md",
     "slug": "documents/au-nem-esoo-2026"
   },
@@ -428,6 +480,19 @@
     "rights_status": "link_only_pending_terms",
     "rights_url": null,
     "archive_access": "link_only",
+    "type": "technical_notice",
+    "status": "final",
+    "source_ids": [
+      "SRC-POLICY-AU-NEM-GPS-TEMPLATE-2023"
+    ],
+    "evidence_level": "Unverified",
+    "published": "2023-03-16",
+    "effective": null,
+    "last_verified": "2026-09-11",
+    "valid_from": null,
+    "valid_to": null,
+    "supersedes": [],
+    "superseded_by": [],
     "path": "content/documents/au-nem-gps-template-2023.md",
     "slug": "documents/au-nem-gps-template-2023"
   },
@@ -513,6 +578,19 @@
     "rights_status": "link_only_pending_terms",
     "rights_url": null,
     "archive_access": "link_only",
+    "type": "regulation",
+    "status": "amended",
+    "source_ids": [
+      "SRC-POLICY-AU-NER-V254"
+    ],
+    "evidence_level": "Unverified",
+    "published": "2026-09-04",
+    "effective": "2026-09-04",
+    "last_verified": "2026-09-11",
+    "valid_from": null,
+    "valid_to": null,
+    "supersedes": [],
+    "superseded_by": [],
     "path": "content/documents/au-ner-v254.md",
     "slug": "documents/au-ner-v254"
   },
@@ -603,6 +681,19 @@
     "rights_status": "link_only_pending_terms",
     "rights_url": null,
     "archive_access": "link_only",
+    "type": "forecast",
+    "status": "amended",
+    "source_ids": [
+      "SRC-POLICY-AU-WEM-ESOO-2026"
+    ],
+    "evidence_level": "Unverified",
+    "published": "2026-06-23",
+    "effective": null,
+    "last_verified": "2026-09-11",
+    "valid_from": null,
+    "valid_to": null,
+    "supersedes": [],
+    "superseded_by": [],
     "path": "content/documents/au-wem-esoo-2026.md",
     "slug": "documents/au-wem-esoo-2026"
   },
@@ -681,6 +772,19 @@
     "rights_status": "link_only_pending_terms",
     "rights_url": null,
     "archive_access": "link_only",
+    "type": "official_explainer",
+    "status": "official_explainer",
+    "source_ids": [
+      "SRC-POLICY-AU-WEM-GPS-FRAMEWORK"
+    ],
+    "evidence_level": "Unverified",
+    "published": null,
+    "effective": "2021-02-01",
+    "last_verified": "2026-09-11",
+    "valid_from": null,
+    "valid_to": null,
+    "supersedes": [],
+    "superseded_by": [],
     "path": "content/documents/au-wem-gps-framework.md",
     "slug": "documents/au-wem-gps-framework"
   },
@@ -767,6 +871,19 @@
     "rights_status": "link_only_pending_terms",
     "rights_url": null,
     "archive_access": "link_only",
+    "type": "official_explainer",
+    "status": "official_explainer",
+    "source_ids": [
+      "SRC-POLICY-AU-WEM-GPS-REGISTRATION"
+    ],
+    "evidence_level": "Unverified",
+    "published": null,
+    "effective": "2021-02-01",
+    "last_verified": "2026-09-11",
+    "valid_from": null,
+    "valid_to": null,
+    "supersedes": [],
+    "superseded_by": [],
     "path": "content/documents/au-wem-gps-registration.md",
     "slug": "documents/au-wem-gps-registration"
   },
@@ -855,6 +972,19 @@
     "rights_status": "link_only_pending_terms",
     "rights_url": null,
     "archive_access": "link_only",
+    "type": "test_procedure",
+    "status": "official_explainer",
+    "source_ids": [
+      "SRC-POLICY-AU-WEM-GPS-TESTING"
+    ],
+    "evidence_level": "Unverified",
+    "published": null,
+    "effective": null,
+    "last_verified": "2026-09-11",
+    "valid_from": null,
+    "valid_to": null,
+    "supersedes": [],
+    "superseded_by": [],
     "path": "content/documents/au-wem-gps-testing.md",
     "slug": "documents/au-wem-gps-testing"
   },
@@ -899,7 +1029,6 @@
       {
         "url": "https://kesis.keei.re.kr/boardDownload.es?bid=0025&list_no=1488&seq=1",
         "title": "제3차 에너지기본계획 전문 (KESIS 공식 재게시)",
-        "path": "data/raw/sha256/ea/ea646eb07761fff06dbcefdc2759ff21a365357c01e57c2a6f11f07453168806.pdf",
         "file_hash": "sha256:ea646eb07761fff06dbcefdc2759ff21a365357c01e57c2a6f11f07453168806",
         "format": "pdf",
         "size_bytes": 2213632,
@@ -909,7 +1038,6 @@
       }
     ],
     "source_snapshot": {
-      "path": "data/raw/sha256/15/1588e750c9485525e026c24c87aeb3eb207bb5dd62597c142e60b23cf374e3de.html",
       "file_hash": "sha256:1588e750c9485525e026c24c87aeb3eb207bb5dd62597c142e60b23cf374e3de",
       "resolved_url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/161753/view"
     },
@@ -939,6 +1067,20 @@
     "document_identifier": null,
     "edition_year": null,
     "version": null,
+    "archive_access": "link_only",
+    "type": "plan",
+    "status": "final",
+    "source_ids": [
+      "SRC-POLICY-ENERGY-3-FINAL"
+    ],
+    "evidence_level": "Unverified",
+    "published": "2019-06-04",
+    "effective": null,
+    "last_verified": "2026-09-09",
+    "valid_from": null,
+    "valid_to": null,
+    "supersedes": [],
+    "superseded_by": [],
     "path": "content/documents/energy-3-final.md",
     "slug": "documents/energy-3-final"
   },
@@ -981,7 +1123,6 @@
       {
         "url": "https://www.kpx.or.kr/boardDownload.es?bid=0017&list_no=68649&seq=1",
         "title": "다운로드",
-        "path": "data/raw/sha256/aa/aa6a2fb0e84a8c7e730d6366b6245235d81af94889c29feb7a8dcca4cbbfa8fa.hwp",
         "file_hash": "sha256:aa6a2fb0e84a8c7e730d6366b6245235d81af94889c29feb7a8dcca4cbbfa8fa",
         "format": "hwp",
         "size_bytes": 133632,
@@ -992,7 +1133,6 @@
       {
         "url": "https://www.kpx.or.kr/boardDownload.es?bid=0017&list_no=68649&seq=2",
         "title": "다운로드",
-        "path": "data/raw/sha256/af/af76e30ecd4a27a2c4040910ba0a3171ed7be33fde79d09204a16e6c43d1365b.pdf",
         "file_hash": "sha256:af76e30ecd4a27a2c4040910ba0a3171ed7be33fde79d09204a16e6c43d1365b",
         "format": "pdf",
         "size_bytes": 85485,
@@ -1002,7 +1142,6 @@
       }
     ],
     "source_snapshot": {
-      "path": "data/raw/sha256/f3/f3ff814f9389387873576c72438f47ec773e471001eb844ed6c480b0b7e01c53.html",
       "file_hash": "sha256:f3ff814f9389387873576c72438f47ec773e471001eb844ed6c480b0b7e01c53",
       "resolved_url": "https://www.kpx.or.kr/board.es?act=view&bid=0017&list_no=68649&mid=a10109030400"
     },
@@ -1033,6 +1172,20 @@
     "document_identifier": null,
     "edition_year": null,
     "version": null,
+    "archive_access": "link_only",
+    "type": "forecast",
+    "status": "supporting",
+    "source_ids": [
+      "SRC-POLICY-P10-DEMAND"
+    ],
+    "evidence_level": "Unverified",
+    "published": "2023-01-18",
+    "effective": null,
+    "last_verified": "2026-09-09",
+    "valid_from": null,
+    "valid_to": null,
+    "supersedes": [],
+    "superseded_by": [],
     "path": "content/documents/p10-demand.md",
     "slug": "documents/p10-demand"
   },
@@ -1075,7 +1228,6 @@
     "draft": false,
     "attachments": [],
     "source_snapshot": {
-      "path": "data/raw/sha256/3f/3fcac374268f86589754ca56ed9c7308717c20664d993866e238fad2eb66a24a.html",
       "file_hash": "sha256:3fcac374268f86589754ca56ed9c7308717c20664d993866e238fad2eb66a24a",
       "resolved_url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/165956/view"
     },
@@ -1106,6 +1258,20 @@
     "document_identifier": null,
     "edition_year": null,
     "version": null,
+    "archive_access": "link_only",
+    "type": "plan",
+    "status": "working_draft",
+    "source_ids": [
+      "SRC-POLICY-P10-DRAFT"
+    ],
+    "evidence_level": "Unverified",
+    "published": "2022-08-30",
+    "effective": null,
+    "last_verified": "2026-09-09",
+    "valid_from": null,
+    "valid_to": null,
+    "supersedes": [],
+    "superseded_by": [],
     "path": "content/documents/p10-draft.md",
     "slug": "documents/p10-draft"
   },
@@ -1150,7 +1316,6 @@
       {
         "url": "https://www.kpx.or.kr/boardDownload.es?bid=0061&list_no=69127&seq=1",
         "title": "제10차 전력수급기본계획 원문",
-        "path": "data/raw/sha256/8e/8ed37705452306eb20b4e6c065f816eb2389e69083d04d7cbad42d28e0f0b175.pdf",
         "file_hash": "sha256:8ed37705452306eb20b4e6c065f816eb2389e69083d04d7cbad42d28e0f0b175",
         "format": "pdf",
         "size_bytes": 5052465,
@@ -1160,7 +1325,6 @@
       }
     ],
     "source_snapshot": {
-      "path": "data/raw/sha256/19/198c8a716a041bf97df050c939d97e255e47d9b5ace3170c7385a499664d424c.html",
       "file_hash": "sha256:198c8a716a041bf97df050c939d97e255e47d9b5ace3170c7385a499664d424c",
       "resolved_url": "https://www.kpx.or.kr/board.es?bid=0061&mid=a30700000000"
     },
@@ -1191,6 +1355,20 @@
     "document_identifier": null,
     "edition_year": null,
     "version": null,
+    "archive_access": "link_only",
+    "type": "plan",
+    "status": "final",
+    "source_ids": [
+      "SRC-POLICY-P10-FINAL"
+    ],
+    "evidence_level": "Unverified",
+    "published": "2023-01-13",
+    "effective": null,
+    "last_verified": "2026-09-09",
+    "valid_from": null,
+    "valid_to": null,
+    "supersedes": [],
+    "superseded_by": [],
     "path": "content/documents/p10-final.md",
     "slug": "documents/p10-final"
   },
@@ -1232,7 +1410,6 @@
     "draft": false,
     "attachments": [],
     "source_snapshot": {
-      "path": "data/raw/sha256/33/33ee55da711fa6998f8a012c7cc5dd6c974b70d3cb421df1f5ecaca7777bd0d8.html",
       "file_hash": "sha256:33ee55da711fa6998f8a012c7cc5dd6c974b70d3cb421df1f5ecaca7777bd0d8",
       "resolved_url": "https://www.motir.go.kr/kor/article/ATCLc01b2801b/68020/view"
     },
@@ -1263,6 +1440,20 @@
     "document_identifier": null,
     "edition_year": null,
     "version": null,
+    "archive_access": "link_only",
+    "type": "notice",
+    "status": "consultation",
+    "source_ids": [
+      "SRC-POLICY-P10-HEARING"
+    ],
+    "evidence_level": "Unverified",
+    "published": "2022-11-14",
+    "effective": null,
+    "last_verified": "2026-09-09",
+    "valid_from": null,
+    "valid_to": null,
+    "supersedes": [],
+    "superseded_by": [],
     "path": "content/documents/p10-hearing.md",
     "slug": "documents/p10-hearing"
   },
@@ -1303,7 +1494,6 @@
     "draft": false,
     "attachments": [],
     "source_snapshot": {
-      "path": "data/raw/sha256/57/571c08dc6c3a2c54d2081f63f25c05c1f7148c1a7e3c850d3956e4ea96de3c86.html",
       "file_hash": "sha256:571c08dc6c3a2c54d2081f63f25c05c1f7148c1a7e3c850d3956e4ea96de3c86",
       "resolved_url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/166650/view"
     },
@@ -1334,6 +1524,20 @@
     "document_identifier": null,
     "edition_year": null,
     "version": null,
+    "archive_access": "link_only",
+    "type": "press_release",
+    "status": "press_release",
+    "source_ids": [
+      "SRC-POLICY-P10-RELEASE"
+    ],
+    "evidence_level": "Unverified",
+    "published": "2023-01-12",
+    "effective": null,
+    "last_verified": "2026-09-09",
+    "valid_from": null,
+    "valid_to": null,
+    "supersedes": [],
+    "superseded_by": [],
     "path": "content/documents/p10-release.md",
     "slug": "documents/p10-release"
   },
@@ -1375,7 +1579,6 @@
     "draft": false,
     "attachments": [],
     "source_snapshot": {
-      "path": "data/raw/sha256/7f/7f03c6d68f889d8405d257492e2124b259608d13990ed0adf73d5ff3b018c3ec.html",
       "file_hash": "sha256:7f03c6d68f889d8405d257492e2124b259608d13990ed0adf73d5ff3b018c3ec",
       "resolved_url": "https://www.motir.go.kr/kor/article/ATCLc01b2801b/67954/view"
     },
@@ -1406,6 +1609,20 @@
     "document_identifier": null,
     "edition_year": null,
     "version": null,
+    "archive_access": "link_only",
+    "type": "notice",
+    "status": "consultation",
+    "source_ids": [
+      "SRC-POLICY-P10-SEA-DRAFT"
+    ],
+    "evidence_level": "Unverified",
+    "published": "2022-09-30",
+    "effective": null,
+    "last_verified": "2026-09-09",
+    "valid_from": null,
+    "valid_to": null,
+    "supersedes": [],
+    "superseded_by": [],
     "path": "content/documents/p10-sea-draft.md",
     "slug": "documents/p10-sea-draft"
   },
@@ -1447,7 +1664,6 @@
     "draft": false,
     "attachments": [],
     "source_snapshot": {
-      "path": "data/raw/sha256/a7/a79e7cfbdf5e9d192fb69fb165d7442dcabff5b89cc2296edcbdc88a824553ca.html",
       "file_hash": "sha256:a79e7cfbdf5e9d192fb69fb165d7442dcabff5b89cc2296edcbdc88a824553ca",
       "resolved_url": "https://www.motir.go.kr/kor/article/ATCLc01b2801b/67906/view"
     },
@@ -1478,6 +1694,20 @@
     "document_identifier": null,
     "edition_year": null,
     "version": null,
+    "archive_access": "link_only",
+    "type": "notice",
+    "status": "consultation",
+    "source_ids": [
+      "SRC-POLICY-P10-SEA-SCOPE"
+    ],
+    "evidence_level": "Unverified",
+    "published": "2022-09-15",
+    "effective": null,
+    "last_verified": "2026-09-09",
+    "valid_from": null,
+    "valid_to": null,
+    "supersedes": [],
+    "superseded_by": [],
     "path": "content/documents/p10-sea-scope.md",
     "slug": "documents/p10-sea-scope"
   },
@@ -1522,7 +1752,6 @@
       {
         "url": "https://www.kpx.or.kr/boardDownload.es?bid=0061&list_no=74609&seq=1",
         "title": "제11차 전력수급기본계획 수정본 PDF (KPX 공식 재게시, 표지 2025-238호)",
-        "path": "data/raw/sha256/4d/4db38773da86a94fe3752a58376fbc6c33bb0ebfac17473f23a6555ac582d822.pdf",
         "file_hash": "sha256:4db38773da86a94fe3752a58376fbc6c33bb0ebfac17473f23a6555ac582d822",
         "format": "pdf",
         "size_bytes": 4601338,
@@ -1532,7 +1761,6 @@
       }
     ],
     "source_snapshot": {
-      "path": "data/raw/sha256/a4/a46be8c5b3e996718bee3a32b96335092d81bc965165c8cc67072b6b47cd55a5.html",
       "file_hash": "sha256:a46be8c5b3e996718bee3a32b96335092d81bc965165c8cc67072b6b47cd55a5",
       "resolved_url": "https://www.motir.go.kr/kor/article/ATCLc01b2801b/70152/view"
     },
@@ -1563,6 +1791,20 @@
     "document_identifier": null,
     "edition_year": null,
     "version": null,
+    "archive_access": "link_only",
+    "type": "plan",
+    "status": "amended",
+    "source_ids": [
+      "SRC-POLICY-P11-AMEND"
+    ],
+    "evidence_level": "Unverified",
+    "published": "2025-03-13",
+    "effective": null,
+    "last_verified": "2026-09-09",
+    "valid_from": null,
+    "valid_to": null,
+    "supersedes": [],
+    "superseded_by": [],
     "path": "content/documents/p11-amend.md",
     "slug": "documents/p11-amend"
   },
@@ -1604,7 +1846,6 @@
     "draft": false,
     "attachments": [],
     "source_snapshot": {
-      "path": "data/raw/sha256/8e/8e47dd524c0367ae305e990a83f2f3dd110e53b4c95d59ee40da29d344d6204e.html",
       "file_hash": "sha256:8e47dd524c0367ae305e990a83f2f3dd110e53b4c95d59ee40da29d344d6204e",
       "resolved_url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/167618/view"
     },
@@ -1635,6 +1876,20 @@
     "document_identifier": null,
     "edition_year": null,
     "version": null,
+    "archive_access": "link_only",
+    "type": "notice",
+    "status": "announced",
+    "source_ids": [
+      "SRC-POLICY-P11-COMMITTEE"
+    ],
+    "evidence_level": "Unverified",
+    "published": "2023-07-27",
+    "effective": null,
+    "last_verified": "2026-09-09",
+    "valid_from": null,
+    "valid_to": null,
+    "supersedes": [],
+    "superseded_by": [],
     "path": "content/documents/p11-committee.md",
     "slug": "documents/p11-committee"
   },
@@ -1679,7 +1934,6 @@
       {
         "url": "https://www.kpx.or.kr/boardDownload.es?bid=0017&list_no=74523&seq=2",
         "title": "다운로드",
-        "path": "data/raw/sha256/8f/8f1c87b8ccbc467c5379880aba76cef207c629bc2c491c22df0cb251173b5026.pdf",
         "file_hash": "sha256:8f1c87b8ccbc467c5379880aba76cef207c629bc2c491c22df0cb251173b5026",
         "format": "pdf",
         "size_bytes": 51650,
@@ -1690,7 +1944,6 @@
       {
         "url": "https://www.kpx.or.kr/boardDownload.es?bid=0017&list_no=74523&seq=3",
         "title": "다운로드",
-        "path": "data/raw/sha256/be/bee1c4e5a58e68ba98473e8f825391de7041532fa56da8b5fa1131cf145c6275.hwpx",
         "file_hash": "sha256:bee1c4e5a58e68ba98473e8f825391de7041532fa56da8b5fa1131cf145c6275",
         "format": "hwpx",
         "size_bytes": 69562,
@@ -1700,7 +1953,6 @@
       }
     ],
     "source_snapshot": {
-      "path": "data/raw/sha256/a9/a9a8d695f065c4083f835de5771d0ce8ed9876c66b7153594cf7996ce0175044.html",
       "file_hash": "sha256:a9a8d695f065c4083f835de5771d0ce8ed9876c66b7153594cf7996ce0175044",
       "resolved_url": "https://www.kpx.or.kr/board.es?act=view&bid=0017&list_no=74523&mid=a10109030400"
     },
@@ -1731,6 +1983,20 @@
     "document_identifier": null,
     "edition_year": null,
     "version": null,
+    "archive_access": "link_only",
+    "type": "forecast",
+    "status": "supporting",
+    "source_ids": [
+      "SRC-POLICY-P11-DEMAND"
+    ],
+    "evidence_level": "Unverified",
+    "published": "2025-02-27",
+    "effective": null,
+    "last_verified": "2026-09-09",
+    "valid_from": null,
+    "valid_to": null,
+    "supersedes": [],
+    "superseded_by": [],
     "path": "content/documents/p11-demand.md",
     "slug": "documents/p11-demand"
   },
@@ -1771,7 +2037,6 @@
     "draft": false,
     "attachments": [],
     "source_snapshot": {
-      "path": "data/raw/sha256/44/4401ebb96bcdd825cfddce43535fc5c8c5eef07e52fadbee3046a59e543ed42e.html",
       "file_hash": "sha256:4401ebb96bcdd825cfddce43535fc5c8c5eef07e52fadbee3046a59e543ed42e",
       "resolved_url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/169132/view"
     },
@@ -1802,6 +2067,20 @@
     "document_identifier": null,
     "edition_year": null,
     "version": null,
+    "archive_access": "link_only",
+    "type": "plan",
+    "status": "working_draft",
+    "source_ids": [
+      "SRC-POLICY-P11-DRAFT"
+    ],
+    "evidence_level": "Unverified",
+    "published": "2024-05-31",
+    "effective": null,
+    "last_verified": "2026-09-09",
+    "valid_from": null,
+    "valid_to": null,
+    "supersedes": [],
+    "superseded_by": [],
     "path": "content/documents/p11-draft.md",
     "slug": "documents/p11-draft"
   },
@@ -1848,7 +2127,6 @@
       {
         "url": "https://www.kpx.or.kr/boardDownload.es?bid=ATT&list_no=74548&seq=1",
         "title": "제11차 최초 공고 PDF (KPX 재게시, 표지 2025-169호)",
-        "path": "data/raw/sha256/3b/3b0867749e987e0773ae4c08587dffe5b94215701c0a619c7c19222a1e084e14.pdf",
         "file_hash": "sha256:3b0867749e987e0773ae4c08587dffe5b94215701c0a619c7c19222a1e084e14",
         "format": "pdf",
         "size_bytes": 4749938,
@@ -1858,7 +2136,6 @@
       }
     ],
     "source_snapshot": {
-      "path": "data/raw/sha256/ab/ab84737c5a895fdc94e6bcc71bff8474a27375698e41e2b29af794013e8ae8bd.html",
       "file_hash": "sha256:ab84737c5a895fdc94e6bcc71bff8474a27375698e41e2b29af794013e8ae8bd",
       "resolved_url": "https://www.motir.go.kr/kor/article/ATCLc01b2801b/70083/view"
     },
@@ -1889,6 +2166,20 @@
     "document_identifier": null,
     "edition_year": null,
     "version": null,
+    "archive_access": "link_only",
+    "type": "plan",
+    "status": "final",
+    "source_ids": [
+      "SRC-POLICY-P11-FINAL"
+    ],
+    "evidence_level": "Unverified",
+    "published": "2025-02-21",
+    "effective": null,
+    "last_verified": "2026-09-09",
+    "valid_from": null,
+    "valid_to": null,
+    "supersedes": [],
+    "superseded_by": [],
     "path": "content/documents/p11-final.md",
     "slug": "documents/p11-final"
   },
@@ -1930,7 +2221,6 @@
     "draft": false,
     "attachments": [],
     "source_snapshot": {
-      "path": "data/raw/sha256/01/01003356e26a491c97ab66290145c1b8aca5ad78b9baa96a60f191c2678302ef.html",
       "file_hash": "sha256:01003356e26a491c97ab66290145c1b8aca5ad78b9baa96a60f191c2678302ef",
       "resolved_url": "https://www.motir.go.kr/kor/article/ATCLc01b2801b/69720/view"
     },
@@ -1961,6 +2251,20 @@
     "document_identifier": null,
     "edition_year": null,
     "version": null,
+    "archive_access": "link_only",
+    "type": "notice",
+    "status": "consultation",
+    "source_ids": [
+      "SRC-POLICY-P11-HEARING"
+    ],
+    "evidence_level": "Unverified",
+    "published": "2024-09-12",
+    "effective": null,
+    "last_verified": "2026-09-09",
+    "valid_from": null,
+    "valid_to": null,
+    "supersedes": [],
+    "superseded_by": [],
     "path": "content/documents/p11-hearing.md",
     "slug": "documents/p11-hearing"
   },
@@ -2005,7 +2309,6 @@
       {
         "url": "https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=316006&fileSeq=1",
         "title": "제11차 전기본의 신규원전 계획대로 추진(기후부  보도자료).hwp (705 KB)",
-        "path": "data/raw/sha256/e2/e2fcb8af9df14f3850daf5642fe35e8490910eba6ea75ca84c118c84ddc2cb30.hwp",
         "file_hash": "sha256:e2fcb8af9df14f3850daf5642fe35e8490910eba6ea75ca84c118c84ddc2cb30",
         "format": "hwp",
         "size_bytes": 721920,
@@ -2016,7 +2319,6 @@
       {
         "url": "https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=316006&fileSeq=2",
         "title": "제11차 전기본의 신규원전 계획대로 추진(기후부  보도자료).pdf (157.6 KB)",
-        "path": "data/raw/sha256/53/53973f911fa26ae930b601b3cdcd329229595640b0d26b19d5b227af24534f57.pdf",
         "file_hash": "sha256:53973f911fa26ae930b601b3cdcd329229595640b0d26b19d5b227af24534f57",
         "format": "pdf",
         "size_bytes": 161426,
@@ -2026,7 +2328,6 @@
       }
     ],
     "source_snapshot": {
-      "path": "data/raw/sha256/20/2088f4cfc929d19f43a1d87cc2669ef51055531876758c44957709c8d0199bb7.html",
       "file_hash": "sha256:2088f4cfc929d19f43a1d87cc2669ef51055531876758c44957709c8d0199bb7",
       "resolved_url": "https://www.mcee.go.kr/home/web/board/read.do?boardId=1837310&boardMasterId=939&menuId=10598"
     },
@@ -2057,6 +2358,20 @@
     "document_identifier": null,
     "edition_year": null,
     "version": null,
+    "archive_access": "link_only",
+    "type": "press_release",
+    "status": "press_release",
+    "source_ids": [
+      "SRC-POLICY-P11-IMPLEMENTATION"
+    ],
+    "evidence_level": "Unverified",
+    "published": "2026-01-26",
+    "effective": null,
+    "last_verified": "2026-09-09",
+    "valid_from": null,
+    "valid_to": null,
+    "supersedes": [],
+    "superseded_by": [],
     "path": "content/documents/p11-implementation.md",
     "slug": "documents/p11-implementation"
   },
@@ -2100,7 +2415,6 @@
       {
         "url": "https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=315786&fileSeq=1",
         "title": "260121 여론조사 결과 발표 보도참고자료.hwp (707.5 KB)",
-        "path": "data/raw/sha256/22/22a38bb3dea06ced12b086120a5514ab9170717aab24f6258999f1b10ec07f15.hwp",
         "file_hash": "sha256:22a38bb3dea06ced12b086120a5514ab9170717aab24f6258999f1b10ec07f15",
         "format": "hwp",
         "size_bytes": 724480,
@@ -2111,7 +2425,6 @@
       {
         "url": "https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=315786&fileSeq=2",
         "title": "260121 여론조사 결과 발표 보도참고자료.pdf (257.9 KB)",
-        "path": "data/raw/sha256/47/47826a00e7e0f772b1facc026c418c038286845834cc4d51e4b1efda1f76322f.pdf",
         "file_hash": "sha256:47826a00e7e0f772b1facc026c418c038286845834cc4d51e4b1efda1f76322f",
         "format": "pdf",
         "size_bytes": 264087,
@@ -2121,7 +2434,6 @@
       }
     ],
     "source_snapshot": {
-      "path": "data/raw/sha256/18/18378b1fb14b8fbb07b56e4e1e9f6c98e5040dae0318f28d3ad44628d9221ead.html",
       "file_hash": "sha256:18378b1fb14b8fbb07b56e4e1e9f6c98e5040dae0318f28d3ad44628d9221ead",
       "resolved_url": "https://www.mcee.go.kr/home/web/board/read.do?boardId=1836550&boardMasterId=939&menuId=10598"
     },
@@ -2152,6 +2464,20 @@
     "document_identifier": null,
     "edition_year": null,
     "version": null,
+    "archive_access": "link_only",
+    "type": "study",
+    "status": "supporting",
+    "source_ids": [
+      "SRC-POLICY-P11-POLL"
+    ],
+    "evidence_level": "Unverified",
+    "published": "2026-01-21",
+    "effective": null,
+    "last_verified": "2026-09-09",
+    "valid_from": null,
+    "valid_to": null,
+    "supersedes": [],
+    "superseded_by": [],
     "path": "content/documents/p11-poll.md",
     "slug": "documents/p11-poll"
   },
@@ -2193,7 +2519,6 @@
     "draft": false,
     "attachments": [],
     "source_snapshot": {
-      "path": "data/raw/sha256/4e/4e22e483ade57d8fe8cb51beb1b7927001a7c6b64e959ec5b65b6cdfa0506368.html",
       "file_hash": "sha256:4e22e483ade57d8fe8cb51beb1b7927001a7c6b64e959ec5b65b6cdfa0506368",
       "resolved_url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/170183/view"
     },
@@ -2224,6 +2549,20 @@
     "document_identifier": null,
     "edition_year": null,
     "version": null,
+    "archive_access": "link_only",
+    "type": "press_release",
+    "status": "press_release",
+    "source_ids": [
+      "SRC-POLICY-P11-RELEASE"
+    ],
+    "evidence_level": "Unverified",
+    "published": "2025-02-21",
+    "effective": null,
+    "last_verified": "2026-09-09",
+    "valid_from": null,
+    "valid_to": null,
+    "supersedes": [],
+    "superseded_by": [],
     "path": "content/documents/p11-release.md",
     "slug": "documents/p11-release"
   },
@@ -2265,7 +2604,6 @@
     "draft": false,
     "attachments": [],
     "source_snapshot": {
-      "path": "data/raw/sha256/a7/a7b1a9c5dbdf64d4d12106d59607a8ad6ec6ccdf58c8311f49246fe5ef2ce1a2.html",
       "file_hash": "sha256:a7b1a9c5dbdf64d4d12106d59607a8ad6ec6ccdf58c8311f49246fe5ef2ce1a2",
       "resolved_url": "https://www.motir.go.kr/kor/article/ATCLc01b2801b/69589/view"
     },
@@ -2296,6 +2634,20 @@
     "document_identifier": null,
     "edition_year": null,
     "version": null,
+    "archive_access": "link_only",
+    "type": "notice",
+    "status": "consultation",
+    "source_ids": [
+      "SRC-POLICY-P11-SEA-DRAFT"
+    ],
+    "evidence_level": "Unverified",
+    "published": "2024-07-10",
+    "effective": null,
+    "last_verified": "2026-09-09",
+    "valid_from": null,
+    "valid_to": null,
+    "supersedes": [],
+    "superseded_by": [],
     "path": "content/documents/p11-sea-draft.md",
     "slug": "documents/p11-sea-draft"
   },
@@ -2337,7 +2689,6 @@
     "draft": false,
     "attachments": [],
     "source_snapshot": {
-      "path": "data/raw/sha256/b0/b0561074b1a7f3283b76cbeb87a07f3894f78828e1f3abe15026f5eb9b288b6a.html",
       "file_hash": "sha256:b0561074b1a7f3283b76cbeb87a07f3894f78828e1f3abe15026f5eb9b288b6a",
       "resolved_url": "https://www.motir.go.kr/kor/article/ATCLc01b2801b/69540/view"
     },
@@ -2368,6 +2719,20 @@
     "document_identifier": null,
     "edition_year": null,
     "version": null,
+    "archive_access": "link_only",
+    "type": "notice",
+    "status": "consultation",
+    "source_ids": [
+      "SRC-POLICY-P11-SEA-SCOPE"
+    ],
+    "evidence_level": "Unverified",
+    "published": "2024-06-21",
+    "effective": null,
+    "last_verified": "2026-09-09",
+    "valid_from": null,
+    "valid_to": null,
+    "supersedes": [],
+    "superseded_by": [],
     "path": "content/documents/p11-sea-scope.md",
     "slug": "documents/p11-sea-scope"
   },
@@ -2412,7 +2777,6 @@
       {
         "url": "https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=312862&fileSeq=1",
         "title": "새정부 첫 에너지 종합계획 수립 본격화(보도자료)(전력산업 12.9).hwpx (970.4 KB)",
-        "path": "data/raw/sha256/bf/bf3b6fcc2f0b1d8d47138f8b948c5d0abad442edbaf7404001c85db638bbb365.hwpx",
         "file_hash": "sha256:bf3b6fcc2f0b1d8d47138f8b948c5d0abad442edbaf7404001c85db638bbb365",
         "format": "hwpx",
         "size_bytes": 993720,
@@ -2423,7 +2787,6 @@
       {
         "url": "https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=312862&fileSeq=2",
         "title": "새정부 첫 에너지 종합계획 수립 본격화(보도자료)(전력산업 12.9).pdf (231.5 KB)",
-        "path": "data/raw/sha256/4c/4c2abe1a74802de839feec20ede03123e93bf3f182244fc1129ded8e9ac22a30.pdf",
         "file_hash": "sha256:4c2abe1a74802de839feec20ede03123e93bf3f182244fc1129ded8e9ac22a30",
         "format": "pdf",
         "size_bytes": 237075,
@@ -2434,7 +2797,6 @@
       {
         "url": "https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=312862&fileSeq=3",
         "title": "별첨_기후부장관모두말씀.pdf (109.2 KB)",
-        "path": "data/raw/sha256/34/34e4e8b319f050577592db38d33e4cab80bdc074d878383985b5373811f69b74.pdf",
         "file_hash": "sha256:34e4e8b319f050577592db38d33e4cab80bdc074d878383985b5373811f69b74",
         "format": "pdf",
         "size_bytes": 111849,
@@ -2444,7 +2806,6 @@
       }
     ],
     "source_snapshot": {
-      "path": "data/raw/sha256/86/865d76e7aaff40dcdc5c6180556fbcdf901bbb265be1605962df0192ed846dad.html",
       "file_hash": "sha256:865d76e7aaff40dcdc5c6180556fbcdf901bbb265be1605962df0192ed846dad",
       "resolved_url": "https://www.mcee.go.kr/home/web/board/read.do?boardId=1826720&boardMasterId=939&menuId=10598"
     },
@@ -2475,6 +2836,20 @@
     "document_identifier": null,
     "edition_year": null,
     "version": null,
+    "archive_access": "link_only",
+    "type": "notice",
+    "status": "announced",
+    "source_ids": [
+      "SRC-POLICY-P12-COMMITTEE"
+    ],
+    "evidence_level": "Unverified",
+    "published": "2025-12-09",
+    "effective": null,
+    "last_verified": "2026-09-09",
+    "valid_from": null,
+    "valid_to": null,
+    "supersedes": [],
+    "superseded_by": [],
     "path": "content/documents/p12-committee.md",
     "slug": "documents/p12-committee"
   },
@@ -2520,7 +2895,6 @@
       {
         "url": "https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=324062&fileSeq=2",
         "title": "재생에너지 보급 전략 보도자료 — 붙임3 제12차 수요 전망(안) 포함",
-        "path": "data/raw/sha256/a8/a89688dec4f1542d5c5cc5f34b9936a56b510afcccaa629e057c5507bb3b78a0.pdf",
         "file_hash": "sha256:a89688dec4f1542d5c5cc5f34b9936a56b510afcccaa629e057c5507bb3b78a0",
         "format": "pdf",
         "size_bytes": 576495,
@@ -2530,7 +2904,6 @@
       }
     ],
     "source_snapshot": {
-      "path": "data/raw/sha256/37/374217cf933dbc4fe91e36249a7e76bb91671146ccde3169e4d0452797d85ac6.html",
       "file_hash": "sha256:374217cf933dbc4fe91e36249a7e76bb91671146ccde3169e4d0452797d85ac6",
       "resolved_url": "https://www.mcee.go.kr/home/web/board/read.do?boardId=1864660&boardMasterId=939&menuId=10598"
     },
@@ -2560,6 +2933,20 @@
     "document_identifier": null,
     "edition_year": null,
     "version": null,
+    "archive_access": "link_only",
+    "type": "forecast",
+    "status": "draft",
+    "source_ids": [
+      "SRC-POLICY-P12-DEMAND-DRAFT-20260519"
+    ],
+    "evidence_level": "Unverified",
+    "published": "2026-05-19",
+    "effective": null,
+    "last_verified": "2026-09-09",
+    "valid_from": null,
+    "valid_to": null,
+    "supersedes": [],
+    "superseded_by": [],
     "path": "content/documents/p12-demand-draft-20260519.md",
     "slug": "documents/p12-demand-draft-20260519"
   },
@@ -2604,7 +2991,6 @@
       {
         "url": "https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=313914&fileSeq=1",
         "title": "바람직한 에너지믹스 대국민 정책토론회 개최_3(보도참고자료)(전력산업 12.22).hwpx (199.8 KB)",
-        "path": "data/raw/sha256/b9/b98f37dd266dae1d7ed898c8d9623f1319328186257fe2a1b12f68469bd93878.hwpx",
         "file_hash": "sha256:b98f37dd266dae1d7ed898c8d9623f1319328186257fe2a1b12f68469bd93878",
         "format": "hwpx",
         "size_bytes": 204631,
@@ -2615,7 +3001,6 @@
       {
         "url": "https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=313914&fileSeq=2",
         "title": "바람직한 에너지믹스 대국민 정책토론회 개최_3(보도참고자료)(전력산업 12.22).pdf (375.2 KB)",
-        "path": "data/raw/sha256/a4/a469847bfc8ffbccfb79cb278de15ab78fdfcfdc05e5738a785f5a8f769b638c.pdf",
         "file_hash": "sha256:a469847bfc8ffbccfb79cb278de15ab78fdfcfdc05e5738a785f5a8f769b638c",
         "format": "pdf",
         "size_bytes": 384239,
@@ -2625,7 +3010,6 @@
       }
     ],
     "source_snapshot": {
-      "path": "data/raw/sha256/65/65c71e7804a36eb8787504f7e6775305d606daf24f4c7e4f577f351f55a91788.html",
       "file_hash": "sha256:65c71e7804a36eb8787504f7e6775305d606daf24f4c7e4f577f351f55a91788",
       "resolved_url": "https://www.mcee.go.kr/home/web/board/read.do?boardId=1830350&boardMasterId=939&menuId=10598"
     },
@@ -2662,6 +3046,20 @@
     "document_identifier": null,
     "edition_year": null,
     "version": null,
+    "archive_access": "link_only",
+    "type": "notice",
+    "status": "consultation",
+    "source_ids": [
+      "SRC-POLICY-P12-FORUM1"
+    ],
+    "evidence_level": "Unverified",
+    "published": "2025-12-22",
+    "effective": null,
+    "last_verified": "2026-09-09",
+    "valid_from": null,
+    "valid_to": null,
+    "supersedes": [],
+    "superseded_by": [],
     "path": "content/documents/p12-forum1.md",
     "slug": "documents/p12-forum1"
   },
@@ -2705,7 +3103,6 @@
       {
         "url": "https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=322238&fileSeq=1",
         "title": "미래_전력수요_전망_제12차 전기본 제3차 대국민_정책토론회_개최_3(기후부 보도참고자료).hwp (360 KB)",
-        "path": "data/raw/sha256/35/35958c74ec24de6551f383d84460b18b067c162a93c470a6cd4056e05a03354c.hwp",
         "file_hash": "sha256:35958c74ec24de6551f383d84460b18b067c162a93c470a6cd4056e05a03354c",
         "format": "hwp",
         "size_bytes": 368640,
@@ -2716,7 +3113,6 @@
       {
         "url": "https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=322238&fileSeq=2",
         "title": "미래_전력수요_전망_제12차 전기본 제3차 대국민_정책토론회_개최_3(기후부 보도참고자료).pdf (232.8 KB)",
-        "path": "data/raw/sha256/46/46a3e2175786911774fcff5d8c17c0ffe04ae41fb7fb2e053f622917b32da15a.pdf",
         "file_hash": "sha256:46a3e2175786911774fcff5d8c17c0ffe04ae41fb7fb2e053f622917b32da15a",
         "format": "pdf",
         "size_bytes": 238410,
@@ -2726,7 +3122,6 @@
       }
     ],
     "source_snapshot": {
-      "path": "data/raw/sha256/0b/0bfec69093142412261ee228d4806ba740b0b0b53f4a20d2591d2b278e7c79bc.html",
       "file_hash": "sha256:0bfec69093142412261ee228d4806ba740b0b0b53f4a20d2591d2b278e7c79bc",
       "resolved_url": "https://www.mcee.go.kr/home/web/board/read.do?boardId=1858100&boardMasterId=939&menuId=10598"
     },
@@ -2763,6 +3158,20 @@
     "document_identifier": null,
     "edition_year": null,
     "version": null,
+    "archive_access": "link_only",
+    "type": "notice",
+    "status": "consultation",
+    "source_ids": [
+      "SRC-POLICY-P12-FORUM3"
+    ],
+    "evidence_level": "Unverified",
+    "published": "2026-04-17",
+    "effective": null,
+    "last_verified": "2026-09-09",
+    "valid_from": null,
+    "valid_to": null,
+    "supersedes": [],
+    "superseded_by": [],
     "path": "content/documents/p12-forum3.md",
     "slug": "documents/p12-forum3"
   },
@@ -2806,7 +3215,6 @@
       {
         "url": "https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=330358&fileSeq=1",
         "title": "전기국가 전환  전력수요 및 재생에너지 보급 전망 논의 4·5차 대국민 정책토론회 개최(기후부 보도참고자료).hwpx (2.1 MB)",
-        "path": "data/raw/sha256/97/97b9ec40363a69b47e37485d1c8bcf4421d4139f90da08b50f9e0ac96e9a58be.hwpx",
         "file_hash": "sha256:97b9ec40363a69b47e37485d1c8bcf4421d4139f90da08b50f9e0ac96e9a58be",
         "format": "hwpx",
         "size_bytes": 2185226,
@@ -2817,7 +3225,6 @@
       {
         "url": "https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=330358&fileSeq=2",
         "title": "전기국가 전환  전력수요 및 재생에너지 보급 전망 논의 4·5차 대국민 정책토론회 개최(기후부 보도참고자료).pdf (327.7 KB)",
-        "path": "data/raw/sha256/5b/5b67abde7bc1ac8edfe5b14120481e1e8ea50c53d09a0fde22aac5b75dd0deb2.pdf",
         "file_hash": "sha256:5b67abde7bc1ac8edfe5b14120481e1e8ea50c53d09a0fde22aac5b75dd0deb2",
         "format": "pdf",
         "size_bytes": 335550,
@@ -2827,7 +3234,6 @@
       }
     ],
     "source_snapshot": {
-      "path": "data/raw/sha256/6e/6ebd70df0e523aa529e17564706b97ed2f409074978bfbb18d9af001ce8d4c38.html",
       "file_hash": "sha256:6ebd70df0e523aa529e17564706b97ed2f409074978bfbb18d9af001ce8d4c38",
       "resolved_url": "https://www.mcee.go.kr/home/web/board/read.do?boardId=1884280&boardMasterId=939&menuId=10598"
     },
@@ -2864,6 +3270,20 @@
     "document_identifier": null,
     "edition_year": null,
     "version": null,
+    "archive_access": "link_only",
+    "type": "notice",
+    "status": "consultation",
+    "source_ids": [
+      "SRC-POLICY-P12-FORUM45"
+    ],
+    "evidence_level": "Unverified",
+    "published": "2026-08-15",
+    "effective": null,
+    "last_verified": "2026-09-09",
+    "valid_from": null,
+    "valid_to": null,
+    "supersedes": [],
+    "superseded_by": [],
     "path": "content/documents/p12-forum45.md",
     "slug": "documents/p12-forum45"
   },
@@ -2906,7 +3326,6 @@
       {
         "url": "https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=330550&fileSeq=1",
         "title": "제12차 전기본 수립을 위한 재생에너지 보급 전망 정책토론회(6차) 개최(보도참고자료)(재셍에너지 8.20).hwpx (982.4 KB)",
-        "path": "data/raw/sha256/ab/ab2fff224218543e12210276bfd0b48a7229e32564d663de34f81578568c7762.hwpx",
         "file_hash": "sha256:ab2fff224218543e12210276bfd0b48a7229e32564d663de34f81578568c7762",
         "format": "hwpx",
         "size_bytes": 1005951,
@@ -2917,7 +3336,6 @@
       {
         "url": "https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=330550&fileSeq=2",
         "title": "제12차 전기본 수립을 위한 재생에너지 보급 전망 정책토론회(6차) 개최(보도참고자료)(재셍에너지 8.20).pdf (367.9 KB)",
-        "path": "data/raw/sha256/b6/b6cc8e7131b086df32eaa7c2da396194d627dde046c8b6e619c22a7aa6820f88.pdf",
         "file_hash": "sha256:b6cc8e7131b086df32eaa7c2da396194d627dde046c8b6e619c22a7aa6820f88",
         "format": "pdf",
         "size_bytes": 376723,
@@ -2927,7 +3345,6 @@
       }
     ],
     "source_snapshot": {
-      "path": "data/raw/sha256/85/859e98a3e2526d7adb1fa7f52507b852e844adda905cf2fe0256d3e26f7ee9fa.html",
       "file_hash": "sha256:859e98a3e2526d7adb1fa7f52507b852e844adda905cf2fe0256d3e26f7ee9fa",
       "resolved_url": "https://www.mcee.go.kr/home/web/board/read.do?boardId=1884910&boardMasterId=939&menuId=10598"
     },
@@ -2964,6 +3381,20 @@
     "document_identifier": null,
     "edition_year": null,
     "version": null,
+    "archive_access": "link_only",
+    "type": "notice",
+    "status": "consultation",
+    "source_ids": [
+      "SRC-POLICY-P12-FORUM6"
+    ],
+    "evidence_level": "Unverified",
+    "published": "2026-08-20",
+    "effective": null,
+    "last_verified": "2026-09-09",
+    "valid_from": null,
+    "valid_to": null,
+    "supersedes": [],
+    "superseded_by": [],
     "path": "content/documents/p12-forum6.md",
     "slug": "documents/p12-forum6"
   },
@@ -3009,7 +3440,6 @@
       {
         "url": "https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=331844&fileSeq=2",
         "title": "제12차 전기본 수립을 위한 2040년 석탄발전 조기폐지 방안  정책토론회(7차) 개최(기후부 보도참고자료).pdf (302.5 KB)",
-        "path": "data/raw/sha256/80/803250b635cbf1af8c217226504784c7a78cf42116b9a654c86148dc0bbbdb64.pdf",
         "file_hash": "sha256:803250b635cbf1af8c217226504784c7a78cf42116b9a654c86148dc0bbbdb64",
         "format": "pdf",
         "size_bytes": 309734,
@@ -3020,7 +3450,6 @@
       {
         "url": "https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=331844&fileSeq=3",
         "title": "제12차 전기본 수립을 위한 2040년 석탄발전 조기폐지 방안  정책토론회(7차) 개최(기후부 보도참고자료).hwpx (703.3 KB)",
-        "path": "data/raw/sha256/9b/9bd4a74403e6826bb8aceab713ba1c7e648dbbff303d8257f03334850b633f65.hwpx",
         "file_hash": "sha256:9bd4a74403e6826bb8aceab713ba1c7e648dbbff303d8257f03334850b633f65",
         "format": "hwpx",
         "size_bytes": 720166,
@@ -3030,7 +3459,6 @@
       }
     ],
     "source_snapshot": {
-      "path": "data/raw/sha256/cf/cfb02dd2b4636eb1fc9a13b764cd1e86ad7b87cd71740c8098978f9d415b5a90.html",
       "file_hash": "sha256:cfb02dd2b4636eb1fc9a13b764cd1e86ad7b87cd71740c8098978f9d415b5a90",
       "resolved_url": "https://www.mcee.go.kr/home/web/board/read.do?boardId=1889590&boardMasterId=939&menuId=10598"
     },
@@ -3067,6 +3495,20 @@
     "document_identifier": null,
     "edition_year": null,
     "version": null,
+    "archive_access": "link_only",
+    "type": "notice",
+    "status": "consultation",
+    "source_ids": [
+      "SRC-POLICY-P12-FORUM7"
+    ],
+    "evidence_level": "Unverified",
+    "published": "2026-09-09",
+    "effective": null,
+    "last_verified": "2026-09-09",
+    "valid_from": null,
+    "valid_to": null,
+    "supersedes": [],
+    "superseded_by": [],
     "path": "content/documents/p12-forum7.md",
     "slug": "documents/p12-forum7"
   },
@@ -3110,7 +3552,6 @@
       {
         "url": "https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=311860&fileSeq=2",
         "title": "제12차 전력수급기본계획 수립 착수(보도참고자료)(전력국 11.27).hwpx (966.9 KB)",
-        "path": "data/raw/sha256/1c/1c6d7cfefaeebf82157e4543704e2adb36b34fa8e03fe02a18e7849ef87d5fac.hwpx",
         "file_hash": "sha256:1c6d7cfefaeebf82157e4543704e2adb36b34fa8e03fe02a18e7849ef87d5fac",
         "format": "hwpx",
         "size_bytes": 990142,
@@ -3121,7 +3562,6 @@
       {
         "url": "https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=311860&fileSeq=3",
         "title": "제12차 전력수급기본계획 수립 착수(보도참고자료)(전력국 11.27).pdf (174.1 KB)",
-        "path": "data/raw/sha256/93/935839fbbfed01d0789d80744bdee3d813e50864c1ad0a50896bf50b8cc0f728.pdf",
         "file_hash": "sha256:935839fbbfed01d0789d80744bdee3d813e50864c1ad0a50896bf50b8cc0f728",
         "format": "pdf",
         "size_bytes": 178228,
@@ -3131,7 +3571,6 @@
       }
     ],
     "source_snapshot": {
-      "path": "data/raw/sha256/b3/b3cd35e2e77f9d422e7ac5e5232302bf89d37f4b68e292853ae55fcc18dcf410.html",
       "file_hash": "sha256:b3cd35e2e77f9d422e7ac5e5232302bf89d37f4b68e292853ae55fcc18dcf410",
       "resolved_url": "https://www.mcee.go.kr/home/web/board/read.do?boardId=1823520&boardMasterId=939&menuId=10598"
     },
@@ -3162,6 +3601,20 @@
     "document_identifier": null,
     "edition_year": null,
     "version": null,
+    "archive_access": "link_only",
+    "type": "notice",
+    "status": "announced",
+    "source_ids": [
+      "SRC-POLICY-P12-LAUNCH"
+    ],
+    "evidence_level": "Unverified",
+    "published": "2025-11-27",
+    "effective": null,
+    "last_verified": "2026-09-09",
+    "valid_from": null,
+    "valid_to": null,
+    "supersedes": [],
+    "superseded_by": [],
     "path": "content/documents/p12-launch.md",
     "slug": "documents/p12-launch"
   },
@@ -3208,7 +3661,6 @@
       {
         "url": "https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=324062&fileSeq=3",
         "title": "별첨 제1차 재생에너지 기본계획 전문",
-        "path": "data/raw/sha256/89/89b9841bf987c71e29a28c5fbea0e9c9b2569ab35f5f80e485cace31a0fe5f5d.pdf",
         "file_hash": "sha256:89b9841bf987c71e29a28c5fbea0e9c9b2569ab35f5f80e485cace31a0fe5f5d",
         "format": "pdf",
         "size_bytes": 3990669,
@@ -3218,7 +3670,6 @@
       }
     ],
     "source_snapshot": {
-      "path": "data/raw/sha256/4c/4ca836d0625109130eb3e129f7c7b29ba478e39eff161abcbe82084284f59276.html",
       "file_hash": "sha256:4ca836d0625109130eb3e129f7c7b29ba478e39eff161abcbe82084284f59276",
       "resolved_url": "https://www.mcee.go.kr/home/web/board/read.do?boardId=1864660&boardMasterId=939&menuId=10598"
     },
@@ -3256,6 +3707,20 @@
     "document_identifier": null,
     "edition_year": null,
     "version": null,
+    "archive_access": "link_only",
+    "type": "plan",
+    "status": "final",
+    "source_ids": [
+      "SRC-POLICY-RENEWABLE-1-FINAL-2026"
+    ],
+    "evidence_level": "Unverified",
+    "published": "2026-05-19",
+    "effective": null,
+    "last_verified": "2026-09-09",
+    "valid_from": null,
+    "valid_to": null,
+    "supersedes": [],
+    "superseded_by": [],
     "path": "content/documents/renewable-1-final-2026.md",
     "slug": "documents/renewable-1-final-2026"
   },
@@ -3301,7 +3766,6 @@
       {
         "url": "https://www.knrec.or.kr/biz/introduce/file/File_down.do?file_nm=%28%EB%B3%84%EC%B2%A8%29%EC%A0%9C5%EC%B0%A8%20%EC%8B%A0%EC%9E%AC%EC%83%9D%EC%97%90%EB%84%88%EC%A7%80%20%EA%B8%B0%EB%B3%B8%EA%B3%84%ED%9A%8D.pdf",
         "title": "제5차 신재생에너지 기본계획 전문 (한국에너지공단 공식 재게시)",
-        "path": "data/raw/sha256/25/25d568f54b708145cf92591a44520d9c4d7dd378430f3953155b53acaf261744.pdf",
         "file_hash": "sha256:25d568f54b708145cf92591a44520d9c4d7dd378430f3953155b53acaf261744",
         "format": "pdf",
         "size_bytes": 2427140,
@@ -3311,7 +3775,6 @@
       }
     ],
     "source_snapshot": {
-      "path": "data/raw/sha256/c2/c2ae67be794edcfc5286ea43bd69b7121eb0d394c97f7c702a0568dbb4078eb0.html",
       "file_hash": "sha256:c2ae67be794edcfc5286ea43bd69b7121eb0d394c97f7c702a0568dbb4078eb0",
       "resolved_url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/163676/view"
     },
@@ -3349,6 +3812,20 @@
     "document_identifier": null,
     "edition_year": null,
     "version": null,
+    "archive_access": "link_only",
+    "type": "plan",
+    "status": "final",
+    "source_ids": [
+      "SRC-POLICY-RENEWABLE-5-FINAL"
+    ],
+    "evidence_level": "Unverified",
+    "published": "2020-12-29",
+    "effective": null,
+    "last_verified": "2026-09-09",
+    "valid_from": null,
+    "valid_to": null,
+    "supersedes": [],
+    "superseded_by": [],
     "path": "content/documents/renewable-5-final.md",
     "slug": "documents/renewable-5-final"
   },
@@ -3390,7 +3867,6 @@
     "draft": false,
     "attachments": [],
     "source_snapshot": {
-      "path": "data/raw/sha256/28/28800375e6baf3cfde3dd715ddb257767744cd973bb246737aa8fb8b6ed03f99.html",
       "file_hash": "sha256:28800375e6baf3cfde3dd715ddb257767744cd973bb246737aa8fb8b6ed03f99",
       "resolved_url": "https://home.kepco.co.kr/kepco/front/html/WZ/2025_02/heritage.html"
     },
@@ -3414,6 +3890,20 @@
     "document_identifier": null,
     "edition_year": null,
     "version": null,
+    "archive_access": "link_only",
+    "type": "official_explainer",
+    "status": "official_explainer",
+    "source_ids": [
+      "SRC-POLICY-T10-EXPLAINER"
+    ],
+    "evidence_level": "Unverified",
+    "published": null,
+    "effective": null,
+    "last_verified": "2026-09-09",
+    "valid_from": null,
+    "valid_to": null,
+    "supersedes": [],
+    "superseded_by": [],
     "path": "content/documents/t10-explainer.md",
     "slug": "documents/t10-explainer"
   },
@@ -3458,7 +3948,6 @@
       {
         "url": "https://www.kepco.co.kr/c2r/FileDownload.do?fileNo=P%2FvVfXe7XHnAbYRUs7gDfw%3D%3D&fileSeq=DIMtNyzfJ3kKEXQCksqfEQ%3D%3D",
         "title": "다운로드",
-        "path": "data/raw/sha256/02/02357633fa4c9383ad6a498320e99887ca7f0a28623883b549fb8abbd326e5b5.pdf",
         "file_hash": "sha256:02357633fa4c9383ad6a498320e99887ca7f0a28623883b549fb8abbd326e5b5",
         "format": "pdf",
         "size_bytes": 674530,
@@ -3468,7 +3957,6 @@
       }
     ],
     "source_snapshot": {
-      "path": "data/raw/sha256/51/51d1df81c020fa96c34af37336e58e36bad4eb13592c579121436177ac596b26.html",
       "file_hash": "sha256:51d1df81c020fa96c34af37336e58e36bad4eb13592c579121436177ac596b26",
       "resolved_url": "https://www.kepco.co.kr/home/media/newsroom/pr/boardView.do?boardMngNo=15&boardNo=447"
     },
@@ -3499,6 +3987,20 @@
     "document_identifier": null,
     "edition_year": null,
     "version": null,
+    "archive_access": "link_only",
+    "type": "transmission_plan",
+    "status": "final",
+    "source_ids": [
+      "SRC-POLICY-T10-FINAL"
+    ],
+    "evidence_level": "Unverified",
+    "published": "2023-05-08",
+    "effective": null,
+    "last_verified": "2026-09-09",
+    "valid_from": null,
+    "valid_to": null,
+    "supersedes": [],
+    "superseded_by": [],
     "path": "content/documents/t10-final.md",
     "slug": "documents/t10-final"
   },
@@ -3541,7 +4043,6 @@
     "draft": false,
     "attachments": [],
     "source_snapshot": {
-      "path": "data/raw/sha256/96/966185838d26a501588564c0314cc687d9aa1c4af31564d75567d6c29c807e35.html",
       "file_hash": "sha256:966185838d26a501588564c0314cc687d9aa1c4af31564d75567d6c29c807e35",
       "resolved_url": "https://www.kepco.co.kr/KEPCO_FILE/html/2025_12/special1.html"
     },
@@ -3565,6 +4066,20 @@
     "document_identifier": null,
     "edition_year": null,
     "version": null,
+    "archive_access": "link_only",
+    "type": "official_explainer",
+    "status": "official_explainer",
+    "source_ids": [
+      "SRC-POLICY-T11-EXPLAINER"
+    ],
+    "evidence_level": "Unverified",
+    "published": null,
+    "effective": null,
+    "last_verified": "2026-09-09",
+    "valid_from": null,
+    "valid_to": null,
+    "supersedes": [],
+    "superseded_by": [],
     "path": "content/documents/t11-explainer.md",
     "slug": "documents/t11-explainer"
   },
@@ -3611,7 +4126,6 @@
       {
         "url": "https://www.kepco.co.kr/c2r/FileDownload.do?fileNo=bQSK6KNFNAG9cfWeYpeHWA%3D%3D&fileSeq=Snw2%2Bh9Sw1L2yimBGsLgBA%3D%3D",
         "title": "다운로드",
-        "path": "data/raw/sha256/73/73c1b0c26a5efb96b864a4ee7ce59a5ff8ccc5bbc665aed7649934144c5d5f95.pdf",
         "file_hash": "sha256:73c1b0c26a5efb96b864a4ee7ce59a5ff8ccc5bbc665aed7649934144c5d5f95",
         "format": "pdf",
         "size_bytes": 694914,
@@ -3621,7 +4135,6 @@
       }
     ],
     "source_snapshot": {
-      "path": "data/raw/sha256/6c/6c7a5d4f7811c9c6d13ec53ae848042fb9550fe0e709cc3cd4fb9b422e4f42a4.html",
       "file_hash": "sha256:6c7a5d4f7811c9c6d13ec53ae848042fb9550fe0e709cc3cd4fb9b422e4f42a4",
       "resolved_url": "https://www.kepco.co.kr/home/media/newsroom/pr/boardView.do?boardMngNo=15&boardNo=2904"
     },
@@ -3652,6 +4165,20 @@
     "document_identifier": null,
     "edition_year": null,
     "version": null,
+    "archive_access": "link_only",
+    "type": "transmission_plan",
+    "status": "final",
+    "source_ids": [
+      "SRC-POLICY-T11-FINAL"
+    ],
+    "evidence_level": "Unverified",
+    "published": "2025-05-27",
+    "effective": null,
+    "last_verified": "2026-09-09",
+    "valid_from": null,
+    "valid_to": null,
+    "supersedes": [],
+    "superseded_by": [],
     "path": "content/documents/t11-final.md",
     "slug": "documents/t11-final"
   },
@@ -3695,7 +4222,6 @@
       {
         "url": "https://www.kepco.co.kr/c2r/FileDownload.do?fileNo=bQSK6KNFNAG9cfWeYpeHWA%3D%3D&fileSeq=DIMtNyzfJ3kKEXQCksqfEQ%3D%3D",
         "title": "다운로드",
-        "path": "data/raw/sha256/d2/d2cdebf009f356711c9e27a88f144e9b035a4ab1cb20b16af9918383f1d3c01c.pdf",
         "file_hash": "sha256:d2cdebf009f356711c9e27a88f144e9b035a4ab1cb20b16af9918383f1d3c01c",
         "format": "pdf",
         "size_bytes": 167129,
@@ -3705,7 +4231,6 @@
       }
     ],
     "source_snapshot": {
-      "path": "data/raw/sha256/c0/c0238703080c910b0d193cb294242b0bd29d7578a134fe3098f3d0df4a660d44.html",
       "file_hash": "sha256:c0238703080c910b0d193cb294242b0bd29d7578a134fe3098f3d0df4a660d44",
       "resolved_url": "https://www.kepco.co.kr/home/media/newsroom/pr/boardView.do?boardMngNo=15&boardNo=2904"
     },
@@ -3736,6 +4261,20 @@
     "document_identifier": null,
     "edition_year": null,
     "version": null,
+    "archive_access": "link_only",
+    "type": "press_release",
+    "status": "press_release",
+    "source_ids": [
+      "SRC-POLICY-T11-RELEASE"
+    ],
+    "evidence_level": "Unverified",
+    "published": "2025-05-27",
+    "effective": null,
+    "last_verified": "2026-09-09",
+    "valid_from": null,
+    "valid_to": null,
+    "supersedes": [],
+    "superseded_by": [],
     "path": "content/documents/t11-release.md",
     "slug": "documents/t11-release"
   },
@@ -3781,7 +4320,6 @@
       {
         "url": "https://www.kpx.or.kr/boardDownload.es?bid=0042&list_no=77368&seq=1",
         "title": "신재생발전기 송전계통 연계기술기준 부록6.pdf",
-        "path": "data/raw/sha256/5d/5deb6993fa7c0341f59f92164e512dd81474bb96a8c991cc1fa2315e08fee118.pdf",
         "file_hash": "sha256:5deb6993fa7c0341f59f92164e512dd81474bb96a8c991cc1fa2315e08fee118",
         "format": "pdf",
         "size_bytes": 409564,
@@ -3791,7 +4329,6 @@
       }
     ],
     "source_snapshot": {
-      "path": "data/raw/sha256/fd/fd8dae852062196d2ddc1f61498cf4663d800e684e335ca923e522a47847a185.html",
       "file_hash": "sha256:fd8dae852062196d2ddc1f61498cf4663d800e684e335ca923e522a47847a185",
       "resolved_url": "https://www.kpx.or.kr/board.es?act=view&bid=0042&mid=a11201000000&list_no=77368"
     },
@@ -3830,6 +4367,20 @@
     "document_identifier": null,
     "edition_year": null,
     "version": null,
+    "archive_access": "link_only",
+    "type": "test_procedure",
+    "status": "supporting",
+    "source_ids": [
+      "SRC-POLICY-TECH-FIELD-TEST-APPENDIX6"
+    ],
+    "evidence_level": "Unverified",
+    "published": "2026-05-13",
+    "effective": null,
+    "last_verified": "2026-09-09",
+    "valid_from": null,
+    "valid_to": null,
+    "supersedes": [],
+    "superseded_by": [],
     "path": "content/documents/tech-field-test-appendix6.md",
     "slug": "documents/tech-field-test-appendix6"
   },
@@ -3870,7 +4421,6 @@
     "draft": false,
     "attachments": [],
     "source_snapshot": {
-      "path": "data/raw/sha256/eb/eb70c752bdbb950bf4d01bca4906c9de6787f2ad4429d492427224e76116f96b.html",
       "file_hash": "sha256:eb70c752bdbb950bf4d01bca4906c9de6787f2ad4429d492427224e76116f96b",
       "resolved_url": "https://www.kpx.or.kr/board.es?act=view&bid=0042&mid=a11201000000&list_no=77368"
     },
@@ -3917,6 +4467,20 @@
     "document_identifier": null,
     "edition_year": null,
     "version": null,
+    "archive_access": "link_only",
+    "type": "technical_notice",
+    "status": "announced",
+    "source_ids": [
+      "SRC-POLICY-TECH-FIELD-TEST-NOTICE-202605"
+    ],
+    "evidence_level": "Unverified",
+    "published": "2026-05-13",
+    "effective": null,
+    "last_verified": "2026-09-09",
+    "valid_from": null,
+    "valid_to": null,
+    "supersedes": [],
+    "superseded_by": [],
     "path": "content/documents/tech-field-test-notice-202605.md",
     "slug": "documents/tech-field-test-notice-202605"
   },
@@ -3961,7 +4525,6 @@
       {
         "url": "https://www.kpx.or.kr/boardDownload.es?bid=0042&list_no=77979&seq=1",
         "title": "첨부1 전력시장운영규칙 개정(안)",
-        "path": "data/raw/sha256/b4/b47df5a187e4243d0ce3f049244ce925cc7fcbefe2594740f11a3c12e128e136.pdf",
         "file_hash": "sha256:b47df5a187e4243d0ce3f049244ce925cc7fcbefe2594740f11a3c12e128e136",
         "format": "pdf",
         "size_bytes": 56704,
@@ -3972,7 +4535,6 @@
       {
         "url": "https://www.kpx.or.kr/boardDownload.es?bid=0042&list_no=77979&seq=3",
         "title": "첨부2 계통평가세부운영규정 신설(안)",
-        "path": "data/raw/sha256/39/39984bbe9610d1bd23b0cea3f34052003e8d089b75a894750ee1c50d5d75c392.pdf",
         "file_hash": "sha256:39984bbe9610d1bd23b0cea3f34052003e8d089b75a894750ee1c50d5d75c392",
         "format": "pdf",
         "size_bytes": 470685,
@@ -3982,7 +4544,6 @@
       }
     ],
     "source_snapshot": {
-      "path": "data/raw/sha256/17/175c4fc16a4437756849fa33de332a795083622202888cb69d065672bafae8d9.html",
       "file_hash": "sha256:175c4fc16a4437756849fa33de332a795083622202888cb69d065672bafae8d9",
       "resolved_url": "https://www.kpx.or.kr/board.es?act=view&bid=0042&mid=a11201000000&list_no=77979"
     },
@@ -4029,6 +4590,20 @@
     "document_identifier": null,
     "edition_year": null,
     "version": null,
+    "archive_access": "link_only",
+    "type": "rule_draft",
+    "status": "draft",
+    "source_ids": [
+      "SRC-POLICY-TECH-GRID-MODEL-DRAFT-202608"
+    ],
+    "evidence_level": "Unverified",
+    "published": "2026-08-25",
+    "effective": null,
+    "last_verified": "2026-09-09",
+    "valid_from": null,
+    "valid_to": null,
+    "supersedes": [],
+    "superseded_by": [],
     "path": "content/documents/tech-grid-model-draft-202608.md",
     "slug": "documents/tech-grid-model-draft-202608"
   }

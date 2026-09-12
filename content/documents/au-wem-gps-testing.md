@@ -9,11 +9,17 @@ subcategory: WEM GPS 시험·모니터링
 plan_family: null
 plan_number: null
 document_stage: official_explainer
-topics: [WEM, SWIS, GPS compliance tests, Generator Monitoring Plan]
+topics:
+- WEM
+- SWIS
+- GPS compliance tests
+- Generator Monitoring Plan
 source_id: au-aemo
 source_url: https://www.aemo.com.au/energy-systems/electricity/wholesale-electricity-market-wem/system-operations/gps-framework/generator-performance-testing-and-monitoring
 attachment_url: null
-related_documents: ['[[au-wem-gps-framework]]', '[[au-wem-gps-registration]]']
+related_documents:
+- '[[au-wem-gps-framework]]'
+- '[[au-wem-gps-registration]]'
 previous_document: null
 next_document: null
 collected_date: '2026-09-11'
@@ -28,8 +34,16 @@ verification_notes: AEMO 공식 페이지에서 운전 전 GPS 준수시험과 �
 draft: false
 attachments: []
 events: []
-tags: [호주, WEM, GPS, 시험, 모니터링, 보완자료, 검수대기]
-aliases: [Generator Performance Testing and Monitoring]
+tags:
+- 호주
+- WEM
+- GPS
+- 시험
+- 모니터링
+- 보완자료
+- 검수대기
+aliases:
+- Generator Performance Testing and Monitoring
 date: null
 technical:
   document_type: test_procedure
@@ -40,8 +54,10 @@ technical:
   applicability: WEM의 신규·변경 송전접속 발전시스템 GPS 준수시험과 운전 중 성능 모니터링
   coverage: AEMO 공식 안내 페이지; 개별 시험절차 양식과 GMP 상세문서는 링크 경로로 제공
 region_group: AU
-jurisdictions: [AU-WA]
-market_regions: [WEM]
+jurisdictions:
+- AU-WA
+market_regions:
+- WEM
 document_language: en
 document_type: test_procedure
 title_original: Generator Performance Testing and Monitoring
@@ -60,6 +76,18 @@ translation_review_status: unreviewed
 rights_status: link_only_pending_terms
 rights_url: null
 archive_access: link_only
+type: test_procedure
+status: official_explainer
+source_ids:
+- SRC-POLICY-AU-WEM-GPS-TESTING
+evidence_level: Unverified
+published: null
+effective: null
+last_verified: '2026-09-11'
+valid_from: null
+valid_to: null
+supersedes: []
+superseded_by: []
 ---
 
 > [!warning] 공식 출처 확인 · AI 요약 검수 대기
@@ -111,6 +139,6 @@ archive_access: link_only
 - [AEMO Generator Performance Testing and Monitoring](https://www.aemo.com.au/energy-systems/electricity/wholesale-electricity-market-wem/system-operations/gps-framework/generator-performance-testing-and-monitoring)
 - 확인일: 2026-09-11
 
-## 원본 첨부파일
+## 공식 원문 형식
 
 공식 웹 안내를 링크 전용으로 등록했다. 하위 양식·절차의 재배포 권리는 별도 검토 대상이다.

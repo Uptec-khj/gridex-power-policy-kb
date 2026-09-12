@@ -9,11 +9,18 @@ subcategory: WEM GPS 공식 안내
 plan_family: null
 plan_number: null
 document_stage: official_explainer
-topics: [WEM, SWIS, Generator Performance Standards, 계통연계]
+topics:
+- WEM
+- SWIS
+- Generator Performance Standards
+- 계통연계
 source_id: au-aemo
 source_url: https://www.aemo.com.au/energy-systems/electricity/wholesale-electricity-market-wem/system-operations/gps-framework
 attachment_url: null
-related_documents: ['[[au-wem-esoo-2026]]', '[[au-wem-gps-registration]]', '[[au-wem-gps-testing]]']
+related_documents:
+- '[[au-wem-esoo-2026]]'
+- '[[au-wem-gps-registration]]'
+- '[[au-wem-gps-testing]]'
 previous_document: null
 next_document: null
 collected_date: '2026-09-11'
@@ -28,12 +35,20 @@ verification_notes: 공식 페이지에 자체 발행일·버전 표기가 없�
 draft: false
 attachments: []
 events: []
-tags: [호주, WEM, SWIS, GPS, 검수대기]
-aliases: [WEM GPS Framework]
+tags:
+- 호주
+- WEM
+- SWIS
+- GPS
+- 검수대기
+aliases:
+- WEM GPS Framework
 date: null
 region_group: AU
-jurisdictions: [AU-WA]
-market_regions: [WEM]
+jurisdictions:
+- AU-WA
+market_regions:
+- WEM
 document_language: en
 document_type: official_explainer
 title_original: Generator Performance Standards Framework
@@ -52,6 +67,18 @@ translation_review_status: unreviewed
 rights_status: link_only_pending_terms
 rights_url: null
 archive_access: link_only
+type: official_explainer
+status: official_explainer
+source_ids:
+- SRC-POLICY-AU-WEM-GPS-FRAMEWORK
+evidence_level: Unverified
+published: null
+effective: '2021-02-01'
+last_verified: '2026-09-11'
+valid_from: null
+valid_to: null
+supersedes: []
+superseded_by: []
 ---
 
 > [!warning] 공식 출처 확인 · AI 요약 검수 대기
@@ -104,6 +131,6 @@ Electricity System and Market Rules s1.40, Chapter 3A, Appendix 12를 공식 원
 - [AEMO GPS Framework](https://www.aemo.com.au/energy-systems/electricity/wholesale-electricity-market-wem/system-operations/gps-framework)
 - 확인일: 2026-09-11
 
-## 원본 첨부파일
+## 공식 원문 형식
 
 공식 웹 안내이며 독립 첨부파일과 페이지 버전 표기가 없다. 링크 전용으로 등록했다.

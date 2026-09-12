@@ -35,7 +35,6 @@ draft: false
 attachments:
 - url: https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=315786&fileSeq=1
   title: 260121 여론조사 결과 발표 보도참고자료.hwp (707.5 KB)
-  path: data/raw/sha256/22/22a38bb3dea06ced12b086120a5514ab9170717aab24f6258999f1b10ec07f15.hwp
   file_hash: sha256:22a38bb3dea06ced12b086120a5514ab9170717aab24f6258999f1b10ec07f15
   format: hwp
   size_bytes: 724480
@@ -44,7 +43,6 @@ attachments:
   rights_status: check_source_terms
 - url: https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=315786&fileSeq=2
   title: 260121 여론조사 결과 발표 보도참고자료.pdf (257.9 KB)
-  path: data/raw/sha256/47/47826a00e7e0f772b1facc026c418c038286845834cc4d51e4b1efda1f76322f.pdf
   file_hash: sha256:47826a00e7e0f772b1facc026c418c038286845834cc4d51e4b1efda1f76322f
   format: pdf
   size_bytes: 264087
@@ -52,7 +50,6 @@ attachments:
   collected_at: '2026-09-09T03:20:52.428028+00:00'
   rights_status: check_source_terms
 source_snapshot:
-  path: data/raw/sha256/18/18378b1fb14b8fbb07b56e4e1e9f6c98e5040dae0318f28d3ad44628d9221ead.html
   file_hash: sha256:18378b1fb14b8fbb07b56e4e1e9f6c98e5040dae0318f28d3ad44628d9221ead
   resolved_url: https://www.mcee.go.kr/home/web/board/read.do?boardId=1836550&boardMasterId=939&menuId=10598
 events:
@@ -77,6 +74,19 @@ title_ko: 제11차 신규원전 계획 관련 대국민 여론조사 결과 발�
 document_identifier: null
 edition_year: null
 version: null
+archive_access: link_only
+type: study
+status: supporting
+source_ids:
+- SRC-POLICY-P11-POLL
+evidence_level: Unverified
+published: '2026-01-21'
+effective: null
+last_verified: '2026-09-09'
+valid_from: null
+valid_to: null
+supersedes: []
+superseded_by: []
 ---
 
 > [!warning] 공식 출처 확인 · AI 요약 검수 대기
@@ -140,13 +150,11 @@ version: null
 - [공식 게시물 / 공식 자료실](https://www.mcee.go.kr/home/web/board/read.do?boardId=1836550&boardMasterId=939&menuId=10598)
 - 출처 확인일: 2026-09-09
 
-## 원본 첨부파일
+## 공식 원문 형식
 
-- **HWP** · 724,480 bytes · [공식 다운로드](https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=315786&fileSeq=1) · [보존 원본](https://github.com/Uptec-khj/gridex-power-policy-kb/blob/main/data/raw/sha256/22/22a38bb3dea06ced12b086120a5514ab9170717aab24f6258999f1b10ec07f15.hwp)
-  - 원본 경로: `data/raw/sha256/22/22a38bb3dea06ced12b086120a5514ab9170717aab24f6258999f1b10ec07f15.hwp`
+- **HWP** · 724,480 bytes · [공식 다운로드](https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=315786&fileSeq=1)
   - 해시: `sha256:22a38bb3dea06ced12b086120a5514ab9170717aab24f6258999f1b10ec07f15`
-- **PDF** · 264,087 bytes · [공식 다운로드](https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=315786&fileSeq=2) · [보존 원본](https://github.com/Uptec-khj/gridex-power-policy-kb/blob/main/data/raw/sha256/47/47826a00e7e0f772b1facc026c418c038286845834cc4d51e4b1efda1f76322f.pdf)
-  - 원본 경로: `data/raw/sha256/47/47826a00e7e0f772b1facc026c418c038286845834cc4d51e4b1efda1f76322f.pdf`
+- **PDF** · 264,087 bytes · [공식 다운로드](https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=315786&fileSeq=2)
   - 해시: `sha256:47826a00e7e0f772b1facc026c418c038286845834cc4d51e4b1efda1f76322f`
 
 게시물 스냅샷: `{r["source_snapshot"]["path"]}`

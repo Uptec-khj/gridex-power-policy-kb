@@ -34,7 +34,6 @@ verification_notes: 공식 게시물 및 확보한 원본을 AI가 확인. 요�
 draft: false
 attachments: []
 source_snapshot:
-  path: data/raw/sha256/8e/8e47dd524c0367ae305e990a83f2f3dd110e53b4c95d59ee40da29d344d6204e.html
   file_hash: sha256:8e47dd524c0367ae305e990a83f2f3dd110e53b4c95d59ee40da29d344d6204e
   resolved_url: https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/167618/view
 events:
@@ -59,6 +58,19 @@ title_ko: 제11차 전력수급기본계획 총괄위원회 첫 회의
 document_identifier: null
 edition_year: null
 version: null
+archive_access: link_only
+type: notice
+status: announced
+source_ids:
+- SRC-POLICY-P11-COMMITTEE
+evidence_level: Unverified
+published: '2023-07-27'
+effective: null
+last_verified: '2026-09-09'
+valid_from: null
+valid_to: null
+supersedes: []
+superseded_by: []
 ---
 
 > [!warning] 공식 출처 확인 · AI 요약 검수 대기
@@ -117,7 +129,7 @@ version: null
 - [공식 게시물 / 공식 자료실](https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/167618/view)
 - 출처 확인일: 2026-09-09
 
-## 원본 첨부파일
+## 공식 원문 형식
 
 첨부파일 미확보. 공식 게시물 HTML은 별도로 보존했습니다. 사보 해설은 이 단계에서 HTML만 보존합니다.
 

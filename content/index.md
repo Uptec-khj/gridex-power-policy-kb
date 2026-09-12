@@ -22,7 +22,7 @@ tags: [안내]
 
 ## 연결해서 살펴보기
 
-- [[original-search|공식 PDF 원문 검색]] — PDF 쪽수와 출처로 찾아가기
+- [[original-search|공식 원문 이용 안내]] — 발행기관 공식 링크에서 원문 확인
 - [[catalog|공식 문서 목록]] — 문서 단계와 발행일로 찾기
 - [[timeline|정책 Timeline]] — 게시·공고와 안내문상 예정일 구분
 - [[demand-outlook|장기 전력수요전망]] — 소비량, 최대전력, 목표수요의 기준

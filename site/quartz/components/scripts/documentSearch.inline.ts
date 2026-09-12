@@ -21,7 +21,7 @@ document.addEventListener("nav", () => {
       card.hidden = !matches
       if (matches) count++
     }
-    state.textContent = count ? `${count}건의 공식 문서가 있습니다. 제목·주제를 검색하며 PDF 본문은 원문 검색에서 찾을 수 있습니다.` : "조건에 맞는 공개 문서가 없습니다. 해외 자료는 수집 준비 중입니다. 국가나 필터를 바꿔보세요."
+    state.textContent = count ? `${count}건의 공식 문서가 있습니다. 원문은 각 문서의 발행기관 공식 링크에서 확인하세요.` : "조건에 맞는 공개 문서가 없습니다. 국가나 필터를 바꿔보세요."
   }
   form.addEventListener("submit", run)
   form.addEventListener("change", run)

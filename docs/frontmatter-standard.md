@@ -25,9 +25,13 @@
 ## 확장 필드
 
 - `id`: 안정적인 ASCII 식별자이며 파일명과 동일. 제목 변경으로 ID를 바꾸지 않는다.
-- `schema_version`: 새 문서는 문자열 '1.1'. 기존 '1.0'은 국내 계획 규칙으로 계속 검증한다. `source_id`: Source Registry 키.
-- `attachments`: 첨부별 URL·제목·보존 경로·해시·형식·크기·수집 시각·권리 확인 상태.
-- `source_snapshot`: 게시물 HTML의 보존 경로와 SHA-256. 대표 첨부 해시와 분리.
+- `schema_version`: 새 문서는 문자열 '1.1'. 기존 '1.0'은 국내 계획 규칙으로 계속 검증한다. `source_id`: `data/institution-registry.yaml`의 기관 키.
+- `source_ids`: `data/source-registry.yaml`의 출처 ID 목록. 정책 자료는 `SRC-POLICY-<문서 ID 대문자>`로 연결한다.
+- `attachments`: 공식 URL·제목·해시·형식·크기·수집 시각·권리 확인 상태. 내부 파일 경로를 포함하지 않는다.
+- `source_snapshot`: 공식 게시물 URL과 SHA-256. 대표 첨부 해시와 분리하며 내부 파일 경로는 금지한다.
+- `type`, `status`, `published`, `effective`, `last_verified`: 생성기 공통 필드. 기존 document_type·document_stage·published_date·effective_date·last_verified_date와 일치해야 한다.
+- `evidence_level`: Confirmed / Supported / Reported / Inferred / Unverified. 미배정은 Unverified이며 출처 존재 확인을 주장 검증으로 승격하지 않는다.
+- `valid_from`, `valid_to`, `supersedes`, `superseded_by`: 확인된 경우만 입력한다. 미상은 null 또는 빈 목록이며 문서의 단순 이전/다음 순서를 대체 관계로 추정하지 않는다.
 - `ai_generated`: AI 작성·편집 포함 여부. `summary_review_status`: unreviewed / reviewed.
 - `reviewed_by`, `reviewed_date`: 사람이 검수한 경우 GitHub ID 등과 날짜. 자동 채우기 금지.
 - `events`: 날짜·사건명·publication/scheduled/confirmed·근거 URL. 보도일과 행사일을 분리.
@@ -39,7 +43,7 @@
 
 ## 국제 문서 필수 필드 (v1.1)
 
-기존 17개 필드와 10개 본문 절을 유지한다. 분류 사전은 `schemas/international-taxonomy.json`이며 새 관할·계열을 추가할 때 JSON Schema의 조합 규칙과 함께 갱신한다. 국가 허브·문서 찾기·PDF 검색·편집 RAG와 원문 색인에 같은 필드를 전달한다.
+기존 도메인 필드와 10개 본문 절을 유지하며 마지막 절은 ‘공식 원문 형식’이다. 분류 사전은 `schemas/international-taxonomy.json`이며 새 관할·계열을 추가할 때 JSON Schema의 조합 규칙과 함께 갱신한다. 국가 허브·문서 찾기·편집 요약 검색에 같은 필드를 전달한다. 공개 archive_access는 항상 link_only다.
 
 | 필드 | 규칙 |
 | --- | --- |

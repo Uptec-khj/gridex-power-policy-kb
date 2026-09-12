@@ -36,7 +36,6 @@ draft: false
 attachments:
 - url: https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=312862&fileSeq=1
   title: 새정부 첫 에너지 종합계획 수립 본격화(보도자료)(전력산업 12.9).hwpx (970.4 KB)
-  path: data/raw/sha256/bf/bf3b6fcc2f0b1d8d47138f8b948c5d0abad442edbaf7404001c85db638bbb365.hwpx
   file_hash: sha256:bf3b6fcc2f0b1d8d47138f8b948c5d0abad442edbaf7404001c85db638bbb365
   format: hwpx
   size_bytes: 993720
@@ -45,7 +44,6 @@ attachments:
   rights_status: check_source_terms
 - url: https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=312862&fileSeq=2
   title: 새정부 첫 에너지 종합계획 수립 본격화(보도자료)(전력산업 12.9).pdf (231.5 KB)
-  path: data/raw/sha256/4c/4c2abe1a74802de839feec20ede03123e93bf3f182244fc1129ded8e9ac22a30.pdf
   file_hash: sha256:4c2abe1a74802de839feec20ede03123e93bf3f182244fc1129ded8e9ac22a30
   format: pdf
   size_bytes: 237075
@@ -54,7 +52,6 @@ attachments:
   rights_status: check_source_terms
 - url: https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=312862&fileSeq=3
   title: 별첨_기후부장관모두말씀.pdf (109.2 KB)
-  path: data/raw/sha256/34/34e4e8b319f050577592db38d33e4cab80bdc074d878383985b5373811f69b74.pdf
   file_hash: sha256:34e4e8b319f050577592db38d33e4cab80bdc074d878383985b5373811f69b74
   format: pdf
   size_bytes: 111849
@@ -62,7 +59,6 @@ attachments:
   collected_at: '2026-09-09T03:20:41.179095+00:00'
   rights_status: check_source_terms
 source_snapshot:
-  path: data/raw/sha256/86/865d76e7aaff40dcdc5c6180556fbcdf901bbb265be1605962df0192ed846dad.html
   file_hash: sha256:865d76e7aaff40dcdc5c6180556fbcdf901bbb265be1605962df0192ed846dad
   resolved_url: https://www.mcee.go.kr/home/web/board/read.do?boardId=1826720&boardMasterId=939&menuId=10598
 events:
@@ -87,6 +83,19 @@ title_ko: 제12차 전력수급기본계획 제1차 총괄위원회 개최 안�
 document_identifier: null
 edition_year: null
 version: null
+archive_access: link_only
+type: notice
+status: announced
+source_ids:
+- SRC-POLICY-P12-COMMITTEE
+evidence_level: Unverified
+published: '2025-12-09'
+effective: null
+last_verified: '2026-09-09'
+valid_from: null
+valid_to: null
+supersedes: []
+superseded_by: []
 ---
 
 > [!warning] 공식 출처 확인 · AI 요약 검수 대기
@@ -150,16 +159,13 @@ version: null
 - [공식 게시물 / 공식 자료실](https://www.mcee.go.kr/home/web/board/read.do?boardId=1826720&boardMasterId=939&menuId=10598)
 - 출처 확인일: 2026-09-09
 
-## 원본 첨부파일
+## 공식 원문 형식
 
-- **HWPX** · 993,720 bytes · [공식 다운로드](https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=312862&fileSeq=1) · [보존 원본](https://github.com/Uptec-khj/gridex-power-policy-kb/blob/main/data/raw/sha256/bf/bf3b6fcc2f0b1d8d47138f8b948c5d0abad442edbaf7404001c85db638bbb365.hwpx)
-  - 원본 경로: `data/raw/sha256/bf/bf3b6fcc2f0b1d8d47138f8b948c5d0abad442edbaf7404001c85db638bbb365.hwpx`
+- **HWPX** · 993,720 bytes · [공식 다운로드](https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=312862&fileSeq=1)
   - 해시: `sha256:bf3b6fcc2f0b1d8d47138f8b948c5d0abad442edbaf7404001c85db638bbb365`
-- **PDF** · 237,075 bytes · [공식 다운로드](https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=312862&fileSeq=2) · [보존 원본](https://github.com/Uptec-khj/gridex-power-policy-kb/blob/main/data/raw/sha256/4c/4c2abe1a74802de839feec20ede03123e93bf3f182244fc1129ded8e9ac22a30.pdf)
-  - 원본 경로: `data/raw/sha256/4c/4c2abe1a74802de839feec20ede03123e93bf3f182244fc1129ded8e9ac22a30.pdf`
+- **PDF** · 237,075 bytes · [공식 다운로드](https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=312862&fileSeq=2)
   - 해시: `sha256:4c2abe1a74802de839feec20ede03123e93bf3f182244fc1129ded8e9ac22a30`
-- **PDF** · 111,849 bytes · [공식 다운로드](https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=312862&fileSeq=3) · [보존 원본](https://github.com/Uptec-khj/gridex-power-policy-kb/blob/main/data/raw/sha256/34/34e4e8b319f050577592db38d33e4cab80bdc074d878383985b5373811f69b74.pdf)
-  - 원본 경로: `data/raw/sha256/34/34e4e8b319f050577592db38d33e4cab80bdc074d878383985b5373811f69b74.pdf`
+- **PDF** · 111,849 bytes · [공식 다운로드](https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=312862&fileSeq=3)
   - 해시: `sha256:34e4e8b319f050577592db38d33e4cab80bdc074d878383985b5373811f69b74`
 
 게시물 스냅샷: `{r["source_snapshot"]["path"]}`

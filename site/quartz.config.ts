@@ -1,6 +1,5 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
-import { OriginalIndex } from "./quartz/plugins/emitters/originalIndex"
 import { ManagementRedirects } from "./quartz/plugins/emitters/managementRedirects"
 
 /**
@@ -86,7 +85,6 @@ const config: QuartzConfig = {
       }),
       Plugin.Assets(),
       Plugin.Static(),
-      OriginalIndex(),
       ManagementRedirects(),
       Plugin.Favicon(),
       Plugin.NotFoundPage(),

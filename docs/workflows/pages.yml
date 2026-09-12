@@ -30,13 +30,14 @@ jobs:
           cache: npm
           cache-dependency-path: site/package-lock.json
       - run: python -m pip install -r requirements.txt
+      - run: python scripts/validate_kb.py .
       - run: python -m unittest discover -s tests -v
       - run: python scripts/kb.py build
       - run: npm --prefix site ci --no-audit --no-fund
       - run: npm --prefix site run build
       - run: node scripts/check-site.mjs
       - name: Check generated indexes are committed
-        run: git diff --exit-code -- content/catalog.md content/timeline.md content/extraction-status.md data/metadata ai/index
+        run: git diff --exit-code -- content/catalog.md content/timeline.md content/project/review-queue.md content/regions data/metadata data/source-registry.yaml ai/index
       - uses: actions/upload-pages-artifact@v3
         if: github.event_name != 'pull_request'
         with:
