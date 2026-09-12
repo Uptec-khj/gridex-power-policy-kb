@@ -2,7 +2,7 @@
 
 기준: [knowledge-base-generator c74f662](https://github.com/Uptec-khj/knowledge-base-generator/tree/c74f6625f2f570c2f68a748c26477e7634f718da), 실제 CLI 0.3.0. 기존 Markdown을 재생성하지 않는 Level 0 메타데이터 연동이다. GCP/API/자동 수집/자동 배포를 활성화하지 않는다.
 
-[개발 적용 로드맵](https://github.com/Uptec-khj/gridex-project-management/blob/main/content/generator-integration-roadmap.md) · [공개 GFM 홈](../content/gfm/00_Home/Home.md)
+[개발 적용 로드맵](https://github.com/Uptec-khj/gridex-power-policy-kb-dev/blob/main/content/generator-integration-roadmap.md) · [공개 GFM 홈](../content/gfm/00_Home/Home.md)
 
 ## 실행
 

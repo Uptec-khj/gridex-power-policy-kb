@@ -3,7 +3,7 @@ schema_version: 'proposal-1'
 research_cutoff: '2026-09-11'
 status: proposed
 enabled: false
-roadmap: https://github.com/Uptec-khj/gridex-project-management/blob/main/content/international-roadmap.md
+roadmap: https://github.com/Uptec-khj/gridex-power-policy-kb-dev/blob/main/content/international-roadmap.md
 defaults:
   collection_feasibility: untested
   robots_review: pending

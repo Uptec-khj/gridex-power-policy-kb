@@ -66,7 +66,7 @@ for (const name of ['roadmap','development-backlog','release-log','international
     assert(!fs.readFileSync(path.join(root,'site/public',file),'utf8').includes('/' + slug))
   }
   const redirect = fs.readFileSync(path.join(root,'site/public',slug+'.html'),'utf8')
-  assert(redirect.includes(`https://github.com/Uptec-khj/gridex-project-management/blob/main/content/${name}.md`))
+  assert(redirect.includes(`https://github.com/Uptec-khj/gridex-power-policy-kb-dev/blob/main/content/${name}.md`))
   assert(redirect.includes('content="noindex"'))
 }
 const technical = rankEvidence(evidence.pages, "유효전력", "technical", "supporting")

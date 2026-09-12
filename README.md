@@ -2,7 +2,7 @@
 
 대한민국 전력정책의 **공식 원문을 연결하는 Markdown Knowledge Base**입니다. PDF를 내려받지 않아도 정책의 맥락·수치·변화·연관 문서를 탐색할 수 있도록 만듭니다.
 
-[공개 Knowledge Base](https://uptec-khj.github.io/gridex-power-policy-kb/) · [개발 로드맵](https://github.com/Uptec-khj/gridex-project-management/blob/main/content/roadmap.md) · [문서 표준](docs/frontmatter-standard.md) · [자료 확보 현황](content/collection-status.md) · [작성 템플릿](templates/policy-document.md)
+[공개 Knowledge Base](https://uptec-khj.github.io/gridex-power-policy-kb/) · [개발 로드맵](https://github.com/Uptec-khj/gridex-power-policy-kb-dev/blob/main/content/roadmap.md) · [문서 표준](docs/frontmatter-standard.md) · [자료 확보 현황](content/collection-status.md) · [작성 템플릿](templates/policy-document.md)
 
 ## GFM 세계 규격·시험·인증
 
@@ -26,7 +26,7 @@ GFM 영역에는 제3자 PDF·원문 표·그림·스크린샷·로고·인증�
 
 ## 구성
 
-[국가별 확장 로드맵](https://github.com/Uptec-khj/gridex-project-management/blob/main/content/international-roadmap.md)의 G2까지 구현했습니다. 대한민국·호주·미국·중국·유럽 메뉴와 [국가별 문서 찾기](content/document-search.md), 관할·시장·언어·종류 필터를 제공합니다. 호주는 핵심 6건과 보완 4건의 판본·시행 상태를 표시하고 AEMO/AEMC 발견기의 첫 제한 실행을 기록합니다. 나머지 국제 자료원 후보는 비활성 설계 목록이며 정기 실행은 G5 이후입니다.
+[국가별 확장 로드맵](https://github.com/Uptec-khj/gridex-power-policy-kb-dev/blob/main/content/international-roadmap.md)의 G2까지 구현했습니다. 대한민국·호주·미국·중국·유럽 메뉴와 [국가별 문서 찾기](content/document-search.md), 관할·시장·언어·종류 필터를 제공합니다. 호주는 핵심 6건과 보완 4건의 판본·시행 상태를 표시하고 AEMO/AEMC 발견기의 첫 제한 실행을 기록합니다. 나머지 국제 자료원 후보는 비활성 설계 목록이며 정기 실행은 G5 이후입니다.
 
 ```text
 content/                  Obsidian Markdown: 유일한 콘텐츠 편집 원본
@@ -122,14 +122,14 @@ JSONL 청크에는 문서 ID·절·차수·문서 단계·원문 URL·해시·�
 
 ## 권리와 출처
 
-2026-09-11 사용자 지시로 **원문은 비공개 개발 저장소에 보관하고 공개 사이트에는 공식 원문 링크·서지·자체 요약만 제공**하는 전환을 진행합니다. 현재 개발 저장소가 Public으로 확인되어 원문 이관은 보류 중입니다. GFM 영역은 이미 원문 사본을 포함하지 않지만, 기존 정책 영역의 `data/raw/sha256/` 75개 파일과 원문 전문 색인은 아직 이관·공개 제외·재배포 검증이 남아 있습니다. 아래 기존 보존 설명은 전환 전 상태이며 완료를 뜻하지 않습니다. [이관 계획](https://github.com/Uptec-khj/gridex-project-management/blob/main/content/original-archive-migration.md)을 따릅니다.
+2026-09-11 사용자 지시로 **원문은 비공개 개발 저장소에 보관하고 공개 사이트에는 공식 원문 링크·서지·자체 요약만 제공**하는 전환을 진행합니다. 2026-09-12에 비공개 개발 저장소 `gridex-power-policy-kb-dev`를 만들었지만, 기존 정책 영역의 `data/raw/sha256/` 75개 파일과 원문 전문 색인은 아직 이관·공개 제외·재배포 검증이 남아 있습니다. GFM 영역은 이미 원문 사본을 포함하지 않습니다. 아래 기존 보존 설명은 전환 전 상태이며 완료를 뜻하지 않습니다. [이관 계획](https://github.com/Uptec-khj/gridex-power-policy-kb-dev/blob/main/content/original-archive-migration.md)을 따릅니다.
 
 GRIDEX 신규 코드에는 [MIT License](LICENSE)를 적용합니다. 공식 원문, 발행기관의 저작물, 인용문, 제3자 이미지에는 적용하지 않습니다. 원본의 이용조건·공공누리 유형은 자료별로 확인하며 확인하지 않은 권리를 추정하지 않습니다. 초기 획득 기록의 `rights_status: check_source_terms`는 별도 확인이 남아 있다는 뜻입니다. Quartz의 MIT 라이선스와 [고정한 upstream 기록](site/UPSTREAM.md)을 보존합니다.
 
 
 ## 개발 관리
 
-개발 관리는 [gridex-project-management](https://github.com/Uptec-khj/gridex-project-management) 저장소에서 수행합니다. 해당 저장소를 별도 Obsidian 보관함으로 열고 [로드맵](https://github.com/Uptec-khj/gridex-project-management/blob/main/content/roadmap.md), [백로그](https://github.com/Uptec-khj/gridex-project-management/blob/main/content/development-backlog.md), [개발 기록](https://github.com/Uptec-khj/gridex-project-management/blob/main/content/release-log.md)을 함께 사용합니다. 개발 문서는 공개 KB의 검색·탐색·그래프에서 제외합니다. 기존 개발 문서 주소는 새 저장소로 안내합니다. 자료 검수·수집 현황은 이 저장소에 유지합니다.
+개발 관리는 비공개 [gridex-power-policy-kb-dev](https://github.com/Uptec-khj/gridex-power-policy-kb-dev) 저장소에서 수행합니다. 해당 저장소를 별도 Obsidian 보관함으로 열고 로드맵·백로그·개발 기록을 함께 사용합니다. 개발 문서는 공개 KB의 검색·탐색·그래프에서 제외합니다. 자료 검수·수집 현황은 이 저장소에 유지합니다.
 
 ## 원문 검색의 범위
 
