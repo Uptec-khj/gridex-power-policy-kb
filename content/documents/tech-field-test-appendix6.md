@@ -38,7 +38,6 @@ draft: false
 attachments:
 - url: https://www.kpx.or.kr/boardDownload.es?bid=0042&list_no=77368&seq=1
   title: 신재생발전기 송전계통 연계기술기준 부록6.pdf
-  path: data/raw/sha256/5d/5deb6993fa7c0341f59f92164e512dd81474bb96a8c991cc1fa2315e08fee118.pdf
   file_hash: sha256:5deb6993fa7c0341f59f92164e512dd81474bb96a8c991cc1fa2315e08fee118
   format: pdf
   size_bytes: 409564
@@ -46,7 +45,6 @@ attachments:
   collected_at: '2026-09-09T05:08:48.507193+00:00'
   rights_status: check_source_terms
 source_snapshot:
-  path: data/raw/sha256/fd/fd8dae852062196d2ddc1f61498cf4663d800e684e335ca923e522a47847a185.html
   file_hash: sha256:fd8dae852062196d2ddc1f61498cf4663d800e684e335ca923e522a47847a185
   resolved_url: https://www.kpx.or.kr/board.es?act=view&bid=0042&mid=a11201000000&list_no=77368
 events:
@@ -78,6 +76,19 @@ title_ko: 신재생발전기 송전계통 연계기술기준 부록6 발전단�
 document_identifier: null
 edition_year: null
 version: null
+archive_access: link_only
+type: test_procedure
+status: supporting
+source_ids:
+- SRC-POLICY-TECH-FIELD-TEST-APPENDIX6
+evidence_level: Unverified
+published: '2026-05-13'
+effective: null
+last_verified: '2026-09-09'
+valid_from: null
+valid_to: null
+supersedes: []
+superseded_by: []
 ---
 
 > [!warning] 공식 출처 확인 · AI 요약 검수 대기
@@ -154,11 +165,9 @@ version: null
 - [공식 게시물](https://www.kpx.or.kr/board.es?act=view&bid=0042&mid=a11201000000&list_no=77368)
 - 확인일: 2026-09-09
 
-## 원본 첨부파일
+## 공식 원문 형식
 
-- **신재생발전기 송전계통 연계기술기준 부록6.pdf** (PDF, 409,564 bytes): [공식 다운로드](https://www.kpx.or.kr/boardDownload.es?bid=0042&list_no=77368&seq=1) · [보존본](https://github.com/Uptec-khj/gridex-power-policy-kb/blob/main/data/raw/sha256/5d/5deb6993fa7c0341f59f92164e512dd81474bb96a8c991cc1fa2315e08fee118.pdf)
+- **신재생발전기 송전계통 연계기술기준 부록6.pdf** (PDF, 409,564 bytes): [공식 다운로드](https://www.kpx.or.kr/boardDownload.es?bid=0042&list_no=77368&seq=1)
   - SHA-256: `sha256:5deb6993fa7c0341f59f92164e512dd81474bb96a8c991cc1fa2315e08fee118`
-
-[공식 게시물 보존본](https://github.com/Uptec-khj/gridex-power-policy-kb/blob/main/data/raw/sha256/fd/fd8dae852062196d2ddc1f61498cf4663d800e684e335ca923e522a47847a185.html)
 
 원문 파일의 권리는 발행기관·원저작자에게 있습니다. 원본 이용조건 검수는 대기 상태입니다.

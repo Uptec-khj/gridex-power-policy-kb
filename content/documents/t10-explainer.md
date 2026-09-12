@@ -34,7 +34,6 @@ verification_notes: 공식 게시물 및 확보한 원본을 AI가 확인. 요�
 draft: false
 attachments: []
 source_snapshot:
-  path: data/raw/sha256/28/28800375e6baf3cfde3dd715ddb257767744cd973bb246737aa8fb8b6ed03f99.html
   file_hash: sha256:28800375e6baf3cfde3dd715ddb257767744cd973bb246737aa8fb8b6ed03f99
   resolved_url: https://home.kepco.co.kr/kepco/front/html/WZ/2025_02/heritage.html
 events: []
@@ -55,6 +54,19 @@ title_ko: 한국전력 사보 전력망 확충 해설 2025년 2월
 document_identifier: null
 edition_year: null
 version: null
+archive_access: link_only
+type: official_explainer
+status: official_explainer
+source_ids:
+- SRC-POLICY-T10-EXPLAINER
+evidence_level: Unverified
+published: null
+effective: null
+last_verified: '2026-09-09'
+valid_from: null
+valid_to: null
+supersedes: []
+superseded_by: []
 ---
 
 > [!warning] 공식 출처 확인 · AI 요약 검수 대기
@@ -114,7 +126,7 @@ version: null
 - [공식 게시물 / 공식 자료실](https://home.kepco.co.kr/kepco/front/html/WZ/2025_02/heritage.html)
 - 출처 확인일: 2026-09-09
 
-## 원본 첨부파일
+## 공식 원문 형식
 
 첨부파일 미확보. 공식 게시물 HTML은 별도로 보존했습니다. 사보 해설은 이 단계에서 HTML만 보존합니다.
 

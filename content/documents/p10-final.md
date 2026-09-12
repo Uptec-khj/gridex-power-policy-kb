@@ -36,7 +36,6 @@ draft: false
 attachments:
 - url: https://www.kpx.or.kr/boardDownload.es?bid=0061&list_no=69127&seq=1
   title: 제10차 전력수급기본계획 원문
-  path: data/raw/sha256/8e/8ed37705452306eb20b4e6c065f816eb2389e69083d04d7cbad42d28e0f0b175.pdf
   file_hash: sha256:8ed37705452306eb20b4e6c065f816eb2389e69083d04d7cbad42d28e0f0b175
   format: pdf
   size_bytes: 5052465
@@ -44,7 +43,6 @@ attachments:
   collected_at: '2026-09-09T02:33:27.116494+00:00'
   rights_status: check_source_terms
 source_snapshot:
-  path: data/raw/sha256/19/198c8a716a041bf97df050c939d97e255e47d9b5ace3170c7385a499664d424c.html
   file_hash: sha256:198c8a716a041bf97df050c939d97e255e47d9b5ace3170c7385a499664d424c
   resolved_url: https://www.kpx.or.kr/board.es?bid=0061&mid=a30700000000
 events:
@@ -69,6 +67,19 @@ title_ko: 제10차 전력수급기본계획
 document_identifier: null
 edition_year: null
 version: null
+archive_access: link_only
+type: plan
+status: final
+source_ids:
+- SRC-POLICY-P10-FINAL
+evidence_level: Unverified
+published: '2023-01-13'
+effective: null
+last_verified: '2026-09-09'
+valid_from: null
+valid_to: null
+supersedes: []
+superseded_by: []
 ---
 
 > [!warning] 공식 출처 확인 · AI 요약 검수 대기
@@ -133,10 +144,9 @@ version: null
 - [공식 게시물 / 공식 자료실](https://www.kpx.or.kr/board.es?bid=0061&mid=a30700000000)
 - 출처 확인일: 2026-09-09
 
-## 원본 첨부파일
+## 공식 원문 형식
 
-- **PDF** · 5,052,465 bytes · [공식 다운로드](https://www.kpx.or.kr/boardDownload.es?bid=0061&list_no=69127&seq=1) · [보존 원본](https://github.com/Uptec-khj/gridex-power-policy-kb/blob/main/data/raw/sha256/8e/8ed37705452306eb20b4e6c065f816eb2389e69083d04d7cbad42d28e0f0b175.pdf)
-  - 원본 경로: `data/raw/sha256/8e/8ed37705452306eb20b4e6c065f816eb2389e69083d04d7cbad42d28e0f0b175.pdf`
+- **PDF** · 5,052,465 bytes · [공식 다운로드](https://www.kpx.or.kr/boardDownload.es?bid=0061&list_no=69127&seq=1)
   - 해시: `sha256:8ed37705452306eb20b4e6c065f816eb2389e69083d04d7cbad42d28e0f0b175`
 
 게시물 스냅샷: `{r["source_snapshot"]["path"]}`

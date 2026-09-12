@@ -37,27 +37,6 @@ for (const slug of ["index", "timeline", "catalog", "documents/p11-amend"]) {
 }
 console.log(`Site smoke checks passed: ${Object.keys(content).length} indexed pages, Korean search, graph edge, review labels`)
 
-// Exercise the exact ranking code shipped to the browser against real PDF pages.
-const evidence = JSON.parse(fs.readFileSync(path.join(root, "site/public/static/official-pages.json"), "utf8"))
-const core = fs.readFileSync(path.join(root, "site/quartz/components/scripts/originalSearchCore.ts"), "utf8")
-const coreCode = buildSync({stdin:{contents:core, loader:'ts', resolveDir:path.join(root,'site/quartz/components/scripts')}, bundle:true, write:false, format:'cjs', platform:'browser'}).outputFiles[0].text
-const coreModule = { exports: {} }
-new Function("module", "exports", coreCode)(coreModule, coreModule.exports)
-const { rankEvidence } = coreModule.exports
-for (const [query, plan, stage, id, page] of [
-  ["송변전 61183", "11", "final", "t11-final", 14],
-  ["송변전 57,681", "10", "final", "t10-final", 13],
-  ["72.8", "11", "press_release", "t11-release", 2],
-]) {
-  const found = rankEvidence(evidence.pages, query, plan, stage)
-  assert(found.some(p => p.document_id === id && p.pdf_page === page), `Original search: ${query}`)
-  assert(found.every(p => String(p.plan_number) === plan && p.document_stage === stage))
-}
-assert.equal(rankEvidence(evidence.pages, "", "", "").length, 0)
-assert.equal(rankEvidence(evidence.pages, "송변전 zzz-does-not-exist", "", "").length, 0)
-assert(evidence.pages.every(p => p.content_origin === "official_extraction" && p.extraction_review_status === "unreviewed"))
-const originalPage = fs.readFileSync(path.join(root, "site/public/original-search.html"), "utf8")
-assert(originalPage.includes('class="original-search"') && originalPage.includes('name="stage"'))
 for (const name of ['roadmap','development-backlog','release-log','international-roadmap']) {
   const slug = 'project/' + name
   assert(!content[slug], 'Development documents must not appear in the policy search or graph')
@@ -66,51 +45,10 @@ for (const name of ['roadmap','development-backlog','release-log','international
     assert(!fs.readFileSync(path.join(root,'site/public',file),'utf8').includes('/' + slug))
   }
   const redirect = fs.readFileSync(path.join(root,'site/public',slug+'.html'),'utf8')
-  assert(redirect.includes(`https://github.com/Uptec-khj/gridex-power-policy-kb-dev/blob/main/content/${name}.md`))
+  assert(redirect.includes("../document-search"))
+  assert(!redirect.includes("-dev"))
   assert(redirect.includes('content="noindex"'))
 }
-const technical = rankEvidence(evidence.pages, "유효전력", "technical", "supporting")
-assert(technical.some(p => p.document_id === 'tech-field-test-appendix6' && p.pdf_page === 1))
-assert(technical.every(p => p.plan_number === null))
-assert(!rankEvidence(evidence.pages, '유효전력', '11').some(p => p.document_id.startsWith('tech-')))
-assert(rankEvidence(evidence.pages, '657.6', '12', 'draft').some(p => p.document_id === 'p12-demand-draft-20260519' && p.pdf_page === 6))
-assert(!rankEvidence(evidence.pages, '657.6', '12', 'final').length)
-assert(evidence.pages.some(p => p.document_id === 'p11-final' && p.pdf_page === 1 && p.text.includes('169')))
-for (const id of ['tech-field-test-appendix6', 'tech-grid-model-draft-202608']) {
-  const html = fs.readFileSync(path.join(root, 'site/public/documents', id + '.html'), 'utf8')
-  assert(!html.includes('제null차') && !html.includes('제undefined차'))
-  assert(html.includes('AI 요약 · 검수 대기'))
-}
-assert(content['technical-documents'].links.includes('documents/tech-field-test-appendix6'))
-assert(content['project/review-queue'].links.includes('documents/tech-grid-model-draft-202608'))
-const relations = JSON.parse(fs.readFileSync(path.join(root, 'data/metadata/relations.json'), 'utf8'))
-assert(relations.some(r => r.type === 'explains' && r.target === 'tech-field-test-appendix6' && r.source_url && r.basis))
-for (const [family, query, id, page] of [
-  ['에너지기본계획', '재생에너지', 'energy-3-final', 53],
-  ['신재생에너지기본계획', '25.8', 'renewable-5-final', 6],
-  ['재생에너지기본계획', '100GW', 'renewable-1-final-2026', 17],
-]) {
-  const found = rankEvidence(evidence.pages, query, 'family:' + family, 'final')
-  assert(found.some(p => p.document_id === id && p.pdf_page === page))
-  assert(found.every(p => p.plan_family === family))
-}
-const collision = [{ ...evidence.pages[0], text: 'same', plan_number: 1, plan_family: '에너지기본계획' },
-  { ...evidence.pages[0], text: 'same', plan_number: 1, plan_family: '재생에너지기본계획' }]
-assert.equal(rankEvidence(collision, 'same', 'family:재생에너지기본계획').length, 1)
-assert(content['energy-renewable-plans'].links.includes('documents/renewable-1-final-2026'))
-console.log(`Original search passed: ${evidence.report.searchable_pages} pages with text, PDF citations and plan/stage filters`)
-
-// Region filters must never broaden to Korea; AU editorial notes are link-only until rights review.
-assert.equal(rankEvidence(evidence.pages, '전력', '', '', {region:'AU'}).length, 0)
-assert(rankEvidence(evidence.pages, '전력', '', '', {region:'KR', jurisdiction:'KR', language:'ko'}).length > 0)
-assert.equal(rankEvidence(evidence.pages, '전력', '', '', {region:'KR', language:'en'}).length, 0)
-const fixture = {...evidence.pages[0], title:'국제 계획', title_original:'Integrated System Plan', text:'power',
-  region_group:'AU', jurisdictions:['AU'], market_regions:['NEM'], document_language:'en', document_type:'plan', plan_number:null}
-assert.equal(rankEvidence([fixture], 'Integrated', '', '', {region:'AU', market:'NEM'}).length, 1)
-assert.equal(rankEvidence([fixture], 'power', 'technical').length, 0, 'Null plan number is not a technical document')
-assert.equal(rankEvidence([fixture], 'power', '', '', {market:'WEM'}).length, 0)
-const multi = {...fixture, region_group:'Europe', jurisdictions:['EU','DE']}
-for (const jurisdiction of ['EU','DE']) assert.equal(rankEvidence([multi], 'power', '', '', {jurisdiction}).length, 1)
 for (const region of ['kr','au','us','cn','europe']) {
   const html = fs.readFileSync(path.join(root, 'site/public/regions', region + '.html'), 'utf8')
   assert(html.includes('aria-label="국가·지역별 자료"'))
@@ -123,11 +61,10 @@ for (const region of ['kr','au','us','cn','europe']) {
     assert(html.includes('핵심') && html.includes('6건') && html.includes('WEM'))
   } else assert(html.includes('수집 준비 중'))
 }
-for (const slug of ['original-search','document-search']) {
+for (const slug of ['document-search']) {
   const html = fs.readFileSync(path.join(root, 'site/public', slug + '.html'), 'utf8')
   for (const name of ['region','jurisdiction','market','language','type']) assert(html.includes(`name="${name}"`))
 }
-assert(evidence.pages.every(p => p.region_group === 'KR' && p.document_language === 'ko' && p.document_type))
 console.log('International navigation, region isolation, language/market filters and null-plan classification passed')
 
 // Use the same serialized functions and actual content tree as the Explorer.
@@ -196,3 +133,9 @@ const kepcoGfmHtml = fs.readFileSync(
 assert(kepcoGfmHtml.includes('11.1~11.8'))
 assert(kepcoGfmHtml.includes('자료제출과 이용 절차의 근거'))
 console.log(`GFM navigation passed: ${gfmPages.length} hubs and representative pages with resolved local links`)
+
+assert(!fs.existsSync(path.join(root, "site/public/static/official-pages.json")))
+const originalsGuide = fs.readFileSync(path.join(root, "site/public/original-search.html"), "utf8")
+assert(!originalsGuide.includes('class="original-search-form"'))
+assert(originalsGuide.includes("공식 원문 이용 안내"))
+console.log("Link-only publication: no original full-text payload or private redirects")

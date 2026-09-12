@@ -38,6 +38,18 @@ attachments: []
 events: []
 tags: [전력정책]
 aliases: []
+type: plan
+status: announced
+source_ids: []
+evidence_level: Unverified
+published: null
+effective: null
+last_verified: null
+valid_from: null
+valid_to: null
+supersedes: []
+superseded_by: []
+archive_access: link_only
 ---
 
 > [!warning] AI 작성 초안 · 검수 전
@@ -86,6 +98,6 @@ Frontmatter 관계를 본문 Wiki Link에도 적습니다.
 
 공식 게시물 링크와 확인일.
 
-## 원본 첨부파일
+## 공식 원문 형식
 
-확보한 원본의 보존 경로와 SHA-256. 미수집이면 상태와 실패 이유를 적습니다.
+발행기관의 공식 다운로드 URL·파일 형식·SHA-256을 기록합니다. 내부 보관 경로는 적지 않습니다. 미확보 원문은 미확보로 표시합니다. 생성기 필드는 docs/frontmatter-standard.md에 따라 입력합니다.

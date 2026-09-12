@@ -1,5 +1,4 @@
 import PolicyMetadata from "./quartz/components/PolicyMetadata"
-import OriginalSearch from "./quartz/components/OriginalSearch"
 import CountryNavigation from "./quartz/components/CountryNavigation"
 import DocumentSearch from "./quartz/components/DocumentSearch"
 import { knowledgeExplorer } from "./quartz/components/knowledgeExplorer"
@@ -29,7 +28,6 @@ export const defaultContentPageLayout: PageLayout = {
     Component.ArticleTitle(),
     PolicyMetadata(),
     Component.TagList(),
-    OriginalSearch(),
     DocumentSearch(),
   ],
   left: [

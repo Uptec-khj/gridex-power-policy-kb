@@ -18,9 +18,10 @@
     "format": "npx prettier . --write",
     "test": "tsx --test",
     "profile": "0x -D prof ./quartz/bootstrap-cli.mjs build --concurrency=1",
-    "prebuild": "python ../scripts/originals.py build",
+    "prebuild": "python ../scripts/kb.py build && python ../scripts/source_registry.py && python ../scripts/validate_kb.py ..",
     "build": "node ./quartz/bootstrap-cli.mjs build -d ../content",
-    "prepreview": "python ../scripts/originals.py build",
+    "postbuild": "python ../scripts/validate_kb.py .. --site public && node ../scripts/check-site.mjs",
+    "prepreview": "python ../scripts/validate_kb.py ..",
     "preview": "node ./quartz/bootstrap-cli.mjs build -d ../content --serve"
   },
   "engines": {

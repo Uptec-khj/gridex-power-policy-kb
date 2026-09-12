@@ -220,7 +220,6 @@
         "type": "object",
         "required": [
           "url",
-          "path",
           "file_hash",
           "format",
           "size_bytes"
@@ -231,10 +230,7 @@
             "format": "uri",
             "pattern": "^https://"
           },
-          "path": {
-            "type": "string",
-            "pattern": "^data/raw/"
-          },
+          "path": false,
           "file_hash": {
             "type": "string",
             "pattern": "^sha256:[0-9a-f]{64}$"
@@ -256,14 +252,10 @@
     "source_snapshot": {
       "type": "object",
       "required": [
-        "path",
         "file_hash"
       ],
       "properties": {
-        "path": {
-          "type": "string",
-          "pattern": "^data/raw/"
-        },
+        "path": false,
         "file_hash": {
           "type": "string",
           "pattern": "^sha256:[0-9a-f]{64}$"
@@ -613,12 +605,80 @@
       ]
     },
     "archive_access": {
+      "const": "link_only"
+    },
+    "type": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_level": {
       "enum": [
-        "link_only",
-        "preserved_public",
-        "preserved_restricted",
-        "not_available"
+        "Confirmed",
+        "Supported",
+        "Reported",
+        "Inferred",
+        "Unverified"
       ]
+    },
+    "source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "supersedes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "superseded_by": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "published": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "effective": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "last_verified": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "valid_from": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "valid_to": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
     }
   },
   "additionalProperties": false,

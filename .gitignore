@@ -18,3 +18,12 @@ data/logs/
 *.log
 *.tsbuildinfo
 site/quartz/static/official-pages.json
+/sources/
+/project/
+/gcp/
+/data/raw/
+/data/source-archive.yaml
+/data/source-candidates.json
+/data/metadata/acquisitions.json
+/ai/index/official-pages.jsonl
+*-dev/

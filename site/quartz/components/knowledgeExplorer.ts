@@ -16,11 +16,11 @@ export const knowledgeExplorer: Partial<Options> = {
       "regions/us": "미국", "regions/cn": "중국", "regions/europe": "유럽",
       "plans/plan-10": "제10차 전력수급기본계획", "plans/plan-11": "제11차 전력수급기본계획",
       "plans/plan-12": "제12차 수립 과정", "document-search": "국가별 문서 찾기",
-      "original-search": "PDF 원문 검색", "catalog": "전체 문서 목록", "timeline": "정책 연표",
+      "original-search": "공식 원문 이용 안내", "catalog": "전체 문서 목록", "timeline": "정책 연표",
       "energy-renewable-plans": "에너지·재생에너지 계획", "transmission-plans": "송변전설비계획",
       "demand-outlook": "장기 전력수요전망", "technical-documents": "계통연계·성능평가 기준",
       "reading-guide": "이용 안내", "collection-status": "자료 확보 현황",
-      "extraction-status": "원문 추출 현황", "legal-basis": "관련 법령",
+      "extraction-status": "원문 제공 범위", "legal-basis": "관련 법령",
     }
     if (labels[node.slug]) node.displayName = labels[node.slug]
   },

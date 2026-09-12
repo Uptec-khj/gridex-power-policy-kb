@@ -34,7 +34,6 @@ verification_notes: 공식 게시물 및 확보한 원본을 AI가 확인. 요�
 draft: false
 attachments: []
 source_snapshot:
-  path: data/raw/sha256/a7/a7b1a9c5dbdf64d4d12106d59607a8ad6ec6ccdf58c8311f49246fe5ef2ce1a2.html
   file_hash: sha256:a7b1a9c5dbdf64d4d12106d59607a8ad6ec6ccdf58c8311f49246fe5ef2ce1a2
   resolved_url: https://www.motir.go.kr/kor/article/ATCLc01b2801b/69589/view
 events:
@@ -59,6 +58,19 @@ title_ko: 제11차 전력수급기본계획 전략환경영향평가서 행정�
 document_identifier: null
 edition_year: null
 version: null
+archive_access: link_only
+type: notice
+status: consultation
+source_ids:
+- SRC-POLICY-P11-SEA-DRAFT
+evidence_level: Unverified
+published: '2024-07-10'
+effective: null
+last_verified: '2026-09-09'
+valid_from: null
+valid_to: null
+supersedes: []
+superseded_by: []
 ---
 
 > [!warning] 공식 출처 확인 · AI 요약 검수 대기
@@ -120,7 +132,7 @@ version: null
 - [공식 게시물 / 공식 자료실](https://www.motir.go.kr/kor/article/ATCLc01b2801b/69589/view)
 - 출처 확인일: 2026-09-09
 
-## 원본 첨부파일
+## 공식 원문 형식
 
 첨부파일 미확보. 공식 게시물 HTML은 별도로 보존했습니다. 사보 해설은 이 단계에서 HTML만 보존합니다.
 

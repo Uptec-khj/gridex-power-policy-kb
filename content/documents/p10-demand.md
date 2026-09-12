@@ -34,7 +34,6 @@ draft: false
 attachments:
 - url: https://www.kpx.or.kr/boardDownload.es?bid=0017&list_no=68649&seq=1
   title: 다운로드
-  path: data/raw/sha256/aa/aa6a2fb0e84a8c7e730d6366b6245235d81af94889c29feb7a8dcca4cbbfa8fa.hwp
   file_hash: sha256:aa6a2fb0e84a8c7e730d6366b6245235d81af94889c29feb7a8dcca4cbbfa8fa
   format: hwp
   size_bytes: 133632
@@ -43,7 +42,6 @@ attachments:
   rights_status: check_source_terms
 - url: https://www.kpx.or.kr/boardDownload.es?bid=0017&list_no=68649&seq=2
   title: 다운로드
-  path: data/raw/sha256/af/af76e30ecd4a27a2c4040910ba0a3171ed7be33fde79d09204a16e6c43d1365b.pdf
   file_hash: sha256:af76e30ecd4a27a2c4040910ba0a3171ed7be33fde79d09204a16e6c43d1365b
   format: pdf
   size_bytes: 85485
@@ -51,7 +49,6 @@ attachments:
   collected_at: '2026-09-09T02:33:40.301154+00:00'
   rights_status: check_source_terms
 source_snapshot:
-  path: data/raw/sha256/f3/f3ff814f9389387873576c72438f47ec773e471001eb844ed6c480b0b7e01c53.html
   file_hash: sha256:f3ff814f9389387873576c72438f47ec773e471001eb844ed6c480b0b7e01c53
   resolved_url: https://www.kpx.or.kr/board.es?act=view&bid=0017&list_no=68649&mid=a10109030400
 events:
@@ -76,6 +73,19 @@ title_ko: 장기 전력수요전망 2022-2036
 document_identifier: null
 edition_year: null
 version: null
+archive_access: link_only
+type: forecast
+status: supporting
+source_ids:
+- SRC-POLICY-P10-DEMAND
+evidence_level: Unverified
+published: '2023-01-18'
+effective: null
+last_verified: '2026-09-09'
+valid_from: null
+valid_to: null
+supersedes: []
+superseded_by: []
 ---
 
 > [!warning] 공식 출처 확인 · AI 요약 검수 대기
@@ -137,13 +147,11 @@ version: null
 - [공식 게시물 / 공식 자료실](https://www.kpx.or.kr/board.es?act=view&bid=0017&list_no=68649&mid=a10109030400)
 - 출처 확인일: 2026-09-09
 
-## 원본 첨부파일
+## 공식 원문 형식
 
-- **HWP** · 133,632 bytes · [공식 다운로드](https://www.kpx.or.kr/boardDownload.es?bid=0017&list_no=68649&seq=1) · [보존 원본](https://github.com/Uptec-khj/gridex-power-policy-kb/blob/main/data/raw/sha256/aa/aa6a2fb0e84a8c7e730d6366b6245235d81af94889c29feb7a8dcca4cbbfa8fa.hwp)
-  - 원본 경로: `data/raw/sha256/aa/aa6a2fb0e84a8c7e730d6366b6245235d81af94889c29feb7a8dcca4cbbfa8fa.hwp`
+- **HWP** · 133,632 bytes · [공식 다운로드](https://www.kpx.or.kr/boardDownload.es?bid=0017&list_no=68649&seq=1)
   - 해시: `sha256:aa6a2fb0e84a8c7e730d6366b6245235d81af94889c29feb7a8dcca4cbbfa8fa`
-- **PDF** · 85,485 bytes · [공식 다운로드](https://www.kpx.or.kr/boardDownload.es?bid=0017&list_no=68649&seq=2) · [보존 원본](https://github.com/Uptec-khj/gridex-power-policy-kb/blob/main/data/raw/sha256/af/af76e30ecd4a27a2c4040910ba0a3171ed7be33fde79d09204a16e6c43d1365b.pdf)
-  - 원본 경로: `data/raw/sha256/af/af76e30ecd4a27a2c4040910ba0a3171ed7be33fde79d09204a16e6c43d1365b.pdf`
+- **PDF** · 85,485 bytes · [공식 다운로드](https://www.kpx.or.kr/boardDownload.es?bid=0017&list_no=68649&seq=2)
   - 해시: `sha256:af76e30ecd4a27a2c4040910ba0a3171ed7be33fde79d09204a16e6c43d1365b`
 
 게시물 스냅샷: `{r["source_snapshot"]["path"]}`

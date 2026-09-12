@@ -5,7 +5,6 @@ from pathlib import Path
 import yaml
 from jsonschema import Draft202012Validator, FormatChecker
 
-from collector.discovery import MAX_CANDIDATES, inspect_html
 from scripts import kb
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -14,7 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 class AustraliaPilotTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.config = yaml.safe_load((ROOT / "sources/australia-pilot.yaml").read_text(encoding="utf-8"))
+        cls.config = yaml.safe_load((ROOT / "data/australia-pilot.yaml").read_text(encoding="utf-8"))
         cls.schema = json.loads((ROOT / "schemas/policy-document.schema.json").read_text(encoding="utf-8"))
         cls.validator = Draft202012Validator(cls.schema, format_checker=FormatChecker())
         cls.records = {path.stem: (meta, body) for path, meta, body in kb.notes()}
@@ -25,7 +24,7 @@ class AustraliaPilotTests(unittest.TestCase):
         self.assertEqual(sum(item["tier"] == "core" for item in documents), 6)
         self.assertEqual(sum(item["tier"] == "supplemental" for item in documents), 4)
         self.assertEqual(len({item["id"] for item in documents}), 10)
-        self.assertLessEqual(len(documents), MAX_CANDIDATES)
+        self.assertLessEqual(len(documents), 20)
 
     def test_all_pilot_notes_validate_and_match_market(self):
         for item in self.config["documents"]:
@@ -52,24 +51,6 @@ class AustraliaPilotTests(unittest.TestCase):
         self.assertEqual(self.notes["au-wem-esoo-2026"]["version"], "2")
         self.assertEqual(self.notes["au-wem-esoo-2026"]["published_date"], "2026-06-23")
 
-    def test_discovery_marks_missing_terms_without_inventing_match(self):
-        matched = inspect_html("<h1>NER Version 254</h1><p>4 September 2026</p>",
-                               ["NER Version 254", "4 September 2026"])
-        self.assertEqual(matched["status"], "matched")
-        changed = inspect_html("<h1>NER Version 255</h1>", ["NER Version 254"])
-        self.assertEqual(changed["status"], "changed_or_incomplete")
-        self.assertEqual(changed["missing_terms"], ["NER Version 254"])
-
-    def test_first_discovery_run_is_bounded_and_records_failures(self):
-        report = json.loads((ROOT / "data/metadata/discovery-australia.json").read_text(encoding="utf-8"))
-        self.assertEqual(report["pilot"], "G2")
-        self.assertEqual(report["documents_checked"], 10)
-        self.assertLessEqual(report["documents_checked"], report["candidate_limit"])
-        self.assertEqual({result["id"] for result in report["results"]},
-                         {item["id"] for item in self.config["documents"]})
-        self.assertTrue(all(result["status"] in
-                            {"matched", "changed_or_incomplete", "access_limited", "failed", "rejected_domain"}
-                            for result in report["results"]))
 
 
 if __name__ == "__main__":

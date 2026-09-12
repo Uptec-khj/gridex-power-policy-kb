@@ -39,7 +39,6 @@ draft: false
 attachments:
 - url: https://www.kpx.or.kr/boardDownload.es?bid=ATT&list_no=74548&seq=1
   title: 제11차 최초 공고 PDF (KPX 재게시, 표지 2025-169호)
-  path: data/raw/sha256/3b/3b0867749e987e0773ae4c08587dffe5b94215701c0a619c7c19222a1e084e14.pdf
   file_hash: sha256:3b0867749e987e0773ae4c08587dffe5b94215701c0a619c7c19222a1e084e14
   format: pdf
   size_bytes: 4749938
@@ -47,7 +46,6 @@ attachments:
   collected_at: '2026-09-09T05:09:01.620644+00:00'
   rights_status: check_source_terms
 source_snapshot:
-  path: data/raw/sha256/ab/ab84737c5a895fdc94e6bcc71bff8474a27375698e41e2b29af794013e8ae8bd.html
   file_hash: sha256:ab84737c5a895fdc94e6bcc71bff8474a27375698e41e2b29af794013e8ae8bd
   resolved_url: https://www.motir.go.kr/kor/article/ATCLc01b2801b/70083/view
 events:
@@ -72,6 +70,19 @@ title_ko: 제11차 전력수급기본계획 최초 공고
 document_identifier: null
 edition_year: null
 version: null
+archive_access: link_only
+type: plan
+status: final
+source_ids:
+- SRC-POLICY-P11-FINAL
+evidence_level: Unverified
+published: '2025-02-21'
+effective: null
+last_verified: '2026-09-09'
+valid_from: null
+valid_to: null
+supersedes: []
+superseded_by: []
 ---
 
 > [!warning] 공식 출처 확인 · AI 요약 검수 대기
@@ -135,11 +146,11 @@ KPX 공식 재게시 경로에서 120쪽 PDF를 확보했다. 표지의 산업�
 - [공식 게시물 / 공식 자료실](https://www.motir.go.kr/kor/article/ATCLc01b2801b/70083/view)
 - 출처 확인일: 2026-09-09
 
-## 원본 첨부파일
+## 공식 원문 형식
 
-- [최초 공고 PDF](https://www.kpx.or.kr/boardDownload.es?bid=ATT&list_no=74548&seq=1) · [GitHub 보존본](https://github.com/Uptec-khj/gridex-power-policy-kb/blob/main/data/raw/sha256/3b/3b0867749e987e0773ae4c08587dffe5b94215701c0a619c7c19222a1e084e14.pdf)
+- [최초 공고 PDF](https://www.kpx.or.kr/boardDownload.es?bid=ATT&list_no=74548&seq=1)
 - SHA-256: `sha256:3b0867749e987e0773ae4c08587dffe5b94215701c0a619c7c19222a1e084e14`
 
-산업부 첨부 경로의 다운로드 오류는 획득 이력에 남아 있습니다. [공식 게시물 보존본](https://github.com/Uptec-khj/gridex-power-policy-kb/blob/main/data/raw/sha256/ab/ab84737c5a895fdc94e6bcc71bff8474a27375698e41e2b29af794013e8ae8bd.html)
+산업부 첨부 경로의 다운로드 오류는 획득 이력에 남아 있습니다.
 
 원문 파일의 권리는 발행기관·원저작자에게 있습니다.

@@ -9,11 +9,17 @@ subcategory: WEM Electricity Statement of Opportunities
 plan_family: null
 plan_number: null
 document_stage: amended
-topics: [WEM, SWIS, ESOO, 신뢰도, 수요전망]
+topics:
+- WEM
+- SWIS
+- ESOO
+- 신뢰도
+- 수요전망
 source_id: au-aemo
 source_url: https://www.aemo.com.au/energy-systems/electricity/wholesale-electricity-market-wem/wem-forecasting-and-planning/wem-electricity-statement-of-opportunities-wem-esoo
 attachment_url: null
-related_documents: ['[[au-wem-gps-framework]]']
+related_documents:
+- '[[au-wem-gps-framework]]'
 previous_document: null
 next_document: null
 collected_date: '2026-09-11'
@@ -36,12 +42,20 @@ events:
   label: 2026 WEM ESOO v2 수정
   status: publication
   source_url: https://www.aemo.com.au/energy-systems/electricity/wholesale-electricity-market-wem/wem-forecasting-and-planning/wem-electricity-statement-of-opportunities-wem-esoo
-tags: [호주, WEM, SWIS, ESOO, 검수대기]
-aliases: [2026 WEM ESOO]
+tags:
+- 호주
+- WEM
+- SWIS
+- ESOO
+- 검수대기
+aliases:
+- 2026 WEM ESOO
 date: '2026-06-23'
 region_group: AU
-jurisdictions: [AU-WA]
-market_regions: [WEM]
+jurisdictions:
+- AU-WA
+market_regions:
+- WEM
 document_language: en
 document_type: forecast
 title_original: 2026 WEM Electricity Statement of Opportunities
@@ -60,6 +74,18 @@ translation_review_status: unreviewed
 rights_status: link_only_pending_terms
 rights_url: null
 archive_access: link_only
+type: forecast
+status: amended
+source_ids:
+- SRC-POLICY-AU-WEM-ESOO-2026
+evidence_level: Unverified
+published: '2026-06-23'
+effective: null
+last_verified: '2026-09-11'
+valid_from: null
+valid_to: null
+supersedes: []
+superseded_by: []
 ---
 
 > [!warning] 공식 출처 확인 · AI 요약 검수 대기
@@ -112,6 +138,6 @@ v2의 수정 범위는 문서 버전관리 설명대로 그림·표·주석에 �
 - [공식 PDF v2](https://www.aemo.com.au/-/media/files/electricity/wem/planning_and_forecasting/esoo/2026/2026-wem-electricity-statement-of-opportunities.pdf?rev=3aa69153c92f4437ac7032402a261f9c&sc_lang=en)
 - 확인일: 2026-09-11
 
-## 원본 첨부파일
+## 공식 원문 형식
 
 공식 PDF는 링크만 제공한다. 국제 원본 재배포 이용조건은 후속 검토 대상이다.

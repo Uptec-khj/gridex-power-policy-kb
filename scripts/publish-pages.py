@@ -18,6 +18,8 @@ def run(args, cwd, capture=True):
 
 
 if __name__ == "__main__":
+    import sys
+    run([sys.executable, "scripts/validate_kb.py", ".", "--site", "site/public"], ROOT, capture=False)
     # Local build check exercises the real Quartz search config and graph output.
     run(["node", "scripts/check-site.mjs"], ROOT, capture=False)
     public = ROOT / "site/public"

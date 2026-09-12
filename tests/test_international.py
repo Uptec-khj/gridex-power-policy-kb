@@ -2,7 +2,7 @@ import json
 import unittest
 from pathlib import Path
 from jsonschema import Draft202012Validator, FormatChecker
-from scripts import kb, originals
+from scripts import kb
 from scripts.migrate_international import migrate
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -79,18 +79,6 @@ class InternationalTests(unittest.TestCase):
         for field in ('id', 'attachments', 'file_hash', 'related_documents', 'source_url'):
             self.assertEqual(new[field], legacy[field])
         self.assertEqual(list(self.validator.iter_errors(new)), [])
-
-    def test_page_filters_and_original_language_title(self):
-        base = {'title':'한국어 제목', 'title_original':'Integrated System Plan', 'text':'grid 100',
-                'document_id':'test', 'file_hash':'test', 'pdf_page':1, 'plan_number':None,
-                'document_stage':'final', 'document_type':'plan', 'region_group':'AU',
-                'jurisdictions':['AU'], 'market_regions':['NEM'], 'document_language':'en'}
-        pages = [base, {**base, 'region_group':'KR', 'jurisdictions':['KR'], 'document_language':'ko'}]
-        found = originals.search_pages(pages, 'Integrated', region='AU', jurisdiction='AU', language='en', document_type='plan')
-        self.assertEqual(found, [base])
-        self.assertEqual(originals.search_pages(pages, '100', region='US'), [])
-        self.assertEqual(originals.search_pages(pages, '100', region='AU', language='ko'), [])
-        self.assertEqual(originals.search_pages(pages, '100', market='WEM'), [])
 
     def test_editorial_search_keeps_region_and_language(self):
         import contextlib

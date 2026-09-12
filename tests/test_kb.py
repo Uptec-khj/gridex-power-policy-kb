@@ -6,8 +6,6 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 import yaml
-from collector.__main__ import detect_type
-from collector.adapters import discover
 
 ROOT = Path(__file__).resolve().parents[1]
 spec = importlib.util.spec_from_file_location("gridex_kb", ROOT / "scripts/kb.py")
@@ -15,26 +13,11 @@ kb = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(kb)
 
 
-class SourceSafetyTests(unittest.TestCase):
-    def test_kepco_opaque_ids_preserve_plus_and_slash(self):
-        from urllib.parse import parse_qs, urlparse
-        result = discover("<a href=\"javascript:G_FILE.downloadFile('a/b+c==','d+e/f==');\">plan</a>", "https://www.kepco.co.kr/home/media/newsroom/pr/boardView.do")
-        self.assertEqual(parse_qs(urlparse(result[0]["url"]).query), {"fileNo": ["a/b+c=="], "fileSeq": ["d+e/f=="]})
-
-    def test_html_error_is_not_a_pdf(self):
-        with self.assertRaisesRegex(ValueError, "not a supported"):
-            detect_type(b"<!DOCTYPE html><title>Download error</title>")
-
-    def test_mcee_ids_are_extracted_from_observed_link(self):
-        result = discover("<a href=\"javascript:ajaxFileDownLoad('311860','3');\">source.pdf</a>", "https://www.mcee.go.kr/home/web/board/read.do?boardId=1823520")
-        self.assertEqual(result[0]["url"], "https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=311860&fileSeq=3")
-
-
 class KnowledgeBaseTests(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
         self.root = Path(self.temp.name)
-        for name in ("content", "schemas", "sources", "data/raw"):
+        for name in ("content", "schemas", "data"):
             shutil.copytree(ROOT / name, self.root / name)
         self.p1 = patch.object(kb, "ROOT", self.root)
         self.p2 = patch.object(kb, "CONTENT", self.root / "content")
@@ -54,11 +37,14 @@ class KnowledgeBaseTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "invalid relationship"):
             kb.validate()
 
-    def test_corrupt_preserved_file_rejected(self):
-        meta, _ = kb.read_note(self.root / "content/documents/p10-final.md")
-        (self.root / meta["attachments"][0]["path"]).write_bytes(b"corrupt original")
-        with self.assertRaisesRegex(ValueError, "hash mismatch"):
+    def test_private_archive_path_rejected(self):
+        self.rewrite(lambda m: m["attachments"][0].update(path="sources/internal.pdf"))
+        with self.assertRaisesRegex(ValueError, "private archive paths"):
             kb.validate()
+
+    def test_public_validation_does_not_require_originals(self):
+        self.assertFalse((self.root / "sources").exists())
+        self.assertEqual(len(kb.validate()), 47)
 
     def test_false_human_verification_rejected(self):
         self.rewrite(lambda m: m.update(verification_status="human_verified"))

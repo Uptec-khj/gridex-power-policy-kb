@@ -35,7 +35,6 @@ draft: false
 attachments:
 - url: https://www.kepco.co.kr/c2r/FileDownload.do?fileNo=bQSK6KNFNAG9cfWeYpeHWA%3D%3D&fileSeq=DIMtNyzfJ3kKEXQCksqfEQ%3D%3D
   title: 다운로드
-  path: data/raw/sha256/d2/d2cdebf009f356711c9e27a88f144e9b035a4ab1cb20b16af9918383f1d3c01c.pdf
   file_hash: sha256:d2cdebf009f356711c9e27a88f144e9b035a4ab1cb20b16af9918383f1d3c01c
   format: pdf
   size_bytes: 167129
@@ -43,7 +42,6 @@ attachments:
   collected_at: '2026-09-09T03:20:05.456132+00:00'
   rights_status: check_source_terms
 source_snapshot:
-  path: data/raw/sha256/c0/c0238703080c910b0d193cb294242b0bd29d7578a134fe3098f3d0df4a660d44.html
   file_hash: sha256:c0238703080c910b0d193cb294242b0bd29d7578a134fe3098f3d0df4a660d44
   resolved_url: https://www.kepco.co.kr/home/media/newsroom/pr/boardView.do?boardMngNo=15&boardNo=2904
 events:
@@ -68,6 +66,19 @@ title_ko: 제11차 장기 송변전설비계획 수립 발표 보도자료
 document_identifier: null
 edition_year: null
 version: null
+archive_access: link_only
+type: press_release
+status: press_release
+source_ids:
+- SRC-POLICY-T11-RELEASE
+evidence_level: Unverified
+published: '2025-05-27'
+effective: null
+last_verified: '2026-09-09'
+valid_from: null
+valid_to: null
+supersedes: []
+superseded_by: []
 ---
 
 > [!warning] 공식 출처 확인 · AI 요약 검수 대기
@@ -132,10 +143,9 @@ PDF p.2의 투자비는 전망치이며 집행 실적이 아니다. 자재비 �
 - [공식 게시물 / 공식 자료실](https://www.kepco.co.kr/home/media/newsroom/pr/boardView.do?boardMngNo=15&boardNo=2904)
 - 출처 확인일: 2026-09-09
 
-## 원본 첨부파일
+## 공식 원문 형식
 
-- **PDF** · 167,129 bytes · [공식 다운로드](https://www.kepco.co.kr/c2r/FileDownload.do?fileNo=bQSK6KNFNAG9cfWeYpeHWA%3D%3D&fileSeq=DIMtNyzfJ3kKEXQCksqfEQ%3D%3D) · [보존 원본](https://github.com/Uptec-khj/gridex-power-policy-kb/blob/main/data/raw/sha256/d2/d2cdebf009f356711c9e27a88f144e9b035a4ab1cb20b16af9918383f1d3c01c.pdf)
-  - 원본 경로: `data/raw/sha256/d2/d2cdebf009f356711c9e27a88f144e9b035a4ab1cb20b16af9918383f1d3c01c.pdf`
+- **PDF** · 167,129 bytes · [공식 다운로드](https://www.kepco.co.kr/c2r/FileDownload.do?fileNo=bQSK6KNFNAG9cfWeYpeHWA%3D%3D&fileSeq=DIMtNyzfJ3kKEXQCksqfEQ%3D%3D)
   - 해시: `sha256:d2cdebf009f356711c9e27a88f144e9b035a4ab1cb20b16af9918383f1d3c01c`
 
 게시물 스냅샷: `{r["source_snapshot"]["path"]}`

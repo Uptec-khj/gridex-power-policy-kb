@@ -38,7 +38,6 @@ draft: false
 attachments:
 - url: https://www.knrec.or.kr/biz/introduce/file/File_down.do?file_nm=%28%EB%B3%84%EC%B2%A8%29%EC%A0%9C5%EC%B0%A8%20%EC%8B%A0%EC%9E%AC%EC%83%9D%EC%97%90%EB%84%88%EC%A7%80%20%EA%B8%B0%EB%B3%B8%EA%B3%84%ED%9A%8D.pdf
   title: 제5차 신재생에너지 기본계획 전문 (한국에너지공단 공식 재게시)
-  path: data/raw/sha256/25/25d568f54b708145cf92591a44520d9c4d7dd378430f3953155b53acaf261744.pdf
   file_hash: sha256:25d568f54b708145cf92591a44520d9c4d7dd378430f3953155b53acaf261744
   format: pdf
   size_bytes: 2427140
@@ -46,7 +45,6 @@ attachments:
   collected_at: '2026-09-09T06:02:47.101156+00:00'
   rights_status: check_source_terms
 source_snapshot:
-  path: data/raw/sha256/c2/c2ae67be794edcfc5286ea43bd69b7121eb0d394c97f7c702a0568dbb4078eb0.html
   file_hash: sha256:c2ae67be794edcfc5286ea43bd69b7121eb0d394c97f7c702a0568dbb4078eb0
   resolved_url: https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/163676/view
 events:
@@ -75,6 +73,19 @@ title_ko: 제5차 신재생에너지 기본계획 2020–2034
 document_identifier: null
 edition_year: null
 version: null
+archive_access: link_only
+type: plan
+status: final
+source_ids:
+- SRC-POLICY-RENEWABLE-5-FINAL
+evidence_level: Unverified
+published: '2020-12-29'
+effective: null
+last_verified: '2026-09-09'
+valid_from: null
+valid_to: null
+supersedes: []
+superseded_by: []
 ---
 
 > [!warning] 공식 출처 확인 · AI 요약 검수 대기
@@ -147,11 +158,11 @@ version: null
 - [전문 PDF](https://www.knrec.or.kr/biz/introduce/file/File_down.do?file_nm=%28%EB%B3%84%EC%B2%A8%29%EC%A0%9C5%EC%B0%A8%20%EC%8B%A0%EC%9E%AC%EC%83%9D%EC%97%90%EB%84%88%EC%A7%80%20%EA%B8%B0%EB%B3%B8%EA%B3%84%ED%9A%8D.pdf)
 - 확인일: 2026-09-09
 
-## 원본 첨부파일
+## 공식 원문 형식
 
 - **제5차 신재생에너지 기본계획 전문 (한국에너지공단 공식 재게시)** · 2,427,140 bytes
-- [공식 원본](https://www.knrec.or.kr/biz/introduce/file/File_down.do?file_nm=%28%EB%B3%84%EC%B2%A8%29%EC%A0%9C5%EC%B0%A8%20%EC%8B%A0%EC%9E%AC%EC%83%9D%EC%97%90%EB%84%88%EC%A7%80%20%EA%B8%B0%EB%B3%B8%EA%B3%84%ED%9A%8D.pdf) · [GitHub 보존본](https://github.com/Uptec-khj/gridex-power-policy-kb/blob/main/data/raw/sha256/25/25d568f54b708145cf92591a44520d9c4d7dd378430f3953155b53acaf261744.pdf)
+- [공식 원본](https://www.knrec.or.kr/biz/introduce/file/File_down.do?file_nm=%28%EB%B3%84%EC%B2%A8%29%EC%A0%9C5%EC%B0%A8%20%EC%8B%A0%EC%9E%AC%EC%83%9D%EC%97%90%EB%84%88%EC%A7%80%20%EA%B8%B0%EB%B3%B8%EA%B3%84%ED%9A%8D.pdf)
 - SHA-256: `sha256:25d568f54b708145cf92591a44520d9c4d7dd378430f3953155b53acaf261744`
-- [공식 발표 HTML 보존본](https://github.com/Uptec-khj/gridex-power-policy-kb/blob/main/data/raw/sha256/c2/c2ae67be794edcfc5286ea43bd69b7121eb0d394c97f7c702a0568dbb4078eb0.html)
+-
 
 원문 권리는 발행기관·원저작자에게 있습니다. 이용조건과 AI 요약에 대한 사람 검수는 대기 상태입니다.

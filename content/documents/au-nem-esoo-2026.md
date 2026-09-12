@@ -9,11 +9,17 @@ subcategory: NEM Electricity Statement of Opportunities
 plan_family: null
 plan_number: null
 document_stage: final
-topics: [NEM, ESOO, 신뢰도, 수요전망]
+topics:
+- NEM
+- ESOO
+- 신뢰도
+- 수요전망
 source_id: au-aemo
 source_url: https://www.aemo.com.au/energy-systems/electricity/national-electricity-market-nem/nem-forecasting-and-planning/forecasting-and-reliability/nem-electricity-statement-of-opportunities-esoo
 attachment_url: null
-related_documents: ['[[au-isp-2026-final]]', '[[au-ner-v254]]']
+related_documents:
+- '[[au-isp-2026-final]]'
+- '[[au-ner-v254]]'
 previous_document: null
 next_document: null
 collected_date: '2026-09-11'
@@ -32,12 +38,20 @@ events:
   label: 2026 NEM ESOO 공개
   status: publication
   source_url: https://www.aemo.com.au/energy-systems/electricity/national-electricity-market-nem/nem-forecasting-and-planning/forecasting-and-reliability/nem-electricity-statement-of-opportunities-esoo
-tags: [호주, NEM, ESOO, 전력수요, 검수대기]
-aliases: [2026 NEM ESOO]
+tags:
+- 호주
+- NEM
+- ESOO
+- 전력수요
+- 검수대기
+aliases:
+- 2026 NEM ESOO
 date: '2026-08-25'
 region_group: AU
-jurisdictions: [AU]
-market_regions: [NEM]
+jurisdictions:
+- AU
+market_regions:
+- NEM
 document_language: en
 document_type: forecast
 title_original: 2026 Electricity Statement of Opportunities
@@ -56,6 +70,18 @@ translation_review_status: unreviewed
 rights_status: link_only_pending_terms
 rights_url: null
 archive_access: link_only
+type: forecast
+status: final
+source_ids:
+- SRC-POLICY-AU-NEM-ESOO-2026
+evidence_level: Unverified
+published: '2026-08-25'
+effective: null
+last_verified: '2026-09-11'
+valid_from: null
+valid_to: null
+supersedes: []
+superseded_by: []
 ---
 
 > [!warning] 공식 출처 확인 · AI 요약 검수 대기
@@ -108,6 +134,6 @@ archive_access: link_only
 - [공식 PDF](https://www.aemo.com.au/-/media/files/electricity/nem/planning_and_forecasting/nem_esoo/2026/2026-electricity-statement-of-opportunities.pdf?rev=4f2e73fbd906456288198fdbc24b335a&sc_lang=en)
 - 확인일: 2026-09-11
 
-## 원본 첨부파일
+## 공식 원문 형식
 
 공식 PDF는 링크만 제공한다. 국제 원본 재배포 이용조건은 후속 검토 대상이다.

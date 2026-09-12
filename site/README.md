@@ -1,13 +1,7 @@
-# GRIDEX Quartz 사이트
+# GRIDEX 공개 사이트
 
-Quartz 공식 엔진을 site/에 고정하고 ../content를 직접 읽습니다. 저장소 루트에서 npm --prefix site ci, npm --prefix site run build, npm --prefix site run preview를 실행합니다.
+Quartz 4.5.2가 공개 저장소의 `../content`만 읽습니다. `npm run build`는 요약 인덱스·출처 레지스트리를 재생성하고 원문 파일 없이 빌드한 뒤 검색·그래프·국가 메뉴·공개 경계를 검사합니다.
 
-public/은 배포 생성물이며 Git 제외입니다. 검색·그래프·백링크·태그·목차를 제공합니다. PolicyMetadata 컴포넌트는 공식 자료의 문서 단계, 발행일, AI 요약 검수 상태를 표시합니다. 외부 분석 추적은 비활성화했습니다.
+`npm run preview`는 `http://localhost:8080`에서 미리보기를 제공합니다. `public/`은 Git에서 제외하는 파생 산출물입니다.
 
-현재 gh-pages 브랜치를 통해 공개합니다. 저장소 루트의 scripts/publish-pages.py를 사용합니다. GitHub Actions 자동화 예제는 docs/workflows/pages.yml에 있으며 workflow 등록 권한 확보 후 활성화할 수 있습니다. Quartz 업데이트 시 UPSTREAM.md·잠금파일을 함께 갱신하고 실제 콘텐츠로 빌드 검증합니다.
-
-CountryNavigation은 국가 허브로 연결합니다. DocumentSearch는 PDF 없는 문서를 포함해 제목·주제·원어 제목과 분류를 찾고, OriginalSearch는 공식 PDF 페이지를 찾습니다. 관할·시장·언어·문서 종류는 `schemas/international-taxonomy.json`을 공통으로 사용합니다. 필터는 URL에 보존하며 국가 변경 시 종속 관할·시장 선택을 초기화합니다. 기본 Quartz 검색은 전체 KB 검색으로 유지합니다.
-
-자료 탐색은 `knowledgeExplorer.ts`에서 국가 → 계획·기술 → 공식 문서 → 검색 → 이용·검수 안내 순으로 정렬합니다. 국가·계획 폴더는 한글 이름과 고정 순서를 사용하며 문서 전체 폴더는 최근 날짜순입니다. 폴더 제목을 클릭하면 펼치거나 접습니다. 개발 문서는 별도 [개발 관리 저장소](https://github.com/Uptec-khj/gridex-power-policy-kb-dev)에 보관하며 기존 공개 주소만 검색·사이트맵에 포함되지 않는 이동 안내로 유지합니다.
-
-국가 허브 `content/regions/*.md`는 `scripts/kb.py build`로 재생성합니다. 국가 허브의 본문을 직접 편집하지 말고 생성기·원본 Metadata·자료원 후보를 수정합니다. Quartz의 내부 링크 변환은 검색 URL의 query를 보존하도록 수정했으며 `quartz/util/path.test.ts`에 회귀 검증을 추가했습니다.
+PDF 전문 색인과 다운로드 UI는 제거했습니다. 이전 `original-search` 주소는 공식 원문 이용 안내로, 개발 문서의 이전 주소는 비공개 주소를 포함하지 않는 안내로 유지합니다. 배포 전에 `python ../scripts/validate_kb.py .. --site public`으로 검사합니다.

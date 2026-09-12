@@ -7,7 +7,7 @@ tags: [국가별자료]
 
 공개 공식 자료 **0건**. 공식 문서 수집 준비 중입니다. 아래 자료원 후보는 아직 수집·검수된 문서가 아닙니다.
 
-[이 지역 문서 찾기](../document-search?region=CN) · [이 지역 PDF 검색](../original-search?region=CN) · [[reading-guide|이용 안내]]
+[이 지역 문서 찾기](../document-search?region=CN) · [[original-search|공식 원문 이용 안내]] · [[reading-guide|이용 안내]]
 
 적용 관할·시장은 문서별 범위입니다. 국가 분류만으로 모든 지역·설비에 동일한 규정이 적용된다는 뜻은 아닙니다.
 
@@ -43,11 +43,5 @@ tags: [국가별자료]
 
 수집 예정 · 현재 공개 문서 0건.
 
-## 공식 자료원 후보
-
-원문·이용조건 확인 후 수집할 후보입니다.
-
-- [国家能源局 / 国家发展改革委 공동 발행 문서 포함](https://www.nea.gov.cn/20260625/0ccfdc1674e84868b49480edf584eb5f/c.html) — 에너지체계·전력·재생에너지 계획
-- [全国标准信息公共服务平台](https://std.samr.gov.cn/gb/search/gbDetailed?id=p3zoY65no%2FU%3D&mode=p) — 국가표준 식별·상태·대체 관계·계통연계 및 시험 기준
 
 [[index|전체 홈]] · [[catalog|전체 문서 목록]]

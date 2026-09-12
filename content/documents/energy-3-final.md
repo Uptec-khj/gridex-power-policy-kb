@@ -37,7 +37,6 @@ draft: false
 attachments:
 - url: https://kesis.keei.re.kr/boardDownload.es?bid=0025&list_no=1488&seq=1
   title: 제3차 에너지기본계획 전문 (KESIS 공식 재게시)
-  path: data/raw/sha256/ea/ea646eb07761fff06dbcefdc2759ff21a365357c01e57c2a6f11f07453168806.pdf
   file_hash: sha256:ea646eb07761fff06dbcefdc2759ff21a365357c01e57c2a6f11f07453168806
   format: pdf
   size_bytes: 2213632
@@ -45,7 +44,6 @@ attachments:
   collected_at: '2026-09-09T06:02:42.622315+00:00'
   rights_status: check_source_terms
 source_snapshot:
-  path: data/raw/sha256/15/1588e750c9485525e026c24c87aeb3eb207bb5dd62597c142e60b23cf374e3de.html
   file_hash: sha256:1588e750c9485525e026c24c87aeb3eb207bb5dd62597c142e60b23cf374e3de
   resolved_url: https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/161753/view
 events:
@@ -69,6 +67,19 @@ title_ko: 제3차 에너지기본계획 2019–2040
 document_identifier: null
 edition_year: null
 version: null
+archive_access: link_only
+type: plan
+status: final
+source_ids:
+- SRC-POLICY-ENERGY-3-FINAL
+evidence_level: Unverified
+published: '2019-06-04'
+effective: null
+last_verified: '2026-09-09'
+valid_from: null
+valid_to: null
+supersedes: []
+superseded_by: []
 ---
 
 > [!warning] 공식 출처 확인 · AI 요약 검수 대기
@@ -138,11 +149,11 @@ version: null
 - [전문 PDF](https://kesis.keei.re.kr/boardDownload.es?bid=0025&list_no=1488&seq=1)
 - 확인일: 2026-09-09
 
-## 원본 첨부파일
+## 공식 원문 형식
 
 - **제3차 에너지기본계획 전문 (KESIS 공식 재게시)** · 2,213,632 bytes
-- [공식 원본](https://kesis.keei.re.kr/boardDownload.es?bid=0025&list_no=1488&seq=1) · [GitHub 보존본](https://github.com/Uptec-khj/gridex-power-policy-kb/blob/main/data/raw/sha256/ea/ea646eb07761fff06dbcefdc2759ff21a365357c01e57c2a6f11f07453168806.pdf)
+- [공식 원본](https://kesis.keei.re.kr/boardDownload.es?bid=0025&list_no=1488&seq=1)
 - SHA-256: `sha256:ea646eb07761fff06dbcefdc2759ff21a365357c01e57c2a6f11f07453168806`
-- [공식 발표 HTML 보존본](https://github.com/Uptec-khj/gridex-power-policy-kb/blob/main/data/raw/sha256/15/1588e750c9485525e026c24c87aeb3eb207bb5dd62597c142e60b23cf374e3de.html)
+-
 
 원문 권리는 발행기관·원저작자에게 있습니다. 이용조건과 AI 요약에 대한 사람 검수는 대기 상태입니다.

@@ -36,7 +36,6 @@ draft: false
 attachments:
 - url: https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=316006&fileSeq=1
   title: 제11차 전기본의 신규원전 계획대로 추진(기후부  보도자료).hwp (705 KB)
-  path: data/raw/sha256/e2/e2fcb8af9df14f3850daf5642fe35e8490910eba6ea75ca84c118c84ddc2cb30.hwp
   file_hash: sha256:e2fcb8af9df14f3850daf5642fe35e8490910eba6ea75ca84c118c84ddc2cb30
   format: hwp
   size_bytes: 721920
@@ -45,7 +44,6 @@ attachments:
   rights_status: check_source_terms
 - url: https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=316006&fileSeq=2
   title: 제11차 전기본의 신규원전 계획대로 추진(기후부  보도자료).pdf (157.6 KB)
-  path: data/raw/sha256/53/53973f911fa26ae930b601b3cdcd329229595640b0d26b19d5b227af24534f57.pdf
   file_hash: sha256:53973f911fa26ae930b601b3cdcd329229595640b0d26b19d5b227af24534f57
   format: pdf
   size_bytes: 161426
@@ -53,7 +51,6 @@ attachments:
   collected_at: '2026-09-09T03:20:47.841489+00:00'
   rights_status: check_source_terms
 source_snapshot:
-  path: data/raw/sha256/20/2088f4cfc929d19f43a1d87cc2669ef51055531876758c44957709c8d0199bb7.html
   file_hash: sha256:2088f4cfc929d19f43a1d87cc2669ef51055531876758c44957709c8d0199bb7
   resolved_url: https://www.mcee.go.kr/home/web/board/read.do?boardId=1837310&boardMasterId=939&menuId=10598
 events:
@@ -78,6 +75,19 @@ title_ko: 제11차 신규원전 건설 계획대로 추진 발표
 document_identifier: null
 edition_year: null
 version: null
+archive_access: link_only
+type: press_release
+status: press_release
+source_ids:
+- SRC-POLICY-P11-IMPLEMENTATION
+evidence_level: Unverified
+published: '2026-01-26'
+effective: null
+last_verified: '2026-09-09'
+valid_from: null
+valid_to: null
+supersedes: []
+superseded_by: []
 ---
 
 > [!warning] 공식 출처 확인 · AI 요약 검수 대기
@@ -141,13 +151,11 @@ version: null
 - [공식 게시물 / 공식 자료실](https://www.mcee.go.kr/home/web/board/read.do?boardId=1837310&boardMasterId=939&menuId=10598)
 - 출처 확인일: 2026-09-09
 
-## 원본 첨부파일
+## 공식 원문 형식
 
-- **HWP** · 721,920 bytes · [공식 다운로드](https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=316006&fileSeq=1) · [보존 원본](https://github.com/Uptec-khj/gridex-power-policy-kb/blob/main/data/raw/sha256/e2/e2fcb8af9df14f3850daf5642fe35e8490910eba6ea75ca84c118c84ddc2cb30.hwp)
-  - 원본 경로: `data/raw/sha256/e2/e2fcb8af9df14f3850daf5642fe35e8490910eba6ea75ca84c118c84ddc2cb30.hwp`
+- **HWP** · 721,920 bytes · [공식 다운로드](https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=316006&fileSeq=1)
   - 해시: `sha256:e2fcb8af9df14f3850daf5642fe35e8490910eba6ea75ca84c118c84ddc2cb30`
-- **PDF** · 161,426 bytes · [공식 다운로드](https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=316006&fileSeq=2) · [보존 원본](https://github.com/Uptec-khj/gridex-power-policy-kb/blob/main/data/raw/sha256/53/53973f911fa26ae930b601b3cdcd329229595640b0d26b19d5b227af24534f57.pdf)
-  - 원본 경로: `data/raw/sha256/53/53973f911fa26ae930b601b3cdcd329229595640b0d26b19d5b227af24534f57.pdf`
+- **PDF** · 161,426 bytes · [공식 다운로드](https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=316006&fileSeq=2)
   - 해시: `sha256:53973f911fa26ae930b601b3cdcd329229595640b0d26b19d5b227af24534f57`
 
 게시물 스냅샷: `{r["source_snapshot"]["path"]}`

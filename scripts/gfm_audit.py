@@ -1,7 +1,7 @@
 """Read-only GFM metadata audit and deterministic kbgen-compatible projection.
 
 No fetching, LLM calls, evidence promotion, source edits or deployment.
---write only writes data/gfm/source-registry.json and data/gfm/metadata-audit.json.
+--write writes the public registry and, when available, a private audit report.
 """
 import argparse
 from collections import Counter
@@ -19,7 +19,7 @@ import yaml
 from jsonschema import Draft202012Validator
 
 ROOT = Path(__file__).resolve().parents[1]
-UPSTREAM = "c74f6625f2f570c2f68a748c26477e7634f718da"
+UPSTREAM = "5fff2140909089a85cdb5bd92b24db2ee1e44418"
 LEVELS = {"Confirmed", "Supported", "Reported", "Inferred", "Unverified"}
 REQUIRED = ("id", "family_id", "title_original", "title_ko", "organization",
             "jurisdiction_market", "document_type", "edition", "language",
@@ -191,8 +191,8 @@ def upstream_audit(generator, registry):
     if sha != UPSTREAM or subprocess.check_output(["git", "status", "--porcelain"], cwd=generator, text=True).strip():
         raise ValueError("generator must be the clean pinned checkout")
     with tempfile.TemporaryDirectory(prefix="gfm-kbgen-") as tmp:
-        stage = Path(tmp)
-        (stage / "content").mkdir()
+        stage = Path(tmp) / "projection"
+        (stage / "content").mkdir(parents=True)
         for n, record in enumerate(registry["sources"]):
             meta = {k: record[k] for k in ("id", "title", "type", "source_ids", "published", "effective", "last_verified", "evidence_level")}
             (stage / "content" / f"source-{n:03d}.md").write_text("---\n" + yaml.safe_dump(meta, allow_unicode=True) + "---\n", encoding="utf-8")
@@ -224,8 +224,13 @@ def main():
     if args.write and not report["errors"]:
         dest = args.root / "data/gfm"
         dest.mkdir(parents=True, exist_ok=True)
-        for name, payload in (("source-registry.json", registry), ("metadata-audit.json", report)):
+        for name, payload in (("source-registry.json", registry),):
             (dest / name).write_text(json.dumps(payload, ensure_ascii=False, indent=2, default=string_date) + "\n", encoding="utf-8")
+        dev = args.root.resolve().with_name(args.root.resolve().name + "-dev")
+        if (dev / "repository.json").is_file():
+            report_dir = dev / "project/audits"
+            report_dir.mkdir(parents=True, exist_ok=True)
+            (report_dir / "gfm-metadata.json").write_text(json.dumps(report, ensure_ascii=False, indent=2, default=string_date) + "\n", encoding="utf-8")
     print(json.dumps(report, ensure_ascii=False, indent=2))
     return 1 if report["errors"] else 0
 

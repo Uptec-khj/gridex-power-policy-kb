@@ -9,11 +9,18 @@ subcategory: 통합계통계획 확정본
 plan_family: integrated-system-plan
 plan_number: null
 document_stage: final
-topics: [NEM, Integrated System Plan, 송전망, 에너지전환]
+topics:
+- NEM
+- Integrated System Plan
+- 송전망
+- 에너지전환
 source_id: au-aemo
 source_url: https://www.aemo.com.au/energy-systems/major-publications/integrated-system-plan-isp/2026-integrated-system-plan-isp
 attachment_url: null
-related_documents: ['[[au-isp-2026-draft]]', '[[au-nem-esoo-2026]]', '[[au-gpsrr-2026]]']
+related_documents:
+- '[[au-isp-2026-draft]]'
+- '[[au-nem-esoo-2026]]'
+- '[[au-gpsrr-2026]]'
 previous_document: '[[au-isp-2026-draft]]'
 next_document: null
 collected_date: '2026-09-11'
@@ -32,12 +39,21 @@ events:
   label: 2026 Integrated System Plan 확정본 공개
   status: publication
   source_url: https://www.aemo.com.au/energy-systems/major-publications/integrated-system-plan-isp/2026-integrated-system-plan-isp
-tags: [호주, NEM, ISP, 송전망, 검수대기]
-aliases: [2026 Integrated System Plan, 2026 ISP]
+tags:
+- 호주
+- NEM
+- ISP
+- 송전망
+- 검수대기
+aliases:
+- 2026 Integrated System Plan
+- 2026 ISP
 date: '2026-06-25'
 region_group: AU
-jurisdictions: [AU]
-market_regions: [NEM]
+jurisdictions:
+- AU
+market_regions:
+- NEM
 document_language: en
 document_type: transmission_plan
 title_original: 2026 Integrated System Plan
@@ -56,6 +72,18 @@ translation_review_status: unreviewed
 rights_status: link_only_pending_terms
 rights_url: null
 archive_access: link_only
+type: transmission_plan
+status: final
+source_ids:
+- SRC-POLICY-AU-ISP-2026-FINAL
+evidence_level: Unverified
+published: '2026-06-25'
+effective: null
+last_verified: '2026-09-11'
+valid_from: null
+valid_to: null
+supersedes: []
+superseded_by: []
 ---
 
 > [!warning] 공식 출처 확인 · AI 요약 검수 대기
@@ -109,6 +137,6 @@ PDF 표지는 NEL s49(2)와 NER의 ISP 관련 절차를 작성 근거로 든다.
 - [공식 PDF](https://www.aemo.com.au/-/media/files/major-publications/isp/2026/2026-integrated-system-plan-isp.pdf?rev=f2f142d0a8d740a986f186da17bb8a9d&sc_lang=en)
 - 확인일: 2026-09-11
 
-## 원본 첨부파일
+## 공식 원문 형식
 
 공식 PDF를 페이지 단위로 대조했으나 재배포 권리 확인 전이므로 저장소에는 복제하지 않았다.

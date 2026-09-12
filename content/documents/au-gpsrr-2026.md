@@ -9,11 +9,17 @@ subcategory: General Power System Risk Review
 plan_family: null
 plan_number: null
 document_stage: final
-topics: [NEM, GPSRR, 계통보안, 비상주파수제어]
+topics:
+- NEM
+- GPSRR
+- 계통보안
+- 비상주파수제어
 source_id: au-aemo
 source_url: https://www.aemo.com.au/energy-systems/electricity/national-electricity-market-nem/system-operations/general-power-system-risk-review
 attachment_url: null
-related_documents: ['[[au-isp-2026-final]]', '[[au-ner-v254]]']
+related_documents:
+- '[[au-isp-2026-final]]'
+- '[[au-ner-v254]]'
 previous_document: null
 next_document: null
 collected_date: '2026-09-11'
@@ -32,12 +38,22 @@ events:
   label: 2026 GPSRR 최종보고서 공개
   status: publication
   source_url: https://www.aemo.com.au/energy-systems/electricity/national-electricity-market-nem/system-operations/general-power-system-risk-review
-tags: [호주, NEM, GPSRR, 계통보안, 보완자료, 검수대기]
-aliases: [2026 GPSRR, 2026 General Power System Risk Review]
+tags:
+- 호주
+- NEM
+- GPSRR
+- 계통보안
+- 보완자료
+- 검수대기
+aliases:
+- 2026 GPSRR
+- 2026 General Power System Risk Review
 date: '2026-07-31'
 region_group: AU
-jurisdictions: [AU]
-market_regions: [NEM]
+jurisdictions:
+- AU
+market_regions:
+- NEM
 document_language: en
 document_type: study
 title_original: 2026 General Power System Risk Review
@@ -56,6 +72,18 @@ translation_review_status: unreviewed
 rights_status: link_only_pending_terms
 rights_url: null
 archive_access: link_only
+type: study
+status: final
+source_ids:
+- SRC-POLICY-AU-GPSRR-2026
+evidence_level: Unverified
+published: '2026-07-31'
+effective: null
+last_verified: '2026-09-11'
+valid_from: null
+valid_to: null
+supersedes: []
+superseded_by: []
 ---
 
 > [!warning] 공식 출처 확인 · AI 요약 검수 대기
@@ -107,6 +135,6 @@ NER 5.20A가 GPSRR 수행 근거다. NER 5.22.10은 ISP가 최신 GPSRR을 고�
 - [AEMO General Power System Risk Review](https://www.aemo.com.au/energy-systems/electricity/national-electricity-market-nem/system-operations/general-power-system-risk-review)
 - 확인일: 2026-09-11
 
-## 원본 첨부파일
+## 공식 원문 형식
 
 공식 페이지의 2026 최종보고서 링크를 제공하며, 국제 원본은 저장소에 복제하지 않았다.

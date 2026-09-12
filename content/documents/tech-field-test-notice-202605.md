@@ -33,7 +33,6 @@ verification_notes: 공식 HTML 보존. 제목의 6월과 본문의 5월 27일�
 draft: false
 attachments: []
 source_snapshot:
-  path: data/raw/sha256/eb/eb70c752bdbb950bf4d01bca4906c9de6787f2ad4429d492427224e76116f96b.html
   file_hash: sha256:eb70c752bdbb950bf4d01bca4906c9de6787f2ad4429d492427224e76116f96b
   resolved_url: https://www.kpx.or.kr/board.es?act=view&bid=0042&mid=a11201000000&list_no=77368
 events:
@@ -70,6 +69,19 @@ title_ko: 신재생 발전소 현장성능시험 결과 제출 안내
 document_identifier: null
 edition_year: null
 version: null
+archive_access: link_only
+type: technical_notice
+status: announced
+source_ids:
+- SRC-POLICY-TECH-FIELD-TEST-NOTICE-202605
+evidence_level: Unverified
+published: '2026-05-13'
+effective: null
+last_verified: '2026-09-09'
+valid_from: null
+valid_to: null
+supersedes: []
+superseded_by: []
 ---
 
 > [!warning] 공식 출처 확인 · AI 요약 검수 대기
@@ -137,10 +149,8 @@ version: null
 - [공식 게시물](https://www.kpx.or.kr/board.es?act=view&bid=0042&mid=a11201000000&list_no=77368)
 - 확인일: 2026-09-09
 
-## 원본 첨부파일
+## 공식 원문 형식
 
 이 노트는 공식 HTML 안내문을 보존합니다. 별도 문서인 첨부 절차서는 [[tech-field-test-appendix6]]에 연결합니다.
-
-[공식 게시물 보존본](https://github.com/Uptec-khj/gridex-power-policy-kb/blob/main/data/raw/sha256/eb/eb70c752bdbb950bf4d01bca4906c9de6787f2ad4429d492427224e76116f96b.html)
 
 원문 파일의 권리는 발행기관·원저작자에게 있습니다. 원본 이용조건 검수는 대기 상태입니다.

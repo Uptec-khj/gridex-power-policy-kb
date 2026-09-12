@@ -3,7 +3,6 @@
 Usage: python scripts/kb.py validate | build | search QUERY [--verified-only]
 """
 import argparse
-import hashlib
 import json
 import re
 from pathlib import Path
@@ -13,7 +12,7 @@ from jsonschema import Draft202012Validator, FormatChecker
 
 ROOT = Path(__file__).resolve().parents[1]
 CONTENT = ROOT / "content"
-HEADINGS = ["기본정보", "3줄 요약", "핵심 내용", "핵심 수치", "주요 정책 변화", "Timeline", "관련 문서", "관련 법령", "원문 링크", "원본 첨부파일"]
+HEADINGS = ["기본정보", "3줄 요약", "핵심 내용", "핵심 수치", "주요 정책 변화", "Timeline", "관련 문서", "관련 법령", "원문 링크", "공식 원문 형식"]
 WIKI = re.compile(r"\[\[([^\]|#]+)(?:#[^\]|]*)?(?:\|[^\]]*)?\]\]")
 INTERNATIONAL_FIELDS = ('region_group', 'jurisdictions', 'market_regions', 'document_language',
                         'document_type', 'title_original', 'title_ko', 'document_identifier', 'edition_year', 'version',
@@ -53,7 +52,7 @@ def validate(generating=False):
     if generating:
         known.update({"catalog", "timeline", "review-queue", "kr", "au", "us", "cn", "europe"})
     ids = {m["id"]: m for _, m, _ in records}
-    registry = yaml.safe_load((ROOT / "sources/registry.yaml").read_text(encoding="utf-8"))["sources"]
+    registry = yaml.safe_load((ROOT / "data/institution-registry.yaml").read_text(encoding="utf-8"))["sources"]
     sources = {s["id"]: s for s in registry}
     errors = []
     if len(ids) != len(records):
@@ -98,11 +97,11 @@ def validate(generating=False):
                     errors.append(f"{path.name}: {direction} must be reciprocal")
         evidence = meta.get("attachments", []) + ([meta["source_snapshot"]] if meta.get("source_snapshot") else [])
         for item in evidence:
-            raw = (ROOT / item["path"]).resolve()
-            if not raw.is_relative_to((ROOT / "data/raw").resolve()) or not raw.is_file():
-                errors.append(f"{path.name}: missing or unsafe original {item['path']}")
-            elif "sha256:" + hashlib.sha256(raw.read_bytes()).hexdigest() != item["file_hash"]:
-                errors.append(f"{path.name}: hash mismatch {item['path']}")
+            if "path" in item or "archive_path" in item:
+                errors.append(f"{path.name}: private archive paths must not be published")
+            url = item.get("url") or item.get("resolved_url")
+            if url and (urlparse(url).scheme != "https" or urlparse(url).hostname not in {d for s in registry for d in s["allowed_domains"]}):
+                errors.append(f"{path.name}: original URL is not in the official registry")
         if meta.get("attachment_url") and not any(a["url"] == meta["attachment_url"] and a["file_hash"] == meta.get("file_hash") for a in meta.get("attachments", [])):
             errors.append(f"{path.name}: primary attachment URL/hash mismatch")
         if meta.get("file_hash") and not meta.get("attachment_url"):
@@ -194,16 +193,15 @@ def build_regions(documents):
     taxonomy = json.loads((ROOT / 'schemas/international-taxonomy.json').read_text(encoding='utf-8'))
     folder = CONTENT / 'regions'
     folder.mkdir(exist_ok=True)
-    candidates = yaml.safe_load((ROOT / 'sources/international-candidates.yaml').read_text(encoding='utf-8'))['sources']
     for region in taxonomy['regions']:
         selected = [m for m in documents if m.get('region_group') == region['id']]
         rows = ['---', f"title: {region['label']} 전력정책·기술 문서", f"region_group: {region['id']}",
                 'type: region_hub', 'tags: [국가별자료]', '---', '',
                 f"공개 공식 자료 **{len(selected)}건**. " + ('AI 요약의 사람 검수 상태는 각 문서에서 확인하세요.' if selected else '공식 문서 수집 준비 중입니다. 아래 자료원 후보는 아직 수집·검수된 문서가 아닙니다.'), '',
-                f"[이 지역 문서 찾기](../document-search?region={region['id']}) · [이 지역 PDF 검색](../original-search?region={region['id']}) · [[reading-guide|이용 안내]]", '',
+                f"[이 지역 문서 찾기](../document-search?region={region['id']}) · [[original-search|공식 원문 이용 안내]] · [[reading-guide|이용 안내]]", '',
                 '적용 관할·시장은 문서별 범위입니다. 국가 분류만으로 모든 지역·설비에 동일한 규정이 적용된다는 뜻은 아닙니다.', '']
         if region['id'] == 'AU' and selected:
-            pilot = yaml.safe_load((ROOT / 'sources/australia-pilot.yaml').read_text(encoding='utf-8'))['documents']
+            pilot = yaml.safe_load((ROOT / 'data/australia-pilot.yaml').read_text(encoding='utf-8'))['documents']
             tiers = {item['id']: item['tier'] for item in pilot}
             selected_by_id = {m['id']: m for m in selected}
             rows += ['## G2 호주 파일럿', '',
@@ -222,9 +220,6 @@ def build_regions(documents):
             else:
                 rows += [f"- [[{m['id']}|{m['title']}]] · {m['published_date'] or '발행일 미확인'}" for m in items] or ['수집 예정 · 현재 공개 문서 0건.']
             rows.append('')
-        if not selected:
-            rows += ['## 공식 자료원 후보', '', '원문·이용조건 확인 후 수집할 후보입니다.', '']
-            rows += [f"- [{s['organization']}]({s['entrypoints'][0]}) — {s['scope']}" for s in candidates if s['region_group'] == region['id']]
         rows += ['', '[[index|전체 홈]] · [[catalog|전체 문서 목록]]', '']
         (folder / (region['slug'] + '.md')).write_text('\n'.join(rows), encoding='utf-8')
 

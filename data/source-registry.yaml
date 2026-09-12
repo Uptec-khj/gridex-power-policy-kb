@@ -1,0 +1,1428 @@
+version: 1
+sources:
+- id: SRC-AU-AEMO-2023-001
+  title: 계통형성형 인버터 자발적 사양
+  organization: AEMO
+  country: Australia NEM
+  source_type: 자발적 기술사양
+  url: https://www.aemo.com.au/initiatives/major-programs/engineering-roadmap/engineering-roadmap-execution-reports
+  official_document_url: https://www.aemo.com.au/-/media/files/initiatives/primary-frequency-response/2023/gfm-voluntary-spec.pdf
+  publication_date: '2023-05-29'
+  effective_date: null
+  version: '1.0'
+  status: 확정
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: §2.1~2.4, pp.7~20
+  publication_policy: link-only
+  note_path: content/gfm/02_Sources/Australia/AEMO_2023_Voluntary_Spec.md
+- id: SRC-AU-AEMO-2024-002
+  title: GFM 핵심요건 자발적 모의시험 프레임워크
+  organization: AEMO
+  country: Australia NEM
+  source_type: 모의시험 프레임워크
+  url: https://www.aemo.com.au/initiatives/major-programs/engineering-roadmap/engineering-roadmap-execution-reports
+  official_document_url: https://www.aemo.com.au/-/media/files/initiatives/engineering-framework/2023/grid-forming-inverters-jan-2024.pdf
+  publication_date: '2024-01-18'
+  effective_date: null
+  version: January 2024
+  status: 확정
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: §2~3, pp.9~21; Appendix A1~A2
+  publication_policy: link-only
+  note_path: content/gfm/02_Sources/Australia/AEMO_2024_Test_Framework.md
+- id: SRC-AU-AEMO-2024-003
+  title: GFM BESS 합성관성 정량화
+  organization: AEMO
+  country: Australia NEM
+  source_type: 기술노트
+  url: https://www.aemo.com.au/initiatives/major-programs/engineering-roadmap/engineering-roadmap-execution-reports
+  official_document_url: https://www.aemo.com.au/-/media/files/initiatives/engineering-framework/2024/quantifying-synthetic-inertia-from-gfm-bess.pdf
+  publication_date: '2024-09-16'
+  effective_date: null
+  version: September 2024
+  status: 확정
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: Executive summary; §2~3, pp.3~16
+  publication_policy: link-only
+  note_path: content/gfm/02_Sources/Australia/AEMO_2024_Synthetic_Inertia.md
+- id: SRC-AU-AEMO-2024-004
+  title: 계통사고 중 Dalrymple GFM BESS 분석 및 모델링
+  organization: AEMO
+  country: Australia NEM
+  source_type: 사고분석·모델검증 보고서
+  url: https://www.aemo.com.au/initiatives/major-programs/engineering-roadmap/engineering-roadmap-execution-reports
+  official_document_url: https://www.aemo.com.au/-/media/files/initiatives/engineering-framework/2024/analysis_and_modelling_of_dalrymple_bess_performance_december_2023_events.pdf
+  publication_date: '2024-12-20'
+  effective_date: null
+  version: December 2024 publication
+  status: 확정
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: 보고서 전체; 사건 파형·모델 비교
+  publication_policy: link-only
+  note_path: content/gfm/02_Sources/Australia/AEMO_2024_Dalrymple.md
+- id: SRC-AU-AEMO-2025-005
+  title: GFM 기술 접속기준 접근서
+  organization: AEMO
+  country: Australia NEM
+  source_type: 협의 접근서
+  url: https://www.aemo.com.au/consultations/current-and-closed-consultations/grid-forming-technology-access-standards-technical-requirements-review
+  official_document_url: https://www.aemo.com.au/-/media/files/stakeholder_consultation/consultations/nem-consultations/2025/grid-forming-technology/grid-forming-technology-access-standards-approach-paper.pdf
+  publication_date: '2025-08-22'
+  effective_date: null
+  version: August 2025
+  status: 초안·협의
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: §2~3; Appendices C~D
+  publication_policy: link-only
+  note_path: content/gfm/02_Sources/Australia/AEMO_2025_Access_Approach.md
+- id: SRC-CN-CQC-2026-001
+  title: 전기화학 저장 GFM 변환기 계통형성 성능 제품인증 규칙
+  organization: China Quality Certification Centre (CQC)
+  country: China
+  source_type: 제품인증 규칙
+  url: https://www.cqc.com.cn/www/col67/596955.html
+  official_document_url: https://www.cqc.com.cn/www/upload/file/2025-12/col1008/1765256868773.pdf
+  publication_date: '2024-05-23'
+  effective_date: '2024-05-23'
+  version: CQC19-461262-2024, v1.3
+  status: 확정·2026-05-13 개정 1.3
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: §1~9; Annex 1~2
+  publication_policy: link-only
+  note_path: content/gfm/02_Sources/China/CQC19_461262_2024_v1_3.md
+- id: SRC-CN-SAC-2026-002
+  title: 전력전자 장비·시스템의 계통형성 성능요건 및 시험방법
+  organization: SAMR / SAC
+  country: China
+  source_type: 국가 권고표준
+  url: https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=2A02604DBDFAFC90FAD84E91E96005B5
+  official_document_url: https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=2A02604DBDFAFC90FAD84E91E96005B5
+  publication_date: '2026-07-02'
+  effective_date: '2027-02-01'
+  version: GB/T 47655-2026
+  status: 확정·시행 전
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: 전문 검토 미완료
+  publication_policy: link-only
+  note_path: content/gfm/02_Sources/China/GBT_47655_2026.md
+- id: SRC-CN-SAC-2026-003
+  title: 계통형성형 변환기 일반 기술규격
+  organization: SAMR / SAC
+  country: China
+  source_type: 국가 권고표준
+  url: https://openstd.samr.gov.cn/bzgk/std/std_list?p.p1=0&p.p2=%E6%8A%80%E6%9C%AF%E8%A7%84%E8%8C%83&p.p90=circulation_date&p.p91=desc
+  official_document_url: https://openstd.samr.gov.cn/
+  publication_date: '2026-07-30'
+  effective_date: '2026-11-01'
+  version: GB/T 47968-2026
+  status: 확정·시행 전
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: 전문 검토 미완료
+  publication_policy: link-only
+  note_path: content/gfm/02_Sources/China/GBT_47968_2026.md
+- id: SRC-DE-FGW-2026-002
+  title: FGW TR 8 개정 10 부록 10.1
+  organization: FGW e.V.
+  country: Germany
+  source_type: 인증 기술지침 부록
+  url: https://shop.wind-fgw.de/produkt/tr-8-zertifizierung-der-elektrischen-eigenschaften-von-erzeugungseinheiten-und-anlagen-speicher-sowie-fuer-deren-komponenten-am-stromnetz/
+  official_document_url: https://www.wind-fgw.de/wp-content/uploads/2026/03/260318_TR-8_Beiblatt_10.1.pdf
+  publication_date: '2026-03-18'
+  effective_date: null
+  version: Beiblatt 10.1
+  status: 확정·TR 8 Rev.10 선택적 보완
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: §2~4; Annex G
+  publication_policy: link-only
+  note_path: content/gfm/02_Sources/Germany/FGW_TR8_Beiblatt_10_1.md
+- id: SRC-DE-VDEFNN-2026-001
+  title: 계통형성 능력 및 순간예비력 제공 기술요건
+  organization: VDE FNN
+  country: Germany
+  source_type: FNN Guideline
+  url: https://www.vde.com/de/fnn/themen/tar/systemanforderungen
+  official_document_url: https://www.vde.com/resource/blob/2473026/ad76f904abf220d2c2759cb9a33a283d/vde-fnn-guideline-grid-forming-capabilitiesv2-1-data.pdf
+  publication_date: 2026-04
+  effective_date: null
+  version: 2.1, April 2026 (English)
+  status: 확정
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: §4~5; §5.5~5.7; Annexes B~C
+  publication_policy: link-only
+  note_path: content/gfm/02_Sources/Germany/VDE_FNN_2026_v2_1.md
+- id: SRC-EU-ENTSOE-2020-001
+  title: 전력전자 연계 전원의 고침투와 GFM 컨버터의 잠재 기여
+  organization: ENTSO-E
+  country: European Union
+  source_type: 기술보고서
+  url: https://www.entsoe.eu/network_codes/cnc/technical-groups/
+  official_document_url: https://www.entsoe.eu/Documents/Publications/SOC/High_Penetration_of_Power_Electronic_Interfaced_Power_Sources_and_the_Potential_Contribution_of_Grid_Forming_Converters.pdf
+  publication_date: '2020-01-29'
+  effective_date: null
+  version: January 2020
+  status: 확정·후속보고서 존재
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: 보고서 전체
+  publication_policy: link-only
+  note_path: content/gfm/02_Sources/EU/ENTSOE_2020_High_Penetration.md
+- id: SRC-EU-ENTSOE-2025-002
+  title: Power Park Module의 계통형성 능력
+  organization: ENTSO-E
+  country: European Union
+  source_type: Technical Group Phase II report
+  url: https://www.entsoe.eu/network_codes/cnc/technical-groups/
+  official_document_url: https://www.entsoe.eu/Documents/Publications/SOC/20251104_GRID_FORMING_CAPABILITY_OF_POWER_PARK_MODULES.pdf
+  publication_date: '2025-10-03'
+  effective_date: null
+  version: Final 3 October 2025
+  status: 확정 비구속 보고서
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: §2~3, pp.14~48; Appendices C~F
+  publication_policy: link-only
+  note_path: content/gfm/02_Sources/EU/ENTSOE_2025_GFM_PPM.md
+- id: SRC-GB-NESO-2022-001
+  title: GB 계통형성 능력 제공 최소사양
+  organization: NESO
+  country: Great Britain
+  source_type: Grid Code modification
+  url: https://www.neso.energy/industry-information/codes/gc/modifications/gc0137-minimum-specification-required-provision-gb-grid-forming-gbgf-capability-formerly-virtual-synchronous-machinevsm-capability
+  official_document_url: https://www.neso.energy/document/220511/download
+  publication_date: null
+  effective_date: '2022-02-14'
+  version: GC0137 concluded
+  status: 구현·종결
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: 최종 개정안 및 Grid Code legal text
+  publication_policy: link-only
+  note_path: content/gfm/02_Sources/UK/NESO_GC0137.md
+- id: SRC-GB-NESO-2024-003
+  title: GBGF 가상임피던스 제한 제거
+  organization: NESO
+  country: Great Britain
+  source_type: Grid Code modification
+  url: https://www.neso.energy/industry-information/codes/gc/modifications
+  official_document_url: https://www.neso.energy/document/290536/download
+  publication_date: '2023-10-02'
+  effective_date: 2024
+  version: GC0163
+  status: 구현
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: Proposal pp.3~4; 최종 legal text 별도 확인
+  publication_policy: link-only
+  note_path: content/gfm/02_Sources/UK/NESO_GC0163.md
+- id: SRC-GB-NESO-2026-002
+  title: 계통형성 지침서
+  organization: NESO
+  country: Great Britain
+  source_type: Grid Code guidance
+  url: https://www.neso.energy/industry-information/codes/grid-code/code-documents
+  official_document_url: https://www.neso.energy/document/289921/download
+  publication_date: 2026
+  effective_date: null
+  version: Issue 4 Review Public
+  status: 검토 공개본·과도 지침
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: pp.4~20; Appendix B~D
+  publication_policy: link-only
+  note_path: content/gfm/02_Sources/UK/NESO_GFM_Guidance_Issue4.md
+- id: SRC-KR-KEPCO-2026-001
+  title: 한전 신재생발전기 송전계통 연계기술기준 제5차 개정안의 GFM 조항
+  organization: 한국전력공사
+  country: Republic of Korea, 송전계통 연계 인버터설비
+  source_type: 제·개정 사전예고·개정 대비표
+  url: https://www.kepco.co.kr/home/disclosure/regulations/revision/revision/boardView.do?boardMngNo=69&boardNo=445
+  official_document_url: null
+  publication_date: '2026-05-04'
+  effective_date: null
+  version: 제5차 개정 대비표 V1
+  status: 공개회람·사전예고 개정안; 확정·시행본 미확인
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-11'
+  source_locator: 개정안 3.28, 11.1~11.8, 13.1; 첨부 PDF 21쪽
+  publication_policy: link-only
+  note_path: content/gfm/02_Sources/Korea/KEPCO_Renewable_Transmission_Interconnection_GFM_Draft_2026_05.md
+- id: SRC-KR-KPX-2026-001
+  title: 2026년 4월 29일 시행 전력시장운영규칙의 GFM 조항
+  organization: 한국전력거래소
+  country: Republic of Korea, 전력시장·중앙계약시장 장주기 BESS
+  source_type: 전력시장운영규칙
+  url: https://new.kpx.or.kr/board.es?act=view&bid=0030&list_no=77237&mid=a11002010000&nPage=1&tag=
+  official_document_url: https://new.kpx.or.kr/boardDownload.es?bid=0030&list_no=77237&seq=4
+  publication_date: '2026-04-28'
+  effective_date: '2026-04-29'
+  version: 전문 260428; 2026-04-29 시행
+  status: 확정·시행
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: 제1.1.2조 정의 159·159의2; 제5.3.1조①10; 제5.8.4조⑨; 제15.3.2조⑨; 별표3 24.0~25.3, PDF 인쇄면 574~575
+  publication_policy: link-only
+  note_path: content/gfm/02_Sources/Korea/KPX_Market_Rules_2026_04_29.md
+- id: SRC-KR-KPX-2026-002
+  title: 2026년 2월 계통평가세부운영규정과 GFM 후속개정 공백
+  organization: 한국전력거래소
+  country: Republic of Korea, 전력시장
+  source_type: 계통평가세부운영규정
+  url: https://new.kpx.or.kr/board.es?act=view&bid=0031&list_no=76973&mid=a10205020000&nPage=1&tag=
+  official_document_url: https://new.kpx.or.kr/boardDownload.es?bid=0031&list_no=76973&seq=2
+  publication_date: '2026-03-17'
+  effective_date: '2026-02-23'
+  version: 2026-02-23 개정
+  status: 확정·2026-09-11 공개목록상 최신 계통평가세부운영규정
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-11'
+  source_locator: 제4장 ESS 기술특성; 제5.2절 ESS 보조서비스; GFM 문구 없음
+  publication_policy: link-only
+  note_path: content/gfm/02_Sources/Korea/KPX_Grid_Assessment_Detailed_Rules_2026_02.md
+- id: SRC-KR-KPX-2026-003
+  title: 인버터 설비 계통해석 모델 제출·검증 사전안내
+  organization: 한국전력거래소
+  country: Republic of Korea, 송전연계 IBR·중앙계약전기저장장치
+  source_type: 사전안내·규칙 및 세부운영규정 개정안
+  url: https://www.kpx.or.kr/board.es?act=view&bid=0042&list_no=77979&mid=a11201000000
+  official_document_url: https://new.kpx.or.kr/boardDownload.es?bid=0042&list_no=77979&seq=3
+  publication_date: '2026-08-25'
+  effective_date: null
+  version: 2026-08-25 공지
+  status: 사전안내·개정안; 확정 시행본 아님
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-11'
+  source_locator: 공지 1~7항; 첨부2 개정안 제13장 13.1~13.5
+  publication_policy: link-only
+  note_path: content/gfm/02_Sources/Korea/KPX_Inverter_Model_Submission_PreNotice_2026.md
+- id: SRC-KR-KSGA-2023-001
+  title: '그리드포밍 인버터 — 제1부: 일반 요구사항'
+  organization: 한국스마트그리드협회
+  country: Republic of Korea
+  source_type: 단체표준
+  url: https://ksga.org/sgstandard/lib/all/enactment/view.do?seq=2693
+  official_document_url: null
+  publication_date: '2023-12-21'
+  effective_date: null
+  version: KSGA-025-18-1:2023 Ed1
+  status: 확정
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-11'
+  source_locator: 공식 페이지 표준 개요 확인; 전문 조항·쪽수 재검토 필요
+  publication_policy: link-only
+  note_path: content/gfm/02_Sources/Korea/KSGA_025_18_1_2023_Ed1.md
+- id: SRC-KR-KTL-2026-001
+  title: KTL PCS 시험 안내의 KSGA GFM 단체표준 시험 범위
+  organization: 한국산업기술시험원
+  country: Republic of Korea
+  source_type: 공식 시험서비스 안내
+  url: https://customer.ktl.re.kr/web/contents/K102311000.do
+  official_document_url: null
+  publication_date: null
+  effective_date: null
+  version: 웹페이지 확인본 2026-09-09
+  status: 현행 서비스 안내
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: 전력변환장치 한국스마트그리드협회 단체표준 인증시험(일반) 항목
+  publication_policy: link-only
+  note_path: content/gfm/02_Sources/Korea/KTL_PCS_Test_Service_KSGA_025_18_1.md
+- id: SRC-KR-MCEE-2026-001
+  title: 송전용 BESS GFM 성능요건 도입 발표
+  organization: 기후에너지환경부
+  country: Republic of Korea, 중앙계약시장 장주기 BESS
+  source_type: 정부 보도자료·성능요건 발표
+  url: https://mcee.go.kr/home/web/newsRead.do?boardId=1872760&boardMasterId=939&menuId=10607
+  official_document_url: https://www.korea.kr/common/download.do?fileId=198495396&tblKey=GMN
+  publication_date: '2026-06-24'
+  effective_date: null
+  version: '2026-06-24'
+  status: 확정 발표
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-11'
+  source_locator: 보도자료 붙임1 그리드포밍 세부 성능 요건; 전력시장운영규칙 제15.3.2조⑨·별표3 24.0~25.3
+  publication_policy: link-only
+  note_path: content/gfm/02_Sources/Korea/KR_MCEE_GFM_BESS_Requirements_2026.md
+- id: SRC-POLICY-AU-GPSRR-2026
+  document_id: au-gpsrr-2026
+  title: 2026 일반 전력계통 위험 검토
+  organization: Australian Energy Market Operator
+  country: AU
+  source_type: study
+  url: https://www.aemo.com.au/energy-systems/electricity/national-electricity-market-nem/system-operations/general-power-system-risk-review
+  official_document_url: null
+  publication_date: '2026-07-31'
+  effective_date: null
+  version: Final
+  status: final
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-11'
+  source_locator: null
+  locator_status: claim_level_mapping_pending
+  publication_policy: link-only
+  note_path: content/documents/au-gpsrr-2026.md
+- id: SRC-POLICY-AU-ISP-2026-DRAFT
+  document_id: au-isp-2026-draft
+  title: 2026 통합계통계획 초안
+  organization: Australian Energy Market Operator
+  country: AU
+  source_type: transmission_plan
+  url: https://www.aemo.com.au/consultations/current-and-closed-consultations/draft-2026-isp-consultation
+  official_document_url: null
+  publication_date: '2025-12-10'
+  effective_date: null
+  version: Draft
+  status: consultation
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-11'
+  source_locator: null
+  locator_status: claim_level_mapping_pending
+  publication_policy: link-only
+  note_path: content/documents/au-isp-2026-draft.md
+- id: SRC-POLICY-AU-ISP-2026-FINAL
+  document_id: au-isp-2026-final
+  title: 2026 통합계통계획
+  organization: Australian Energy Market Operator
+  country: AU
+  source_type: transmission_plan
+  url: https://www.aemo.com.au/energy-systems/major-publications/integrated-system-plan-isp/2026-integrated-system-plan-isp
+  official_document_url: null
+  publication_date: '2026-06-25'
+  effective_date: null
+  version: '1.0'
+  status: final
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-11'
+  source_locator: null
+  locator_status: claim_level_mapping_pending
+  publication_policy: link-only
+  note_path: content/documents/au-isp-2026-final.md
+- id: SRC-POLICY-AU-NEM-ESOO-2026
+  document_id: au-nem-esoo-2026
+  title: 2026 NEM 전력수급기회전망
+  organization: Australian Energy Market Operator
+  country: AU
+  source_type: forecast
+  url: https://www.aemo.com.au/energy-systems/electricity/national-electricity-market-nem/nem-forecasting-and-planning/forecasting-and-reliability/nem-electricity-statement-of-opportunities-esoo
+  official_document_url: null
+  publication_date: '2026-08-25'
+  effective_date: null
+  version: August 2026
+  status: final
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-11'
+  source_locator: null
+  locator_status: claim_level_mapping_pending
+  publication_policy: link-only
+  note_path: content/documents/au-nem-esoo-2026.md
+- id: SRC-POLICY-AU-NEM-GPS-TEMPLATE-2023
+  document_id: au-nem-gps-template-2023
+  title: NEM 발전기·통합자원제공자 성능기준 양식
+  organization: Australian Energy Market Operator
+  country: AU
+  source_type: technical_notice
+  url: https://www.aemo.com.au/consultations/current-and-closed-consultations/gps-template
+  official_document_url: null
+  publication_date: '2023-03-16'
+  effective_date: null
+  version: Final
+  status: final
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-11'
+  source_locator: null
+  locator_status: claim_level_mapping_pending
+  publication_policy: link-only
+  note_path: content/documents/au-nem-gps-template-2023.md
+- id: SRC-POLICY-AU-NER-V254
+  document_id: au-ner-v254
+  title: National Electricity Rules v254
+  organization: Australian Energy Market Commission
+  country: AU
+  source_type: regulation
+  url: https://energy-rules.aemc.gov.au/ner/818
+  official_document_url: null
+  publication_date: '2026-09-04'
+  effective_date: '2026-09-04'
+  version: '254'
+  status: amended
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-11'
+  source_locator: null
+  locator_status: claim_level_mapping_pending
+  publication_policy: link-only
+  note_path: content/documents/au-ner-v254.md
+- id: SRC-POLICY-AU-WEM-ESOO-2026
+  document_id: au-wem-esoo-2026
+  title: 2026 WEM 전력수급기회전망
+  organization: Australian Energy Market Operator
+  country: AU
+  source_type: forecast
+  url: https://www.aemo.com.au/energy-systems/electricity/wholesale-electricity-market-wem/wem-forecasting-and-planning/wem-electricity-statement-of-opportunities-wem-esoo
+  official_document_url: null
+  publication_date: '2026-06-23'
+  effective_date: null
+  version: '2'
+  status: amended
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-11'
+  source_locator: null
+  locator_status: claim_level_mapping_pending
+  publication_policy: link-only
+  note_path: content/documents/au-wem-esoo-2026.md
+- id: SRC-POLICY-AU-WEM-GPS-FRAMEWORK
+  document_id: au-wem-gps-framework
+  title: WEM 발전기 성능기준 프레임워크
+  organization: Australian Energy Market Operator
+  country: AU
+  source_type: official_explainer
+  url: https://www.aemo.com.au/energy-systems/electricity/wholesale-electricity-market-wem/system-operations/gps-framework
+  official_document_url: null
+  publication_date: null
+  effective_date: '2021-02-01'
+  version: null
+  status: official_explainer
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-11'
+  source_locator: null
+  locator_status: claim_level_mapping_pending
+  publication_policy: link-only
+  note_path: content/documents/au-wem-gps-framework.md
+- id: SRC-POLICY-AU-WEM-GPS-REGISTRATION
+  document_id: au-wem-gps-registration
+  title: WEM 발전기 성능기준 등록 안내
+  organization: Australian Energy Market Operator
+  country: AU
+  source_type: official_explainer
+  url: https://www.aemo.com.au/energy-systems/electricity/wholesale-electricity-market-wem/system-operations/gps-framework/registration-of-generator-performance-standards
+  official_document_url: null
+  publication_date: null
+  effective_date: '2021-02-01'
+  version: null
+  status: official_explainer
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-11'
+  source_locator: null
+  locator_status: claim_level_mapping_pending
+  publication_policy: link-only
+  note_path: content/documents/au-wem-gps-registration.md
+- id: SRC-POLICY-AU-WEM-GPS-TESTING
+  document_id: au-wem-gps-testing
+  title: WEM 발전기 성능 시험·모니터링 안내
+  organization: Australian Energy Market Operator
+  country: AU
+  source_type: test_procedure
+  url: https://www.aemo.com.au/energy-systems/electricity/wholesale-electricity-market-wem/system-operations/gps-framework/generator-performance-testing-and-monitoring
+  official_document_url: null
+  publication_date: null
+  effective_date: null
+  version: null
+  status: official_explainer
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-11'
+  source_locator: null
+  locator_status: claim_level_mapping_pending
+  publication_policy: link-only
+  note_path: content/documents/au-wem-gps-testing.md
+- id: SRC-POLICY-ENERGY-3-FINAL
+  document_id: energy-3-final
+  title: 제3차 에너지기본계획 2019–2040
+  organization: 산업통상자원부
+  country: KR
+  source_type: plan
+  url: https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/161753/view
+  official_document_url: https://kesis.keei.re.kr/boardDownload.es?bid=0025&list_no=1488&seq=1
+  publication_date: '2019-06-04'
+  effective_date: null
+  version: null
+  status: final
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: null
+  locator_status: claim_level_mapping_pending
+  publication_policy: link-only
+  note_path: content/documents/energy-3-final.md
+- id: SRC-POLICY-P10-DEMAND
+  document_id: p10-demand
+  title: 장기 전력수요전망 2022-2036
+  organization: 전력거래소
+  country: KR
+  source_type: forecast
+  url: https://www.kpx.or.kr/board.es?act=view&bid=0017&list_no=68649&mid=a10109030400
+  official_document_url: https://www.kpx.or.kr/boardDownload.es?bid=0017&list_no=68649&seq=2
+  publication_date: '2023-01-18'
+  effective_date: null
+  version: null
+  status: supporting
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: null
+  locator_status: claim_level_mapping_pending
+  publication_policy: link-only
+  note_path: content/documents/p10-demand.md
+- id: SRC-POLICY-P10-DRAFT
+  document_id: p10-draft
+  title: 제10차 전력수급기본계획 총괄분과위 실무안 공개
+  organization: 산업통상자원부
+  country: KR
+  source_type: plan
+  url: https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/165956/view
+  official_document_url: null
+  publication_date: '2022-08-30'
+  effective_date: null
+  version: null
+  status: working_draft
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: null
+  locator_status: claim_level_mapping_pending
+  publication_policy: link-only
+  note_path: content/documents/p10-draft.md
+- id: SRC-POLICY-P10-FINAL
+  document_id: p10-final
+  title: 제10차 전력수급기본계획
+  organization: 산업통상자원부
+  country: KR
+  source_type: plan
+  url: https://www.kpx.or.kr/board.es?bid=0061&mid=a30700000000
+  official_document_url: https://www.kpx.or.kr/boardDownload.es?bid=0061&list_no=69127&seq=1
+  publication_date: '2023-01-13'
+  effective_date: null
+  version: null
+  status: final
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: null
+  locator_status: claim_level_mapping_pending
+  publication_policy: link-only
+  note_path: content/documents/p10-final.md
+- id: SRC-POLICY-P10-HEARING
+  document_id: p10-hearing
+  title: 제10차 전력수급기본계획 수립 공청회 개최 공고
+  organization: 산업통상자원부
+  country: KR
+  source_type: notice
+  url: https://www.motir.go.kr/kor/article/ATCLc01b2801b/68020/view
+  official_document_url: null
+  publication_date: '2022-11-14'
+  effective_date: null
+  version: null
+  status: consultation
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: null
+  locator_status: claim_level_mapping_pending
+  publication_policy: link-only
+  note_path: content/documents/p10-hearing.md
+- id: SRC-POLICY-P10-RELEASE
+  document_id: p10-release
+  title: 제10차 전력수급기본계획 확정 발표
+  organization: 산업통상자원부
+  country: KR
+  source_type: press_release
+  url: https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/166650/view
+  official_document_url: null
+  publication_date: '2023-01-12'
+  effective_date: null
+  version: null
+  status: press_release
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: null
+  locator_status: claim_level_mapping_pending
+  publication_policy: link-only
+  note_path: content/documents/p10-release.md
+- id: SRC-POLICY-P10-SEA-DRAFT
+  document_id: p10-sea-draft
+  title: 제10차 전력수급기본계획 전략환경영향평가서 행정예고
+  organization: 산업통상자원부
+  country: KR
+  source_type: notice
+  url: https://www.motir.go.kr/kor/article/ATCLc01b2801b/67954/view
+  official_document_url: null
+  publication_date: '2022-09-30'
+  effective_date: null
+  version: null
+  status: consultation
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: null
+  locator_status: claim_level_mapping_pending
+  publication_policy: link-only
+  note_path: content/documents/p10-sea-draft.md
+- id: SRC-POLICY-P10-SEA-SCOPE
+  document_id: p10-sea-scope
+  title: 제10차 전력수급기본계획 전략환경영향평가 항목 결정내용 공개
+  organization: 산업통상자원부
+  country: KR
+  source_type: notice
+  url: https://www.motir.go.kr/kor/article/ATCLc01b2801b/67906/view
+  official_document_url: null
+  publication_date: '2022-09-15'
+  effective_date: null
+  version: null
+  status: consultation
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: null
+  locator_status: claim_level_mapping_pending
+  publication_policy: link-only
+  note_path: content/documents/p10-sea-scope.md
+- id: SRC-POLICY-P11-AMEND
+  document_id: p11-amend
+  title: 제11차 전력수급기본계획 수정 공고
+  organization: 산업통상자원부
+  country: KR
+  source_type: plan
+  url: https://www.motir.go.kr/kor/article/ATCLc01b2801b/70152/view
+  official_document_url: https://www.kpx.or.kr/boardDownload.es?bid=0061&list_no=74609&seq=1
+  publication_date: '2025-03-13'
+  effective_date: null
+  version: null
+  status: amended
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: null
+  locator_status: claim_level_mapping_pending
+  publication_policy: link-only
+  note_path: content/documents/p11-amend.md
+- id: SRC-POLICY-P11-COMMITTEE
+  document_id: p11-committee
+  title: 제11차 전력수급기본계획 총괄위원회 첫 회의
+  organization: 산업통상자원부
+  country: KR
+  source_type: notice
+  url: https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/167618/view
+  official_document_url: null
+  publication_date: '2023-07-27'
+  effective_date: null
+  version: null
+  status: announced
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: null
+  locator_status: claim_level_mapping_pending
+  publication_policy: link-only
+  note_path: content/documents/p11-committee.md
+- id: SRC-POLICY-P11-DEMAND
+  document_id: p11-demand
+  title: 장기 전력수요전망 2024-2038
+  organization: 전력거래소
+  country: KR
+  source_type: forecast
+  url: https://www.kpx.or.kr/board.es?act=view&bid=0017&list_no=74523&mid=a10109030400
+  official_document_url: https://www.kpx.or.kr/boardDownload.es?bid=0017&list_no=74523&seq=2
+  publication_date: '2025-02-27'
+  effective_date: null
+  version: null
+  status: supporting
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: null
+  locator_status: claim_level_mapping_pending
+  publication_policy: link-only
+  note_path: content/documents/p11-demand.md
+- id: SRC-POLICY-P11-DRAFT
+  document_id: p11-draft
+  title: 제11차 전력수급기본계획 실무안 공개
+  organization: 산업통상자원부
+  country: KR
+  source_type: plan
+  url: https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/169132/view
+  official_document_url: null
+  publication_date: '2024-05-31'
+  effective_date: null
+  version: null
+  status: working_draft
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: null
+  locator_status: claim_level_mapping_pending
+  publication_policy: link-only
+  note_path: content/documents/p11-draft.md
+- id: SRC-POLICY-P11-FINAL
+  document_id: p11-final
+  title: 제11차 전력수급기본계획 최초 공고
+  organization: 산업통상자원부
+  country: KR
+  source_type: plan
+  url: https://www.motir.go.kr/kor/article/ATCLc01b2801b/70083/view
+  official_document_url: https://www.kpx.or.kr/boardDownload.es?bid=ATT&list_no=74548&seq=1
+  publication_date: '2025-02-21'
+  effective_date: null
+  version: null
+  status: final
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: null
+  locator_status: claim_level_mapping_pending
+  publication_policy: link-only
+  note_path: content/documents/p11-final.md
+- id: SRC-POLICY-P11-HEARING
+  document_id: p11-hearing
+  title: 제11차 전력수급기본계획 수립 공청회 개최 공고
+  organization: 산업통상자원부
+  country: KR
+  source_type: notice
+  url: https://www.motir.go.kr/kor/article/ATCLc01b2801b/69720/view
+  official_document_url: null
+  publication_date: '2024-09-12'
+  effective_date: null
+  version: null
+  status: consultation
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: null
+  locator_status: claim_level_mapping_pending
+  publication_policy: link-only
+  note_path: content/documents/p11-hearing.md
+- id: SRC-POLICY-P11-IMPLEMENTATION
+  document_id: p11-implementation
+  title: 제11차 신규원전 건설 계획대로 추진 발표
+  organization: 기후에너지환경부
+  country: KR
+  source_type: press_release
+  url: https://www.mcee.go.kr/home/web/board/read.do?boardId=1837310&boardMasterId=939&menuId=10598
+  official_document_url: https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=316006&fileSeq=2
+  publication_date: '2026-01-26'
+  effective_date: null
+  version: null
+  status: press_release
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: null
+  locator_status: claim_level_mapping_pending
+  publication_policy: link-only
+  note_path: content/documents/p11-implementation.md
+- id: SRC-POLICY-P11-POLL
+  document_id: p11-poll
+  title: 제11차 신규원전 계획 관련 대국민 여론조사 결과 발표
+  organization: 기후에너지환경부
+  country: KR
+  source_type: study
+  url: https://www.mcee.go.kr/home/web/board/read.do?boardId=1836550&boardMasterId=939&menuId=10598
+  official_document_url: https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=315786&fileSeq=2
+  publication_date: '2026-01-21'
+  effective_date: null
+  version: null
+  status: supporting
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: null
+  locator_status: claim_level_mapping_pending
+  publication_policy: link-only
+  note_path: content/documents/p11-poll.md
+- id: SRC-POLICY-P11-RELEASE
+  document_id: p11-release
+  title: 제11차 전력수급기본계획 확정 발표
+  organization: 산업통상자원부
+  country: KR
+  source_type: press_release
+  url: https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/170183/view
+  official_document_url: null
+  publication_date: '2025-02-21'
+  effective_date: null
+  version: null
+  status: press_release
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: null
+  locator_status: claim_level_mapping_pending
+  publication_policy: link-only
+  note_path: content/documents/p11-release.md
+- id: SRC-POLICY-P11-SEA-DRAFT
+  document_id: p11-sea-draft
+  title: 제11차 전력수급기본계획 전략환경영향평가서 행정예고
+  organization: 산업통상자원부
+  country: KR
+  source_type: notice
+  url: https://www.motir.go.kr/kor/article/ATCLc01b2801b/69589/view
+  official_document_url: null
+  publication_date: '2024-07-10'
+  effective_date: null
+  version: null
+  status: consultation
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: null
+  locator_status: claim_level_mapping_pending
+  publication_policy: link-only
+  note_path: content/documents/p11-sea-draft.md
+- id: SRC-POLICY-P11-SEA-SCOPE
+  document_id: p11-sea-scope
+  title: 제11차 전력수급기본계획 전략환경영향평가 항목 결정내용 공개
+  organization: 산업통상자원부
+  country: KR
+  source_type: notice
+  url: https://www.motir.go.kr/kor/article/ATCLc01b2801b/69540/view
+  official_document_url: null
+  publication_date: '2024-06-21'
+  effective_date: null
+  version: null
+  status: consultation
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: null
+  locator_status: claim_level_mapping_pending
+  publication_policy: link-only
+  note_path: content/documents/p11-sea-scope.md
+- id: SRC-POLICY-P12-COMMITTEE
+  document_id: p12-committee
+  title: 제12차 전력수급기본계획 제1차 총괄위원회 개최 안내
+  organization: 기후에너지환경부
+  country: KR
+  source_type: notice
+  url: https://www.mcee.go.kr/home/web/board/read.do?boardId=1826720&boardMasterId=939&menuId=10598
+  official_document_url: https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=312862&fileSeq=2
+  publication_date: '2025-12-09'
+  effective_date: null
+  version: null
+  status: announced
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: null
+  locator_status: claim_level_mapping_pending
+  publication_policy: link-only
+  note_path: content/documents/p12-committee.md
+- id: SRC-POLICY-P12-DEMAND-DRAFT-20260519
+  document_id: p12-demand-draft-20260519
+  title: 제12차 전력수급기본계획 수요 전망(안) 2026년 5월
+  organization: 기후에너지환경부
+  country: KR
+  source_type: forecast
+  url: https://www.mcee.go.kr/home/web/board/read.do?boardId=1864660&boardMasterId=939&menuId=10598
+  official_document_url: https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=324062&fileSeq=2
+  publication_date: '2026-05-19'
+  effective_date: null
+  version: null
+  status: draft
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: null
+  locator_status: claim_level_mapping_pending
+  publication_policy: link-only
+  note_path: content/documents/p12-demand-draft-20260519.md
+- id: SRC-POLICY-P12-FORUM1
+  document_id: p12-forum1
+  title: 제12차 계획 관련 제1차 에너지믹스 정책토론회 안내
+  organization: 기후에너지환경부
+  country: KR
+  source_type: notice
+  url: https://www.mcee.go.kr/home/web/board/read.do?boardId=1830350&boardMasterId=939&menuId=10598
+  official_document_url: https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=313914&fileSeq=2
+  publication_date: '2025-12-22'
+  effective_date: null
+  version: null
+  status: consultation
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: null
+  locator_status: claim_level_mapping_pending
+  publication_policy: link-only
+  note_path: content/documents/p12-forum1.md
+- id: SRC-POLICY-P12-FORUM3
+  document_id: p12-forum3
+  title: 제12차 전기본 제3차 전력수요 전망 정책토론회 안내
+  organization: 기후에너지환경부
+  country: KR
+  source_type: notice
+  url: https://www.mcee.go.kr/home/web/board/read.do?boardId=1858100&boardMasterId=939&menuId=10598
+  official_document_url: https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=322238&fileSeq=2
+  publication_date: '2026-04-17'
+  effective_date: null
+  version: null
+  status: consultation
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: null
+  locator_status: claim_level_mapping_pending
+  publication_policy: link-only
+  note_path: content/documents/p12-forum3.md
+- id: SRC-POLICY-P12-FORUM45
+  document_id: p12-forum45
+  title: 제12차 전기본 제4·5차 정책토론회 개최 안내
+  organization: 기후에너지환경부
+  country: KR
+  source_type: notice
+  url: https://www.mcee.go.kr/home/web/board/read.do?boardId=1884280&boardMasterId=939&menuId=10598
+  official_document_url: https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=330358&fileSeq=2
+  publication_date: '2026-08-15'
+  effective_date: null
+  version: null
+  status: consultation
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: null
+  locator_status: claim_level_mapping_pending
+  publication_policy: link-only
+  note_path: content/documents/p12-forum45.md
+- id: SRC-POLICY-P12-FORUM6
+  document_id: p12-forum6
+  title: 제12차 전기본 제6차 재생에너지 정책토론회 개최 안내
+  organization: 기후에너지환경부
+  country: KR
+  source_type: notice
+  url: https://www.mcee.go.kr/home/web/board/read.do?boardId=1884910&boardMasterId=939&menuId=10598
+  official_document_url: https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=330550&fileSeq=2
+  publication_date: '2026-08-20'
+  effective_date: null
+  version: null
+  status: consultation
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: null
+  locator_status: claim_level_mapping_pending
+  publication_policy: link-only
+  note_path: content/documents/p12-forum6.md
+- id: SRC-POLICY-P12-FORUM7
+  document_id: p12-forum7
+  title: 제12차 전기본 제7차 석탄발전 조기폐지 정책토론회 안내
+  organization: 기후에너지환경부
+  country: KR
+  source_type: notice
+  url: https://www.mcee.go.kr/home/web/board/read.do?boardId=1889590&boardMasterId=939&menuId=10598
+  official_document_url: https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=331844&fileSeq=2
+  publication_date: '2026-09-09'
+  effective_date: null
+  version: null
+  status: consultation
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: null
+  locator_status: claim_level_mapping_pending
+  publication_policy: link-only
+  note_path: content/documents/p12-forum7.md
+- id: SRC-POLICY-P12-LAUNCH
+  document_id: p12-launch
+  title: 제12차 전력수급기본계획 수립 착수
+  organization: 기후에너지환경부
+  country: KR
+  source_type: notice
+  url: https://www.mcee.go.kr/home/web/board/read.do?boardId=1823520&boardMasterId=939&menuId=10598
+  official_document_url: https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=311860&fileSeq=3
+  publication_date: '2025-11-27'
+  effective_date: null
+  version: null
+  status: announced
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: null
+  locator_status: claim_level_mapping_pending
+  publication_policy: link-only
+  note_path: content/documents/p12-launch.md
+- id: SRC-POLICY-RENEWABLE-1-FINAL-2026
+  document_id: renewable-1-final-2026
+  title: 제1차 재생에너지 기본계획 2026–2035
+  organization: 기후에너지환경부
+  country: KR
+  source_type: plan
+  url: https://www.mcee.go.kr/home/web/board/read.do?boardId=1864660&boardMasterId=939&menuId=10598
+  official_document_url: https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=324062&fileSeq=3
+  publication_date: '2026-05-19'
+  effective_date: null
+  version: null
+  status: final
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: null
+  locator_status: claim_level_mapping_pending
+  publication_policy: link-only
+  note_path: content/documents/renewable-1-final-2026.md
+- id: SRC-POLICY-RENEWABLE-5-FINAL
+  document_id: renewable-5-final
+  title: 제5차 신재생에너지 기본계획 2020–2034
+  organization: 산업통상자원부
+  country: KR
+  source_type: plan
+  url: https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/163676/view
+  official_document_url: https://www.knrec.or.kr/biz/introduce/file/File_down.do?file_nm=%28%EB%B3%84%EC%B2%A8%29%EC%A0%9C5%EC%B0%A8%20%EC%8B%A0%EC%9E%AC%EC%83%9D%EC%97%90%EB%84%88%EC%A7%80%20%EA%B8%B0%EB%B3%B8%EA%B3%84%ED%9A%8D.pdf
+  publication_date: '2020-12-29'
+  effective_date: null
+  version: null
+  status: final
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: null
+  locator_status: claim_level_mapping_pending
+  publication_policy: link-only
+  note_path: content/documents/renewable-5-final.md
+- id: SRC-POLICY-T10-EXPLAINER
+  document_id: t10-explainer
+  title: 한국전력 사보 전력망 확충 해설 2025년 2월
+  organization: 한국전력공사
+  country: KR
+  source_type: official_explainer
+  url: https://home.kepco.co.kr/kepco/front/html/WZ/2025_02/heritage.html
+  official_document_url: null
+  publication_date: null
+  effective_date: null
+  version: null
+  status: official_explainer
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: null
+  locator_status: claim_level_mapping_pending
+  publication_policy: link-only
+  note_path: content/documents/t10-explainer.md
+- id: SRC-POLICY-T10-FINAL
+  document_id: t10-final
+  title: 제10차 장기 송변전설비계획 2022–2036
+  organization: 한국전력공사
+  country: KR
+  source_type: transmission_plan
+  url: https://www.kepco.co.kr/home/media/newsroom/pr/boardView.do?boardMngNo=15&boardNo=447
+  official_document_url: https://www.kepco.co.kr/c2r/FileDownload.do?fileNo=P%2FvVfXe7XHnAbYRUs7gDfw%3D%3D&fileSeq=DIMtNyzfJ3kKEXQCksqfEQ%3D%3D
+  publication_date: '2023-05-08'
+  effective_date: null
+  version: null
+  status: final
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: null
+  locator_status: claim_level_mapping_pending
+  publication_policy: link-only
+  note_path: content/documents/t10-final.md
+- id: SRC-POLICY-T11-EXPLAINER
+  document_id: t11-explainer
+  title: 한국전력 사보 탄소중립과 전력망 2025년 12월
+  organization: 한국전력공사
+  country: KR
+  source_type: official_explainer
+  url: https://www.kepco.co.kr/KEPCO_FILE/html/2025_12/special1.html
+  official_document_url: null
+  publication_date: null
+  effective_date: null
+  version: null
+  status: official_explainer
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: null
+  locator_status: claim_level_mapping_pending
+  publication_policy: link-only
+  note_path: content/documents/t11-explainer.md
+- id: SRC-POLICY-T11-FINAL
+  document_id: t11-final
+  title: 제11차 장기 송변전설비계획 2024–2038
+  organization: 한국전력공사
+  country: KR
+  source_type: transmission_plan
+  url: https://www.kepco.co.kr/home/media/newsroom/pr/boardView.do?boardMngNo=15&boardNo=2904
+  official_document_url: https://www.kepco.co.kr/c2r/FileDownload.do?fileNo=bQSK6KNFNAG9cfWeYpeHWA%3D%3D&fileSeq=Snw2%2Bh9Sw1L2yimBGsLgBA%3D%3D
+  publication_date: '2025-05-27'
+  effective_date: null
+  version: null
+  status: final
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: null
+  locator_status: claim_level_mapping_pending
+  publication_policy: link-only
+  note_path: content/documents/t11-final.md
+- id: SRC-POLICY-T11-RELEASE
+  document_id: t11-release
+  title: 제11차 장기 송변전설비계획 수립 발표 보도자료
+  organization: 한국전력공사
+  country: KR
+  source_type: press_release
+  url: https://www.kepco.co.kr/home/media/newsroom/pr/boardView.do?boardMngNo=15&boardNo=2904
+  official_document_url: https://www.kepco.co.kr/c2r/FileDownload.do?fileNo=bQSK6KNFNAG9cfWeYpeHWA%3D%3D&fileSeq=DIMtNyzfJ3kKEXQCksqfEQ%3D%3D
+  publication_date: '2025-05-27'
+  effective_date: null
+  version: null
+  status: press_release
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: null
+  locator_status: claim_level_mapping_pending
+  publication_policy: link-only
+  note_path: content/documents/t11-release.md
+- id: SRC-POLICY-TECH-FIELD-TEST-APPENDIX6
+  document_id: tech-field-test-appendix6
+  title: 신재생발전기 송전계통 연계기술기준 부록6 발전단지 현장 특성시험절차서
+  organization: 한국전력공사
+  country: KR
+  source_type: test_procedure
+  url: https://www.kpx.or.kr/board.es?act=view&bid=0042&mid=a11201000000&list_no=77368
+  official_document_url: https://www.kpx.or.kr/boardDownload.es?bid=0042&list_no=77368&seq=1
+  publication_date: '2026-05-13'
+  effective_date: null
+  version: null
+  status: supporting
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: null
+  locator_status: claim_level_mapping_pending
+  publication_policy: link-only
+  note_path: content/documents/tech-field-test-appendix6.md
+- id: SRC-POLICY-TECH-FIELD-TEST-NOTICE-202605
+  document_id: tech-field-test-notice-202605
+  title: 신재생 발전소 현장성능시험 결과 제출 안내
+  organization: 전력거래소
+  country: KR
+  source_type: technical_notice
+  url: https://www.kpx.or.kr/board.es?act=view&bid=0042&mid=a11201000000&list_no=77368
+  official_document_url: null
+  publication_date: '2026-05-13'
+  effective_date: null
+  version: null
+  status: announced
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: null
+  locator_status: claim_level_mapping_pending
+  publication_policy: link-only
+  note_path: content/documents/tech-field-test-notice-202605.md
+- id: SRC-POLICY-TECH-GRID-MODEL-DRAFT-202608
+  document_id: tech-grid-model-draft-202608
+  title: 발전사업자 계통해석 모델 제출 사전안내 및 규정 개정안
+  organization: 전력거래소
+  country: KR
+  source_type: rule_draft
+  url: https://www.kpx.or.kr/board.es?act=view&bid=0042&mid=a11201000000&list_no=77979
+  official_document_url: https://www.kpx.or.kr/boardDownload.es?bid=0042&list_no=77979&seq=1
+  publication_date: '2026-08-25'
+  effective_date: null
+  version: null
+  status: draft
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: null
+  locator_status: claim_level_mapping_pending
+  publication_policy: link-only
+  note_path: content/documents/tech-grid-model-draft-202608.md
+- id: SRC-US-ERCOT-2025-003
+  title: 인버터형 ESR 고급 계통지원 요구
+  organization: ERCOT
+  country: ERCOT Texas
+  source_type: Nodal Operating Guide Revision Request
+  url: https://www.ercot.com/mktrules/issues/NOGRR272
+  official_document_url: https://www.ercot.com/mktrules/issues/NOGRR272
+  publication_date: '2024-10-31'
+  effective_date: '2025-12-01'
+  version: NOGRR272
+  status: 승인·발효
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: Nodal Operating Guide §2.14; approved ERCOT comments/report
+  publication_policy: link-only
+  note_path: content/gfm/02_Sources/USA/ERCOT_NOGRR272.md
+- id: SRC-US-IEEE-2022-004
+  title: 송전계통 접속 IBR 상호연계·상호운용 표준
+  organization: IEEE Standards Association
+  country: International / adopting entities
+  source_type: 표준
+  url: https://standards.ieee.org/ieee/2800/10453/
+  official_document_url: https://standards.ieee.org/ieee/2800/10453/
+  publication_date: '2022-04-22'
+  effective_date: null
+  version: IEEE 2800-2022
+  status: 활성 표준
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: 유료 원문 미확인
+  publication_policy: link-only
+  note_path: content/gfm/02_Sources/USA/IEEE_2800_2022.md
+- id: SRC-US-IEEE-2026-005
+  title: BPS 접속 IBR 시험·검증 절차 권고실무
+  organization: IEEE Standards Association
+  country: International / adopting entities
+  source_type: 권고실무
+  url: https://standards.ieee.org/ieee/2800.2/10616/
+  official_document_url: https://standards.ieee.org/ieee/2800.2/10616/
+  publication_date: '2026-06-30'
+  effective_date: null
+  version: IEEE 2800.2-2026
+  status: 활성 표준
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: 유료 원문 미확인
+  publication_policy: link-only
+  note_path: content/gfm/02_Sources/USA/IEEE_2800_2_2026.md
+- id: SRC-US-NERC-2023-002
+  title: BPS 접속 BESS용 GFM 기능사양
+  organization: NERC
+  country: North American Bulk Power System
+  source_type: White Paper
+  url: https://www.nerc.com/our-work/white-papers
+  official_document_url: https://www.nerc.com/globalassets/our-work/white-papers/white_paper_gfm_functional_specification.pdf
+  publication_date: 2023-09
+  effective_date: null
+  version: September 2023
+  status: 확정
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: Executive Summary; Chapter 1; Appendices
+  publication_policy: link-only
+  note_path: content/gfm/02_Sources/USA/NERC_2023_GFM_BESS.md
+- id: SRC-US-UNIFI-2024-001
+  title: UNIFI GFM IBR 사양 제2판
+  organization: UNIFI Consortium / NREL
+  country: United States / international reference
+  source_type: 연구컨소시엄 기술사양
+  url: https://research-hub.nlr.gov/en/publications/unifi-specifications-for-grid-forming-inverter-based-resources-ve/
+  official_document_url: https://unificonsortium.org/wp-content/uploads/UNIFI-Specs-for-GFM-IBR-Version-2.pdf
+  publication_date: '2024-03-21'
+  effective_date: null
+  version: Version 2; UNIFI-2024-2-1
+  status: 확정
+  official: true
+  evidence_level: Unverified
+  collection_mode: Manual
+  last_verified: '2026-09-09'
+  source_locator: §1~4, pp.4~16
+  publication_policy: link-only
+  note_path: content/gfm/02_Sources/USA/UNIFI_2024_v2.md

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "upstream_commit": "c74f6625f2f570c2f68a748c26477e7634f718da",
+  "upstream_commit": "5fff2140909089a85cdb5bd92b24db2ee1e44418",
   "scope": "GFM source metadata only; not claim verification",
   "sources": [
     {
